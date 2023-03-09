@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language id="44">
+    <page id="9961" title="" desc="" voice="no">
+        <t id="1000">Colourful Renamer by FriendlyFirePhoenix. v%s</t>
+        <t id="1001">Colourful Renamer deactivated.</t>
+        <t id="1002">Initialised Colourful Renamer version: %s</t>
+
+        <t id="0">Dummy - %s - Dummy</t>
+        <t id="1">\033B%s\033X(Argon)</t>
+        <t id="2">\033G%s\033X(Boron)</t>
+        <t id="3">\033M%s\033X(Split)</t>
+        <t id="4">\033O%s\033X(Paranid)</t>
+        <t id="5">\033Y%s\033X(Teladi)</t>
+        <t id="8">\033R%s\033X(Pirates)</t>
+        <t id="9">\033B%s\033X(Goner)</t>
+        <t id="16">\033C%s\033X(Independant)</t>
+        <t id="17">\033A%s\033X(ATF)</t>
+        <t id="18">\033A%s\033X(Terran)</t>
+        <t id="19">\033R%s\033X(Yaki)</t>
+
+        <t id="50">\033W</t>
+        <t id="51">\033C</t>
+        <t id="52">\033A</t>
+        <t id="53">\033Y</t>
+        <t id="54">\033O</t>
+        <t id="55">\033M</t>
+        <t id="56">\033G</t>
+        <t id="57">\033B</t>
+        <t id="58">\033R</t>
+        <t id="59">\033X</t>
+        <!-- Argon -->
+        <t id="100">{1000,101}(Argon)</t>
+        <t id="101">{1266,201}(A.)</t>
+        <t id="102">{1000,133}(OTAS)</t>
+        <t id="103">{1000,132}(Terracorp)</t>
+        <t id="104">{1000,144}(Jonferco)</t>
+        <t id="105">{1000,135}(Plutarch)</t>
+        <t id="106">{17,80487}(Beryll)</t>
+        <t id="107">{1000,60008}(Privateer)</t>
+
+        <t id="130">{1000,30000}(Military)</t>
+        <!-- <t id="130">{1000,1012}(Farpoint)</t> -->
+        <!-- <t id="131">TerraCorp(Some stations use capital C for Corp and there is no translation)</t> -->
+        <!-- Boron -->
+        <t id="200">{1000,102}(Boron)</t>
+        <t id="201">{1266,202}(B.)</t>
+        <t id="202">{1000,138}(Atreus)</t>
+        <t id="203">{1000,1023}(Waverider Corp.)</t>
+        <t id="204">{1000,60008}(Privateer)</t>
+        <t id="230">{1000,30000}(Military)</t>
+        <!-- Split -->
+        <t id="300">{1000,103}(Split)</t>
+        <t id="301">{1266,203}(S.)</t>
+        <t id="302">{13,9080}(Strong Arms)</t>
+        <t id="303">{1000,1033}(Thuruk's Inc.)</t>
+        <t id="304">{1000,60008}(Privateer)</t>
+        <t id="330">{1000,30000}(Military)</t>
+        <!-- Paranid -->
+        <t id="400">{1000,104}(Paranid)</t>
+        <t id="401">{1266,204}(P.)</t>
+        <t id="402">{1000,1040}(Holy Dimensions)</t>
+        <t id="403">{1000,1043}(Trinity Corp.)</t>
+        <t id="404">{1000,137}(Duke's)</t>
+        <t id="405">{1000,60008}(Privateer)</t>
+        <t id="430">{1000,30000}(Military)</t>
+        <!-- Teladi -->
+        <t id="500">{1000,105}(Teladi - add space to prevent colouring of "Teladi"anium if necessary)</t>
+        <t id="501">{1266,205}(T.)</t>
+        <t id="502">{1000,146}(NMMC)</t>
+        <t id="503">{1000,1051}(Creditania)</t>
+        <t id="504">{1000,60008}(Privateer)</t>
+        <t id="530">{1000,30000}(Military)</t>
+        <!-- Pirate -->
+        <!-- <t id="800">{8513,134}(Pirate Guild - has to go before "Pirate")</t> -->
+        <t id="800">{1000,108}(Pirate)</t>
+        <t id="801">{1266,208}(Pi.)</t>
+        <t id="802">{1000,1050}(Talonfire)</t>
+        <t id="803">{1000,137}(Duke's)</t>
+        <t id="804">{1000,1040}(Holy Dimensions)</t>
+        <t id="805">{1000,60008}(Privateer)</t>
+        <!-- Hidden Pirate Names -->
+        <t id="30">{1000,1051}(Creditania)</t>
+        <t id="31">{1000,137}(Duke's)</t>
+        <t id="32">{1000,60005}(Assassin)</t>
+        <!-- Goner -->
+        <t id="900">{1000,109}(Goner)</t>
+        <t id="901">{1266,209}(G.)</t>
+        <!-- Independant -->
+        <t id="1600">{1000,60008} {17,80517}(Privateer Trading Post)</t>
+        <t id="1601">{13,9080}(Strong Arms - used for XRM weapons dealer XL)</t>
+        <!-- ATF -->
+        <t id="1700">{1000,120}(ATF)</t>
+        <!-- Terran -->
+        <t id="1800">{1000,118}(Terran)</t>
+        <t id="1801">{1266,218}(Ter.)</t>
+        <t id="1802">{1000,120}/{1000,121}(ATF/USC)</t>
+        <t id="1803">{1000,121}(USC)</t>
+        <t id="1804">{1000,120}(ATF)</t>
+        <t id="1805">{1000,124}(Aldrin)</t>
+        <t id="1806">{1000,122}(AGI Task Force)</t>
+        <t id="1807">{1000,140}(Dark Space)</t>
+        <t id="1808">{1000,60008}(Privateer)</t>
+        <t id="1809">{1000,40008}(Command Ship - for 'Command Ship "Morning Star"')</t>
+
+        <t id="1830">{17,16081}(Orbital Defence Station)</t>
+        <t id="1831">{17,16091}(Orbital Patrol Base)</t>
+        <t id="1832">{1000,30000}(Military)</t>
+        <!-- <t id="1830">{7,1020414}(Earth)</t> -->
+        <!-- <t id="1831">{7,1020212}(Saturn)</t> -->
+        <!-- <t id="1832">{17,13131}(McCallum)</t> -->
+        <!-- Yaki -->
+        <t id="1900">{1000,119}(Yaki)</t>
+        <t id="1901">{1266,219}(Y.)</t>
+        <t id="1902">{1000,1040}(Holy Dimensions)</t>
+        <!-- <t id="1903">{3214,5}(Trouble Seeker)</t> -->
+        <!-- Strings to prefix military bases/outposts -->
+        <!--
+        <t id="201">{9961,30}(Argon)</t>
+        <t id="202">{9961,40}(Boron)</t>
+        <t id="203">{9961,50}(Goner)</t>
+        <t id="204">{9961,60}(Paranid)</t>
+        <t id="205">{9961,70}(Pirates)</t>
+        <t id="206">{9961,80}(Split)</t>
+        <t id="207">{9961,90}(Teladi)</t>
+        <t id="208">{9961,102}(Terran - USC)</t>
+        <t id="209">{9961,110}(Yaki)</t>
+        -->
+    </page>
+    <page id="17" title="Boardcomp. objects"
+          descr="Quad line groups for ware factory pairs or twins (spoken by Boardcomputer)" voice="yes">
+        <t id="3101">Federal \033BArgon\033X Shipyard(Federal Argon Shipyard)</t>
+        <t id="3181">Free \033BArgon\033X Trading Station(Free Argon Trading Station)</t>
+        <t id="3191">\033BArgon\033X Equipment Dock(Argon Equipment Dock)</t>
+        <t id="3201">Royal \033GBoron\033X Shipyard(Royal Boron Shipyard)</t>
+        <t id="3281">Royal \033GBoron\033X Trading Station(Royal Boron Trading Station)</t>
+        <t id="3291">\033GBoron\033X Equipment Dock(Boron Equipment Dock)</t>
+        <t id="3301">\033MSplit\033X Shipyard(Split Shipyard)</t>
+        <t id="3381">\033MSplit\033X Trading Port(Split Trading Port)</t>
+        <t id="3391">\033MSplit\033X Equipment Dock(Split Equipment Dock)</t>
+        <t id="3401">\033OParanid\033X Shipyard(Paranid Shipyard)</t>
+        <t id="3481">\033OParanid\033X Trading Dock(Paranid Trading Dock)</t>
+        <t id="3491">\033OParanid\033X Equipment Dock(Paranid Equipment Dock)</t>
+        <t id="3501">\033YTeladi\033X Shipyard(Teladi Shipyard)</t>
+        <!-- <t id="3502">{17,3108} {17,3509}</t> -->
+        <t id="3581">\033YTeladi\033X Trading Station(Teladi Trading Station)</t>
+        <t id="3591">\033YTeladi\033X Space Equipment Dock(Teladi Space Equipment Dock)</t>
+        <t id="3741">\033BGoner\033X Temple(Goner Temple)</t>
+        <t id="3761">\033RPirate\033X Anarchy Port(Pirate Anarchy Port)</t>
+        <t id="3771">\033RPirate\033X Ship(Pirate Ship)</t>
+        <t id="3781">\033RPirate\033X Base(Pirate Base)</t>
+        <t id="4181">Federal \033BArgon\033X Wharf(Federal Argon Wharf)</t>
+        <t id="4281">Royal \033GBoron\033X Dry-dock(Royal Boron Dry-dock)</t>
+        <t id="4381">\033MSplit\033X Dockyard(Split Dockyard)</t>
+        <t id="4481">\033OParanid\033X Pier(Paranid Pier)</t>
+        <t id="4581">\033YTeladi\033X Showroom(Teladi Showroom)</t>
+        <t id="4971">\033BTerracorp\033X Headquarters(Terracorp Headquarters)</t>
+        <!--
+        <t id="4981">\033BTerracorp\033X Crystal Fab(Terracorp Crystal Fab)</t>
+        <t id="4991">\033BTerracorp\033X Computer Plant(Terracorp Computer Plant)</t>
+        <t id="5001">\033BTerracorp\033X Solar Power Plant(Terracorp Solar Power Plant)</t>
+        <t id="5011">\033BTerracorp\033X Wheat Farm(Terracorp Wheat Farm)</t>
+        <t id="5021">\033BTerracorp\033X Cattle Ranch(Terracorp Cattle Ranch)</t>
+        <t id="5031">\033BTerracorp\033X 125MW Shield Prod. Facility(Terracorp 125MW Shield Prod. Facility)</t>
+        <t id="5041">\033BTerracorp\033X Quantum Tube Fab(Terracorp Quantum Tube Fab)</t>
+        -->
+        <t id="5061">Federal \033BArgon\033X Installation(Federal Argon Installation)</t>
+        <t id="5071">Royal \033GBoron\033X Research Station(Royal Boron Research Station)</t>
+        <t id="5081">\033OParanid\033X Communications Facility(Paranid Communications Facility)</t>
+        <!-- XRM 9950 Stuff - This gets overwritten regularly - Start -->
+        <t id="16391">\033R{1000,119}\033X {17,16041}(Yaki Shipyard)</t>
+        <!--XRM 9950 Stuff - End -->
+        <!-- XRM 7027 Stuff - Start -->
+        <t id="75000">\033A{1000,122}\033X {1000,40007}(AGI Task Force Command)</t>
+        <t id="75002">\033A{1000,122}\033X {1000,20010}(AGI Task Force Flight School)</t>
+        <t id="75004">\033A{1000,122}\033X {1000,50202}(AGI Task Force Station Defence)</t>
+        <t id="75006">\033R{1000,119}\033X {17,16041}(Yaki Shipyard)</t>
+
+        <t id="75008">\033R{1000,119}\033X {1000,40011} {1000,40007}(Yaki Flotilla Command)</t>
+        <t id="75010">\033R{1000,119}\033X {1000,40010} {1000,40007}(Yaki Battle Group Command)</t>
+        <t id="75020">\033A{1000,118}\033X {1000,30003}(Terran Border Control)</t>
+        <t id="75022">\033A{1000,122}\033X {1000,30000} {1000,30002}(AGI Task Force Military Police)</t>
+        <t id="75024">\033A{1000,123}\033X {1000,30000} {1000,30002}(USC Military Police)</t>
+        <t id="75026">\033R{1000,108}\033X {17,16041}(Pirate Shipyard)</t>
+        <t id="75028">\033R{1000,137}\033X {17,16041}(Duke's Shipyard)</t>
+        <t id="75030">\033R{1000,137}\033X {1000,10006}(Duke's Scrap Iron Merchant)</t>
+
+        <t id="75032">\033A{1000,122}\033X {1000,30014}(AGI Task Force Disaster Control)</t>
+        <t id="75034">\033A{1000,122}\033X {1000,20032}(AGI Task Force Technical Emergency Service)</t>
+        <t id="75536">\033B{1000,109}\033X {17,16041}(Goner Shipyard)</t>
+        <t id="75537">\033BGoner\033X Shipyard(Goner Shipyard)</t>
+        <t id="75538">\033A{1000,122}\033X {1000,30005}(AGI Task Force Intelligence Service)</t>
+        <t id="81114">\033A{17,13131}\033X {17,81113}(McCallum Station)</t>
+        <t id="81116">\033B{1000,1012}\033X {17,81113}(Farpoint Station)</t>
+        <!-- XRM 7027 Stuff - End -->
+        <!-- XRM 9950 Stuff - This gets overwritten regularly - Start -->
+        <t id="80108">\033A{1000,121}\033X {17,16041}(USC Shipyard)</t>
+
+        <t id="80148">\033O{1000,1043}\033X {17,6161}(Trinity Corp. Headquarters)</t>
+        <t id="80150">\033O{1000,1040}\033X {17,6161}(Holy Dimensions Headquarters)</t>
+        <t id="80152">\033G{1000,1023}\033X {17,6161}(Waverider Corp. Headquarters)</t>
+        <t id="80154">\033Y{1000,1051}\033X {17,6161}(Creditania Headquarters)</t>
+        <t id="80156">\033M{1000,1033}\033X {17,6161}(Thuruk's Inc. Headquarters)</t>
+
+        <t id="80180">\033B{1000,101}\033X {9,515}{9,500}{9,517} {17,16041}(Argon PAR Shipyard)</t>
+        <t id="80182">\033G{1000,102}\033X {9,515}{9,500}{9,517} {17,16041}(Boron PAR Shipyard)</t>
+        <t id="80184">\033M{1000,103}\033X {9,515}{9,500}{9,517} {17,16041}(Split PAR Shipyard)</t>
+        <t id="80186">\033O{1000,104}\033X {9,515}{9,500}{9,517} {17,16041}(Paranid PAR Shipyard)</t>
+        <t id="80188">\033Y{1000,105}\033X {9,515}{9,500}{9,517} {17,16041}(Teladi PAR Shipyard)</t>
+        <t id="80190">\033A{1000,121}\033X {9,515}{9,500}{9,517} {17,16041}(USC PAR Shipyard)</t>
+
+        <t id="80192">\033B{1000,1091}\033X {1000,10021}(Terracorp Weapons Dealer)</t>
+        <t id="80194">\033G{1000,1024}\033X {1000,10021}(Blue Storm Weapons Dealer)</t>
+        <t id="80196">\033O{1000,1040}\033X {1000,10021}(Holy Dimensions Weapons Dealer)</t>
+        <t id="80198">\033M{1000,1098}\033X {1000,10021}(Strong Arms Weapons Dealer)</t>
+        <t id="80200">\033R{1000,1050}\033X {1000,10021}(Talonfire Weapons Dealer)</t>
+        <t id="80202">\033O{1000,1096}\033X {1000,10021}(Duke's Weapons Dealer)</t>
+        <t id="80204">\033A{1000,150}\033X {1000,10021}(Dark Space Weapons Dealer)</t>
+
+        <t id="80233">\033B{13,9030}\033X {17,80232}(Jonferco Showroom)</t>
+        <t id="80235">\033G{13,9073}\033X {17,80232}(Atreus Showroom)</t>
+        <t id="80237">\033M{1000,1033}\033X {17,80232}(Thuruk's Inc. Showroom)</t>
+        <t id="80239">\033O{1000,1043}\033X {17,80232}(Trinity Corp Showroom)</t>
+        <t id="80241">\033Y{1000,146}\033X {17,80232}(NMMC Showroom)</t>
+        <t id="80243">\033A{1000,150}\033X {17,80232}(Dark Space Showroom)</t>
+
+        <t id="80245">\033B{13,9030}\033X {17,80227}(Jonferco Research Station)</t>
+        <t id="80247">\033G{1000,1023}\033X {17,80227}(Waverider Corp. Research Station)</t>
+        <t id="80249">\033M{1000,1033}\033X {17,80227}(Thuruk's Inc. Research Station)</t>
+        <t id="80251">\033O{1000,1040}\033X {17,80227}(Holy Dimensions Research Station)</t>
+        <t id="80253">\033Y{1000,1051}\033X {17,80227}(Creditania Research Station)</t>
+        <t id="80255">\033A{1000,150}\033X {17,80227}(Dark Space Research Station)</t>
+        <t id="80382">\033A{1000,150}\033X {17,6161}(Dark Space Headquarters)</t>
+        <t id="80384">\033B{1000,133}\033X {17,80227}(OTAS Research Station)</t>
+
+        <t id="81114">\033A{17,13131}\033X {17,81113}(McCallum Station)</t>
+        <t id="81116">\033B{1000,1012}\033X {17,81113}(Farpoint Station)</t>
+        <t id="81118">\033A{1000,121}\033X {1000,30000} {1000,40007}(USC Military Command)</t>
+        <t id="81120">\033B{1000,101}\033X {1000,30000} {1000,40007}(Argon Military Command)</t>
+        <!--XRM 9950 Stuff - End -->
+    </page>
+    <page id="350017" title="Boardcomp. objects" descr="0" voice="yes">
+        <t id="15271">\033BTerracorp\033X HQ(Terracorp HQ)</t>
+        <t id="15281">\033BOTAS\033X HQ(OTAS HQ speak Oh-Tass)</t>
+        <t id="15291">\033BJonferco\033X Headquarters(Jonferco Headquarters)</t>
+        <t id="15301">\033BPlutarch\033X Mining Corporation HQ(Plutarch Mining Corporation HQ speak ploo-tark)</t>
+        <t id="15311">\033YNMMC\033X Headquarters(NMMC Headquarters)</t>
+        <t id="15321">\033RDuke's\033X Haven(Duke's Haven)</t>
+        <t id="15331">\033GAtreus\033X Headquarters(Atreus Headquarters)</t>
+        <t id="15341">\033MStrong Arms\033X HQ(Strong Arms HQ)</t>
+        <t id="16001">\033AEarth\033X Torus(Earth Torus)</t>
+        <t id="16051">\033AUSC\033X Orbital Supply Base(USC Orbital Supply Base)</t>
+        <t id="16061">\033AUSC\033X Orbital Support Station(USC Orbital Support Station)</t>
+        <t id="16071">\033AUSC\033X Orbital Logistics Dock(USC Orbital Logistics Dock)</t>
+        <!-- <t id="16081">\033AOrbital Defence Station\033X</t>
+        <t id="16091">\033AOrbital Patrol Base\033X</t> -->
+        <t id="16241">\033RKha'ak\033X Hive(Kha'ak Hive)</t>
+        <t id="16331">\033BGoner\033X Trading Post(Goner Trading Post)</t>
+        <t id="16341">\033ASaturn\033X Research Station(Saturn Research Station)</t>
+        <t id="16971">\033AATF\033X Research Base(ATF Research Base)</t>
+        <t id="16981">\033BArgon\033X Secret Service Outpost(Argon Secret Service Outpost)</t>
+        <t id="17001">Unknown \033AAldrin\033X Base(Unknown Aldrin Base)</t>
+        <t id="17061">\033AAldrin\033X Ship Production Base(Aldrin Ship Production Base)</t>
+        <t id="17081">\033ADark Space\033X Artefact (Dark Space Artefact - 2001 stone)</t>
+        <t id="17091">\033ADark Space\033X Installation(Dark Space Installation)</t>
+        <t id="17111">\033AAldrin\033X Equipment Dock(Aldrin Equipment Dock)</t>
+
+        <t id="18200">\033B{13,9020}\033X {17,16041}(OTAS Shipyard)</t>
+    </page>
+    <page id="380017" title="Boardcomp. objects" descr="0" voice="yes">
+        <t id="20351">\033BArgon\033X Stock Exchange(Argon Stock Exchange)</t>
+        <t id="20361">\033GBoron\033X Stock Exchange(Argon Stock Exchange)</t>
+        <t id="20371">\033OParanid\033X Stock Exchange(Paranid Stock Exchange)</t>
+        <t id="20381">\033YTeladi\033X Stock Exchange(Teladi Stock Exchange)</t>
+        <t id="20391">\033MSplit\033X Stock Exchange(Split Stock Exchange)</t>
+        <t id="20401">\033ATerran\033X Stock Exchange(Terran Stock Exchange)</t>
+        <t id="20411">\033RPirate\033X Stock Exchange(Pirate Stock Exchange)</t>
+        <t id="20421">\033RYaki\033X Stock Exchange(Yaki Stock Exchange)</t>
+
+        <t id="20431">\033BPlutarch\033X Trading Port(Plutarch Trading Port)</t>
+        <t id="20441">\033BPlutarch\033X Defence Outpost(Plutarch Defence Outpost)</t>
+        <t id="20451">\033BPlutarch\033X Development Station(Plutarch Development Station)</t>
+        <t id="20461">\033BJonferco\033X Trading Station(Jonferco Trading Station)</t>
+        <t id="20471">\033BJonferco\033X Equipment Dock(Jonferco Equipment Dock)</t>
+        <t id="20481">\033BBeryll\033X Research Station(Beryll Research Station)</t>
+        <t id="20491">\033BJonferco\033X Research Station(Jonferco Research Station)</t>
+        <t id="20501">\033BJonferco\033X Defence Outpost(Jonferco Defence Outpost)</t>
+    </page>
+    <page id="8010" title="Military Transport" descr="Lucike Military Transport" voice="yes">
+        <t id="100">\033B{1000,101}\033X \033R{1000,30000}\033X {17,4161}(Argon Military Express)</t>
+        <t id="101">\033B{1000,101}\033X \033B{1000,30000}\033X {17,4161}(Argon Military Express)</t>
+        <t id="102">\033Y{1000,105}\033X \033R{1000,30000}\033X {17,4561}(Teladi Military Tukan)</t>
+        <t id="103">\033Y{1000,105}\033X \033B{1000,30000}\033X {17,4561}(Teladi Military Tukan)</t>
+        <t id="104">\033A{1000,118}\033X \033R{1000,30000}\033X {17,10811}(Terran Military Scabbard)</t>
+        <t id="105">\033A{1000,118}\033X \033B{1000,30000}\033X {17,10811}(Terran Military Scabbard)</t>
+    </page>
+    <page id="8514" title="CFR" descr="Yaki Armada - Total War" voice="yes">
+        <t id="114">\033RYaki\033X Equipment Dock(Need to fix sound)</t>
+        <t id="115">\033RYaki\033X Armada %s</t>
+        <t id="116">\033RYaki\033X Mercenary Outpost</t>
+        <t id="117">\033RYaki\033X Armada Mothership</t>
+        <t id="122">\033RYaki\033X %s</t>
+    </page>
+    <page id="353214" title="L2 Treasure Hunt" descr="Text used in Ketraar's Treasure Hunt MD Mission">
+        <t id="5">\033RTrouble Seeker\033X</t>
+    </page>
+</language>
