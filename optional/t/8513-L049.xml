@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<language id="49">
+
+<page id="8513" title="Piratengilde" descr="Piratengilde AL Plugin">
+
+  <t id="001">** Lines like this one are comments, you don't need to translate them</t>
+  <t id="001">** text.id 100, 104, 105 (used for self-update), 106, 849 (copyright) must NOT be altered in any way</t>
+  <t id="001">** do not change any numerical value : "2" translated to "two/dos/deux" will probably cause issues</t>
+
+<t id="100">Pirate Guild</t>
+<t id="101">\033RPiratengilde 3:\033X \033WDynamisches AI und Gilden System\033X  [\033Ybuild %s\033X]</t>
+<t id="102">[author][b]Anarkis Federation[/b][/author] [b]Piratengilde[/b] wurde aktiviert - Viel Spaß !</t>
+<t id="103">[author][b]Anarkis Federation[/b][/author] [b]Piratengilde[/b] wurde deaktiviert !</t>
+<t id="104">359</t>
+<t id="105">1</t>
+<t id="106">Anarkis Federation</t>
+<t id="107">[author][b]Anarkis Federation[/b][/author] [b]Piratengilde[/b] wurde auf v%s gepatcht !</t>
+<t id="108">Patchvorgang der Piratengilde auf v%s läuft, bitte warten ...</t>
+<t id="109">[author][b]Anarkis Federation[/b][/author]Neue Major Version von [b]Piratengilde[/b] gefunden, das Plugin muss manuell im [b]Artificial Life[/b] Menü deaktiviert werden. Warte auf eine Bestätigungsnachricht und aktiviere es wieder.</t>
+<t id="110">\033RPiratengilde 3:\033X \033WLädt gerade, bitte warten ...\033X</t>
+
+ <t id="001">** Yes, there is a 'space' before and after the word 'Pirate', leave it that way, but translate Pirate if needed.</t>
+
+<t id="111"> Pirat </t>
+
+<t id="126">%s Kopfgeldjäger</t>
+<t id="127">\033R%s\033X Mob Boss</t>
+<t id="128">%s Gefangeneneskorte</t>
+<t id="129">%s Gefangenentransport</t>
+<t id="130">\033RPirat\033X Raumfliegenjäger</t>
+<t id="131">\033RPiratengilde\033X Schiffswerft</t>
+<t id="132">\033RPiratengilde\033X Händler</t>
+<t id="133">Schwerer Laserturm</t>
+<t id="135">PG Unterhaltungsnetzwerk</t>
+<t id="136">Todeslaufteilnehmer</t>
+<t id="137">Crystal Grabber</t>
+<t id="138">Arena %s</t>
+<t id="139">Feind %s</t>
+<t id="140">Nova Mk2</t>
+<t id="141">\033RPiratengilde\033X Aussenposten</t>
+<t id="142">\033RPiratengilde\033X Basis</t>
+<t id="143">\033Y[\033X%s\033Y]\033X</t>
+<t id="144">\033RPiratengilde\033X Bollwerk</t>
+<t id="145">\n\n- Herausgegeben vor %s .\n</t>
+<t id="146">\033RPiratengilde\033X Festung</t>
+<t id="147">\033RPiratengilde\033X Mobiles HQ</t>
+
+ <t id="001">** Yes, there is no space between Mercenary and %s, this is intended, and the %s must always be last in your translation</t>
+ <t id="001">** %s is the ship type here. It's the same for the line after.</t>
+ 
+<t id="148">\033RPiraten\033X Söldner%s</t>
+<t id="134">\033RPiratengilden\033X%s</t>
+ 
+<t id="149">\033RPiratengilde\033X Vergnügungszentrum</t>
+<t id="150">\033Y%s\033X</t>
+<t id="151">\033W%s\033X</t>
+ 
+<t id="152">\033GDeine Haltung:\033X\n- Piratengilde : \033Y%s\033X Punkte &lt; \033Y%s\033X &gt;\n- Andere Piraten : \033Y%s\033X Punkte &lt; \033Y%s\033X &gt;</t>
+<t id="153">\n\033GDu bist ein Mitglied der Gilde\033X</t>
+<t id="154">\n\033RDu bist kein Mitglied der Gilde\033X</t>
+<t id="155">\nDie Fraktion, die der Gilde im Moment ein Dorn im Auge ist : \033R%s\033X</t>
+<t id="156">\nUnser Mobiles HQ ist gerade im Sektor : \033Y%s\033X</t>
+ 
+<t id="157">\033YTrete der Piratengilde bei\033X</t>
+<t id="158">Gilden Missionen</t>
+<t id="159">Gilde verlassen</t>
+<t id="160">Tribut an die Gilde zahlen</t>
+<t id="161">Bezahle dass Strafgeld \033R&lt;\033X \033Y%s Credits\033X \033R&gt;\033X</t>
+<t id="162">Credits der Gilde übergeben</t>
+<t id="163">Schiffe der Gilde übergeben</t>
+<t id="164">AL Plugin Konfiguration</t>
+<t id="165">Neueste Gildennachrichten</t>
+<t id="166">Station Hacken</t>
+<t id="167">Willst du wirklich \033Y%s Credits zahlen\033X ?</t>
+<t id="168">\nDu hast dafür nicht genügend Credits.\n</t>
+<t id="169">Okay</t>
+<t id="170">Credits an die Gilde zu übergeben wird dein Ansehen steigern\nund die lokale Piratenbasis stärken.</t>
+<t id="171">Wieviel willst du geben ?</t>
+<t id="172">Schiff übergeben</t>
+<t id="173">Schiffe an die Gilde zu übergeben wird dein Ansehen steigern und\ndie lokale Piratenbasis stärken. Du kannst nur M4, M3 und M6\nKlasse Schiffe übergeben und es muss an die lokale Piratenbasis angedockt sein.</t>
+<t id="174">Schiff auswählen</t>
+<t id="175">Kein Schiff gefunden</t>
+<t id="176">Nächster Artikel</t>
+<t id="177">Vorheriger Artikel</t>
+<t id="178">Keine Nachrichten zum Anzeigen</t>
+<t id="179">Schließen</t>
+<t id="180">Piraten Nachrichtennetzwerk</t>
+<t id="181">Einen Überfall anfordern</t>
+<t id="182">Überfall Anfrage</t>
+<t id="183">Entschuldigung,\nWir haben nicht genug Schiffe um im Moment einen Überfall zu starten.\nVersuche es bitte später noch einmal.</t>
+<t id="184">Entschuldigung,\nDu bist nicht bekannt genug. (Du benötigst mindestens %s Notoriety Punkte)</t>
+<t id="185">Willkommen !\nBitte wähle eine Option und ein Ziel um die Kosten dieses Services zu erhalten.\n\033YSpezial Angebot :\033X Überfälle gegen die %s sind besonders günstig !\n</t>
+<t id="186">Wähle eine Option</t>
+<t id="187">Greife ein Shiff an</t>
+<t id="188">Greife eine Station an</t>
+<t id="189">Überfalle einen Sektor</t>
+<t id="190">Entschuldigung,\nEs sind nicht genügend Schiffe verüfgbar um dieses Ziel anzugreifen !</t>
+<t id="191">\033Ziel :\033X %s\n\033YZu sendende Schiffe :\033X %s\n\033YPreis :\033X %s Credits</t>
+<t id="192">Ich will mehr Schiffe</t>
+<t id="193">Ich will weniger Schiffe</t>
+<t id="194">Überfall starten !</t>
+<t id="195">Abbrechen</t>
+<t id="196">Ziel auswählen</t>
+<t id="197">Entschuldige,\naber wir werden keine anderen Piraten angreifen !</t>
+<t id="198">Entschuldige,\nDu hast nicht genügend Geld dafür.</t>
+<t id="199">Danke sehr !\nUnsere Schiffe werden ausgesendet um das Ziel anzugreifen !</t>
+
+<t id="200">[author]Galaktische Polizei[/author]Du hast %s Credits für die Zerstörung eines %s erhalten, das von der Piratengilde in sector %s unterhalten wurde. Vielen Dank für Ihre Hilfe.</t>
+<t id="201">[author]Piratengilden Kanal[/author]Danke für deine Hilfe gegen unsere Feinde. Du hast %s Credits als Belohnung erhalten.\n</t>
+
+<t id="001">** Displayed as subtitles text when in PB sector, keep it short.</t>
+<t id="250">\033RPG:\033X \033WGreife %s in %s an- ID: %s \033X</t>
+<t id="251">\033RPG:\033X \033WInvasioniere Sektor %s\033X</t>
+
+<t id="260">%s Schwerer Transporter</t>
+<t id="261">%s Polizei Eskorte</t>
+
+<t id="001">** Used in the News Network, double check display in the news browser, \n used to go to next line.</t>
+
+<t id="321">Aktuelle Berichte der Gilde zeigen, dass die \033R%ss\033X zurzeit die Fraktion sind, die unseren Kräften die meisten Schäden bereitet haben. Daher weist das Gilden HQ unsere Basen an %s Ziele mit oberster Priorität anzugreifen.</t>
+<t id="322">Nach einigen Tagen zunehmender Kämpfe zwischen unseren Streitkräften und den \033R%s\033X Sicherheitskräften wurde entschieden, dass wir eine massive Piratenflotte in den Sektor \033R%s\033X senden um sie dies büßen zu lassen. Alle Mitglieder sind eingeladen den Kämpfen beizutreten.</t>
+<t id="323">Die %s im Sektor \033G%s\033X meldet, dass sie eine Überfallgruppe nach \033R%s\033X im \033R%s\033X Territorium geschickt hat. Mitglieder in der Umgebung sind eingeladen sich anzuschließen.</t>
+<t id="324">Die %s im Sektor \033G%s\033X meldet, dass eine Flotte gegen die \033R%s\033X im Sektor \033R%s\033X geschickt wurde, um die %s Verteidigungen zu schwächen. Außerdem wurde uns mitgeteilt, dass ein Preis denjenigen erwartet, der den letzten Schlag ausführt.</t>
+<t id="325">Unsere Basis im Sektor \033G%s\033X meldet, dass eine Staffel Jäger gegen die  \033R%s\033X im Sektor \033R%s\033X gestartet wurde.</t>
+<t id="326">Die Kameraden in \033G%s\033X berichten stolz, dass sie eine glänzend neue \033G%s\033X gekauft haben um ihre Piratenbasis zu verteidigen.</t>
+<t id="327">Leider müssen wir mitteilen, dass unsere Basis in \033G%s\033X zerstört wurde. Trotz den Bemühungen unserer Kämpfer wurde die Basis schlussendlich durch feindliche \033R%s\033X Sicherheitskräfte. Das Gildenhauptquartier wurde informiert und eine Gegenoffensive wird möglicherweise in einigen Wochen stattfinden.</t>
+<t id="328">Unsere Basis in \033G%s\033X wurde durch feindliche Schiffe angegriffen.</t>
+<t id="329">Wir können stolz berichten, dass ein neues \033YMobiles Hauptquartier\033X von unseren Ingeniueren gebaut wurde.</t>
+<t id="330">Leider wurde unser \033YMobiles Hauptquartier\033X in %s besiegt, es wurde durch einen %s vernichtet.</t>
+<t id="331">Wir berichten stolz, dass eine neue \033YBrigantine Zerstörer\033X von unseren Ingenieuren gebaut wurde.</t>
+<t id="332">Leider wurde unsere \033YBrigantine Zerstörer\033X in %s besiegt, sie wurde durch %s vernichtet.</t>
+<t id="333">Ein neues Vergnügungszentrum wurde in %s gebaut.</t>
+<t id="334">Eine neue Fregatte wurde unserem Verteidigungsnett hinzugefügt, freundlicherweise zur Verfügung gestellt von den %s aus %s</t>
+
+<t id="350">Unser M2 wurde zerstört !</t>
+<t id="351">Unsere Brigantine wurde ausgelöscht !</t>
+<t id="352">Eine neue Brigantine wurde gebaut</t>
+<t id="353">Gilden HQ wurde zersört !</t>
+<t id="354">Unser Mobiles HQ wurde zerstört  !</t>
+<t id="355">Ein neues Mobiles HQ wurde gebaut</t>
+<t id="356">Piratenbasis in %s attackiert</t>
+<t id="357">Piratenbasis in %s zersört</t>
+<t id="358">Piraten M6 in %s den Truppen hinzugefügt</t>
+<t id="359">Piraten Korvette aufgestellt in %s</t>
+<t id="360">Staffel gestartet gegen %s</t>
+<t id="361">Überfallgruppe gesendet nach %s</t>
+<t id="362">Wir überfallen gerade %s</t>
+<t id="363">Die %s Fraktion ist unser Feind</t>
+<t id="364">Stationen Überfall in %s</t>
+<t id="365">Vergnügungszentrum gebaut in %s</t>
+<t id="366">Eine neue Fregatte wurde gebaut</t>
+<t id="367">Basis wird angegriffen in Sektor %s</t>
+<t id="368">Angriff gegen ein %s in %s</t>
+
+<t id="400">Eingehende Nachricht</t>
+<t id="401">\033WVon:\033X %s</t>
+<t id="402">Nachrichten</t>
+<t id="403">\n\n- Von \033W%s\033X\n\n\n\n</t>
+<t id="410">\033W[end transmission]\033X</t>
+<t id="411">Wo ist die nächste Piratenbasis ?</t>
+<t id="412">Irgendwelche Neuigkeiten ?</t>
+<t id="413">Was machst du gerade ?</t>
+<t id="414">Brauchst du Hilfe ?</t>
+<t id="415">Kannst du mich eskortieren ?</t>
+<t id="416">Gib Auf !</t>	
+<t id="417">Okay, ich bezahle.</t>
+<t id="418">Lass mich alleine !</t>
+<t id="419">Okay, ich helfe dir !</t>
+<t id="420">Sorry, das geht mich nichts an.</t>
+<t id="421">Wo ist die nächste Piraten Schiffswerft ?</t>
+<t id="422">Sind irgendwelche Frachter mit guter Ladung in der Nähe ?</t>
+<t id="423">Willst du dich wirklich mit der Gilde anlegen ?</t>
+
+<t id="430">Hallo, Pilot !</t>
+<t id="431">Was willst du ?</t>
+<t id="432">Oh, du schon wieder.\nWas willst du diesmal ?</t>
+<t id="433">Raus aus meinem Komm-Kanal! Ich hab zu tun!</t>
+<t id="434">Hauen Sie ab, ich habe Ihnen nichts zu sagen!</t>
+<t id="435">Hey, du ! \n\nDu hast uns angegriffen, du musst einen Tribut von %s Credits zahlen um die guten Verbindungen zu unserer Heimatbasis im Sektor %s wiederherzustellen.</t>
+<t id="436">Du wirst einen %s im Sektor %s finden.</t>
+<t id="437">Du wirst einen %s im Sektor %s finden, Ich habe den Ort auf deiner Karte markiert.</t>
+<t id="438">Ich sage Ihnen nichts! Hauen Sie ab !</t>
+<t id="439">Hören Sie auf meine Zeit zu verschwenden, Sie haben nicht genug Credits!</t>
+<t id="440">Das weiß ich nicht, Tut mir Leid.</t>
+<t id="441">Hast du Raumkraut geraucht ? Sie ist genau hier, in diesem Sektor!</t>
+<t id="442">Ich werde Gildeninformationen nicht mit Ihnen teilen.\nHauen Sie Ab!\n</t>
+<t id="443">Sorry, Ich habe nichts wichtiges zu melden.</t>
+<t id="444">Ja, ich habe folgende Nachrichten gehört : \n\n</t>
+
+<t id="445">Wie können Sie es wagen uns zu kontaktieren ?\n\nFür \033W%s Credits\033X lassen wir dich vielleicht am Leben!</t>
+<t id="446">Okay, wir lassen Sie ziehen, zumindest dieses Mal...</t>
+<t id="447">Du wirst sterben, Bastard !</t>
+<t id="448">Ich werde angegriffen von \033W%s\033X, bitte helft mir !</t>
+<t id="449">Danke ! Ich werde Sie bezahlen, wenn Sie es schaffen ihn zu töten !</t>
+<t id="450">Danke ! Hier sind \033Y%s Credits\033X für deine Hilfe !</t>
+
+<t id="451">Das geht Sie nichts an.</t>
+<t id="452">Das Übliche, Plündern und Schmuggeln.</t>
+<t id="453">Wir greifen \033W%s\033X an, der im Sektor \033W%s\033X sein sollte. Lass mich nachsehen... Hier ist die ID: \033Y%s\033X</t>
+<t id="454">Wir überfallen den Sektor \033W%s\033X, Kumpel ! Komm mit uns, da gibt's massen an Beute zu plündern!</t>
+<t id="455">Nicht viel, Ich bin gerade auf dem Rückweg nach Hause</t>
+<t id="456">Ich patroulliere diesen Sektor für die Gilde</t>
+
+
+<t id="460">Suchen Sie nach einer Eskorte ? Sie können mich für %s Credits anheuern</t>
+<t id="461">Ich eskortiere dich kostenlos, Boss!</t>
+<t id="462">Sie können mich für \033Y%s Credits\033X für eine Stunde als Eskorte anheuern. Interessiert ?</t>
+<t id="463">Du willst mich für eine Eskorte anheuern ? Machst du Witze ? Hau ab !</t>
+<t id="464">Verstanden ! Ich eskortiere dich.</t>
+<t id="465">Verstanden !</t>
+<t id="466">Eskorte beendet. Auf Wiedersehen.</t>
+<t id="467">Ich habe vor kurzem einen \033Y%s\033X im Sektor %s mit einer netten Fracht gescannt. Die ID ist \033Y%s\033X.</t>
+<t id="468">Nein, ich habe in letzter Zeit nichts wertvolles gescannt.</t>
+<t id="469">Ich mag die Yakis nicht und ich will auch nicht über sie reden...</t>
+<t id="470">Es gibt nichts Neues von den Yaki zu berichten. Sie sind ziemlich ruhig in den letzten Tagen gewesen.</t>
+<t id="471">Aktuelle Berichte der Gilde besagen, dass die %s Mobile Basis im Sektor %s ist.</t>
+<t id="472">Ich habe letzt einen Berichten über sie gelesen. Es sind mindesten %s Yaki Mobile Basen im Universum aktiv.</t>
+<t id="473">Du wirst eine %s im Sektor %s finden, flieg durch das %s.</t>
+<t id="474">Bitte vergeben Sie uns, wir werden Sie nicht weiter belästigen.</t>
+<t id="475">Aktuell ausgewählt : %s</t>
+<t id="476">Wähle eine Station</t>
+<t id="477">\033GHacke diese Station\033X</t>
+<t id="478">Für den richtigen Preis kann unser Hackerteam eine feindliche Station wieder freundlich werden lassen, der Preis hängt von der Sprungweite, der Stationsklasse und dem Besitzer ab. Wir können nur Stationen innerhalb von 5 Sprüngen hacken.\n\n \033YAusgewählt:\033X %s - Klasse: %s\nRasse: %s - Distanz: %s\n \033YPreis:\033X %s Credits\n\n\n\n\n</t>
+
+<t id="480">\033YGesuchter Krimineller :\033X Die Belohnung beträgt %s Credits für einen bestätigten Tod.\n\n</t>
+
+<t id="510">[author][b]%s[/b][/author]Danke für deine Hilfe !\n\nEin Schiff wird mich zurück zur Basis bringen. Hier sind %s Credits für deine Mühe.</t>
+<t id="511">[author][b]Piratengilde[/b][/author]Das %s Militär hat unseren Boss erfolgreich zur Haftanstalt gebracht. Die Mission ist fehlgeschlagen.</t>
+<t id="512">250000</t>
+<t id="513">100</t>
+
+<t id="520">[author][b]Piratengilde[/b][/author]Danke, dass du dich um unseren Feind gekümmert hast !\n\nHier sind %s Credits für deine Mühe.</t>
+<t id="521">n/a</t>
+<t id="522">100000</t>
+<t id="523">50</t>
+
+<t id="530">[author][b]Piratengilde[/b][/author]Danke, dass du dich um unseren Feind gekümmert hast !\n\nHier sind %s Credits für deine Mühe.</t>
+<t id="531">n/a</t>
+<t id="532">50000</t>
+<t id="533">25</t>
+
+<t id="540">[author][b]Piratengilden HQ[/b][/author]Danke für die Hilfe bei der Verteidigung der Basis !\n\n Zusätzlich zu den Belohnungen die du durch das Vernichten der Schiffe erhalten hast ist hier ein Bonus über %s Credits.</t>
+<t id="541">[author][b]Piratengilden HQ[/b][/author]Mission Das %s Militär hat unseren Boss erfolgreich zur Haftanstalt gebracht. Die Mission ist fehlgeschlagen.</t>
+<t id="542">300000</t>
+<t id="543">200</t>
+
+<t id="550">[author][b]Piratengilden HQ[/b][/author]Danke für die Hilfe beim Zerstören des Transportschiffes !\n\n Hier sind %s Credits für deine Mühe.</t>
+<t id="551">[author][b]Piratengilde[/b][/author]Der %s TL hat sein Ziel erreicht. Die Mission ist fehlgeschlagen.</t>
+<t id="552">600000</t>
+<t id="553">150</t>
+
+<t id="600">Missionssystem der Piratengilde</t>
+<t id="601">Folgende Missionen sind in der Nähe dieser Piratenstation verfügbar</t>
+<t id="602">Im Augenblick sind keine Missionen in der Nähe verfügbar</t>
+<t id="603">Missionsliste</t>
+<t id="610">Hilf einem Gefangenen zu entkommen : %s Credits</t>
+<t id="611">Ihre Mission ist %s zu helfen von einem Militär TM und seiner Eskorte zu entkommen. Der Konvoi ist gerade in %s und auf dem Weg nach %s. Fangen Sie den Konvoi ab, bevor er seine Zielposition erreicht hat.\n\n\n\n</t>
+<t id="620">Eliminiere einen Kopfgeldjäger : %s Credits</t>
+<t id="621">Sie müssen sich um %s kümmern, da er andauernd unsere Aktivitäten sabotiert. Er fliegt grade eine %s in %s. Sein Name wird auf Ihrer Sektorkarte blinken, wenn Sie die Mission akzeptieren.\n\n\n\n</t>
+<t id="630">Kümmern Sie sich um einen Feind : %s Credits</t>
+<t id="631">Sie werden die %s in %s zerstören müssen. Er hat einige unserer Piloten getötet. Sein Name wird auf Ihrer Sektorkarte blinken, wenn Sie die Mission akzeptieren.\n\n\n\n</t>
+<t id="640">Eine Piratenstation wird angegriffen in %s</t>
+<t id="641">Unserer Basis in %s liegt unter feindlichem Feuer, bitte helfen Sie uns, indem Sie die Feinde in diesem Sektor vernichten. Die Belohnung für die Zerstörung wird verdoppelt.\n\n\n\n</t>
+<t id="650">Polizei TL gesichtet : %s Credits</t>
+<t id="651">Ein beschädigtes %s Polizeischiff wurde in %s gesichtet. Vernichten Sie es, bevor es %s erreicht.  Sein Name wird auf Ihrer Sektorkarte blinken, wenn Sie die Mission akzeptieren.\n\n\n\n</t>
+
+<t id="810">\033YAddons:\033X</t>
+<t id="811">\033W- Race Response Fleet :\033X %s</t>
+<t id="812">\033W- Anarkis Defense System :\033X %s</t>
+<t id="813">\033W- Yaki Armada :\033X %s</t>
+<t id="800">\033GGefunden\033X</t>
+<t id="801">Nicht Gefunden / Deaktiviert</t>
+ 
+<t id="849">Serial Kicked / [\033YAnarkis Federation\033X]</t>
+<t id="850">Piratengilde Konfiguration</t>
+<t id="851">Spieleinstellungen</t>
+<t id="852">Gildenstärke  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="853">Benutzung des Sprungantriebs \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="854">Angriff von Stationen  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="855">Beziehungen zum Spieler</t>
+<t id="856">Piratengilde  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="857">Andere Piraten  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="858">Verschiedene Einstellungen</t>
+<t id="859">Logbuch Debugnachrichten  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="860">Zufälliger Respawn von Piraten Schiffswerften</t>
+<t id="861">Benutze ADS um Piratenstationen zu verteidigen  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="862">Beziehungen zu anderen Fraktionen</t>
+<t id="863">Frieden mit den Teladi \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="864">Kopfgeldjäger  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+
+<t id="870">Willst du Debugnachrichten im Logbuch aktivieren ?</t>
+<t id="871">Setze die Beziehung zwischen den Piraten und dem Spieler</t>
+<t id="872">Setze die Beziehung zwischen der Piratengilde und dem Spieler</t>
+<t id="873">Dürfen Piratengildenschiffe ihren Sprungantrieb benutzen ?</t>
+<t id="874">Dürfen Piratengildenschiffe ihr Tarnsystem verwenden ?</t>
+<t id="875">Stärke der Gilde auswählen</t>
+
+<t id="880">\033YVery Low:\033X Viel weniger Schiffe, langsamerer Aufbau und Aktivitäten</t>
+<t id="881">\033YLow:\033X Weniger Schiffe und langsamer Aufbau</t>
+<t id="882">\033YMedium:\033X Standardeinstellungen</t>
+<t id="883">\033YHigh:\033X Mehr Schiffe, schnellerer Aufbau und Aktivtäten</t>
+<t id="884">\033YVery High:\033X Viel Glück !</t>
+<t id="885">\033YInsane:\033X Bist du dir sicher ?</t>
+
+<t id="890">Sehr niedrig</t>
+<t id="891">Niedrig</t>
+<t id="892">Mittel</t>
+<t id="893">Hoch</t>
+<t id="894">Sehr Hoch</t>
+<t id="895">Aktiviert</t>
+<t id="896">Deaktiviert</t>
+<t id="897">Keine Veränderung</t>
+<t id="898">Nicht verfügbar</t>
+<t id="899">Ja</t>
+<t id="900">Nein</t>
+<t id="901">ADS 2.05 benötigt</t>
+<t id="902">Verrückt</t>
+
+<t id="1000">Vergnügungszentrum</t>
+<t id="1001">\n\nWillkommen zu unserem Vergnügungszentrum !</t>
+<t id="1002">Casino</t>
+<t id="1003">Spiele Space Roulette</t>
+<t id="1004">Spiele Black Jack</t>
+<t id="1005">Die Arena</t>
+
+<t id="1010">1.000 Credits</t>
+<t id="1011">5.000 Credits</t>
+<t id="1012">10.000 Credits</t>
+<t id="1013">25.000 Credits</t>
+<t id="1014">50.000 Credits</t>
+
+<t id="1100">%s Casino</t>
+<t id="1101">Black Jack</t>
+<t id="1102">\033YRegeln:\033X Wer nahe an 21 aber nicht darüber geht, gewinnt. Wenn du drüber gehst hast du verloren. Wenn dein Gegenspieler mehr Punkte als du hast, hast du verloren. Andernfalls hast du gewonnen. Du startest mit einer Karte - Wert zwischen 1 und 11 - und kannst nach mehr fragen. Wenn du dich entscheidest zu schließen wird der Kartengeber weitermachen bis er auch aufhören will. Keiner kann mehr als 5 Karten bekommen.\n\n\n\n\n</t>
+<t id="1103">\033YDein Einsatz:\033X %s Credits</t>
+<t id="1104">Einsatz ändern</t>
+<t id="1105">Ich will noch eine Karte</t>
+<t id="1106">Ich will schließen</t>
+<t id="1107">Lass uns spielen</t>
+<t id="1108">Beenden</t>
+<t id="1109">\033YDu :\033X %s Punkte\n\033YKartengeber :\033X %s Punkte\n\nDas ist ein unentschieden; Nichts gewonnen, nichts verloren. Und kein Spaß - willst du es nochmal versuchen?\n\n\n</t>
+<t id="1110">\033YDu :\033X %s Punkte\n\033YKartengeber :\033X %s Punkte\n\nGlückwunsch! Du gewinnst %s Credits!\n Du musst heute viel Glück haben. Noch 'ne Runde?\n\n\n</t>
+<t id="1111">\033YDu :\033X %s Punkte\n\033YKartengeber :\033X %s Punkte\n\nZu Schade ! Du hast %s Credits verloren !\n Vielleicht wirst du nächstes Mal mehr Glück haben. Noch 'ne Runde?\n\n\n</t>
+<t id="1112">Sorry, du hast nicht genügend Credits um Blackjack zu spielen um Black Jack zu spielen, du brauchst mindestens 5000 Credits auf deinem Bankaccount.\n\n\n</t>
+<t id="1113">\033YDu :\033X %s Punkte\n\033YKartengeber :\033X %s Punkte\n\n\n</t>
+<t id="1114">Kartenlimit erreicht</t>
+
+
+<t id="1200">\033YSpezialangebot !\033X</t>
+<t id="1201">1210</t>
+<t id="1202">5</t>
+<t id="1203">\033YNicht genügend Credits !\033X</t>
+<t id="1204">\033RAblehnen\033X</t>
+<t id="1205">\033GAkzeptieren\033X</t>
+<t id="1206">Antworten</t>
+
+<t id="1210">Eine komplette Karte aller \033W%s Sektoren\033X ist verfügbar für \033Y%s Credits\033X, sind Sie interessiert?\n\n\n\n</t>
+<t id="1211">Die Enzyklopädie mit \033Wkompletten Kapiteln über Schiffe und Bewaffnungen\033X sind für \033Y%s Credits\033X verfügbar ! Sind Sie interessiert?\n\n\n\n</t>
+<t id="1212">Willst du den Reiseführer \033WPer Anhalter durch die Galaxis\033X in deine Datenbank für \033Y%s Credits\033X herunterladen ?\n\n\n\n</t>
+<t id="1213">Wir haben einige \033W%s %ss\033X, die wir zu einem Sonderpreis von \033Y%s Credits\033X, sind Sie interessiert?\n\n\n\n</t>
+<t id="1214">Wir haben einige \033W%s %ss\033X, die wir zu einem Sonderpreis von \033Y%s credits\033X, sind Sie interessiert?\n\n\n\n</t>
+<t id="1215">Wir können eine nahe feindliche Station für dich hacken, sind Sie interessiert??</t>
+
+<t id="1300">[author][b]Piratengilde[/b][/author][text colwidth='350']     Willkommen bei der Piratengilde ! \n\n[justify]Sie sind nun ein vollständiges Mitglied. Dadurch werden aktuelle Ziele der Gilde auf Ihrer Sektorkarte blinken und eine Liste von Missionen und Zielen wird an jeder Piratenstation verfügbar sein. Zusätzlich werden feindliche, unabhängige Piratenschiffe normalerweise abziehen, wenn Sie sie auf Ihre Mitgliedschaft hinweisen, außer Sie haben zuerst angegriffen. Stellen Sie sicher einen guten Ruf zu unserer Gilde zu halten oder Sie werden ohne Warnung herausgeworfen.\n\nWillkommen an Bord !\n\n [/justify] [/text]</t>
+
+<t id="1400">Eine Station hacken</t>
+<t id="1401">Wir können nahe feindliche Stationen für den richtigen Preis hacken.</t>
+<t id="1402">Wähle eine Station</t>
+<t id="1403">%s - %s : %s Credits</t>
+<t id="1404">Sie haben nicht genügen Credits um diese Station zu hacken.</t>
+<t id="1405">Wollen Sie diese Station wirklich für %s Credits hacken?</t>
+<t id="1406">Keine feindlichen Stationen in Reichweite.</t>
+
+<t id="1407">[author]Pirate Guild[/author]%s</t>
+
+</page>
+    
+</language>

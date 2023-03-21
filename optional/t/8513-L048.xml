@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<language id="48">
+
+<page id="8513" title="Pirate Guild" descr="Pirate Guild AL Plugin">
+
+  <t id="001">** Lines like this one are comments, you don't need to translate them</t>
+  <t id="001">** text.id 100, 104, 105 (used for self-update), 106, 849 (copyright) must NOT be altered in any way</t>
+  <t id="001">** do not change any numerical value : "2" translated to "two/dos/deux" will probably cause issues</t>
+
+<t id="100">Gildia Piratów</t>
+<t id="101">\033RGildia Piratów 3:\033X \033WDynamiczne AI i System Gildii\033X  [\033Ybuild %s\033X]</t>
+<t id="102">[author][b]Federacja Anarkis[/b][/author] [b]Gildia Piratów[/b] została aktywowana - Baw się dobrze!</t>
+<t id="103">[author][b]Federacja Anarkis[/b][/author] [b]Gildia Piratów[/b] została dezaktywowana!</t>
+<t id="104">359</t>
+<t id="105">1</t>
+<t id="106">Federacja Anarkis</t>
+<t id="107">[author][b]Federacja Anarkis[/b][/author] [b]Gildia Piratów[/b] została uaktualniona do wersji v%s !</t>
+<t id="108">Aktualizacja Gildii Piratów do v%s, proszę czekać...</t>
+<t id="109">[author][b]Federacja Anarkis[/b][/author]Nowa główna wersja [b]Gildia Piratów[/b] wykryta, musisz ręcznie wyłączyć wtyczkę w [b]Ustawienia sztucznej inteligencji[/b] menu, czekaj na potwierdzającą wiadomość, a następnie włącz ją ponownie.</t>
+<t id="110">\033RGildia Piratów 3:\033X \033WWczytywanie w trakcie, proszę czekać ...\033X</t>
+
+ <t id="001">** Yes, there is a 'space' before and after the word 'Pirate', leave it that way, but translate Pirate if needed.</t>
+
+<t id="111"> Pirat </t>
+
+<t id="126">%s Łowcy Głów</t>
+<t id="127">\033R%s\033X Szef Bob</t>
+<t id="128">%s Eskorta Więzienna</t>
+<t id="129">%s Transportowiec Więzienny</t>
+<t id="130">\033RPirat\033X – Łowca Gwiezdnych Muszek</t>
+<t id="131">Stocznia \033RGildii Piratów\033X</t>
+<t id="132">Kupiec \033RGildii Piratów\033X</t>
+<t id="133">Ciężka wieża laserowa</t> 
+<t id="135">GP Sieciowe Źródło Informacyjne</t>
+<t id="136">Uruchom Śmiertelne Współzawodnictwo</t>
+<t id="137">Chciwy kryształ</t> 
+<t id="138">Arena %s</t>
+<t id="139">Wróg %s</t>
+<t id="140">Nova Mk2</t>
+<t id="141">Placówka \033RGildii Piratów\033X</t>
+<t id="142">Baza \033RGildii Piratów\033X</t>
+<t id="143">\033Y[\033X%s\033Y]\033X</t>
+<t id="144">Placówka \033RGildii Piratów\033X</t>
+<t id="145">\n\n- Opublikowano %s temu.\n</t>
+<t id="146">Forteca \033RGildii Piratów\033X</t>
+<t id="147">Mobilne HQ \033RGildii Piratów\033X</t>
+
+ <t id="001">** Yes, there is no space between Mercenary and %s, this is intended, and the %s must always be last in your translation</t>
+ <t id="001">** %s is the ship type here. It's the same for the line after.</t>
+ 
+<t id="148">\033RNajemni Piraci\033X %s</t>
+<t id="134">\033RGildia Piratów\033X %s</t>
+ 
+<t id="149">\033RGildia Piratów\033X Dom Rozkoszy</t>
+<t id="150">\033Y%s\033X</t>
+<t id="151">\033W%s\033X</t>
+ 
+<t id="152">\033GTwoja Pozycja:\033X\n- Gildia Piratów : \033Y%s\033X punkty &lt; \033Y%s\033X &gt;\n- Inni Piraci : \033Y%s\033X punkty &lt; \033Y%s\033X &gt;</t>
+<t id="153">\n\033GJesteś członkiem Gildii\033X</t>
+<t id="154">\n\033RNie jesteś członkiem Gildii\033X</t>
+<t id="155">\nGildia jest obecnie wrogo nastawiona wobec rasy: \033R%s\033X </t> 
+<t id="156">\nNasze Mobilne HQ obecnie znajduje się w: \033Y%s\033X</t>
+ 
+<t id="157">\033YZaciągnij się do Gildii Piratów\033X</t>
+<t id="158">Misje Gildii</t>
+<t id="159">Opuść Gildię</t>
+<t id="160">Zapłać haracz Gildii</t>
+<t id="161">Spłata grzywny\033R&lt;\033X \033Y%s kredytów\033X \033R&gt;\033X</t> 
+<t id="162">Podaruj pieniądze Gildii</t>
+<t id="163">Podaruj statek Gildii</t>
+<t id="164">Ustawienia SI skryptu</t>
+<t id="165">Najnowsze Wiadomości Gildii</t>
+<t id="166">Hakowanie stacji</t>
+<t id="167">Jesteś pewien, że chcesz zapłacić \033Y%s kredytów\033X ?</t>
+<t id="168">\nNie posiadasz wystarczającej ilości pieniędzy.\n</t>
+<t id="169">Zgoda</t>
+<t id="170">Podarowanie pieniędzy Gildii przyczynia się do wzrostu twojej reputacji\n i siły miejscowej bazy.</t>
+<t id="171">Ile pieniędzy zamierzasz podarować?</t>
+<t id="172">Podaruj Statek</t>
+<t id="173">Podarowanie statku Gildii przyczynia się do wzrostu twojej reputacji i\nsiły miejscowej bazy. Możesz jedynie podarować statek klasy M4, M3 i M6\ni musi być zadokowany do miejscowej bazy piratów.</t>
+<t id="174">Wybierz Statek</t>
+<t id="175">Nie wybrano statku</t>
+<t id="176">Następna Pozycja</t>
+<t id="177">Poprzednia Pozycja</t>
+<t id="178">Brak nowych wiadomości</t>
+<t id="179">Zamknij</t>
+<t id="180">Piracka Sieć Informacyjna</t>
+<t id="181">Prośba o Atak</t>
+<t id="182">Poproszono o Atak</t>
+<t id="183">Odmawiam.\nW chwili obecnej nie dysponujemy odpowiednia ilością statków, by przeprowadzić jakikolwiek atak.\n Może innym razem.</t>
+<t id="184">Odmawiam.\nTwoja reputacja jest za niska. (potrzebujesz przynajmniej %s punktów reputacji)</t>
+<t id="185">Witam druhu!\nWybierz opcję i cel by otrzymać cenę naszych usług.\n\033YHej kolego mam specjalną ofertę :\033X Atak przeciwko %s jest objęty rabatem!\n</t>
+<t id="186">Wybierz opcje</t>
+<t id="187">Atakuj Statek</t>
+<t id="188">Atakuj Stację</t>
+<t id="189">Atakuj Sektor</t>
+<t id="190">Stary wyluzuj,\nnie dysponujemy taką ilością statków, by móc zaatakować taki cel! To był żart prawda?</t>
+<t id="191">\033YCel :\033X %s\n\033YStatki do wysłania :\033X %s\n\033YCena :\033X %s kredytów</t>
+<t id="192">Chcę więcej statków</t>
+<t id="193">Chcę mniej statków</t>
+<t id="194">Niech Świat pochłonie pożoga. Rozpocząć atak!</t>
+<t id="195">Zrezygnuj</t>
+<t id="196">Wybierz cel</t>
+<t id="197">Oszalałeś? \nNie zaatakujemy współpracownika zajmującego się piractwem!</t>
+<t id="198">Żartujesz prawda?\nNa twoim koncie nie ma wystarczającej ilości gotówki... Mam nadzieje że nie upoważniłeś swojej starej do wglądu swojego konta?</t>
+<t id="199">Mówisz i masz !\nNasze statki zostaną wysłane do ataku na wskazany cel! Życzę miłego dnia druhu.</t>
+
+<t id="200">[author]Galaktyczna Policja[/author]Otrzymujesz %s kredytów za zniszczenie %s który był własnością Gildii Piratów w sektorze %s. Dziękujemy za wsparcie.</t>
+<t id="201">[author]Kanał Gildii Piratów[/author]Dziękujemy brachu za twoją pomoc przeciwko naszym wrogom. Otrzymujesz wynagrodzenie w wysokości %s kredytów.\n</t>
+
+<t id="001">** Displayed as subtitles text when in PB sector, keep it short.</t>
+<t id="250">\033RPG:\033X \033WAtakuje %s w %s - ID: %s \033X</t>
+<t id="251">\033RPG:\033X \033WInwazja na sektor %s\033X</t>
+
+<t id="260">%s Ciężki Transportowiec</t>
+<t id="261">%s Eskorta Policyjna</t>
+
+<t id="001">** Used in the News Network, double check display in the news browser, \n used to go to next line.</t>
+
+<t id="321">Ostatnie sprawozdania z Gildii ujawniły że \033R%s\033X jest frakcją która obecnie wyrządziła naszym siłom największe straty. Dlatego właśnie HQ Gildii rozporządziło naszym bazom uderzyć w  %s jako cel główny.</t>
+<t id="322">Po kilkudniowych narastających walkach pomiędzy naszymi siłami a \033R%s\033X . W naszym interesie jest wysłać potężną flotę piracką do sektora \033R%s\033X . Ich zbrodnie zostaną pomszczone. Wszyscy członkowie Gildii są pilnie wzywani do jakże chwalebnej krucjaty.</t>
+<t id="323"> %s w sektorze \033G%s\033X donosi o wysłanej grupie inwazyjnej do sektora \033R%s\033X należacego do rasy \033R%s\033X . Miejscowi członkowie Gildii będący w tamtej okolicy są wzywani do przyłączenia się.</t>
+<t id="324"> %s w sektorze \033G%s\033X poinformowała nas o wzmożonej aktywności floty przeciwko \033R%s\033X w sektorze \033R%s\033X w celu zmniejszenia zdolności obronnych rasy %s . Informujemy również, że nagroda zostanie przyznana temu, który zada statkowi ostatni cios.</t>
+<t id="325">Nasza baza w sektorze \033G%s\033X informuje nas, że szwadron myśliwców został wysłany przeciwko \033R%s\033X w \033R%s\033X.</t>
+<t id="326">Współdziałający piraci w sektorze \033G%s\033X są dumni informując nas, że zakupili nowy, lśniący \033G%s\033X do ochrony ich bazy Pirackiej.</t>
+<t id="327">Co za hańba... informujemy że nasza baza w sektorze \033G%s\033X została zniszczona. Pomimo wysiłkom naszych myśliwców, baza w końcu została zniszczona przez wrogie siły zbrojne rasy \033R%s\033X. HQ Gildii zostało już poinformowane o tej zniewadze i zapewnia krwawy odwet w przeciągu paru tygodni.</t>
+<t id="328">Nasza baza w sektorze \033G%s\033X została zaatakowana przez zbrojne siły wroga.</t>
+<t id="329">Jesteśmy dumni informując że \033YMobilne HQ\033X zostało wyprodukowane przez naszych  inżynierów.</t>
+<t id="330">Informujemy że nasze \033YMobilne HQ\033X zostało pokonane w %s, zostało zniszczone przez %s.</t>
+<t id="331">Jesteśmy dumni informując, że statek \033YBrygantyna\033X został wyprodukowany przez naszych inżynierów.</t>
+<t id="332">Nasza \033YBrygantyna\033X została pokonana w %s, statek został zniszczony przez %s.</t>
+<t id="333">Nowy Dom Rozkoszy został zbudowany w %s.</t>
+<t id="334">Nowa Fregata została dodana do naszej sieci obronnej z uprzejmości %s z %s</t>
+
+<t id="350">Nasz M2 został zniszczony!</t>
+<t id="351">Nasz statek klasy Brygantyna został zniszczony!</t>
+<t id="352">Nowa Brygantyna został zbudowana</t>
+<t id="353">HQ Gildii zostało zniszczone!</t>
+<t id="354">Nasze Mobilne HQ zostało zniszczone!</t>
+<t id="355">Nowe Mobilne HQ zostało zbudowane</t>
+<t id="356">Baza Piratów jest atakowana w %s</t>
+<t id="357">Baza Piratów została zniszczona w %s</t>
+<t id="358">Pirackie M6 zostało zniszczone w %s</t>
+<t id="359">Piracka Korweta wysłana do %s</t>
+<t id="360">Szwadron myśliwców wyruszył przeciwko %s</t>       
+<t id="361">Grupa uderzeniowa została wysłana do %s</t>        
+<t id="362">Dokonaliśmy nalotu na %s</t>            
+<t id="363">Obecnie rasa %s jest naszym wrogiem</t>
+<t id="364">Nalot na stację w sektorze %s</t>
+<t id="365">Dom Rozkoszy został zbudowany w %s</t>
+<t id="366">Nowa Fregata została zbudowana</t>
+<t id="367">Nasza Baza została zaatakowana w %s</t>
+<t id="368">Atak przeciwko %s w %s</t>
+
+<t id="400">Masz wiadomość</t>
+<t id="401">\033WOd:\033X %s</t>
+<t id="402">Komunikacja</t>
+<t id="403">\n\n- Od \033W%s\033X\n\n\n\n</t>
+<t id="410">\033W[koniec przekazu]\033X</t>
+<t id="411">Gdzie jest najbliższa baza piratów?</t>
+<t id="412">Jakieś wieści?</t>
+<t id="413">Co porabiasz?</t>
+<t id="414">Potrzebna Ci pomoc?</t>
+<t id="415">Czy mógłbyś mnie eskortować?</t>
+<t id="416">Poddaj się!</t>	
+<t id="417">W porządku, już płacę.</t>
+<t id="418">Zostaw mnie w spokoju!</t>
+<t id="419">W porządku, pomogę Ci!</t>
+<t id="420">Spadaj, to nie twoja sprawa.</t>
+<t id="421">Gdzie znajduje się najbliższa stocznia piratów?</t>
+<t id="422">Czy w pobliżu znajduje się jakiś dobry ładunek do złupienia?</t>
+<t id="423">Czy naprawdę chcesz nabruździć sobie z Gildią?</t>
+
+<t id="430">Witaj pilocie!</t>
+<t id="431">Czego chcesz?</t>
+<t id="432">O nie, to znowu ty.\nCzego chcesz tym razem?</t>
+<t id="433">Spadaj z mojego kanału! Nie widzisz że jestem zajęty?!</t>
+<t id="434">Szoruj gościu, nie mam ci nic do powiedzenia!</t>
+<t id="435">Hej, zaraz... chwileczkę....! \n\nTo ty nas zaatakowałeś wcześniej, musisz zapłacić daninę w wysokości %s kredytów, by podtrzymać dobre stosunki z naszą bazą w sektorze %s .</t>
+<t id="436">Powinieneś znaleźć %s w sektorze %s.</t>
+<t id="437">Powinieneś znaleźć %s w sektorze %s, współrzędne lokalizacji za chwilę powinny pojawić się na twojej mapie.</t>
+<t id="438">Nie powiem Ci. Spadaj leszczu!</t>
+<t id="439">Gościu przestań tracić mój czas, nie masz wystarczającej ilości gotówki!</t>
+<t id="440">Spadaj! Nie mam zielonego pojęcia, idź droczyć kogoś innego.</t>
+<t id="441">Gościu brałeś coś, czy jak? Jest tutaj, w tym sektorze!... Co za głąb...</t>
+<t id="442">Spadaj!\nTe informacje są zbyt poufne, bym mógł się nimi dzielić z kimś takim jak ty!\n</t>
+<t id="443">Przykro mi, nie posiadam żadnych istotnych informacji.</t>
+<t id="444">Tak, obiło mi się coś o uszy: \n\n</t>
+
+<t id="445">Jak śmiesz kontaktować się z nami?\n\nZa \033W%s kredytów\033X Może puścimy cię wolno!</t>
+<t id="446">Zgoda kolego, puścimy cię, jak na razie...</t>
+<t id="447">Już po tobie frajerze!</t>
+<t id="448">Zostałem zaatakowany przez \033W%s\033X. Proszę, niech mi ktoś pomoże!</t>
+<t id="449">Dzięki stary! Sowicie cię wynagrodzę jeżeli zdołasz go zabić!</t>
+<t id="450">Dzięki stary! Trzymaj oto Twoje obiecane \033Y%s kredytów\033X za twoja fatygę!</t>
+
+<t id="451">Czy nie mówili Ci, że ciekawość to pierwszy stopień do piekła? \nWięc spadaj i nie wtykaj swojego nosa tam gdzie nie trzeba.\nŻegnam.</t>
+<t id="452">Robota jak co dzień, plądrowanie i przemyt.</t>
+<t id="453">Właśnie atakujemy \033W%s\033X obecnie znajduje się w sektorze \033W%s\033X . Niech spojrzę... Tu jest jego ID: \033Y%s\033X</t>
+<t id="454">Brachu zamierzamy napaść sektor \033W%s\033X ! Rusz dupę i leć z nami, to naprawdę dobry sposób by się obłowić i do tego przednia zabawa!</t>
+<t id="455">Nie za wiele. Właśnie jestem w drodze powrotnej do domu.</t>
+<t id="456">Patroluję ten sektor na zlecenie Gildii</t>
+
+
+<t id="460">Szukasz eskorty? Możesz mnie zatrudnić za jedyne %s kredytów</t>
+<t id="461">Kogo jak kogo Szefie, ale Ciebie mogę eskortować za darmo!</t>
+<t id="462">Możesz mnie wynająć jako eskortę, za jedyne \033Y%s kredytów\033X za godzinę. Jesteś zainteresowany moja ofertą?</t>
+<t id="463">Chcesz Mnie zatrudnić do eskortowania Ciebie? Żartujesz prawda? Goń się leszczu!</t>
+<t id="464">Przyjąłem! Służę Ci eskortą.</t>
+<t id="465">Przyjąłem!</t>
+<t id="466">Misja eskorty zakończona. Do zobaczenia następnym razem.</t>
+<t id="467">Ostatnio skanowałem \033Y%s\033X w sektorze %s z niezłą ilośćią towarów. Tutaj masz ID \033Y%s\033X.</t>
+<t id="468">Ostatnimi czasy nie udało mi się przeskanować niczego, co by przykuło moją uwagę.</t>
+<t id="469">Nie trawię Yaki i nie mam zamiaru nawet o nich rozmawiać... Zrozumiano!?</t>
+<t id="470">Nie posiadam żadnych wieści o Yaki. Ostatnimi czasy są bardzo cicho, co raczej nie jest do nich podobne.</t>
+<t id="471">Otrzymałem raport z Gildii informujący że %s mobilna baza znajduje się w sektorze %s.</t>
+<t id="472">Ostatnio przeczytałem raport o nich. Jest co najmniej %s mobilnych baz Yaki we wszechświecie.</t>
+<t id="473">Znalazłeś %s w sektorze %s, leć przez %s.</t>
+<t id="474">Wybacz nam, już nie będziemy więcej ciebie niepokoić.</t>
+<t id="475">Aktualnie Wybrany: %s</t>
+<t id="476">Wybierz Stację</t>
+<t id="477">\033GWłam się do stacji\033X</t>
+<t id="478">Za właściwą cenę nasz zespół hakerów może włamać się do wrogiej stacji i zmienić jej nastawianie na neutralną. Nasz zespół może złamać zabezpieczenia stacji  maksymalnie do pięciu skoków. Oczywiście wraz z wzrostem zasięgu ich cena usługi ulega zmianie..\n\n \033YWybrano:\033X %s - Klasa: %s\nRasa: %s - Dystans: %s\n \033YCena:\033X %s kredytów\n\n\n\n\n</t>
+
+<t id="480">\033YPoszukiwany Przestępca :\033X Wysokość nagrody %s kredytów za potwierdzenie zgonu.\n\n</t>
+
+<t id="510">[author][b]%s[/b][/author]Dziękuję za Twoją pomoc!\n\nStatek zabierze mnie z powrotem do bazy. Mam tylko %s kredytów, to powinno wystarczy za Twoja fatygę.</t>
+<t id="511">[author][b]Gildia Piratów[/b][/author]Siły zbrojne %s  bezpiecznie przetransportowały naszego szefa do wydziału sprawiedliwości. Stary dałeś ciała, misja nieudana.</t>
+<t id="512">250000</t>
+<t id="513">100</t>
+
+<t id="520">[author][b]Gildia Piratów[/b][/author]Dzięki druhu za skopanie dupy naszym wrogom!\n\nZa fatygę otrzymujesz od nas %s kredytów.</t>
+<t id="521">n/a</t>
+<t id="522">100000</t>
+<t id="523">50</t>
+
+<t id="530">[author][b]Gildia Piratów[/b][/author]Dzięki druhu za skopanie dupy naszym wrogom!\n\nZa fatygę otrzymujesz od nas %s kredytów.</t>
+<t id="531">n/a</t>
+<t id="532">50000</t>
+<t id="533">25</t>
+
+<t id="540">[author][b]HQ Gildii Piratów[/b][/author]Uff... Niewiele brakowało, dzięki brachu że pomogłeś nam obronić naszą bazę!\n\nW podziękowaniu za zniszczone statki otrzymujesz premię w wysokości %s kredytów.</t>
+<t id="541">[author][b]HQ Gildii Piratów[/b][/author]Siły zbrojne %s  bezpiecznie przetransportowały naszego szefa do wydziału sprawiedliwości. Stary dałeś ciała, misja nieudana.</t>
+<t id="542">300000</t>
+<t id="543">200</t>
+
+<t id="550">[author][b]HQ Gildii Piratów[/b][/author]Dzięki brachu za pomoc w zniszczeniu tego transportowca!\n\n Za fatygę otżymujesz od nas %s kredytów.</t>
+<t id="551">[author][b]Gildia Piratów[/b][/author] Statek klasy %s TL doleciał do punktu docelowego. Stary dałeś ciała, misja nieudana.</t>
+<t id="552">600000</t>
+<t id="553">150</t>
+
+<t id="600">Gildia Piratów System Misji</t>
+<t id="601">Tutaj dostępne są misje w obrębie działania tej bazy piratów</t>
+<t id="602">Aktualnie nie ma dostępnych żadnych misji w obrębie działania tej placówki</t>
+<t id="603">Lista Misji</t>
+<t id="610">Pomóż więźniowi w ucieczce: %s kredytów</t>
+<t id="611">Twoim celem misji jest pomóc %s w ucieczce z wojskowego statku klasy TM. Konwój obecnie znajduje się w %s i zmierza do %s. Musisz przechwycić i przejąć go nim dotrze do punktu przeznaczenia.\n\n\n\n</t>
+<t id="620">Zabójstwo Łowcy Głów: %s kredytów</t>
+<t id="621">Musisz "zająć" się %s który jakby to powiedzieć "koliduje" z naszymi interesami w tym sektorze. Obecnie leci %s w %s. Więcej informacji uzyskasz po zaakceptowaniu misji.\n\n\n\n</t>
+<t id="630">Zlikwiduj wrogów: %s kredytów</t>
+<t id="631">Twoim zadaniem jest zniszczenie %s w %s. Zabił kilku z naszych pilotów i teraz będzie musiał za to zapłacić. Jego dane personalne otrzymasz gdy podejmiesz się misji.\n\n\n\n</t>
+<t id="640">Baza Piratów została zaatakowana w %s</t>
+<t id="641">Nasza baza w sektorze %s jest atakowana przez wrogie siły, twoim zadaniem jest pomóc nam wyeliminować wrogów w tym sektorze. Wynagrodzenie za zestrzelenia jest liczone podwójnie.\n\n\n\n</t>
+<t id="650">Policyjny TL wykryty: %s kredytów</t>
+<t id="651">Przemieszczający się uszkodzony statek policyjny %s został wykryty w %s. Wykończ go zanim dotrze do swojego celu %s.  Jego dane personalne otrzymasz gdy podejmiesz się misji.\n\n\n\n</t>
+
+<t id="810">\033YDodatki:\033X</t>
+<t id="811">\033W- Race Response Fleet:\033X %s</t>
+<t id="812">\033W- System Obronny Anarkis:\033X %s</t>
+<t id="813">\033W- Yaki Armada:\033X %s</t>
+<t id="800">\033GWykryto\033X</t>
+<t id="801">Nie znaleziono / Wyłączono</t>
+ 
+<t id="849">Serial Kicked / [\033YFederacja Anarkis\033X]</t>
+<t id="850">Instalacja Gildii Piratów</t>
+<t id="851">Ustawienia Gry</t>
+<t id="852">Poziom trudności Gildii  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="853">Użycie skoku nadprzestrzennego \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="854">Możliwość atakowania stacji  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="855">Relacje względem Gracza</t>
+<t id="856">Gildia Piratów  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="857">Inni piraci \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="858">Ustawienia Misc.</t>
+<t id="859">Debugowanie dziennika  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="860">Odbudowywanie Pirackich stoczni gdzieś indziej</t>
+<t id="861">Użyj ADS do ochrony Baz Piratów  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="862">Relacje do innych ras</t>
+<t id="863">Pokojowe nastawienie do Teladian \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="864">Łowcy Głów  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+
+<t id="870">Czy chcesz włączyć debugowanie dziennika?</t>
+<t id="871">Ustawienie relacji pomiędzy Piratami a graczem</t>
+<t id="872">Ustawienie relacji pomiędzy Gildią Piratów a graczem</t>
+<t id="873">Zezwolić statkom Gildii Piratów na zastosowanie urządzenia Napędu Skokowego?</t>
+<t id="874">Zezwolić statkom Gildii Piratów na zastosowanie Urządzenia Maskującego?</t>
+<t id="875">Wybierz siłę Gildii</t>
+
+<t id="880">\033YBardzo niski:\033X Zdecydowanie mniej statków, powolne budowanie i znikoma ich aktywność</t>
+<t id="881">\033YNiski:\033X Mniej statków i powolne budowanie</t>
+<t id="882">\033YNormalny:\033X Standardowe ustawienia</t>
+<t id="883">\033YWysoki:\033X Więcej statków, szybsze budowanie i wzmożona ich aktywność</t>
+<t id="884">\033YBardzo Wysoki:\033X Powodzenia!</t>
+<t id="885">\033YSzalony:\033X Chyba powinieneś się leczyć?</t>
+
+<t id="890">Bardzo niski</t>
+<t id="891">Niski</t>
+<t id="892">Normalny</t>
+<t id="893">Wysoki</t>
+<t id="894">Bardzo wysoki</t>
+<t id="895">Włączony</t>
+<t id="896">Wyłączony</t>
+<t id="897">Bez Zmian</t>
+<t id="898">Niedostępny</t>
+<t id="899">Tak</t>
+<t id="900">Nie</t>
+<t id="901">Wymagane SOA 2.05</t>
+<t id="902">Szalony</t>
+
+<t id="1000">Dom Rozkoszy</t>
+<t id="1001">\n\nWitamy w Domu Rozkoszy!</t>
+<t id="1002">Kasyno</t>
+<t id="1003">Graj w kosmiczną Ruletkę</t>
+<t id="1004">Graj w Black Jack</t>
+<t id="1005">Arena</t>
+
+<t id="1010">1.000 kredytów</t>
+<t id="1011">5.000 kredytów</t>
+<t id="1012">10.000 kredytów</t>
+<t id="1013">25.000 kredytów</t>
+<t id="1014">50.000 kredytów</t>
+
+<t id="1100">%s Kasyno</t>
+<t id="1101">Black Jack</t>
+<t id="1102">\033YZasady:\033X Rozpoczynasz grę od jednej karty jej wartość zawiera się pomiędzy 1 a 11, możesz poprosić o więcej kart, nie można posiadać więcej niż 5 kart. Wygrywa ten gracz który będzie bliżej 21, jeżeli zsumowana wartość kart przekroczy 21 gracz przegrywa.\n\n\n\n\n</t>
+<t id="1103">\033YTwój zakład:\033X %s kredytów</t>
+<t id="1104">Zmień zakład</t>
+<t id="1105">Chcę następna kartę</t>
+<t id="1106">Wstrzymuje się</t>
+<t id="1107">Zagrajmy</t>
+<t id="1108">Zrezygnuj</t>
+<t id="1109">\033YTy :\033X %s punktów\n\033YKrupier :\033X %s punktów\n\nRemis; nikt nie wygrał, nikt nie przegrał. Chcesz spróbować jeszcze raz?\n\n\n</t>
+<t id="1110">\033YTy :\033X %s punktów\n\033YKrupier :\033X %s punktów\n\nGratulacje! Wygrałeś %s kredytów!\n To musi być twój szczęśliwy dzień. Jeżeli uważasz że faktycznie tak jest, to może spróbujesz zagrać jeszcze raz?\n\n\n</t>
+<t id="1111">\033YTy :\033X %s punktów\n\033YKrupier :\033X %s punktów\n\nJesteś żenujący! Właśnie przegrałeś %s kredytów !\n Może powinieneś paść krowy? No jak leszczu, jeszcze jedna kolejeczka? Czy może polecisz teraz z płaczem do mamusi?\n\n\n</t>
+<t id="1112">Przykro mi, ale nie posiadasz wystarczającej ilości gotówki by móc grać w blackjack, potrzebujesz co najmniej 5000 kredytów dostępnych z twojego konta..\n\n\n</t>
+<t id="1113">\033YTy :\033X %s punkty\n\033YKrupier :\033X %s punkty\n\n\n</t>
+<t id="1114">Limit Kart Przekroczony</t>
+
+
+<t id="1200">\033YSpecjalna Oferta!\033X</t>
+<t id="1201">1210</t>
+<t id="1202">5</t>
+<t id="1203">\033YBrak wystarczającej ilości kredytów!\033X</t>
+<t id="1204">\033ROdrzuć\033X</t>
+<t id="1205">\033GZaakceptuj\033X</t>
+<t id="1206">Odpowiedz</t>
+
+<t id="1210">Tak się właśnie składa, że jestem posiadaczem mapy wszystkich sektorów rasy \033W%s\033X. Mogę Ci ją odsprzedać za jedyne \033Y%s kredytów\033X. No to jak...zainteresowany?\n\n\n\n</t>
+<t id="1211">Jestem posiadaczem świętej księgi (encyklopedia), która została skradziona Gonerom z ich świątyni. \033WZawiera kompletny opis statków jak i broni.\033X Jest dostępna za jedyne \033Y%s kredytów\033X ! Powiem wprost kolego, druga taka okazja może Ci się nie przytrafić\n\n\n\n</t>
+<t id="1212">To chyba twój szczęśliwy dzień, bo jak widzisz jestem posiadaczem \033WPrzewodnik: Autostopem przez Galaktykę\033X może być twój za jedyne \033Y%s kredytów\033X?\n\n\n\n</t>
+<t id="1213">Jesteśmy w posiadaniu danych \033W%s %s\033X które możemy ci odsprzedać ze zniżką za \033Y%s kredytów\033X, zainteresowany?\n\n\n\n</t>
+<t id="1214">Jesteśmy w posiadaniu danych \033W%s %s\033X które możemy ci odsprzedać ze zniżką za \033Y%s kredytów\033X, zainteresowany?\n\n\n\n</t>
+<t id="1215">Możemy zhakować pobliską wrogą stacje, jesteś zainteresowany?</t>
+
+<t id="1300">[author][b]Gildia Piratów[/b][/author][text colwidth='350'] Witamy w Gildii Piratów druhu! \n\n[justify]Moje gratulacje! Jesteś członkiem Gildii. W rezultacie obecne cele Gildii ukazane są na mapie sektora, lista misji i celów dostępna jest w każdej bazie piratów. Pamiętaj by utrzymywać swoją reputację z Gildią na wystarczająco wysokim poziomie, w przeciwnym wypadku zetrą cię na pył.\n\nWitamy na pokładzie!\n\n [/justify] [/text]</t>
+
+<t id="1400">Włamanie do stacji</t>
+<t id="1401">Za odpowiednią cenę możemy włamać się do pobliskiej wrogiej stacji.</t>
+<t id="1402">Wybierz stację</t>
+<t id="1403">%s - %s : %s kredytów</t>
+<t id="1404">Nie posiadasz wystarczającej ilości gotówki, by móc włamać się do stacji.</t>
+<t id="1405">Jesteś pewien że chcesz się włamać do tej stacji za %s kredytów?</t>
+<t id="1406">Brak w zasięgu wrogiej stacji.</t>
+
+<t id="1407">[author]Pirate Guild[/author]%s</t>
+
+</page>
+    
+</language>
+

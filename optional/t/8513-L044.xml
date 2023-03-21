@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<language id="44">
+
+<page id="8513" title="Pirate Guild" descr="Pirate Guild AL Plugin">
+
+  <t id="001">** Lines like this one are comments, you don't need to translate them</t>
+  <t id="001">** text.id 100, 104, 105 (used for self-update), 106, 849 (copyright) must NOT be altered in any way</t>
+  <t id="001">** do not change any numerical value : "2" translated to "two/dos/deux" will probably cause issues</t>
+
+<t id="100">Pirate Guild</t>
+<t id="101">\033RPirate Guild 3:\033X \033WDynamic AI and Guild System\033X  [\033Ybuild %s\033X]</t>
+<t id="102">[author][b]Anarkis Federation[/b][/author] [b]Pirate Guild[/b] has been enabled - Have Fun !</t>
+<t id="103">[author][b]Anarkis Federation[/b][/author] [b]Pirate Guild[/b] has been disabled !</t>
+<t id="104">359</t>
+<t id="105">1</t>
+<t id="106">Anarkis Federation</t>
+<t id="107">[author][b]Anarkis Federation[/b][/author] [b]Pirate Guild[/b] has been upgraded to v%s !</t>
+<t id="108">Upgrading Pirate Guild to v%s, please wait ...</t>
+<t id="109">[author][b]Anarkis Federation[/b][/author]New major version of [b]Pirate Guild[/b] detected, you will need to manually disable the plugin in the [b]Artificial Life[/b] menu, wait for a confirmation message, and enable it back.</t>
+<t id="110">\033RPirate Guild 3:\033X \033WLoading in progress, please wait ...\033X</t>
+
+ <t id="001">** Yes, there is a 'space' before and after the word 'Pirate', leave it that way, but translate Pirate if needed.</t>
+
+<t id="111"> Pirate </t>
+
+<t id="126">%s Bounty Hunter</t>
+<t id="127">\033R%s\033X Mob Boss</t>
+<t id="128">%s Prison Escort</t>
+<t id="129">%s Prison Transport</t>
+<t id="130">\033RPirate\033X Spacefly Hunter</t>
+<t id="131">\033RPirate Guild\033X Shipyard</t>
+<t id="132">\033RPirate Guild\033X Trader</t>
+<t id="133">Heavy Lasertower</t>
+<t id="135">PG Entertainment Network</t>
+<t id="136">Deadly Run Contestant</t>
+<t id="137">Crystal Grabber</t>
+<t id="138">Arena %s</t>
+<t id="139">Enemy %s</t>
+<t id="140">Nova Mk2</t>
+<t id="141">\033RPirate Guild\033X Outpost</t>
+<t id="142">\033RPirate Guild\033X Base</t>
+<t id="143">\033Y[\033X%s\033Y]\033X</t>
+<t id="144">\033RPirate Guild\033X Stronghold</t>
+<t id="145">\n\n- Published %s ago.\n</t>
+<t id="146">\033RPirate Guild\033X Fortress</t>
+<t id="147">\033RPirate Guild\033X Mobile HQ</t>
+
+ <t id="001">** Yes, there is no space between Mercenary and %s, this is intended, and the %s must always be last in your translation</t>
+ <t id="001">** %s is the ship type here. It's the same for the line after.</t>
+ 
+<t id="148">\033RPirate Mercenary\033X%s</t>
+<t id="134">\033RPirate Guild\033X%s</t>
+ 
+<t id="149">\033RPirate Guild\033X Pleasure Dome</t>
+<t id="150">\033Y%s\033X</t>
+<t id="151">\033W%s\033X</t>
+ 
+<t id="152">\033GYour Standing:\033X\n- Pirate Guild : \033Y%s\033X points &lt; \033Y%s\033X &gt;\n- Other Pirates : \033Y%s\033X points &lt; \033Y%s\033X &gt;</t>
+<t id="153">\n\033GYou are a member of the Guild\033X</t>
+<t id="154">\n\033RYou are not a member of the Guild\033X</t>
+<t id="155">\nThe faction currently targeted by the Guild is : \033R%s\033X</t>
+<t id="156">\nOur Mobile HQ is currently located in : \033Y%s\033X</t>
+ 
+<t id="157">\033YJoin the Pirate Guild\033X</t>
+<t id="158">Guild Missions</t>
+<t id="159">Leave Guild</t>
+<t id="160">Pay a tribute to the Guild</t>
+<t id="161">Pay your fine \033R&lt;\033X \033Y%s credits\033X \033R&gt;\033X</t>
+<t id="162">Give money to the Guild</t>
+<t id="163">Give ships to the Guild</t>
+<t id="164">AL Plugin Setup</t>
+<t id="165">Latest Guild News</t>
+<t id="166">Station Hacking</t>
+<t id="167">Are you sure to pay \033Y%s credits\033X ?</t>
+<t id="168">\nYou do not have enough money to do so.\n</t>
+<t id="169">Okay</t>
+<t id="170">Giving money to the Guild will increase your reputation\nand strengthen the local pirate base.</t>
+<t id="171">How much do you want to give ?</t>
+<t id="172">Give a Ship</t>
+<t id="173">Giving ships to the Guild will increase your reputation and\nstrengthen to local pirate base. You can only give M4, M3 and M6\nclass ships and it must be docked to the local pirate base.</t>
+<t id="174">Select a Ship</t>
+<t id="175">No ship found</t>
+<t id="176">Next Item</t>
+<t id="177">Previous Item</t>
+<t id="178">No news to display</t>
+<t id="179">Close</t>
+<t id="180">Pirate News Network</t>
+<t id="181">Request a Raid</t>
+<t id="182">Raid Request</t>
+<t id="183">Sorry,\nWe do not have enough ships to do any kind of raid at the moment.\nPlease, try again later</t>
+<t id="184">Sorry,\nYour notoriety is too low. (you need at least %s notoriety points)</t>
+<t id="185">Welcome !\nPlease choose an option and a target to get the price of our services.\n\033YSpecial offer :\033X Raids against the %s are at a discount price !\n</t>
+<t id="186">Select an option</t>
+<t id="187">Attack a Ship</t>
+<t id="188">Attack a Station</t>
+<t id="189">Raid a sector</t>
+<t id="190">Sorry,\nnot enough ships are available to attack such a target !</t>
+<t id="191">\033YTarget :\033X %s\n\033YShips to send :\033X %s\n\033YPrice :\033X %s credits</t>
+<t id="192">I want more ships</t>
+<t id="193">I want less ships</t>
+<t id="194">Launch the raid !</t>
+<t id="195">Cancel</t>
+<t id="196">Pick a Target</t>
+<t id="197">Sorry,\nWe won't attack fellow pirates !</t>
+<t id="198">Sorry,\nYou do not have enough money in your account.</t>
+<t id="199">Thank you !\nOur ships will be sent to attack the specified target !</t>
+
+<t id="200">[author]Galactic Police[/author]You have received %s credits for the destruction of a %s that was owned by the Pirate Guild in sector %s. Thank you for your assistance.</t>
+<t id="201">[author]Pirate Guild Channel[/author]Thank you for your help against our enemies. You have received %s credits as a reward.\n</t>
+
+<t id="001">** Displayed as subtitles text when in PB sector, keep it short.</t>
+<t id="250">\033RPG:\033X \033WAttacking %s in %s - ID: %s \033X</t>
+<t id="251">\033RPG:\033X \033WInvading sector %s\033X</t>
+
+<t id="260">%s Heavy Transporter</t>
+<t id="261">%s Police Escort</t>
+
+<t id="001">** Used in the News Network, double check display in the news browser, \n used to go to next line.</t>
+
+<t id="321">Recent reports from the Guild show that the \033R%ss\033X are currently the faction who dealt the most damages to our forces. That's why the Guild HQ now orders our bases to hit %s targets in priority.</t>
+<t id="322">After several days of increasing fighting between our forces and the \033R%s\033X security forces. It has been decided that we'll send a massive pirate fleet to the \033R%s\033X sector in order to make them pay. All members are invited to join.</t>
+<t id="323">The %s in \033G%s\033X sector reports that it has sent a raiding party to \033R%s\033X in \033R%s\033X territory. Members located in this area are invited to join.</t>
+<t id="324">The %s in \033G%s\033X sector informs us that a fleet has been launched against the \033R%s\033X in \033R%s\033X in order to reduce %s defensive capacities. We've also been told that a prize will be given to the one who delivers the last blow.</t>
+<t id="325">Our base in \033G%s\033X sector informs us that a squadron of fighters has been launched against the \033R%s\033X in \033R%s\033X.</t>
+<t id="326">The fellow pirates in \033G%s\033X are proud to announce that they have bought a shiny new \033G%s\033X to defend their Pirate Base.</t>
+<t id="327">We are sorry to inform you that our base in \033G%s\033X has been destroyed. Despite the efforts of our fighters, the base was finally destroyed by hostile \033R%s\033X security forces. The Guild headquarter has been informed, and a counter offensive will probably takes place in a few weeks.</t>
+<t id="328">Our base in \033G%s\033X sector has been attacked by hostile forces.</t>
+<t id="329">We are proud to announce that a new \033YMobile Headquarters\033X has been produced by our engineers.</t>
+<t id="330">Sadly our \033YMobile HQ\033X has been defeated in %s, it was destroyed by a %s.</t>
+<t id="331">We are proud to announce that a new \033YBrigantine Destroyer\033X has been produced by our engineers.</t>
+<t id="332">Sadly our \033YBrigantine Destroyer\033X has been defeated in %s, it was destroyed by a %s.</t>
+<t id="333">A new Pleasure Dome has been built in %s.</t>
+<t id="334">A new frigate has been added to our defense grid, courtesy of  the %s from %s</t>
+
+<t id="350">Our M2 has been destroyed !</t>
+<t id="351">Our Brigantine has been wiped out !</t>
+<t id="352">A new Brigantine has been built</t>
+<t id="353">Guild HQ destroyed !</t>
+<t id="354">Our Mobile HQ has been destroyed  !</t>
+<t id="355">A new Mobile HQ has been built</t>
+<t id="356">Pirate Base attacked in %s</t>
+<t id="357">Pirate Base destroyed in %s</t>
+<t id="358">Pirate M6 deployed in %s</t>
+<t id="359">Pirate Corvette deployed in %s</t>
+<t id="360">Wing launched against a %s</t>
+<t id="361">Raiding party sent in %s</t>
+<t id="362">We are raiding %s</t>
+<t id="363">The %s faction is our enemy</t>
+<t id="364">Station Raid in %s</t>
+<t id="365">Pleasure Dome built in %s</t>
+<t id="366">A new frigate has been built</t>
+<t id="367">Base under attack in %s</t>
+<t id="368">Attack against a %s in %s</t>
+
+<t id="400">Incoming Transmission</t>
+<t id="401">\033WFrom:\033X %s</t>
+<t id="402">Communications</t>
+<t id="403">\n\n- From \033W%s\033X\n\n\n\n</t>
+<t id="410">\033W[end transmission]\033X</t>
+<t id="411">Where is the nearest pirate base ?</t>
+<t id="412">Any news ?</t>
+<t id="413">What are you doing ?</t>
+<t id="414">Need any help ?</t>
+<t id="415">Can you escort me ?</t>
+<t id="416">Surrender !</t>	
+<t id="417">Okay, i will pay.</t>
+<t id="418">Leave me alone !</t>
+<t id="419">Okay, i will help you !</t>
+<t id="420">Sorry, it's none of my business.</t>
+<t id="421">Where is the nearest pirate shipyard ?</t>
+<t id="422">Is there any good cargo to loot around here ?</t>
+<t id="423">Do you really want to mess with the Guild ?</t>
+
+<t id="430">Hello, pilot !</t>
+<t id="431">What do you want ?</t>
+<t id="432">Oh, it's you again.\nWhat do you want this time ?</t>
+<t id="433">Get off my comms channel! I'm busy!</t>
+<t id="434">Go away, i've nothing to say to you!</t>
+<t id="435">Hey, you ! \n\nYou attacked us earlier, you have to pay a tribute of %s credits to restore good relations with our homebase in %s sector.</t>
+<t id="436">You will find a %s in sector %s.</t>
+<t id="437">You will find a %s in sector %s, i've added the location to your map.</t>
+<t id="438">I won't tell you. Go away !</t>
+<t id="439">Stop wasting my time, you don't have enough money!</t>
+<t id="440">I don't know, sorry.</t>
+<t id="441">Are you on spaceweed ? It's right here, in this sector!</t>
+<t id="442">I won't share private guild information with you.\nGo away!\n</t>
+<t id="443">Sorry, I have nothing important to report.</t>
+<t id="444">Yes i've heard the following news : \n\n</t>
+
+<t id="445">How dare you contacting us?\n\nFor \033W%s credits\033X we may let you go alive!</t>
+<t id="446">Okay, we'll let you go, for now...</t>
+<t id="447">You will die, you bastard !</t>
+<t id="448">I'm attacked by a \033W%s\033X, please help me !</t>
+<t id="449">Thanks ! I will pay you if you manage to kill him !</t>
+<t id="450">Thanks ! Here's \033Y%s credits\033X for your help !</t>
+
+<t id="451">It's none of your business.</t>
+<t id="452">Usual business, plunder and smuggling.</t>
+<t id="453">We are attacking a \033W%s\033X who should be in the \033W%s\033X sector. Let me see... Here's his ID code: \033Y%s\033X</t>
+<t id="454">We are going to raid the \033W%s\033X sector, bro ! Come with us, there's a bunch of goods to plunder!</t>
+<t id="455">Nothing much, I'm just returning home</t>
+<t id="456">I'm patroling the sector for the Guild</t>
+
+
+<t id="460">Are you looking for an escort ? You can hire me for %s credits</t>
+<t id="461">I'll escort you for free, boss!</t>
+<t id="462">You can hire me as an escort for \033Y%s credits\033X during one hour. Are you interested ?</t>
+<t id="463">You want ME to escort YOU ? Are you kiddin' ? Go away !</t>
+<t id="464">Roger ! I will escort you.</t>
+<t id="465">Roger !</t>
+<t id="466">Escort duty finished. See you later.</t>
+<t id="467">I've recently scanned a \033Y%s\033X in sector %s with a nice amount of wares. The ID is \033Y%s\033X.</t>
+<t id="468">No, i haven't scanned anything interesting recently.</t>
+<t id="469">I don't like the Yakis and i don't want to talk about them...</t>
+<t id="470">No news about the Yakis to report, they are pretty quiet these days.</t>
+<t id="471">Recent reports from the guild tell that the %s mobile base is in sector %s.</t>
+<t id="472">I've read a report about them recently. There is at least %s Yaki mobile bases active in the Universe.</t>
+<t id="473">You will find a %s in sector %s, go through the %s.</t>
+<t id="474">Please forgive us, we won't bother you anymore.</t>
+<t id="475">Currently Selected : %s</t>
+<t id="476">Select a Station</t>
+<t id="477">\033GHack this Station\033X</t>
+<t id="478">For the correct price our hacker team can turn back blue a hostile station, price varies according to the jumprange, the station class and the owner. We can only hack stations within 5 jumps.\n\n \033YSelected:\033X %s - Class: %s\nRace: %s - Distance: %s\n \033YPrice:\033X %s credits\n\n\n\n\n</t>
+
+<t id="480">\033YWanted Criminal :\033X Reward is %s credits for a confirmed death.\n\n</t>
+
+<t id="510">[author][b]%s[/b][/author]Thank you for your help !\n\nA ship is going to take me back to the base. Here's %s credits for your trouble.</t>
+<t id="511">[author][b]Pirate Guild[/b][/author]The %s military has successfully transferred our boss to the detention facility. The mission is failed.</t>
+<t id="512">250000</t>
+<t id="513">100</t>
+
+<t id="520">[author][b]Pirate Guild[/b][/author]Thank you for dispatching our foe !\n\nHere's %s credits for your trouble.</t>
+<t id="521">n/a</t>
+<t id="522">100000</t>
+<t id="523">50</t>
+
+<t id="530">[author][b]Pirate Guild[/b][/author]Thank you for dispatching our foe !\n\nHere's %s credits for your trouble.</t>
+<t id="531">n/a</t>
+<t id="532">50000</t>
+<t id="533">25</t>
+
+<t id="540">[author][b]Pirate Guild HQ[/b][/author]Thank you for your help in defending our base !\n\n In addition to the rewards you've earned killing those ships here's a bonus of %s credits.</t>
+<t id="541">[author][b]Pirate Guild HQ[/b][/author]Mission The %s military has successfully transferred our boss to the detention facility. The mission is failed.</t>
+<t id="542">300000</t>
+<t id="543">200</t>
+
+<t id="550">[author][b]Pirate Guild HQ[/b][/author]Thank you for your help in destroying this transport ship !\n\n Here's %s credits for your trouble.</t>
+<t id="551">[author][b]Pirate Guild[/b][/author]The %s TL has successfully reached its destination. The mission is failed.</t>
+<t id="552">600000</t>
+<t id="553">150</t>
+
+<t id="600">Pirate Guild Mission System</t>
+<t id="601">Here is the missions available around this pirate base</t>
+<t id="602">No mission currently available around this location</t>
+<t id="603">Mission List</t>
+<t id="610">Help a prisonner to escape : %s credits</t>
+<t id="611">Your mission is to help %s escaping from a military TM and its escort. The convoy is currently in %s and it is heading to %s. You must intercept and subdue it before it reaches the destination.\n\n\n\n</t>
+<t id="620">Assassinate a bounty hunter : %s credits</t>
+<t id="621">You'll have to take care of %s who is disrupting our activities in this location. He is currently flying a %s in %s. Its name will blink on your sector map if you accept the mission.\n\n\n\n</t>
+<t id="630">Take care of an enemy : %s credits</t>
+<t id="631">You'll have to destroy the %s in %s. He has killed several of our pilots. Its name will blink on your sector map if you accept the mission.\n\n\n\n</t>
+<t id="640">A Pirate Base is under attack in %s</t>
+<t id="641">Our base in %s is under attack by enemy forces, please help us by destroying enemies in this sector. Reward money given for the destruction of incoming is doubled.\n\n\n\n</t>
+<t id="650">Police TL detected : %s credits</t>
+<t id="651">A %s moving damaged police ship has been detected in %s. Wipe it out before it reaches %s.  Its name will blink on your sector map if you accept the mission.\n\n\n\n</t>
+
+<t id="810">\033YAddons:\033X</t>
+<t id="811">\033W- Race Response Fleet :\033X %s</t>
+<t id="812">\033W- Anarkis Defense System :\033X %s</t>
+<t id="813">\033W- Yaki Armada :\033X %s</t>
+<t id="800">\033GDetected\033X</t>
+<t id="801">Not Found / Disabled</t>
+ 
+<t id="849">Serial Kicked / [\033YAnarkis Federation\033X]</t>
+<t id="850">Pirate Guild Setup</t>
+<t id="851">Gameplay Settings</t>
+<t id="852">Guild Strength  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="853">Use of Jumpdrive \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="854">Ability to attack stations  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="855">Relations to Player</t>
+<t id="856">Pirate Guild  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="857">Other pirates  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="858">Misc. Settings</t>
+<t id="859">Logbook Debug Output  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="860">Respawn Pirate Shipyards somewhere else</t>
+<t id="861">Use ADS to protect Pirate Bases  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="862">Relations to other factions</t>
+<t id="863">At peace with the Teladis \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+<t id="864">Bounty Hunters  \033R&lt;\033X \033Y%s\033X \033R&gt;\033X</t>
+
+<t id="870">Do you want to enable debug output to the logbook ?</t>
+<t id="871">Set the relation between pirates and the player</t>
+<t id="872">Set the relation between the Pirate Guild and the player</t>
+<t id="873">Allow the Pirate Guild ships to use the jumpdrive ?</t>
+<t id="874">Allow the Pirate Guild ships to use the camouflage device ?</t>
+<t id="875">Select the strength of the guild</t>
+
+<t id="880">\033YVery Low:\033X Much less ships, slower buildup and activity</t>
+<t id="881">\033YLow:\033X Less ships and slow buildup</t>
+<t id="882">\033YMedium:\033X Standard settings</t>
+<t id="883">\033YHigh:\033X More ships, faster buildup and activy</t>
+<t id="884">\033YVery High:\033X Good luck !</t>
+<t id="885">\033YInsane:\033X Are you Serious ?</t>
+
+<t id="890">Very Low</t>
+<t id="891">Low</t>
+<t id="892">Medium</t>
+<t id="893">High</t>
+<t id="894">Very High</t>
+<t id="895">Enabled</t>
+<t id="896">Disabled</t>
+<t id="897">No Change</t>
+<t id="898">Not Available</t>
+<t id="899">Yes</t>
+<t id="900">No</t>
+<t id="901">ADS 2.05 Required</t>
+<t id="902">Insane</t>
+
+<t id="1000">Pleasure Dome</t>
+<t id="1001">\n\nWelcome to our Pleasure Dome !</t>
+<t id="1002">Casino</t>
+<t id="1003">Play Space Roulette</t>
+<t id="1004">Play Black Jack</t>
+<t id="1005">The Arena</t>
+
+<t id="1010">1.000 credits</t>
+<t id="1011">5.000 credits</t>
+<t id="1012">10.000 credits</t>
+<t id="1013">25.000 credits</t>
+<t id="1014">50.000 credits</t>
+
+<t id="1100">%s Casino</t>
+<t id="1101">Black Jack</t>
+<t id="1102">\033YRules:\033X Whoever gets as close to 21 as possible but does not exceed 21 wins. If you go over, you have lost. If your adversary has an higher score than you, you lost. Otherwise you've won. You start with one card - value between 1 and 11 - and can ask for more. Once you've decided to stick, the dealer will continue until he decides to stop. None of you can get more than 5 cards.\n\n\n\n\n</t>
+<t id="1103">\033YYour Bet:\033X %s credits</t>
+<t id="1104">Change Bet</t>
+<t id="1105">I want another card</t>
+<t id="1106">I want to stick</t>
+<t id="1107">Let's play</t>
+<t id="1108">Quit</t>
+<t id="1109">\033YYou :\033X %s points\n\033YDealer :\033X %s points\n\nThat is a draw; nothing won, nothing lost. And no fun - want to try again?\n\n\n</t>
+<t id="1110">\033YYou :\033X %s points\n\033YDealer :\033X %s points\n\nCongratulations! You win %s credits!\n Your luck must be quite strong today. If you think it is, would you like to have another go?\n\n\n</t>
+<t id="1111">\033YYou :\033X %s points\n\033YDealer :\033X %s points\n\nToo Bad ! You have lost  %s credits !\n Maybe you'll be luckier next time. Another round?\n\n\n</t>
+<t id="1112">Sorry, you don't have enough money to play blackjack, you need at least 5000 credits available in your bank account.\n\n\n</t>
+<t id="1113">\033YYou :\033X %s points\n\033YDealer :\033X %s points\n\n\n</t>
+<t id="1114">Card Limit Reached</t>
+
+
+<t id="1200">\033YSpecial Offer !\033X</t>
+<t id="1201">1210</t>
+<t id="1202">5</t>
+<t id="1203">\033YNo enough credits !\033X</t>
+<t id="1204">\033RRefuse\033X</t>
+<t id="1205">\033GAccept\033X</t>
+<t id="1206">Answer</t>
+
+<t id="1210">A complete map of all \033W%s sectors\033X is available for \033Y%s credits\033X, are you interested?\n\n\n\n</t>
+<t id="1211">The encyclopedia \033Wfull chapters about ships and weaponry\033X is available for \033Y%s credits\033X ! Are you interested?\n\n\n\n</t>
+<t id="1212">Do you want to download \033WThe Hitchhiker's Guide to the Galaxy\033X to your database for \033Y%s credits\033X?\n\n\n\n</t>
+<t id="1213">We have a batch of \033W%s %ss\033X that we sell at a discount price of \033Y%s credits\033X, are you interested?\n\n\n\n</t>
+<t id="1214">We have a batch of \033W%s %ss\033X that we sell at a discount price of \033Y%s credits\033X, are you interested?\n\n\n\n</t>
+<t id="1215">We can hack a nearby hostile station for you, are you interested?</t>
+
+<t id="1300">[author][b]Pirate Guild[/b][/author][text colwidth='350']     Welcome to the Pirate Guild ! \n\n[justify]You are now a full member. As a result, current targets of the Guild will blink on your sector map and a list of missions and targets is available at any pirate base. Moreover, hostile independant pirate ships will usually turn tail if you ask them to, except if you attack them first. Be sure to keep your notoriety to our Guild high enough or you will be expelled without warning.\n\nWelcome Aboard !\n\n [/justify] [/text]</t>
+
+<t id="1400">Hack a Station</t>
+<t id="1401">We can hack hostile nearby stations for the correct price.</t>
+<t id="1402">Select a Station</t>
+<t id="1403">%s - %s : %s credits</t>
+<t id="1404">You do not have enough money to hack this station.</t>
+<t id="1405">Are you sure to hack this station for %s credits?</t>
+<t id="1406">No enemy station in range.</t>
+
+<t id="1407">[author]Pirate Guild[/author]%s</t>
+
+</page>
+    
+</language>
