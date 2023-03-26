@@ -33,7 +33,7 @@ To make sure the global isn't recreated when you load a save, follow these steps
       contain `plugin.jj.colour.by.race` as part of their filename.
     * Open the `X3\addon\t` folder and delete the `9965` t
       files.
-    * Delete the `9964` translation files if you aren't using the True Relations plugin. The `9964` t file is used by both plugins.
+    * Delete the `9964` translation files if you aren't using the [True Relations](https://github.com/jamesjonesphoenix/true-relations) plugin. The `9964` t file is used by both plugins.
 * Load the save you made after deactivation. Colour By Race should be gone from the Artificial Life menu and its global will be removed from this save.
 
 ## Debug
