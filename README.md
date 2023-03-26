@@ -10,7 +10,7 @@
 Download the latest release from Github. Unzip the download and copy paste files into the `X3/addon/` folder. Files in
 the `scripts/` folder go into the `scripts/` folder. File in the `t/` folder go into the `t/` folder.
 
-Launch the game and load a save or start a new game. Navigate to Main menu->Gameplay->Artificial life Settings and activate the plugin.
+Launch the game and load a save or start a new game. Navigate to `Main menu->Gameplay->Artificial life Settings` and activate the plugin.
 
 ### Optional Files
 
@@ -33,7 +33,7 @@ To make sure the global isn't recreated when you load a save, follow these steps
       contain `plugin.jj.colour.by.race` as part of their filename.
     * Open the `X3\addon\t` folder and delete the `9965` t
       files.
-    * Delete the `9964` t files if you aren't using the True Relations plugin. This t file is used by both plugins.
+    * Delete the `9964` translation files if you aren't using the True Relations plugin. The `9964` t file is used by both plugins.
 * Load the save you made after deactivation. Colour By Race should be gone from the Artificial Life menu and its global will be removed from this save.
 
 ## Debug
@@ -192,6 +192,10 @@ Colour By Race currently does not include functionality to restore the names of 
 * Litcube's universe - I've never played it, so I'm not sure. Try it and let me know!
 * [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) - Yes, especially if you overwrite MBBR's ship naming script with the included optional script. 
 * [Pirate Guild](https://forum.egosoft.com/viewtopic.php?t=244949) - Yes, though station names will be overwritten so I strongly advise the optional included translation files.  
+
+## Languages
+
+Currently English only. If there's demand for other languages I can probably add them. 
 
 ### Why an X3 mod in 2023?
 
