@@ -193,7 +193,8 @@ Colour By Race currently does not include functionality to restore the names of 
 * [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) - Yes, especially if you overwrite MBBR's ship naming script with the included optional script. 
 * [Pirate Guild](https://forum.egosoft.com/viewtopic.php?t=244949) - Yes, though station names will be overwritten so I strongly advise the optional included translation files. 
 
-## Ancilliary Stuff
+## Ancillary Stuff
+
 ### Languages
 
 Currently English only. If there's demand for other languages I can probably add them. 
