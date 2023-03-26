@@ -1347,7 +1347,6 @@
 		<line linenr="128" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="129" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -2209,7 +2208,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="29">
+			<sval type="array" size="28">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -2338,10 +2337,6 @@
 				<sval type="array" size="2">
 					<sval type="int" val="107" />
 					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="108" />
-					<sval type="int" val="2" />
 				</sval>
 			</sval>
 			<sval type="int" val="0" />

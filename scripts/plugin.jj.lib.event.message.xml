@@ -1,0 +1,228 @@
+<?xml version="1.0" standalone="yes"?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
+<!-- Generated using X-Studio -->
+<script>
+	<name>plugin.jj.lib.event.message</name>
+	<version>1</version>
+	<engineversion>50</engineversion>
+	<description></description>
+	<arguments>
+		<argument index="1" name="textID" type="Var/Number" desc="textID" />
+		<argument index="2" name="pageID" type="Var/Number" desc="pageID" />
+		<argument index="3" name="debug" type="Var/Boolean" desc="debug" />
+	</arguments>
+	<sourcetext>
+		<line linenr="001" indent="">
+			<comment>* ************************************************</comment>
+		</line>
+		<line linenr="002" indent="">
+			<comment>* SCRIPT NAME: Event Message</comment>
+		</line>
+		<line linenr="003" indent="">
+			<comment>* DESCRIPTION: Send mesage, this script exists simply to save space in main script.</comment>
+		</line>
+		<line linenr="004" indent="">
+			<comment>* </comment>
+		</line>
+		<line linenr="005" indent="">
+			<comment>* AUTHOR: JJ     DATE: 16 March 2023</comment>
+		</line>
+		<line linenr="006" indent="">
+			<comment>* ************************************************</comment>
+		</line>
+		<line linenr="007" indent="">
+			<var>$eventMessage</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>sprintf</text>
+			<text>:</text>
+			<text> </text>
+			<text>pageid</text>
+			<text>=</text>
+			<var>$pageID</var>
+			<text> </text>
+			<text>textid</text>
+			<text>=</text>
+			<var>$textID</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+			<text>,</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="008" indent="">
+			<text>send</text>
+			<text> </text>
+			<text>incoming</text>
+			<text> </text>
+			<text>message</text>
+			<text> </text>
+			<var>$eventMessage</var>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>player</text>
+			<text>:</text>
+			<text> </text>
+			<text>display</text>
+			<text> </text>
+			<text>it</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="009" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$debug</var>
+		</line>
+		<line linenr="010" indent="&#160;">
+			<text>write</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>log</text>
+			<text> </text>
+			<text>file</text>
+			<text> </text>
+			<var>$debug</var>
+			<text> </text>
+			<text>append</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$eventMessage</var>
+		</line>
+		<line linenr="011" indent="">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+	</sourcetext>
+	<codearray>
+		<sval type="array" size="10">
+			<sval type="string" val="plugin.jj.lib.event.message" />
+			<sval type="int" val="50" />
+			<sval type="string" val="" />
+			<sval type="int" val="1" />
+			<sval type="int" val="0" />
+			<sval type="array" size="4">
+				<sval type="string" val="textID" />
+				<sval type="string" val="pageID" />
+				<sval type="string" val="debug" />
+				<sval type="string" val="eventMessage" />
+			</sval>
+			<sval type="array" size="5">
+				<sval type="array" size="16">
+					<sval type="int" val="150" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="5">
+					<sval type="int" val="203" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610611704" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="404" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
+			</sval>
+			<sval type="array" size="3">
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="string" val="textID" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="string" val="pageID" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="63" />
+					<sval type="string" val="debug" />
+				</sval>
+			</sval>
+			<sval type="array" size="6">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="SCRIPT NAME: Event Message" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="DESCRIPTION: Send mesage, this script exists simply to save space in main script." />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="AUTHOR: JJ     DATE: 16 March 2023" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="************************************************" />
+				</sval>
+			</sval>
+			<sval type="int" val="0" />
+		</sval>
+	</codearray>
+</script>

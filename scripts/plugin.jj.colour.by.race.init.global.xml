@@ -2,7 +2,7 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>plugin.jj.colour.by.race.init</name>
+	<name>plugin.jj.colour.by.race.init.global</name>
 	<version>1</version>
 	<engineversion>50</engineversion>
 	<description></description>
@@ -12,7 +12,7 @@
 			<comment>* ************************************************</comment>
 		</line>
 		<line linenr="002" indent="">
-			<comment>* SCRIPT NAME: Init</comment>
+			<comment>* SCRIPT NAME: Init Global</comment>
 		</line>
 		<line linenr="003" indent="">
 			<comment>* DESCRIPTION: Initialises main global array</comment>
@@ -345,7 +345,7 @@
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="plugin.jj.colour.by.race.init" />
+			<sval type="string" val="plugin.jj.colour.by.race.init.global" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
@@ -564,7 +564,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="SCRIPT NAME: Init" />
+					<sval type="string" val="SCRIPT NAME: Init Global" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

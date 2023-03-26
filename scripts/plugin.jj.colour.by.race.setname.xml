@@ -54,7 +54,7 @@
 			<var>$mbaseScoreName</var>
 		</line>
 		<line linenr="009" indent="&#160;">
-			<comment>* ** Need to reset MBRR mod renaming local variable</comment>
+			<comment>* - - - Need to reset MBRR mod renaming local variable</comment>
 		</line>
 		<line linenr="010" indent="&#160;">
 			<var>$mbaseTagStart</var>
@@ -230,10 +230,6 @@
 			<text>prepend</text>
 			<text>=</text>
 			<text>'Renamed object'</text>
-			<text> </text>
-			<text>logFile</text>
-			<text>=</text>
-			<var>9961</var>
 		</line>
 		<line linenr="022" indent="">
 			<text>return</text>
@@ -384,17 +380,15 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
-				<sval type="array" size="10">
+				<sval type="array" size="8">
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.jj.colour.by.race.log" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="2" />
+					<sval type="int" val="1" />
 					<sval type="int" val="5" />
 					<sval type="string" val="Renamed object" />
-					<sval type="int" val="4" />
-					<sval type="int" val="9961" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -446,7 +440,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="2" />
 					<sval type="int" val="1" />
-					<sval type="string" val="** Need to reset MBRR mod renaming local variable" />
+					<sval type="string" val="- - - Need to reset MBRR mod renaming local variable" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="8" />

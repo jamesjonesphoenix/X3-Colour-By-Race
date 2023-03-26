@@ -252,7 +252,7 @@
 			<text> </text>
 			<text>size</text>
 			<text>=</text>
-			<var>1</var>
+			<var>2</var>
 		</line>
 		<line linenr="027" indent="">
 			<var>$types</var>
@@ -265,6 +265,16 @@
 			<var>{Pirates \033ODuke's\033X Weapons Dealer L}</var>
 		</line>
 		<line linenr="028" indent="">
+			<var>$types</var>
+			<text>[</text>
+			<var>1</var>
+			<text>]</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>{Paranid Pleasure Complex}</var>
+		</line>
+		<line linenr="029" indent="">
 			<var>$stationTypes</var>
 			<text>[</text>
 			<var>5</var>
@@ -274,7 +284,7 @@
 			<text> </text>
 			<var>$types</var>
 		</line>
-		<line linenr="029" indent="">
+		<line linenr="030" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$stationTypes</var>
@@ -291,7 +301,7 @@
 				<sval type="string" val="stationTypes" />
 				<sval type="string" val="types" />
 			</sval>
-			<sval type="array" size="23">
+			<sval type="array" size="24">
 				<sval type="array" size="4">
 					<sval type="int" val="128" />
 					<sval type="int" val="0" />
@@ -449,7 +459,7 @@
 					<sval type="int" val="128" />
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
-					<sval type="int" val="1" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="130" />
@@ -459,6 +469,15 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="9" />
 					<sval type="int" val="393714" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="130" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="9" />
+					<sval type="int" val="393450" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="130" />

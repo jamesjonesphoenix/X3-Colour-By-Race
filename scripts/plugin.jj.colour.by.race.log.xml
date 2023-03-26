@@ -257,7 +257,7 @@
 			<text> </text>
 			<text>fmt</text>
 			<text>=</text>
-			<text>'%s --- %s --- name: %s --- ID: %s --- Job ID: %s '</text>
+			<text>'%s --- %s --- ID: %s --- name: %s --- Job ID: %s '</text>
 			<text>,</text>
 			<text> </text>
 			<var>$prepend</var>
@@ -266,10 +266,10 @@
 			<var>$logOnTheLevel</var>
 			<text>,</text>
 			<text> </text>
-			<var>$logName</var>
+			<var>$logObjectID</var>
 			<text>,</text>
 			<text> </text>
-			<var>$logObjectID</var>
+			<var>$logName</var>
 			<text>,</text>
 			<text> </text>
 			<var>$logJobID</var>
@@ -329,20 +329,42 @@
 			<var>$logType</var>
 		</line>
 		<line linenr="030" indent="">
-			<text>skip</text>
-			<text> </text>
 			<text>if</text>
+			<text> </text>
+			<text>not</text>
 			<text> </text>
 			<var>$logFile</var>
 		</line>
 		<line linenr="031" indent="&#160;">
+			<var>$pluginData</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>global</text>
+			<text> </text>
+			<text>variable</text>
+			<text>:</text>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<text>'plugin.jj.colour.by.race'</text>
+		</line>
+		<line linenr="032" indent="&#160;">
 			<var>$logFile</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>9961</var>
+			<var>$pluginData</var>
+			<text>[</text>
+			<var>2</var>
+			<text>]</text>
 		</line>
-		<line linenr="032" indent="">
+		<line linenr="033" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="034" indent="">
 			<text>write</text>
 			<text> </text>
 			<text>to</text>
@@ -379,7 +401,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="033" indent="">
+		<line linenr="035" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -392,7 +414,7 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="19">
+			<sval type="array" size="20">
 				<sval type="string" val="prepend" />
 				<sval type="string" val="logFile" />
 				<sval type="string" val="logName" />
@@ -412,8 +434,9 @@
 				<sval type="string" val="string1" />
 				<sval type="string" val="string2" />
 				<sval type="string" val="string3" />
+				<sval type="string" val="pluginData" />
 			</sval>
-			<sval type="array" size="24">
+			<sval type="array" size="25">
 				<sval type="array" size="4">
 					<sval type="int" val="1028" />
 					<sval type="int" val="131075" />
@@ -537,15 +560,15 @@
 					<sval type="int" val="149" />
 					<sval type="int" val="16" />
 					<sval type="int" val="5" />
-					<sval type="string" val="%s --- %s --- name: %s --- ID: %s --- Job ID: %s " />
+					<sval type="string" val="%s --- %s --- ID: %s --- name: %s --- Job ID: %s " />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="9" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
 					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
 				</sval>
@@ -583,21 +606,26 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-536865273" />
+					<sval type="int" val="-536865020" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="5" />
+					<sval type="string" val="plugin.jj.colour.by.race" />
+					<sval type="int" val="19" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
 					<sval type="int" val="1" />
-					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="19" />
 					<sval type="int" val="4" />
-					<sval type="int" val="9961" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="17">
 					<sval type="int" val="405" />
@@ -634,7 +662,7 @@
 					<sval type="string" val="logFile" />
 				</sval>
 			</sval>
-			<sval type="array" size="9">
+			<sval type="array" size="10">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -676,6 +704,10 @@
 				<sval type="array" size="2">
 					<sval type="int" val="17" />
 					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="23" />
+					<sval type="int" val="4" />
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
