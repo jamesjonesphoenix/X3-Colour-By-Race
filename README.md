@@ -3,7 +3,7 @@
 
 * Colour By Race is an AL plugin for X3:AP which colours the names of ships and stations across the galaxy. It makes for a cool looking and easier to parse sector map.
 * Most objects only have part of their name coloured, usually the name of their race or corporation.
-* More screenshots of Colour By Race in action at [this Imgur gallery](https://imgur.com/gallery/TSrPT8c).
+* More screenshots of Colour By Race in action at [this Imgur gallery](https://imgur.com/a/TSrPT8c).
 
 ## Install
 
@@ -191,9 +191,10 @@ Colour By Race currently does not include functionality to restore the names of 
 * [XRM](https://forum.egosoft.com/viewtopic.php?f=94&t=304158) - Yes, I developed this while playing on an LxXRM installation. The plugin includes code to handle several XRM specific objects. 
 * Litcube's universe - I've never played it, so I'm not sure. Try it and let me know!
 * [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) - Yes, especially if you overwrite MBBR's ship naming script with the included optional script. 
-* [Pirate Guild](https://forum.egosoft.com/viewtopic.php?t=244949) - Yes, though station names will be overwritten so I strongly advise the optional included translation files.  
+* [Pirate Guild](https://forum.egosoft.com/viewtopic.php?t=244949) - Yes, though station names will be overwritten so I strongly advise the optional included translation files. 
 
-## Languages
+## Ancilliary Stuff
+### Languages
 
 Currently English only. If there's demand for other languages I can probably add them. 
 
