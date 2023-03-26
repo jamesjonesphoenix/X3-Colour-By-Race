@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language id="44">
+    <page id="9964" title="" desc="" voice="no">
+        <t id="1000">\033GTrue Relations\033X by FriendlyFirePhoenix. v%s</t>
+        <t id="1001">\033GTrue Relations\033X deactivated.</t>
+        <t id="1002">Initialised \033GTrue Relations\033X.\n\nAs part of activation, the plugin has fixed IFF for stations and their owned ships across the galaxy. From now on True Relations will regularly select a random sector to fix IFF for, slowly working through the galaxy. If you want to quickly fix IFF for the entire galaxy again you can deactivate and reactivate the plugin.</t>
+
+        <t id="1010">Lost %s %s notoriety as effect of %s %s notoriety gain.</t>
+        <t id="1011">Gained %s %s notoriety as effect of %s %s notoriety gain.</t>
+        <t id="1012">True Relations fixing IFF across galaxy...</t>
+        <t id="1013">%s checked %s stations.</t>
+        <t id="1014">%s Finished.</t>
+        <t id="1015">The %s have \033Rdemoted\033X you to %s as punishment for your %s notoriety gain.</t>
+        <t id="1016">The %s have \033Bpromoted\033X you to %s as a reward for your %s notoriety gain.</t>
+
+        <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X by FriendlyFirePhoenix. v%s</t>
+        <t id="1101">\033GColour By Race\033X deactivated.</t>
+        <t id="1102">Initialised \033GColour By Race\033X.\n\nAs part of activation, the plugin has coloured the names of ships, docks and shipyards across the galaxy.</t>
+    </page>
+</language>
