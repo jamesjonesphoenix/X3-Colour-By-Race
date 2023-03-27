@@ -7,8 +7,7 @@
 
 ## Install
 
-Download the latest release from Github. Unzip the download and copy paste files into the `X3/addon/` folder. Files in
-the `scripts/` folder go into the `scripts/` folder. File in the `t/` folder go into the `t/` folder.
+Download the [latest release](https://github.com/jamesjonesphoenix/colour-by-race/releases) from Github. You probably want to download the `.zip` file not the `.tar.gz` file. Unzip the download and copy paste files into the `X3/addon/` folder. Files in the `scripts/` folder go into the `scripts/` folder. File in the `t/` folder go into the `t/` folder.
 
 Launch the game and load a save or start a new game. Navigate to `Main menu->Gameplay->Artificial life Settings` and activate the plugin.
 
@@ -69,6 +68,7 @@ If you want to change a race colour you can edit the entries in the t file. No c
         <td><span style="color:blue">Blue</span></td>
         <td>\033B</td>
         <td><span style="color:blue">Argon</span> Freight Transporter</td>
+        <td></td>
     </tr>
     <tr>
         <td>Boron</td>
@@ -89,6 +89,7 @@ If you want to change a race colour you can edit the entries in the t file. No c
         <td><span style="color:orange">Orange</span></td>
         <td>\033O</td>
         <td><span style="color:orange">Paranid</span> Trading Dock</td>
+        <td></td>
     </tr>
     <tr>
         <td>Teladi</td>
@@ -102,12 +103,14 @@ If you want to change a race colour you can edit the entries in the t file. No c
         <td><span style="color:red">Red</span></td>
         <td>\033R</td>
         <td><span style="color:red">Pirate</span> Blastclaw Prototype</td>
+        <td></td>
     </tr>
     <tr>
         <td>Goner</td>
         <td><span style="color:blue">Blue</span></td>
         <td>\033B</td>
         <td><span style="color:blue">Goner</span> Ozias</td>
+        <td></td>
     </tr>
     <tr>
         <td>Independant</td>
@@ -121,6 +124,7 @@ If you want to change a race colour you can edit the entries in the t file. No c
         <td><span style="color:grey">Grey</span></td>
         <td>\033A</td>
         <td><span style="color:grey">ATF</span> Escort Vali</td>
+        <td></td>
     </tr>
     <tr>
         <td>Terran</td>
@@ -134,6 +138,7 @@ If you want to change a race colour you can edit the entries in the t file. No c
         <td><span style="color:red">Red</span></td>
         <td>\033R</td>
         <td><span style="color:red">Yaki</span> Assassin Raijin Raider</td>
+        <td></td>
     </tr>
 </tbody>
 </table>
