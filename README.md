@@ -52,96 +52,19 @@ Found a bug? I'm keen to hear about it. Report it as a Github issue or on the Eg
 
 If you want to change a race colour you can edit the entries in the t file. No colours are hardcoded in script files.
 
-<table style="text-align:left;">
-<thead>
-    <tr>
-        <th>Race</th>
-        <th>Colour</th>
-        <th>Code</th>
-        <th>Example</th>
-        <th>Note</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>Argon</td>
-        <td><span style="color:blue">Blue</span></td>
-        <td>\033B</td>
-        <td><span style="color:blue">Argon</span> Freight Transporter</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Boron</td>
-        <td><span style="color:green">Green</span></td>
-        <td>\033G</td>
-        <td><span style="color:green">B.</span> Large Orbital Weapon Platform</td>
-        <td>Example of colouring shortened race name.</td>
-    </tr>
-    <tr>
-        <td>Split</td>
-        <td><span style="color:magenta">Magenta</span></td>
-        <td>\033M</td>
-        <td><span style="color:magenta">Military</span> Base</td>
-        <td>Example of an object without a race specific string. In this case I simply colour the first word of the name.</td>
-    </tr>
-    <tr>
-        <td>Paranid</td>
-        <td><span style="color:orange">Orange</span></td>
-        <td>\033O</td>
-        <td><span style="color:orange">Paranid</span> Trading Dock</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Teladi</td>
-        <td><span style="color:yellow">Yellow</span></td>
-        <td>\033Y</td>
-        <td><span style="color:yellow">NMMC</span> Security Buzzard</td>
-        <td>Corporation names are also coloured as per the race they fall under.</td>
-    </tr>
-    <tr>
-        <td>Pirates</td>
-        <td><span style="color:red">Red</span></td>
-        <td>\033R</td>
-        <td><span style="color:red">Pirate</span> Blastclaw Prototype</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Goner</td>
-        <td><span style="color:blue">Blue</span></td>
-        <td>\033B</td>
-        <td><span style="color:blue">Goner</span> Ozias</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Independant</td>
-        <td><span style="color:cyan">Cyan</span></td>
-        <td>\033C</td>
-        <td><span style="color:cyan">Privateer Trading Post</span></td>
-        <td>XRM's privateer trading posts is currently the only independant object coloured.</td>
-    </tr>
-    <tr>
-        <td>ATF</td>
-        <td><span style="color:grey">Grey</span></td>
-        <td>\033A</td>
-        <td><span style="color:grey">ATF</span> Escort Vali</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Terran</td>
-        <td><span style="color:grey">Grey</span></td>
-        <td>\033A</td>
-        <td><span style="color:grey">Orbital Defence Station</span></td>
-        <td>A rare example of an object where the entire name is coloured. Some stuff just looks weird partially coloured or prepended with a race name.</td>
-    </tr>
-    <tr>
-        <td>Yaki</td>
-        <td><span style="color:red">Red</span></td>
-        <td>\033R</td>
-        <td><span style="color:red">Yaki</span> Assassin Raijin Raider</td>
-        <td></td>
-    </tr>
-</tbody>
-</table>
+| **Race** | - | **Colour** | **Code** | **Example** | **Note**  |
+|:--- |:--- |:--- |:--- |:--- |:--- |
+| Argon | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | Argon Freight Transporter ||
+| Boron | ![#008000](https://placehold.co/15x15/008000/008000.png) | <span style="color:green">Green</span> | \033G | <span style="color:green">B.</span> Large Orbital Weapon Platform | Example of colouring shortened race name. |
+| Split | ![#FF00FF](https://placehold.co/15x15/FF00FF/FF00FF.png) | <span style="color:magenta">Magenta</span> | \033M | <span style="color:magenta">Military</span> Base | Example of an object without a race specific string. In this case I simply colour the first word of the name. | 
+| Paranid | ![#FFA500](https://placehold.co/15x15/FFA500/FFA500.png) | <span style="color:orange">Orange</span> | \033O | <span style="color:orange">Paranid</span> Trading Dock ||
+| Teladi | ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) | <span style="color:yellow">Yellow</span> | \033Y | <span style="color:yellow">NMMC</span> Security Buzzard | Corporation names are also coloured as per the race they fall under. |
+| Pirates | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | <span style="color:red">Pirate</span> Blastclaw Prototype ||
+| Goner | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | <span style="color:blue">Goner</span> Ozias ||
+| Independant | ![#00FFFF](https://placehold.co/15x15/00FFFF/00FFFF.png) | <span style="color:cyan">Cyan</span> | \033C | <span style="color:cyan">Privateer Trading Post</span> | XRM's privateer trading posts is currently the only independant object coloured. |
+| ATF | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:grey">Grey</span> | \033A | <span style="color:grey">ATF</span> Escort Vali ||
+| Terran | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:grey">Grey</span> | \033A | <span style="color:grey">Orbital Defence Station</span> | A rare example of an object where the entire name is coloured. Some stuff just looks weird partially coloured or prepended with a race name. |
+| Yaki | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | <span style="color:red">Yaki</span> Assassin Raijin Raider ||
 
 ## What is coloured and what isn't
 
