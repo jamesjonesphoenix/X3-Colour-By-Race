@@ -50,21 +50,21 @@ Found a bug? I'm keen to hear about it. Report it as a Github issue or on the Eg
 
 ## Race Colours
 
-If you want to change a race colour you can edit the entries in the t file. No colours are hardcoded in script files.
+If you want to change a race's assigned colour you can edit the entries in the `9965` translation file. No colours are hardcoded in script files.
 
-| **Race** | - | **Colour** | **Code** | **Example** | **Note**  |
+| **Race** | - | **Colour** | **Code** | **Image Example** | **Note**  |
 |:--- |:--- |:--- |:--- |:--- |:--- |
-| Argon | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | Argon Freight Transporter ||
-| Boron | ![#008000](https://placehold.co/15x15/008000/008000.png) | <span style="color:green">Green</span> | \033G | <span style="color:green">B.</span> Large Orbital Weapon Platform | Example of colouring shortened race name. |
-| Split | ![#FF00FF](https://placehold.co/15x15/FF00FF/FF00FF.png) | <span style="color:magenta">Magenta</span> | \033M | <span style="color:magenta">Military</span> Base | Example of an object without a race specific string. In this case I simply colour the first word of the name. | 
-| Paranid | ![#FFA500](https://placehold.co/15x15/FFA500/FFA500.png) | <span style="color:orange">Orange</span> | \033O | <span style="color:orange">Paranid</span> Trading Dock ||
-| Teladi | ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) | <span style="color:yellow">Yellow</span> | \033Y | <span style="color:yellow">NMMC</span> Security Buzzard | Corporation names are also coloured as per the race they fall under. |
-| Pirates | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | <span style="color:red">Pirate</span> Blastclaw Prototype ||
-| Goner | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | <span style="color:blue">Goner</span> Ozias ||
-| Independant | ![#00FFFF](https://placehold.co/15x15/00FFFF/00FFFF.png) | <span style="color:cyan">Cyan</span> | \033C | <span style="color:cyan">Privateer Trading Post</span> | XRM's privateer trading posts is currently the only independant object coloured. |
-| ATF | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:grey">Grey</span> | \033A | <span style="color:grey">ATF</span> Escort Vali ||
-| Terran | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:grey">Grey</span> | \033A | <span style="color:grey">Orbital Defence Station</span> | A rare example of an object where the entire name is coloured. Some stuff just looks weird partially coloured or prepended with a race name. |
-| Yaki | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | <span style="color:red">Yaki</span> Assassin Raijin Raider ||
+| Argon | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | ![Argon Freight Transporter](https://user-images.githubusercontent.com/15099626/228219482-75818669-ecdc-4268-ae83-4bb1f1887ab5.jpg) | |
+| Boron | ![#008000](https://placehold.co/15x15/008000/008000.png) | <span style="color:green">Green</span> | \033G | ![Boron Orbital Weapons Platform](https://user-images.githubusercontent.com/15099626/228237945-17f16d84-d1d3-4bd0-ada7-8c41388fefb1.jpg) | Example of colouring shortened race name. |
+| Split | ![#FF00FF](https://placehold.co/15x15/FF00FF/FF00FF.png) | <span style="color:magenta">Magenta</span> | \033M | ![Military Outpost](https://user-images.githubusercontent.com/15099626/228248282-cd013b77-d9f9-46b3-9197-239d5f700a71.jpg) | Example of an object without a race specific string. In this case I simply colour the first word of the name. | 
+| Paranid | ![#FFA500](https://placehold.co/15x15/FFA500/FFA500.png) | <span style="color:orange">Orange</span> | \033O | ![Paranid Trading Dock](https://user-images.githubusercontent.com/15099626/228232666-2519a51e-96ce-4d24-86aa-00be77520ba5.jpg) | |
+| Teladi | ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) | <span style="color:yellow">Yellow</span> | \033Y | ![NMMC Security Buzzard](https://user-images.githubusercontent.com/15099626/228244404-c5f836de-389f-499f-80aa-500f9df5aa23.jpg) | Corporation names are coloured in the same way as a race. |
+| Pirates | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | ![Pirate Blastclaw Prototype](https://user-images.githubusercontent.com/15099626/228249210-a1d5deec-ec33-4b7b-9556-2ae8c0594628.jpg) | |
+| Goner | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | ![Goner Ozias](https://user-images.githubusercontent.com/15099626/228245381-bb185b8e-5e67-4299-8dae-9356240c4b18.jpg) | |
+| Independant | ![#00FFFF](https://placehold.co/15x15/00FFFF/00FFFF.png) | <span style="color:cyan">Cyan</span> | \033C | ![Privateer Trading Post](https://user-images.githubusercontent.com/15099626/228241313-b8c904cc-9545-490c-b61b-e3cb9938924d.jpg) | Currently the XRM privateer trading posts are the only "independant" race objects coloured. |
+| ATF | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:grey">Grey</span> | \033A | ![ATF Escort Vali](https://user-images.githubusercontent.com/15099626/228246213-a201eb2d-3abb-48aa-8036-e87be42552cd.jpg) | |
+| Terran | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:grey">Grey</span> | \033A | ![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png)![Orbital Defence Station](https://user-images.githubusercontent.com/15099626/228242917-37940eb2-6438-48f5-b064-9a02bcbdaa84.jpg)![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png) | A rare example of an object where the entire name is coloured. Some stuff just looks weird partially coloured or prepended with a race name. |
+| Yaki | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | ![Yaki Assassin Fujin Raider](https://user-images.githubusercontent.com/15099626/228247485-7b2fc47e-e2ca-4996-a84e-36ef93cf2f60.jpg) | Example of an enemy ship. X3's standard red text colour for an enemy contrasts with the \033R highlight red colour. |
 
 ## What is coloured and what isn't
 
