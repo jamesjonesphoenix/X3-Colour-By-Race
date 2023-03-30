@@ -17,6 +17,16 @@
         <t id="17">\033A%s\033X(ATF)</t>
         <t id="18">\033A%s\033X(Terran)</t>
         <t id="19">\033R%s\033X(Yaki)</t>
+        <!-- FL Corporations -->
+        <t id="20">\033B%s\033X(OTAS)</t>
+        <t id="21">\033B%s\033X(TerraCorp)</t>
+        <t id="22">\033G%s\033X(Atreus)</t>
+        <t id="23">\033Y%s\033X(NMMC)</t>
+        <t id="24">\033M%s\033X(Strong Arms)</t>
+        <t id="25">\033B%s\033X(Beryll)</t>
+        <t id="26">\033R%s\033X(Duke's)</t>
+        <t id="27">\033A%s\033X(Darkspace)</t>
+        <t id="28">\033B%s\033X(Industritech)</t>
 
         <t id="50">\033W</t>
         <t id="51">\033C</t>
@@ -47,6 +57,7 @@
         <t id="202">{1000,138}(Atreus)</t>
         <t id="203">{1000,1023}(Waverider Corp.)</t>
         <t id="204">{1000,60008}(Privateer)</t>
+        <t id="205">{17,5511}(Nikkonofune)</t>
         <t id="230">{1000,30000}(Military)</t>
         <!-- Split -->
         <t id="300">{1000,103}(Split)</t>
@@ -112,7 +123,27 @@
         <t id="1900">{1000,119}(Yaki)</t>
         <t id="1901">{1266,219}(Y.)</t>
         <t id="1902">{1000,1040}(Holy Dimensions)</t>
-        <!-- <t id="1903">{3214,5}(Trouble Seeker)</t> -->
+        <t id="1903">{3214,5}(Trouble Seeker)</t>
+        <!-- OTAS -->
+        <t id="2000">{1000,133}(OTAS)</t>
+        <!-- Terracorp -->
+        <t id="2100">{1000,132}(Terracorp)</t>
+        <!-- Atreus -->
+        <t id="2200">{1000,138}(Atreus)</t>
+        <!-- NMMC -->
+        <t id="2300">{1000,146}(NMMC)</t>
+        <!-- Strong Arms -->
+        <t id="2400">{13,9080}(Strong Arms)</t>
+        <!-- Beryll -->
+        <t id="2500">{17,80487}(Beryll)</t>
+        <!-- Duke's -->
+        <t id="2600">{1000,137}(Duke's)</t>
+        <!-- Darkspace -->
+        <t id="2700">{1000,150}(Darkspace)</t>
+        <!-- Industritech -->
+        <t id="2800">{1000,1010}(Industritech)</t>
+
+
         <!-- Strings to prefix military bases/outposts -->
         <!--
         <t id="201">{9965,30}(Argon)</t>
