@@ -1,0 +1,409 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl" ?>
+<script>
+<name>plugin.jj.colour.by.race.get.races</name>
+<version>1</version>
+<engineversion>61</engineversion>
+<description></description>
+<arguments>
+</arguments>
+<sourceplaintext>
+<![CDATA[
+  * ************************************************
+  * SCRIPT NAME: Get Races
+  * DESCRIPTION: Separate script to get races. We'll have a version for AP and a different version for FL
+  * 
+  * AUTHOR: JJ     DATE: 31 March 2023
+  * ************************************************
+  $races = array alloc: size=11
+  $races[0] = Argon
+  $races[1] = Split
+  $races[2] = Paranid
+  $races[3] = Terran
+  $races[4] = Race 2
+  $races[5] = Pirates
+  $races[6] = Yaki
+  $races[7] = Goner
+  $races[8] = ATF
+  $races[9] = Boron
+  $races[10] = Teladi
+  $engine = script engine version
+  if $engine == 61
+    $flRaces = array alloc: size=9
+    $flRaces[0] = OTAS
+    $flRaces[1] = TerraCorp
+    $flRaces[2] = Atreus
+    $flRaces[3] = NMMC
+    $flRaces[4] = Strong Arms
+    $flRaces[5] = Beryll
+    $flRaces[6] = Duke's
+    $flRaces[7] = Darkspace
+    $flRaces[8] = Industritech
+    $XS.Iterator1 = size of array $flRaces
+    while $XS.Iterator1
+      dec $XS.Iterator1 = 
+      $race = $flRaces[$XS.Iterator1]
+      append $race to array $races
+    end
+  end
+  return $races
+]]>
+</sourceplaintext>
+<sourcetext>
+<line indent=""><comment><text>*&#160;</text><var>************************************************</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>SCRIPT&#160;NAME:&#160;Get&#160;Races</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>DESCRIPTION:&#160;Separate&#160;script&#160;to&#160;get&#160;races.&#160;We'll&#160;have&#160;a&#160;version&#160;for&#160;AP&#160;and&#160;a&#160;different&#160;version&#160;for&#160;FL</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var></var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>AUTHOR:&#160;JJ&#160;&#160;&#160;&#160;&#160;DATE:&#160;31&#160;March&#160;2023</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>************************************************</var></comment></line>
+<line indent=""><var>$races&#160;=&#160;</var><text>array&#160;alloc:&#160;size=</text><var>11</var></line>
+<line indent=""><var>$races</var><text>[</text><var>0</var><text>]&#160;=&#160;</text><var>Argon</var></line>
+<line indent=""><var>$races</var><text>[</text><var>1</var><text>]&#160;=&#160;</text><var>Split</var></line>
+<line indent=""><var>$races</var><text>[</text><var>2</var><text>]&#160;=&#160;</text><var>Paranid</var></line>
+<line indent=""><var>$races</var><text>[</text><var>3</var><text>]&#160;=&#160;</text><var>Terran</var></line>
+<line indent=""><var>$races</var><text>[</text><var>4</var><text>]&#160;=&#160;</text><var>Race&#160;2</var></line>
+<line indent=""><var>$races</var><text>[</text><var>5</var><text>]&#160;=&#160;</text><var>Pirates</var></line>
+<line indent=""><var>$races</var><text>[</text><var>6</var><text>]&#160;=&#160;</text><var>Yaki</var></line>
+<line indent=""><var>$races</var><text>[</text><var>7</var><text>]&#160;=&#160;</text><var>Goner</var></line>
+<line indent=""><var>$races</var><text>[</text><var>8</var><text>]&#160;=&#160;</text><var>ATF</var></line>
+<line indent=""><var>$races</var><text>[</text><var>9</var><text>]&#160;=&#160;</text><var>Boron</var></line>
+<line indent=""><var>$races</var><text>[</text><var>10</var><text>]&#160;=&#160;</text><var>Teladi</var></line>
+<line indent=""><var>$engine&#160;=&#160;</var><text>script&#160;engine&#160;version</text></line>
+<line indent=""><var>if&#160;</var><var>$engine</var><text>&#160;</text><var>==</var><text>&#160;</text><var>61</var></line>
+<line indent="&#160;"><var>$flRaces&#160;=&#160;</var><text>array&#160;alloc:&#160;size=</text><var>9</var></line>
+<line indent="&#160;"><var>$flRaces</var><text>[</text><var>0</var><text>]&#160;=&#160;</text><var>OTAS</var></line>
+<line indent="&#160;"><var>$flRaces</var><text>[</text><var>1</var><text>]&#160;=&#160;</text><var>TerraCorp</var></line>
+<line indent="&#160;"><var>$flRaces</var><text>[</text><var>2</var><text>]&#160;=&#160;</text><var>Atreus</var></line>
+<line indent="&#160;"><var>$flRaces</var><text>[</text><var>3</var><text>]&#160;=&#160;</text><var>NMMC</var></line>
+<line indent="&#160;"><var>$flRaces</var><text>[</text><var>4</var><text>]&#160;=&#160;</text><var>Strong&#160;Arms</var></line>
+<line indent="&#160;"><var>$flRaces</var><text>[</text><var>5</var><text>]&#160;=&#160;</text><var>Beryll</var></line>
+<line indent="&#160;"><var>$flRaces</var><text>[</text><var>6</var><text>]&#160;=&#160;</text><var>Duke's</var></line>
+<line indent="&#160;"><var>$flRaces</var><text>[</text><var>7</var><text>]&#160;=&#160;</text><var>Darkspace</var></line>
+<line indent="&#160;"><var>$flRaces</var><text>[</text><var>8</var><text>]&#160;=&#160;</text><var>Industritech</var></line>
+<line indent="&#160;"><var>$XS.Iterator1&#160;=&#160;</var><text>size&#160;of&#160;array&#160;</text><var>$flRaces</var></line>
+<line indent="&#160;"><var>while&#160;</var><var>$XS.Iterator1</var></line>
+<line indent="&#160;&#160;"><text>dec&#160;</text><var>$XS.Iterator1&#160;=&#160;</var></line>
+<line indent="&#160;&#160;"><var>$race&#160;=&#160;</var><var>$flRaces</var><text>[</text><var>$XS.Iterator1</var><text>]</text></line>
+<line indent="&#160;&#160;"><text>append&#160;</text><var>$race</var><text>&#160;to&#160;array&#160;</text><var>$races</var></line>
+<line indent="&#160;"><text>end</text></line>
+<line indent=""><text>end</text></line>
+<line indent=""><text>return&#160;</text><var>$races</var></line>
+</sourcetext>
+<codearray>
+
+<sval type="array" size="10">
+  <sval type="string" val="plugin.jj.colour.by.race.get.races"/>
+  <sval type="int" val="61"/>
+  <sval type="string" val=""/>
+  <sval type="int" val="1"/>
+  <sval type="int" val="0"/>
+  <sval type="array" size="5">
+    <sval type="string" val="races"/>
+    <sval type="string" val="engine"/>
+    <sval type="string" val="flRaces"/>
+    <sval type="string" val="XS.Iterator1"/>
+    <sval type="string" val="race"/>
+  </sval>
+  <sval type="array" size="31">
+    <sval type="array" size="4">
+      <sval type="int" val="128"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="11"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="1"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="3"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="4"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="18"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="16"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="5"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="8"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="6"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="19"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="7"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="9"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="8"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="17"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="5"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="152"/>
+      <sval type="int" val="1"/>
+    </sval>
+    <sval type="array" size="13">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610605053"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="61"/>
+      <sval type="int" val="15"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-2"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="128"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="9"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="20"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="21"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="22"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="23"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="24"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="5"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="25"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="6"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="26"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="7"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="27"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="130"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="8"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="28"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="131"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610605047"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="-1"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="143"/>
+      <sval type="int" val="3"/>
+    </sval>
+    <sval type="array" size="6">
+      <sval type="int" val="129"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="3"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="4"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="112"/>
+      <sval type="int" val="25"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="103"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+    </sval>
+  </sval>
+  <sval type="int" val="0"/>
+  <sval type="array" size="8">
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="************************************************"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="SCRIPT NAME: Get Races"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="DESCRIPTION: Separate script to get races. We'll have a version for AP and a different version for FL"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val=""/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="AUTHOR: JJ     DATE: 31 March 2023"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="************************************************"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="30"/>
+      <sval type="int" val="4"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="30"/>
+      <sval type="int" val="4"/>
+    </sval>
+  </sval>
+  <sval type="int" val="0"/>
+</sval>
+
+</codearray>
+<nosignature>9819</nosignature>
+</script>

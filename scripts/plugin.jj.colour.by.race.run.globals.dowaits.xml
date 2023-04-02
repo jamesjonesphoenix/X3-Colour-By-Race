@@ -824,7 +824,7 @@
 		<line linenr="082" indent="&#160;">
 			<comment>* Pirate Guild 3 - Mob Bosses</comment>
 		</line>
-		<line linenr="083" indent="">
+		<line linenr="083" indent="&#160;&#160;">
 			<var>$data</var>
 			<text> </text>
 			<text>=</text>
@@ -930,7 +930,7 @@
 			<text> </text>
 			<text>race</text>
 		</line>
-		<line linenr="092" indent="&#160;">
+		<line linenr="092" indent="">
 			<var>$raceID</var>
 			<text> </text>
 			<text>=</text>
@@ -953,7 +953,7 @@
 			<text>=</text>
 			<var>-1</var>
 		</line>
-		<line linenr="093" indent="&#160;&#160;">
+		<line linenr="093" indent="&#160;">
 			<var>$substringSearchArray</var>
 			<text> </text>
 			<text>=</text>
@@ -992,6 +992,8 @@
 			<text>'Run Globals Do Waits - Mob Boss'</text>
 		</line>
 		<line linenr="096" indent="&#160;&#160;" interruptable="@">
+			<var>$return</var>
+			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$ship</var>
@@ -1014,6 +1016,17 @@
 			<var>$debug</var>
 		</line>
 		<line linenr="097" indent="&#160;&#160;">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$return</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="098" indent="&#160;&#160;">
 			<text>append</text>
 			<text> </text>
 			<var>$ship</var>
@@ -1024,17 +1037,17 @@
 			<text> </text>
 			<var>$dockableShips</var>
 		</line>
-		<line linenr="098" indent="&#160;&#160;&#160;">
+		<line linenr="099" indent="&#160;&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="099" indent="&#160;&#160;" />
-		<line linenr="100" indent="&#160;&#160;">
+		<line linenr="100" indent="&#160;&#160;" />
+		<line linenr="101" indent="&#160;&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>DockableShips.Part</var>
 			<text>:</text>
 		</line>
-		<line linenr="101" indent="&#160;&#160;" interruptable="@">
+		<line linenr="102" indent="&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -1051,13 +1064,13 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="102" indent="&#160;&#160;&#160;">
+		<line linenr="103" indent="&#160;&#160;&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>DockableShips.Part</var>
 			<text>:</text>
 		</line>
-		<line linenr="103" indent="&#160;&#160;&#160;&#160;" interruptable="@">
+		<line linenr="104" indent="&#160;&#160;&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -1074,22 +1087,22 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="104" indent="&#160;&#160;&#160;">
+		<line linenr="105" indent="&#160;&#160;&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>DockableShips.Part</var>
 			<text>:</text>
 		</line>
-		<line linenr="105" indent="&#160;&#160;">
+		<line linenr="106" indent="&#160;&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="106" indent="&#160;">
+		<line linenr="107" indent="&#160;">
 			<var>DockableShips.Part</var>
 			<text>:</text>
 		</line>
-		<line linenr="107" indent="">
+		<line linenr="108" indent="">
 			<var>$XS.Iterator6</var>
 			<text> </text>
 			<text>=</text>
@@ -1102,17 +1115,17 @@
 			<text> </text>
 			<var>$dockableShips</var>
 		</line>
-		<line linenr="108" indent="">
+		<line linenr="109" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator6</var>
 		</line>
-		<line linenr="109" indent="">
+		<line linenr="110" indent="">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator6</var>
 		</line>
-		<line linenr="110" indent="">
+		<line linenr="111" indent="">
 			<var>$ship</var>
 			<text> </text>
 			<text>=</text>
@@ -1122,7 +1135,7 @@
 			<var>$XS.Iterator6</var>
 			<text>]</text>
 		</line>
-		<line linenr="111" indent="" interruptable="@">
+		<line linenr="112" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -1139,7 +1152,7 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="112" indent="">
+		<line linenr="113" indent="">
 			<var>$race</var>
 			<text> </text>
 			<text>=</text>
@@ -1153,7 +1166,7 @@
 			<text> </text>
 			<text>race</text>
 		</line>
-		<line linenr="113" indent="">
+		<line linenr="114" indent="">
 			<var>$raceID</var>
 			<text> </text>
 			<text>=</text>
@@ -1176,7 +1189,7 @@
 			<text>=</text>
 			<var>-1</var>
 		</line>
-		<line linenr="114" indent="">
+		<line linenr="115" indent="">
 			<var>$substringSearchArray</var>
 			<text> </text>
 			<text>=</text>
@@ -1189,14 +1202,14 @@
 			<var>0</var>
 			<text>]</text>
 		</line>
-		<line linenr="115" indent="">
+		<line linenr="116" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="116" indent="" interruptable="@">
+		<line linenr="117" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>$ship</var>
@@ -1214,7 +1227,7 @@
 			<text>=</text>
 			<text>'Run Globals Do Waits - Dockable Ship'</text>
 		</line>
-		<line linenr="117" indent="" interruptable="@">
+		<line linenr="118" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>$ship</var>
@@ -1236,7 +1249,7 @@
 			<text>=</text>
 			<var>$debug</var>
 		</line>
-		<line linenr="118" indent="">
+		<line linenr="119" indent="">
 			<var>$dockedShips</var>
 			<text> </text>
 			<text>=</text>
@@ -1258,7 +1271,7 @@
 			<text>/</text>
 			<text>station</text>
 		</line>
-		<line linenr="119" indent="">
+		<line linenr="120" indent="">
 			<var>$XS.Iterator7</var>
 			<text> </text>
 			<text>=</text>
@@ -1271,17 +1284,17 @@
 			<text> </text>
 			<var>$dockedShips</var>
 		</line>
-		<line linenr="120" indent="">
+		<line linenr="121" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator7</var>
 		</line>
-		<line linenr="121" indent="">
+		<line linenr="122" indent="">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator7</var>
 		</line>
-		<line linenr="122" indent="">
+		<line linenr="123" indent="">
 			<var>$dockedShip</var>
 			<text> </text>
 			<text>=</text>
@@ -1291,14 +1304,14 @@
 			<var>$XS.Iterator7</var>
 			<text>]</text>
 		</line>
-		<line linenr="123" indent="">
+		<line linenr="124" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="124" indent="" interruptable="@">
+		<line linenr="125" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>$dockedShip</var>
@@ -1316,7 +1329,7 @@
 			<text>=</text>
 			<text>'Run Globals Do Waits - Docked Ship'</text>
 		</line>
-		<line linenr="125" indent="" interruptable="@">
+		<line linenr="126" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>$dockedShip</var>
@@ -1338,13 +1351,13 @@
 			<text>=</text>
 			<var>$debug</var>
 		</line>
-		<line linenr="126" indent="">
-			<text>end</text>
-		</line>
 		<line linenr="127" indent="">
 			<text>end</text>
 		</line>
 		<line linenr="128" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="129" indent="">
 			<text>endsub</text>
 		</line>
 	</sourcetext>
@@ -1355,7 +1368,7 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="25">
+			<sval type="array" size="26">
 				<sval type="string" val="pluginData" />
 				<sval type="string" val="debug" />
 				<sval type="string" val="races" />
@@ -1377,12 +1390,13 @@
 				<sval type="string" val="dockableShips" />
 				<sval type="string" val="XS.Iterator4" />
 				<sval type="string" val="XS.Iterator5" />
+				<sval type="string" val="return" />
 				<sval type="string" val="XS.Iterator6" />
 				<sval type="string" val="dockedShips" />
 				<sval type="string" val="dockedShip" />
 				<sval type="string" val="XS.Iterator7" />
 			</sval>
-			<sval type="array" size="108">
+			<sval type="array" size="109">
 				<sval type="array" size="4">
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
@@ -1907,7 +1921,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610592503" />
+					<sval type="int" val="-1610592247" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="20" />
@@ -1982,7 +1996,7 @@
 				<sval type="array" size="10">
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.jj.colour.by.race.mobboss" />
-					<sval type="int" val="-2147483647" />
+					<sval type="int" val="21" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="6" />
 					<sval type="int" val="2" />
@@ -1990,6 +2004,21 @@
 					<sval type="int" val="10" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536850681" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="21" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
 				</sval>
 				<sval type="array" size="5">
 					<sval type="int" val="135" />
@@ -2004,7 +2033,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="85" />
+					<sval type="int" val="86" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="107" />
@@ -2016,7 +2045,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="85" />
+					<sval type="int" val="86" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="107" />
@@ -2028,7 +2057,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="85" />
+					<sval type="int" val="86" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -2041,22 +2070,22 @@
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="131" />
-					<sval type="int" val="21" />
+					<sval type="int" val="22" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="18" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610585335" />
+					<sval type="int" val="-1610585079" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="21" />
+					<sval type="int" val="22" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="143" />
-					<sval type="int" val="21" />
+					<sval type="int" val="22" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
@@ -2064,7 +2093,7 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="18" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="21" />
+					<sval type="int" val="22" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="107" />
@@ -2102,7 +2131,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610588152" />
+					<sval type="int" val="-1610587896" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
@@ -2135,38 +2164,38 @@
 					<sval type="int" val="1008" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="6" />
-					<sval type="int" val="22" />
+					<sval type="int" val="23" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="131" />
-					<sval type="int" val="24" />
+					<sval type="int" val="25" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="22" />
+					<sval type="int" val="23" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610585591" />
+					<sval type="int" val="-1610585335" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="24" />
+					<sval type="int" val="25" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="143" />
-					<sval type="int" val="24" />
+					<sval type="int" val="25" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
+					<sval type="int" val="24" />
+					<sval type="int" val="131074" />
 					<sval type="int" val="23" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="22" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="24" />
+					<sval type="int" val="25" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610586104" />
+					<sval type="int" val="-1610585848" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
@@ -2178,7 +2207,7 @@
 					<sval type="string" val="plugin.jj.colour.by.race.log" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="23" />
+					<sval type="int" val="24" />
 					<sval type="int" val="1" />
 					<sval type="int" val="5" />
 					<sval type="string" val="Run Globals Do Waits - Docked Ship" />
@@ -2188,7 +2217,7 @@
 					<sval type="string" val="plugin.jj.colour.by.race.object" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="23" />
+					<sval type="int" val="24" />
 					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="10" />
@@ -2197,11 +2226,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="99" />
+					<sval type="int" val="100" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="87" />
+					<sval type="int" val="88" />
 				</sval>
 				<sval type="array" size="1">
 					<sval type="int" val="1168" />
@@ -2323,19 +2352,19 @@
 					<sval type="string" val="Pirate Guild 3 - Mob Bosses" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="79" />
+					<sval type="int" val="80" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="79" />
+					<sval type="int" val="80" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="106" />
+					<sval type="int" val="107" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="107" />
+					<sval type="int" val="108" />
 					<sval type="int" val="4" />
 				</sval>
 			</sval>
