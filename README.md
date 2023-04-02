@@ -50,7 +50,7 @@ Info will be logged to `log09965.txt`. By default this file is saved to `C:\User
 
 ## Bugs
 
-Found a bug? I'm keen to hear about it. Report it as a Github issue or on the Egosoft forum thread.
+Found a bug? I'm keen to hear about it. Report it as a Github issue or on the Egosoft forum thread. I'm particularly keen to hear about uncoloured ships or stations that should be coloured. 
 
 ## Race Colours
 
