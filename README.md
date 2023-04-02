@@ -114,7 +114,7 @@ Colour By Race currently does not include functionality to restore the names of 
 ## Compatibility
 
 * AP - Yes.
-* TC - I'm not sure. Try it and let me know!
+* TC - No. One player tried this out and X3:TC crashed. I'm probably using functions introduced in AP which TC can't understand. 
 * Farnham's Legend - I've never played it, but it should work fine. Try it and let me know!
 * [XRM](https://forum.egosoft.com/viewtopic.php?f=94&t=304158) - Yes, I developed this while playing on an LxXRM installation. The plugin includes code to handle several XRM specific objects. 
 * Litcube's universe - I've never played it, so I'm not sure. Try it and let me know!
