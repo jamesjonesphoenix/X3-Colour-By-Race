@@ -1,7 +1,7 @@
 ![X3 Colour By Race - Header](https://i.imgur.com/X98MQ7l.jpeg)
 # <span style="color:blue">C</span><span style="color:green">o</span><span style="color:magenta">l</span><span style="color:orange">o</span><span style="color:yellow">u</span><td><span style="color:red">r</span></td> By Race
 
-* Colour By Race is an AL plugin for X3:AP which colours the names of ships and stations across the galaxy. It makes for a cool looking and easier to parse sector map.
+* Colour By Race is an AL plugin for X3:AP and X3:FL which colours the names of ships and stations across the galaxy. It makes for a cool looking and easier to parse sector map.
 * Most objects only have part of their name coloured, usually the name of their race or corporation.
 * More screenshots of Colour By Race in action at [this Imgur gallery](https://imgur.com/a/TSrPT8c).
 
@@ -10,6 +10,10 @@
 Download the [latest release](https://github.com/jamesjonesphoenix/colour-by-race/releases) from Github. You probably want to download the `.zip` file not the `.tar.gz` file. Unzip the download and copy paste files into the `X3/addon/` folder. Files in the `scripts/` folder go into the `scripts/` folder. File in the `t/` folder go into the `t/` folder.
 
 Launch the game and load a save or start a new game. Navigate to `Main menu->Gameplay->Artificial life Settings` and activate the plugin.
+
+### Farnham's Legend
+
+If installing for Farnham's Legend put the files into the `X3/addon2` folder instead of the `X3/addon` folder. 
 
 ### Optional Files
 
@@ -113,9 +117,9 @@ Colour By Race currently does not include functionality to restore the names of 
 
 ## Compatibility
 
-* AP - Yes.
-* TC - No. One player tried this out and X3:TC crashed. I'm probably using functions introduced in AP which TC can't understand. 
-* Farnham's Legend - I've never played it, but it should work fine. Try it and let me know!
+* Terran Conflict - No. This plugin uses functions introduced in AP which TC can't understand.
+* Albion Prelude - Yes.
+* Farnham's Legend - Yes
 * [XRM](https://forum.egosoft.com/viewtopic.php?f=94&t=304158) - Yes, I developed this while playing on an LxXRM installation. The plugin includes code to handle several XRM specific objects. 
 * Litcube's universe - I've never played it, so I'm not sure. Try it and let me know!
 * [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) - Yes, especially if you overwrite MBBR's ship naming script with the included optional script. 
@@ -134,4 +138,23 @@ Because I'm an idiot.
 ### Thanks
 
 * Thanks Egosoft for making a great game.
-* Thanks Cycrow who saw my proof of concept and wrote me a primer on global signals in X3. 
+* Thanks Cycrow who saw my proof of concept and wrote me a primer on global signals in X3.
+
+## Changelog
+
+#### 1.1
+
+* Now compatibile with Farnham's Legend.
+  * Added FL corporations as races to search for. Includes conditional script which checks which engine version.
+  * Added prepending of ship & station names with race name if none found for certain jobs. Uses shortened name if name length already quite long.
+* Fixed bug where lasertower activation timer would be saved into the name.
+* Added/Fixed search strings to be coloured:
+  * FL - corps, The Marauder, Nikkonofune
+  * Terraformers, Exterminator, ATF Orbital Defence Station
+  * fixed Beryll string
+* Added script to remove the local variable on all ships and stations. This is used when updating the plugin so we can re-check the galaxy and when the plugin is deactivated.
+
+#### 1.0
+
+* Initial Release
+
