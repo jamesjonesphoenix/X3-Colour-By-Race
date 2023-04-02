@@ -4,7 +4,7 @@
         <t id="1000">Colourful Renamer by FriendlyFirePhoenix. v%s</t>
         <t id="1001">Colourful Renamer deactivated.</t>
         <t id="1002">Initialised Colourful Renamer version: %s</t>
-
+        <!-- Colour for main X3 races -->
         <t id="0">Dummy - %s - Dummy</t>
         <t id="1">\033B%s\033X(Argon)</t>
         <t id="2">\033G%s\033X(Boron)</t>
@@ -23,11 +23,11 @@
         <t id="22">\033G%s\033X(Atreus)</t>
         <t id="23">\033Y%s\033X(NMMC)</t>
         <t id="24">\033M%s\033X(Strong Arms)</t>
-        <t id="25">\033B%s\033X(Beryll)</t>
+        <t id="25">\033R%s\033X(Beryll)</t>
         <t id="26">\033R%s\033X(Duke's)</t>
         <t id="27">\033A%s\033X(Darkspace)</t>
-        <t id="28">\033B%s\033X(Industritech)</t>
-
+        <t id="28">\033O%s\033X(Industritech)</t>
+        <!-- 50 - 59 Search strings used by string cleaning function -->
         <t id="50">\033W</t>
         <t id="51">\033C</t>
         <t id="52">\033A</t>
@@ -38,6 +38,7 @@
         <t id="57">\033B</t>
         <t id="58">\033R</t>
         <t id="59">\033X</t>
+        <!-- Race Search Strings x00-x29: ships, x30-x50: stations, x98: prepend string, x99: short prepend string -->
         <!-- Argon -->
         <t id="100">{1000,101}(Argon)</t>
         <t id="101">{1266,201}(A.)</t>
@@ -45,9 +46,9 @@
         <t id="103">{1000,132}(Terracorp)</t>
         <t id="104">{1000,144}(Jonferco)</t>
         <t id="105">{1000,135}(Plutarch)</t>
-        <t id="106">{17,80487}(Beryll)</t>
+        <t id="106">{17,80487}(Beryll - XRM)</t>
         <t id="107">{1000,60008}(Privateer)</t>
-
+        <t id="108">{17,13471}(Exterminator)</t>
         <t id="130">{1000,30000}(Military)</t>
         <!-- <t id="130">{1000,1012}(Farpoint)</t> -->
         <!-- <t id="131">TerraCorp(Some stations use capital C for Corp and there is no translation)</t> -->
@@ -81,14 +82,15 @@
         <t id="503">{1000,1051}(Creditania)</t>
         <t id="504">{1000,60008}(Privateer)</t>
         <t id="530">{1000,30000}(Military)</t>
-        <!-- Pirate -->
-        <!-- <t id="800">{8513,134}(Pirate Guild - has to go before "Pirate")</t> -->
+        <!-- Pirate - Do not include {8513,134}(Pirate Guild) - Plugin includes special handling for this string -->
         <t id="800">{1000,108}(Pirate)</t>
         <t id="801">{1266,208}(Pi.)</t>
         <t id="802">{1000,1050}(Talonfire)</t>
         <t id="803">{1000,137}(Duke's)</t>
         <t id="804">{1000,1040}(Holy Dimensions)</t>
         <t id="805">{1000,60008}(Privateer)</t>
+
+        <t id="830">{17,6341}(The Marauder)</t>
         <!-- Hidden Pirate Names -->
         <t id="30">{1000,1051}(Creditania)</t>
         <t id="31">{1000,137}(Duke's)</t>
@@ -101,6 +103,7 @@
         <t id="1601">{13,9080}(Strong Arms - used for XRM weapons dealer XL)</t>
         <!-- ATF -->
         <t id="1700">{1000,120}(ATF)</t>
+        <t id="1730">{17,16081}(Orbital Defence Station)</t>
         <!-- Terran -->
         <t id="1800">{1000,118}(Terran)</t>
         <t id="1801">{1266,218}(Ter.)</t>
@@ -111,21 +114,26 @@
         <t id="1806">{1000,122}(AGI Task Force)</t>
         <t id="1807">{1000,140}(Dark Space)</t>
         <t id="1808">{1000,60008}(Privateer)</t>
-        <t id="1809">{1000,40008}(Command Ship - for 'Command Ship "Morning Star"')</t>
+        <t id="1809">{1000,126}(Terraformer)</t>
+        <t id="1810">{1000,40008}(Command Ship - for 'Command Ship "Morning Star"')</t>
 
         <t id="1830">{17,16081}(Orbital Defence Station)</t>
         <t id="1831">{17,16091}(Orbital Patrol Base)</t>
         <t id="1832">{1000,30000}(Military)</t>
-        <!-- <t id="1830">{7,1020414}(Earth)</t> -->
-        <!-- <t id="1831">{7,1020212}(Saturn)</t> -->
+        <t id="1833">{7,1020414}(Earth)</t>
+        <t id="1834">{7,1020212}(Saturn)</t>
         <!-- <t id="1832">{17,13131}(McCallum)</t> -->
+        <t id="1898">1803</t>
+        <t id="1899">1803</t>
         <!-- Yaki -->
         <t id="1900">{1000,119}(Yaki)</t>
         <t id="1901">{1266,219}(Y.)</t>
         <t id="1902">{1000,1040}(Holy Dimensions)</t>
         <t id="1903">{3214,5}(Trouble Seeker)</t>
+        <t id="1930">{1000,108}(Pirate)</t>
         <!-- OTAS -->
         <t id="2000">{1000,133}(OTAS)</t>
+        <t id="2031">{1000,101}(Argon)</t>
         <!-- Terracorp -->
         <t id="2100">{1000,132}(Terracorp)</t>
         <!-- Atreus -->
@@ -134,28 +142,17 @@
         <t id="2300">{1000,146}(NMMC)</t>
         <!-- Strong Arms -->
         <t id="2400">{13,9080}(Strong Arms)</t>
+        <t id="2430">{1000,30000}(Military)</t>
+        <t id="2431">{1000,103}(Split)</t>
         <!-- Beryll -->
         <t id="2500">{17,80487}(Beryll)</t>
         <!-- Duke's -->
         <t id="2600">{1000,137}(Duke's)</t>
         <!-- Darkspace -->
         <t id="2700">{1000,150}(Darkspace)</t>
+        <t id="2730">{1000,140}(Dark Space)</t>
         <!-- Industritech -->
         <t id="2800">{1000,1010}(Industritech)</t>
-
-
-        <!-- Strings to prefix military bases/outposts -->
-        <!--
-        <t id="201">{9965,30}(Argon)</t>
-        <t id="202">{9965,40}(Boron)</t>
-        <t id="203">{9965,50}(Goner)</t>
-        <t id="204">{9965,60}(Paranid)</t>
-        <t id="205">{9965,70}(Pirates)</t>
-        <t id="206">{9965,80}(Split)</t>
-        <t id="207">{9965,90}(Teladi)</t>
-        <t id="208">{9965,102}(Terran - USC)</t>
-        <t id="209">{9965,110}(Yaki)</t>
-        -->
     </page>
     <page id="17" title="Boardcomp. objects"
           descr="Quad line groups for ware factory pairs or twins (spoken by Boardcomputer)" voice="yes">
@@ -198,6 +195,7 @@
         <t id="5071">Royal \033GBoron\033X Research Station(Royal Boron Research Station)</t>
         <t id="5081">\033OParanid\033X Communications Facility(Paranid Communications Facility)</t>
         <!-- XRM 9950 Stuff - This gets overwritten regularly - Start -->
+        <t id="80487">Beryll</t>
         <t id="16391">\033R{1000,119}\033X {17,16041}(Yaki Shipyard)</t>
         <!--XRM 9950 Stuff - End -->
         <!-- XRM 7027 Stuff - Start -->
@@ -282,7 +280,7 @@
         <t id="16051">\033AUSC\033X Orbital Supply Base(USC Orbital Supply Base)</t>
         <t id="16061">\033AUSC\033X Orbital Support Station(USC Orbital Support Station)</t>
         <t id="16071">\033AUSC\033X Orbital Logistics Dock(USC Orbital Logistics Dock)</t>
-        <!-- <t id="16081">\033AOrbital Defence Station\033X</t>
+        <t id="16081">\033AOrbital Defence Station\033X</t>
         <t id="16091">\033AOrbital Patrol Base\033X</t> -->
         <t id="16241">\033RKha'ak\033X Hive(Kha'ak Hive)</t>
         <t id="16331">\033BGoner\033X Trading Post(Goner Trading Post)</t>
