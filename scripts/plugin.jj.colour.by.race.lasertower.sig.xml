@@ -4,7 +4,7 @@
 <script>
 	<name>plugin.jj.colour.by.race.lasertower.sig</name>
 	<version>1</version>
-	<engineversion>50</engineversion>
+	<engineversion>44</engineversion>
 	<description></description>
 	<arguments />
 	<sourcetext>
@@ -160,7 +160,7 @@
 		<line linenr="017" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
-			<var>$object</var>
+			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
 			<text>call</text>
@@ -202,16 +202,15 @@
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.lasertower.sig" />
-			<sval type="int" val="50" />
+			<sval type="int" val="44" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="6">
+			<sval type="array" size="5">
 				<sval type="string" val="isRenamed" />
 				<sval type="string" val="pluginData" />
 				<sval type="string" val="debug" />
 				<sval type="string" val="substringSearchArray" />
-				<sval type="string" val="object" />
 				<sval type="string" val="shipsToColour" />
 			</sval>
 			<sval type="array" size="13">
@@ -302,13 +301,13 @@
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.jj.colour.by.race.lasert.strip.timer" />
 					<sval type="int" val="-2147483647" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
 					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
@@ -317,7 +316,7 @@
 				<sval type="array" size="5">
 					<sval type="int" val="135" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 				</sval>
