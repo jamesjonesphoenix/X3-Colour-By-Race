@@ -4,12 +4,12 @@
 <script>
 	<name>plugin.jj.colour.by.race.lasert.strip.timer</name>
 	<version>1</version>
-	<engineversion>50</engineversion>
+	<engineversion>44</engineversion>
 	<description></description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
-			<comment>*************************************************</comment>
+			<comment>* ************************************************</comment>
 		</line>
 		<line linenr="002" indent="">
 			<comment>* SCRIPT NAME: Lasertower Strip Timer</comment>
@@ -24,7 +24,7 @@
 			<comment>* AUTHOR: JJ     DATE: 3 April 2023</comment>
 		</line>
 		<line linenr="006" indent="">
-			<comment>*************************************************</comment>
+			<comment>* ************************************************</comment>
 		</line>
 		<line linenr="007" indent="">
 			<var>$name</var>
@@ -181,6 +181,7 @@
 			<var>$gap2</var>
 			<text> </text>
 			<text>!=</text>
+			<text> </text>
 			<var>3</var>
 		</line>
 		<line linenr="020" indent="&#160;">
@@ -215,7 +216,7 @@
 			<text>offset</text>
 			<text>=</text>
 			<var>$gap1</var>
-			<text>  </text>
+			<text> </text>
 			<text>length</text>
 			<text>=</text>
 			<var>8</var>
@@ -263,7 +264,7 @@
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.lasert.strip.timer" />
-			<sval type="int" val="50" />
+			<sval type="int" val="44" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />

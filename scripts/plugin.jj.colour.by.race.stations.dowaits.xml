@@ -4,7 +4,7 @@
 <script>
 	<name>plugin.jj.colour.by.race.stations.dowaits</name>
 	<version>1</version>
-	<engineversion>50</engineversion>
+	<engineversion>44</engineversion>
 	<description></description>
 	<arguments>
 		<argument index="1" name="doStationOwnedShips" type="Var/Boolean" desc="doStationOwnedShips" />
@@ -34,8 +34,7 @@
 		<line linenr="008" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="009" indent="" />
-		<line linenr="010" indent="">
+		<line linenr="009" indent="">
 			<var>$pluginData</var>
 			<text> </text>
 			<text>=</text>
@@ -51,7 +50,7 @@
 			<text>=</text>
 			<text>'plugin.jj.colour.by.race'</text>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<var>$debug</var>
 			<text> </text>
 			<text>=</text>
@@ -61,7 +60,7 @@
 			<var>3</var>
 			<text>]</text>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="011" indent="">
 			<var>$races</var>
 			<text> </text>
 			<text>=</text>
@@ -71,7 +70,7 @@
 			<var>5</var>
 			<text>]</text>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="012" indent="">
 			<var>$substringSearchArrays</var>
 			<text> </text>
 			<text>=</text>
@@ -81,7 +80,7 @@
 			<var>6</var>
 			<text>]</text>
 		</line>
-		<line linenr="014" indent="" interruptable="@">
+		<line linenr="013" indent="" interruptable="@">
 			<var>$stationTypes</var>
 			<text> </text>
 			<text>=</text>
@@ -97,7 +96,7 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="014" indent="">
 			<var>$i</var>
 			<text> </text>
 			<text>=</text>
@@ -110,17 +109,17 @@
 			<text> </text>
 			<var>$races</var>
 		</line>
-		<line linenr="016" indent="&#160;">
+		<line linenr="015" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$i</var>
 		</line>
-		<line linenr="017" indent="&#160;">
+		<line linenr="016" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$i</var>
 		</line>
-		<line linenr="018" indent="&#160;">
+		<line linenr="017" indent="&#160;">
 			<var>$race</var>
 			<text> </text>
 			<text>=</text>
@@ -130,7 +129,7 @@
 			<var>$i</var>
 			<text>]</text>
 		</line>
-		<line linenr="019" indent="&#160;" interruptable="@">
+		<line linenr="018" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -147,7 +146,7 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="020" indent="&#160;">
+		<line linenr="019" indent="&#160;">
 			<var>$substringSearchArray</var>
 			<text> </text>
 			<text>=</text>
@@ -160,7 +159,7 @@
 			<var>1</var>
 			<text>]</text>
 		</line>
-		<line linenr="021" indent="&#160;">
+		<line linenr="020" indent="&#160;">
 			<var>$stationClasses</var>
 			<text> </text>
 			<text>=</text>
@@ -174,7 +173,7 @@
 			<text>=</text>
 			<var>2</var>
 		</line>
-		<line linenr="022" indent="&#160;&#160;">
+		<line linenr="021" indent="&#160;&#160;">
 			<var>$stationClasses</var>
 			<text>[</text>
 			<var>0</var>
@@ -184,7 +183,7 @@
 			<text> </text>
 			<var>[Dock]</var>
 		</line>
-		<line linenr="023" indent="&#160;">
+		<line linenr="022" indent="&#160;">
 			<var>$stationClasses</var>
 			<text>[</text>
 			<var>1</var>
@@ -194,10 +193,10 @@
 			<text> </text>
 			<var>[Shipyard]</var>
 		</line>
-		<line linenr="024" indent="&#160;">
+		<line linenr="023" indent="&#160;">
 			<comment>* if $stationTypes[$i]</comment>
 		</line>
-		<line linenr="025" indent="&#160;">
+		<line linenr="024" indent="&#160;">
 			<var>$types</var>
 			<text> </text>
 			<text>=</text>
@@ -207,7 +206,7 @@
 			<var>$i</var>
 			<text>]</text>
 		</line>
-		<line linenr="026" indent="&#160;">
+		<line linenr="025" indent="&#160;">
 			<var>$XS.Iterator1</var>
 			<text> </text>
 			<text>=</text>
@@ -220,17 +219,17 @@
 			<text> </text>
 			<var>$types</var>
 		</line>
-		<line linenr="027" indent="&#160;">
+		<line linenr="026" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="028" indent="&#160;&#160;">
+		<line linenr="027" indent="&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="029" indent="&#160;&#160;">
+		<line linenr="028" indent="&#160;&#160;">
 			<var>$type</var>
 			<text> </text>
 			<text>=</text>
@@ -240,7 +239,7 @@
 			<var>$XS.Iterator1</var>
 			<text>]</text>
 		</line>
-		<line linenr="030" indent="&#160;">
+		<line linenr="029" indent="&#160;">
 			<text>append</text>
 			<text> </text>
 			<var>$type</var>
@@ -251,13 +250,13 @@
 			<text> </text>
 			<var>$stationClasses</var>
 		</line>
-		<line linenr="031" indent="&#160;">
+		<line linenr="030" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="032" indent="&#160;">
+		<line linenr="031" indent="&#160;">
 			<comment>* end</comment>
 		</line>
-		<line linenr="033" indent="&#160;">
+		<line linenr="032" indent="&#160;">
 			<var>$sizeOfArray</var>
 			<text> </text>
 			<text>=</text>
@@ -270,7 +269,7 @@
 			<text> </text>
 			<var>$stationClasses</var>
 		</line>
-		<line linenr="034" indent="&#160;">
+		<line linenr="033" indent="&#160;">
 			<var>$arrayOfObjects</var>
 			<text> </text>
 			<text>=</text>
@@ -284,7 +283,7 @@
 			<text>=</text>
 			<var>$sizeOfArray</var>
 		</line>
-		<line linenr="035" indent="&#160;&#160;">
+		<line linenr="034" indent="&#160;&#160;">
 			<var>$j</var>
 			<text> </text>
 			<text>=</text>
@@ -297,17 +296,17 @@
 			<text> </text>
 			<var>$stationClasses</var>
 		</line>
-		<line linenr="036" indent="&#160;">
+		<line linenr="035" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$j</var>
 		</line>
-		<line linenr="037" indent="&#160;">
+		<line linenr="036" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$j</var>
 		</line>
-		<line linenr="038" indent="&#160;">
+		<line linenr="037" indent="&#160;">
 			<var>$class</var>
 			<text> </text>
 			<text>=</text>
@@ -317,7 +316,7 @@
 			<var>$j</var>
 			<text>]</text>
 		</line>
-		<line linenr="039" indent="&#160;">
+		<line linenr="038" indent="&#160;">
 			<var>$stations</var>
 			<text> </text>
 			<text>=</text>
@@ -341,7 +340,7 @@
 			<text>=</text>
 			<var>$class</var>
 		</line>
-		<line linenr="040" indent="&#160;&#160;">
+		<line linenr="039" indent="&#160;&#160;">
 			<var>$arrayOfObjects</var>
 			<text>[</text>
 			<var>$j</var>
@@ -351,10 +350,10 @@
 			<text> </text>
 			<var>$stations</var>
 		</line>
-		<line linenr="041" indent="&#160;&#160;">
+		<line linenr="040" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="042" indent="&#160;&#160;" interruptable="@">
+		<line linenr="041" indent="&#160;&#160;" interruptable="@">
 			<var>$objects</var>
 			<text> </text>
 			<text>=</text>
@@ -374,20 +373,20 @@
 			<text>=</text>
 			<var>$arrayOfObjects</var>
 		</line>
-		<line linenr="043" indent="&#160;&#160;">
+		<line linenr="042" indent="&#160;&#160;">
 			<var>$prepend</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<text>'Run Stations Do Waits - Station'</text>
 		</line>
-		<line linenr="044" indent="&#160;">
+		<line linenr="043" indent="&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>Objects.Part</var>
 			<text>:</text>
 		</line>
-		<line linenr="045" indent="&#160;">
+		<line linenr="044" indent="&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -398,10 +397,10 @@
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="046" indent="&#160;">
+		<line linenr="045" indent="&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="047" indent="&#160;">
+		<line linenr="046" indent="&#160;">
 			<var>$substringSearchArray</var>
 			<text> </text>
 			<text>=</text>
@@ -414,7 +413,7 @@
 			<var>0</var>
 			<text>]</text>
 		</line>
-		<line linenr="048" indent="">
+		<line linenr="047" indent="">
 			<var>$sizeOfArray</var>
 			<text> </text>
 			<text>=</text>
@@ -427,7 +426,7 @@
 			<text> </text>
 			<var>$objects</var>
 		</line>
-		<line linenr="049" indent="">
+		<line linenr="048" indent="">
 			<var>$arrayOfObjects</var>
 			<text> </text>
 			<text>=</text>
@@ -441,7 +440,7 @@
 			<text>=</text>
 			<var>$sizeOfArray</var>
 		</line>
-		<line linenr="050" indent="">
+		<line linenr="049" indent="">
 			<var>$j</var>
 			<text> </text>
 			<text>=</text>
@@ -454,17 +453,17 @@
 			<text> </text>
 			<var>$objects</var>
 		</line>
-		<line linenr="051" indent="">
+		<line linenr="050" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$j</var>
 		</line>
-		<line linenr="052" indent="&#160;">
+		<line linenr="051" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$j</var>
 		</line>
-		<line linenr="053" indent="&#160;&#160;">
+		<line linenr="052" indent="&#160;&#160;">
 			<var>$object</var>
 			<text> </text>
 			<text>=</text>
@@ -474,7 +473,7 @@
 			<var>$j</var>
 			<text>]</text>
 		</line>
-		<line linenr="054" indent="&#160;&#160;" interruptable="@">
+		<line linenr="053" indent="&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -491,7 +490,7 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="055" indent="&#160;&#160;">
+		<line linenr="054" indent="&#160;&#160;">
 			<var>$ships</var>
 			<text> </text>
 			<text>=</text>
@@ -512,10 +511,10 @@
 			<text>=</text>
 			<var>[Moveable Ship]</var>
 		</line>
-		<line linenr="056" indent="&#160;&#160;&#160;">
+		<line linenr="055" indent="&#160;&#160;&#160;">
 			<comment>* $ships = $object-&gt; get ship array from sector/ship/station</comment>
 		</line>
-		<line linenr="057" indent="&#160;&#160;">
+		<line linenr="056" indent="&#160;&#160;">
 			<var>$arrayOfObjects</var>
 			<text>[</text>
 			<var>$j</var>
@@ -525,10 +524,10 @@
 			<text> </text>
 			<var>$ships</var>
 		</line>
-		<line linenr="058" indent="&#160;&#160;&#160;">
+		<line linenr="057" indent="&#160;&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="059" indent="&#160;&#160;" interruptable="@">
+		<line linenr="058" indent="&#160;&#160;" interruptable="@">
 			<var>$objects</var>
 			<text> </text>
 			<text>=</text>
@@ -548,33 +547,33 @@
 			<text>=</text>
 			<var>$arrayOfObjects</var>
 		</line>
-		<line linenr="060" indent="&#160;">
+		<line linenr="059" indent="&#160;">
 			<var>$prepend</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<text>'Run Stations Do Waits - Owned Ship'</text>
 		</line>
-		<line linenr="061" indent="">
+		<line linenr="060" indent="">
 			<text>gosub</text>
 			<text> </text>
 			<var>Objects.Part</var>
 			<text>:</text>
 		</line>
-		<line linenr="062" indent="">
+		<line linenr="061" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="063" indent="">
+		<line linenr="062" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="064" indent="" />
-		<line linenr="065" indent="">
+		<line linenr="063" indent="" />
+		<line linenr="064" indent="">
 			<var>Objects.Part</var>
 			<text>:</text>
 		</line>
-		<line linenr="066" indent="">
+		<line linenr="065" indent="">
 			<var>$XS.Iterator2</var>
 			<text> </text>
 			<text>=</text>
@@ -587,17 +586,17 @@
 			<text> </text>
 			<var>$objects</var>
 		</line>
-		<line linenr="067" indent="">
+		<line linenr="066" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator2</var>
 		</line>
-		<line linenr="068" indent="">
+		<line linenr="067" indent="">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator2</var>
 		</line>
-		<line linenr="069" indent="">
+		<line linenr="068" indent="">
 			<var>$object</var>
 			<text> </text>
 			<text>=</text>
@@ -607,7 +606,7 @@
 			<var>$XS.Iterator2</var>
 			<text>]</text>
 		</line>
-		<line linenr="070" indent="" interruptable="@">
+		<line linenr="069" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<text>wait</text>
@@ -624,7 +623,7 @@
 			<text> </text>
 			<text>ms</text>
 		</line>
-		<line linenr="071" indent="">
+		<line linenr="070" indent="">
 			<var>$isRenamed</var>
 			<text> </text>
 			<text>=</text>
@@ -643,7 +642,7 @@
 			<text>=</text>
 			<text>'JJ.Set.New.Name'</text>
 		</line>
-		<line linenr="072" indent="">
+		<line linenr="071" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -654,17 +653,17 @@
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="073" indent="">
+		<line linenr="072" indent="">
 			<text>continue</text>
 		</line>
-		<line linenr="074" indent="">
+		<line linenr="073" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="075" indent="" interruptable="@">
+		<line linenr="074" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>$object</var>
@@ -682,7 +681,7 @@
 			<text>=</text>
 			<var>$prepend</var>
 		</line>
-		<line linenr="076" indent="" interruptable="@">
+		<line linenr="075" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>$object</var>
@@ -704,17 +703,17 @@
 			<text>=</text>
 			<var>$debug</var>
 		</line>
-		<line linenr="077" indent="">
+		<line linenr="076" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="078" indent="">
+		<line linenr="077" indent="">
 			<text>endsub</text>
 		</line>
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.stations.dowaits" />
-			<sval type="int" val="50" />
+			<sval type="int" val="44" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
@@ -1221,7 +1220,7 @@
 					<sval type="string" val="doStationOwnedShips" />
 				</sval>
 			</sval>
-			<sval type="array" size="20">
+			<sval type="array" size="19">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -1261,10 +1260,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="************************************************" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="0" />
-					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="14" />

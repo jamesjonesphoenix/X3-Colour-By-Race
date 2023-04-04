@@ -4,7 +4,7 @@
 <script>
 	<name>plugin.jj.colour.by.race.setname</name>
 	<version>1</version>
-	<engineversion>50</engineversion>
+	<engineversion>44</engineversion>
 	<description></description>
 	<arguments>
 		<argument index="1" name="newName" type="Var/String" desc="newName" />
@@ -240,7 +240,7 @@
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.setname" />
-			<sval type="int" val="50" />
+			<sval type="int" val="44" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />

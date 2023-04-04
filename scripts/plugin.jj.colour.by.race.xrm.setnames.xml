@@ -4,7 +4,7 @@
 <script>
 	<name>plugin.jj.colour.by.race.xrm.setnames</name>
 	<version>1</version>
-	<engineversion>50</engineversion>
+	<engineversion>44</engineversion>
 	<description></description>
 	<arguments />
 	<sourcetext>
@@ -27,7 +27,7 @@
 			<comment>* ************************************************</comment>
 		</line>
 		<line linenr="007" indent="">
-			<var>$races</var>
+			<var>$xrmRaces</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -41,7 +41,7 @@
 			<var>7</var>
 		</line>
 		<line linenr="008" indent="">
-			<var>$races</var>
+			<var>$xrmRaces</var>
 			<text>[</text>
 			<var>0</var>
 			<text>]</text>
@@ -51,7 +51,7 @@
 			<var>[Terran]</var>
 		</line>
 		<line linenr="009" indent="">
-			<var>$races</var>
+			<var>$xrmRaces</var>
 			<text>[</text>
 			<var>1</var>
 			<text>]</text>
@@ -61,7 +61,7 @@
 			<var>[Yaki]</var>
 		</line>
 		<line linenr="010" indent="">
-			<var>$races</var>
+			<var>$xrmRaces</var>
 			<text>[</text>
 			<var>2</var>
 			<text>]</text>
@@ -71,7 +71,7 @@
 			<var>[Paranid]</var>
 		</line>
 		<line linenr="011" indent="">
-			<var>$races</var>
+			<var>$xrmRaces</var>
 			<text>[</text>
 			<var>3</var>
 			<text>]</text>
@@ -81,7 +81,7 @@
 			<var>[Boron]</var>
 		</line>
 		<line linenr="012" indent="">
-			<var>$races</var>
+			<var>$xrmRaces</var>
 			<text>[</text>
 			<var>4</var>
 			<text>]</text>
@@ -91,7 +91,7 @@
 			<var>[Teladi]</var>
 		</line>
 		<line linenr="013" indent="">
-			<var>$races</var>
+			<var>$xrmRaces</var>
 			<text>[</text>
 			<var>5</var>
 			<text>]</text>
@@ -101,7 +101,7 @@
 			<var>[Split]</var>
 		</line>
 		<line linenr="014" indent="">
-			<var>$races</var>
+			<var>$xrmRaces</var>
 			<text>[</text>
 			<var>6</var>
 			<text>]</text>
@@ -763,7 +763,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Terran Orbital Defence Station (DOCK_TR_MILITARY_2)}</var>
+			<var>{Terran \033AOrbital Defence Station\033X (DOCK_TR_MILITARY_2)}</var>
 		</line>
 		<line linenr="085" indent="">
 			<var>$station</var>
@@ -1342,7 +1342,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$races</var>
+			<var>$xrmRaces</var>
 			<text>[</text>
 			<var>$race</var>
 			<text>]</text>
@@ -1558,12 +1558,12 @@
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.xrm.setnames" />
-			<sval type="int" val="50" />
+			<sval type="int" val="44" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="2" />
 			<sval type="array" size="12">
-				<sval type="string" val="races" />
+				<sval type="string" val="xrmRaces" />
 				<sval type="string" val="stations" />
 				<sval type="string" val="station" />
 				<sval type="string" val="sectors" />

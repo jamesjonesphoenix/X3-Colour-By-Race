@@ -4,7 +4,7 @@
 <script>
 	<name>plugin.jj.colour.by.race.log</name>
 	<version>1</version>
-	<engineversion>50</engineversion>
+	<engineversion>44</engineversion>
 	<description></description>
 	<arguments>
 		<argument index="1" name="prepend" type="Var/String" desc="prepend" />
@@ -410,7 +410,7 @@
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.log" />
-			<sval type="int" val="50" />
+			<sval type="int" val="44" />
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
