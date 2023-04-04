@@ -117,9 +117,9 @@ Colour By Race currently does not include functionality to restore the names of 
 
 ## Compatibility
 
-* Terran Conflict - No. This plugin uses functions introduced in AP which TC can't understand.
+* Terran Conflict - Yes.
 * Albion Prelude - Yes.
-* Farnham's Legend - Yes
+* Farnham's Legend - Yes.
 * [XRM](https://forum.egosoft.com/viewtopic.php?f=94&t=304158) - Yes, I developed this while playing on an LxXRM installation. The plugin includes code to handle several XRM specific objects. 
 * Litcube's universe - I've never played it, so I'm not sure. Try it and let me know!
 * [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) - Yes, especially if you overwrite MBBR's ship naming script with the included optional script. 
@@ -141,6 +141,14 @@ Because I'm an idiot.
 * Thanks Cycrow who saw my proof of concept and wrote me a primer on global signals in X3.
 
 ## Changelog
+
+#### 1.2
+
+* Now compatibile with Terran Conflict.
+  * Wrote alternate code for command `get race id for race`. This was the only plugin code which TC couldn't handle.
+* Deleted extraneous files player.xml and init.xml
+* Lasertower activation timer fix now called on lasertower change sector signal
+* Now only check XRM stations if XRM is activated - was renaming McCallum station but couldn't find string. 
 
 #### 1.1
 
