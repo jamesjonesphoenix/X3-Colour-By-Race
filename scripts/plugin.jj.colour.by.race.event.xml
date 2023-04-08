@@ -100,7 +100,7 @@
 			<var>1100</var>
 			<text>,</text>
 			<text> </text>
-			<text>'1.2'</text>
+			<text>'1.2.1'</text>
 			<text>,</text>
 			<text> </text>
 			<var>null</var>
@@ -563,7 +563,7 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="1100" />
 					<sval type="int" val="5" />
-					<sval type="string" val="1.2" />
+					<sval type="string" val="1.2.1" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
