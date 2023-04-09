@@ -7,7 +7,7 @@
 
 ## Install
 
-Download the [latest release](https://github.com/jamesjonesphoenix/colour-by-race/releases) from Github. You probably want to download the `.zip` file not the `.tar.gz` file. Unzip the download and copy paste files into the `X3/addon/` folder. Files in the `scripts/` folder go into the `scripts/` folder. File in the `t/` folder go into the `t/` folder.
+Download the [latest release](https://github.com/jamesjonesphoenix/colour-by-race/releases) from Github. You probably want to download the `.zip` file not the `.tar.gz` file. Unzip the download and copy paste files into the `X3/addon/` folder. Files in the `scripts/` folder go into the `scripts/` folder. Files in the `t/` folder go into the `t/` folder.
 
 Launch the game and load a save or start a new game. Navigate to `Main menu->Gameplay->Artificial life Settings` and activate the plugin.
 
