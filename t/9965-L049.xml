@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="49">
     <page id="9965" title="" desc="" voice="no">
+        <t id="1000">Colourful Renamer von FriendlyFirePhoenix. v%s</t>
+        <t id="1001">Colourful Renamer deaktiviert.</t>
+        <t id="1002">Initialisiere Colourful Renamer Version: %s</t>
         <!-- Colour for main X3 races -->
         <t id="0">Dummy - %s - Dummy</t>
         <t id="1">\033B%s\033X(Argon)</t>
