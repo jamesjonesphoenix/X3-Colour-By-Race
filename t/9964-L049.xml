@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="49">
     <page id="9964" title="" desc="" voice="no">
-        <t id="1000">\033GWahre Beziehungen\033X von FriendlyFirePhoenix. v%s</t>
-        <t id="1001">\033GWahre Beziehungen\033X deaktiviert.</t>
-        <t id="1002">Initialisierte \033Gwahre Beziehungen\033X.\n\nAls Teil der Aktivierung hat das Plugin IFF für Stationen und ihre eigenen Schiffe in der ganzen Galaxie behoben. Von nun an wird True Relations regelmäßig einen zufälligen Sektor auswählen, um IFF zu beheben, und sich langsam durch die Galaxie arbeiten. Wenn Sie IFF schnell wieder für die gesamte Galaxie reparieren möchten, können Sie das Plugin deaktivieren und erneut aktivieren.</t>
+        <t id="1000">\033GTrue Relations\033X von FriendlyFirePhoenix. v%s</t>
+        <t id="1001">\033GTrue Relations\033X deaktiviert.</t>
+        <t id="1002">Initialisiere \033GTrue Relations\033X.\n\nAls Teil der Aktivierung hat das Plugin die Freund-Feind-Erkennung für Stationen und ihre eigenen Schiffe in der ganzen Galaxie behoben. Von nun an wird True Relations regelmäßig einen zufälligen Sektor auswählen, um IFF zu beheben, und sich langsam durch die Galaxie arbeiten. Wenn Sie die Freund-Feind-Erkennung schnell wieder für die gesamte Galaxie korrigieren möchten, können Sie das Plugin deaktivieren und erneut aktivieren.</t>
 
-        <t id="1010">Verlor %s %s-Bekanntheit als Effekt von %s %s-Bekanntheitsgewinn.</t>
-        <t id="1011">%s %s-Bekanntheit als Effekt von %s %s-Bekanntheit erlangt.</t>
-        <t id="1012">Wahre Beziehungen, die IFF in der ganzen Galaxie reparieren ...</t>
+        <t id="1010">Verlor %s %s-Ansehen als Effekt von %s %s-Ansehensgewinn.</t>
+        <t id="1011">%s %s-Ansehen als Effekt von %s %s-Ansehen erlangt.</t>
+        <t id="1012">True Relations korrigiert die Freund-Feind-Erkennung in der Galaxie...</t>
         <t id="1013">%s hat %s Stationen geprüft.</t>
-        <t id="1014">%s fertig.</t>
-        <t id="1015">Die %s haben dich zu %s \033Rdegradiert\033X als Strafe für deinen Bekanntheitsgrad von %s.</t>
-        <t id="1016">Die %s haben dich \033Bbefördert\033X zu %s als Belohnung für deinen Bekanntheitsgrad von %s.</t>
+        <t id="1014">%s abgeschlossen.</t>
+        <t id="1015">Die %s haben dich zu %s \033Rdegradiert\033X als Strafe für deinen Ansehensgewinn bei %s.</t>
+        <t id="1016">Die %s haben dich \033Bbefördert\033X zu %s als Belohnung für deinen Ansehensgewinn bei %s.</t>
 
-        <t id="1100">\033G\033BF\033X\033Ga\033X\033Mr\033X\033Ob\033X\033Ye\033X nach Rennen\033X von FriendlyFirePhoenix. v%s</t>
-        <t id="1101">\033GFarbe nach Rennen\033X deaktiviert.</t>
-        <t id="1102">Initialised \033GFarbe nach Rennen\033X.\n\nAls Teil der Aktivierung hat das Plugin die Namen von Schiffen, Docks und Werften in der ganzen Galaxie eingefärbt.</t>
+        <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X von FriendlyFirePhoenix. v%s</t>
+        <t id="1101">\033GColour By Race\033X deaktiviert.</t>
+        <t id="1102">\033GColour By Race\033X wurde initialisiert.\n\nAls Teil der Aktivierung hat das Plugin die Namen von Schiffen, Docks und Werften in der ganzen Galaxie eingefärbt.</t>
     </page>
 </language>
