@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language id="48">
+    <page id="9964" title="" desc="" voice="no">
+        <t id="1000">\033GPrawdziwe relacje\033X autorstwa FriendlyFirePhoenix. v%s</t>
+        <t id="1001">Dezaktywowano \033GPrawdziwe Relacje\033X.</t>
+        <t id="1002">Zainicjowane \033GPrawdziwe Relacje\033X.\n\nW ramach aktywacji wtyczka naprawiła IFF dla stacji i posiadanych przez nie statków w całej galaktyce. Od teraz True Relations będzie regularnie wybierać losowy sektor, dla którego ma zostać naprawiony IFF, powoli przemierzając galaktykę. Jeśli chcesz ponownie szybko naprawić IFF dla całej galaktyki, możesz dezaktywować i ponownie aktywować wtyczkę.</t>
+
+        <t id="1010">Utrata %s %s rozgłosu w wyniku wzrostu rozgłosu %s %s.</t>
+        <t id="1011">Zyskano %s %s rozgłosu jako efekt wzrostu rozgłosu %s %s.</t>
+        <t id="1012">Prawdziwe relacje naprawiające IFF w całej galaktyce...</t>
+        <t id="1013">%s sprawdzone stacje %s.</t>
+        <t id="1014">%s Skończone.</t>
+        <t id="1015">%s \033Rzdegradowali\033X cię do %s jako karę za twój wzrost rozgłosu %s.</t>
+        <t id="1016">%s \033Bawansowali\033X cię na %s w nagrodę za twój %s rozgłos.</t>
+
+        <t id="1100">\033G\033BK\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yr\033X według rasy\033X autorstwa FriendlyFirePhoenix. v%s</t>
+        <t id="1101">\033GColour By Race\033X dezaktywowany.</t>
+        <t id="1102">Zainicjowany \033GColour By Race\033X.\n\nW ramach aktywacji wtyczka pokolorowała nazwy statków, doków i stoczni w całej galaktyce.</t>
+    </page>
+</language>
