@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="33">
     <page id="9964" title="" desc="" voice="no">
-        <t id="1000">\033GRelations vraies\033X par FriendlyFirePhoenix. v%s</t>
-        <t id="1001">\033GRelations vraies\033X désactivées.</t>
-        <t id="1002">\033GRelations vraies\033X initialisées.\n\nDans le cadre de l'activation, le plugin a corrigé l'IFF pour les stations et leurs navires à travers la galaxie. À partir de maintenant, True Relations sélectionnera régulièrement un secteur aléatoire pour lequel réparer l'IFF, travaillant lentement à travers la galaxie. Si vous souhaitez à nouveau réparer rapidement l'IFF pour toute la galaxie, vous pouvez désactiver et réactiver le plugin..</t>
+        <t id="1000">\033GTrue Relations\033X par FriendlyFirePhoenix. v%s</t>
+        <t id="1001">\033GTrue Relations\033X désactivées.</t>
+        <t id="1002">\033GTrue Relations\033X initialisées.\n\nDans le cadre de l'activation, le plugin a corrigé l'IFF pour les stations et leurs navires à travers la galaxie. À partir de maintenant, True Relations sélectionnera régulièrement un secteur aléatoire pour lequel réparer l'IFF, travaillant lentement à travers la galaxie. Si vous souhaitez à nouveau réparer rapidement l'IFF pour toute la galaxie, vous pouvez désactiver et réactiver le plugin..</t>
 
         <t id="1010">Perte de notoriété %s de %s à la suite d'un gain de notoriété %s de %s.</t>
         <t id="1011">Gagne %s points de notoriété %s suite à un gain de %s points de notoriété %s.</t>
@@ -13,8 +13,8 @@
         <t id="1015">Les %s vous ont \033Rrétrogradé\033X à %s en guise de punition pour votre gain de notoriété %s.</t>
         <t id="1016">Les %s vous ont \033Bpromu\033X à %s en récompense de votre gain de notoriété %s.</t>
 
-        <t id="1100">\033G\033BC\033X\033Go\033X\033Mu\033X\033Ol\033X\033Ye\033X\033Ru\033X\033Cr\033X par race\033X par FriendlyFirePhoenix.. v%s</t>
-        <t id="1101">\033GCouleur par race\033X désactivé.</t>
-        <t id="1102">\033GCouleur par race\033X initialisées.\n\nDans le cadre de l'activation, le plugin a coloré les noms des navires, des quais et des chantiers navals à travers la galaxie.</t>
+        <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X par FriendlyFirePhoenix.. v%s</t>
+        <t id="1101">\033GColour By Race\033X désactivé.</t>
+        <t id="1102">\033GColour By Race\033X initialisées.\n\nDans le cadre de l'activation, le plugin a coloré les noms des navires, des quais et des chantiers navals à travers la galaxie.</t>
     </page>
 </language>

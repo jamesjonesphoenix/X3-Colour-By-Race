@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="34">
     <page id="9964" title="" desc="" voice="no">
-        <t id="1000">\033GRelaciones verdaderas\033X de FriendlyFirePhoenix. v%s</t>
-        <t id="1001">\033GRelaciones verdaderas\033X desactivado.</t>
-        <t id="1002">\033GRelaciones verdaderas\033X inicializadas.\n\nComo parte de la activación, el complemento ha corregido IFF para las estaciones y sus propias naves en toda la galaxia. A partir de ahora, True Relations seleccionará regularmente un sector aleatorio para arreglar IFF, trabajando lentamente a través de la galaxia. Si desea volver a corregir rápidamente IFF para toda la galaxia, puede desactivar y reactivar el complemento.</t>
+        <t id="1000">\033GTrue Relations\033X de FriendlyFirePhoenix. v%s</t>
+        <t id="1001">\033GTrue Relations\033X desactivado.</t>
+        <t id="1002">\033GTrue Relations\033X inicializadas.\n\nComo parte de la activación, el complemento ha corregido IFF para las estaciones y sus propias naves en toda la galaxia. A partir de ahora, True Relations seleccionará regularmente un sector aleatorio para arreglar IFF, trabajando lentamente a través de la galaxia. Si desea volver a corregir rápidamente IFF para toda la galaxia, puede desactivar y reactivar el complemento.</t>
 
         <t id="1010">Perdió %s %s notoriedad como efecto de la ganancia de %s %s notoriedad.</t>
         <t id="1011">Ganó %s %s notoriedad como efecto de %s %s notoriedad ganada.</t>
@@ -13,8 +13,8 @@
         <t id="1015">Los %s te han \033Rdegradado\033X a %s como castigo por tu ganancia de notoriedad de %s.</t>
         <t id="1016">Los %s te han \033Bascendido\033X a %s como recompensa por tu ganancia de notoriedad de %s.</t>
 
-        <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yr\033X por raza\033X de FriendlyFirePhoenix. v%s</t>
-        <t id="1101">\033GColor por raza \033X desactivado.</t>
-        <t id="1102">\033GColor por raza\033X inicializadas.\n\nComo parte de la activación, el complemento ha coloreado los nombres de barcos, muelles y astilleros de toda la galaxia.</t>
+        <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X de FriendlyFirePhoenix. v%s</t>
+        <t id="1101">\033GColour By Race\033X desactivado.</t>
+        <t id="1102">\033GColour By Race\033X inicializadas.\n\nComo parte de la activación, el complemento ha coloreado los nombres de barcos, muelles y astilleros de toda la galaxia.</t>
     </page>
 </language>
