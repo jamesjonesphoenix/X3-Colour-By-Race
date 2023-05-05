@@ -140,7 +140,7 @@
         <t id="2200">{1000,138}(Atreus)</t>
         <!-- NMMC -->
         <t id="2300">{1000,146}(NMMC)</t>
-        <!-- Starkimarm -->
+        <!-- StarkimArm -->
         <t id="2400">{13,9080}(Starkimarm)</t>
         <t id="2430">{1000,30000}(Militär)</t>
         <t id="2431">{1000,103}(Split)</t>
@@ -165,7 +165,7 @@
         <t id="3301">\033MSplit\033X Schiffswerft(Split Schifswerft)</t>
         <t id="3381">\033MSplit\033X Handelshafen(Split Handelshafen)</t>
         <t id="3391">\033MSplit\033X Ausrüstungsdock(Split Ausrüstungsdock)</t>
-        <t id="3401">\033OParaniden\033X Schiffswerft(Paranid Schifswerft)</t>
+        <t id="3401">\033OParanid\033X Schiffswerft(Paranid Schifswerft)</t>
         <t id="3481">\033OParanid\033X Handelsdock(Paranid Handelsdock)</t>
         <t id="3491">\033OParanid\033X  Ausrüstungsdock(Paranid Ausrüstungsdock)</t>
         <t id="3501">\033YTeladi\033X Schiffswerft(Teladi Schifswerft)</t>
@@ -273,7 +273,7 @@
         <t id="15291">\033BJonferco\033X Hauptquartier(Jonferco Hauptquartier)</t>
         <t id="15301">HQ der \033BPlutarch\033X Mining Corporation(Plutarch Mining Corporation HQ speak ploo-tark)</t>
         <t id="15311">\033YNMMC\033X Hauptquartier(NMMC Hauptquartier)</t>
-        <t id="15321">\033RKorsaren\033X Haven(Korsaren Haven)</t>
+        <t id="15321">\033RHerzogs\033X Hafen(Korsaren Haven)</t>
         <t id="15331">\033GAtreus\033X Hauptquartier(Atreus Hauptquartier)</t>
         <t id="15341">\033MStarkimarm\033X HQ(Starkimarm HQ)</t>
         <t id="16001">Der \033ATorus\033X(Earth Torus)</t>
