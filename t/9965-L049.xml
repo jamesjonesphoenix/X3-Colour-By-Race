@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="49">
     <page id="9965" title="" desc="" voice="no">
-        <t id="1000">Colourful Renamer von FriendlyFirePhoenix. v%s</t>
-        <t id="1001">Colourful Renamer deaktiviert.</t>
-        <t id="1002">Initialisiere Colourful Renamer Version: %s</t>
         <!-- Colour for main X3 races -->
         <t id="0">Dummy - %s - Dummy</t>
         <t id="1">\033B%s\033X(Argon)</t>
@@ -49,9 +46,13 @@
         <t id="106">{17,80487}(Beryll - XRM)</t>
         <t id="107">{1000,60008}(Freibeuter)</t>
         <t id="108">{17,13471}(Exterminator)</t>
+
         <t id="130">{1000,30000}(Militär)</t>
+        <t id="131">{17,20351}(Föderationsbörse)</t>
+
         <!-- <t id="130">{1000,1012}(Farpoint)</t> -->
         <!-- <t id="131">TerraCorp(Some stations use capital C for Corp and there is no translation)</t> -->
+        <t id="150">{1266,1}(Argonen)</t>
         <!-- Boron -->
         <t id="200">{1000,102}(Boronen)</t>
         <t id="201">{1266,202}(B.)</t>
@@ -59,7 +60,11 @@
         <t id="203">{1000,1023}(Waverider Corp.)</t>
         <t id="204">{1000,60008}(Freibeuter)</t>
         <t id="205">{17,5511}(Nikkonofune)</t>
+
         <t id="230">{1000,30000}(Militär)</t>
+        <t id="231">{17,20361}(Königlicher Handelshof)</t>
+
+        <t id="250">{1266,2}(Boronen)</t>
         <!-- Split -->
         <t id="300">{1000,103}(Split)</t>
         <t id="301">{1266,203}(S.)</t>
@@ -67,6 +72,7 @@
         <t id="303">{1000,1033}(Thuruk's Inc.)</t>
         <t id="304">{1000,60008}(Freibeuter)</t>
         <t id="330">{1000,30000}(Militär)</t>
+        <t id="331">{17,20391}(Handelsplatz)</t>
         <!-- Paranid -->
         <t id="400">{1000,104}(Paraniden)</t>
         <t id="401">{1266,204}(P.)</t>
@@ -75,6 +81,8 @@
         <t id="404">{1000,137}(Korsaren)</t>
         <t id="405">{1000,60008}(Freibeuter)</t>
         <t id="430">{1000,30000}(Militär)</t>
+        <t id="431">{17,20371}(Imperialer Finanzhof)</t>
+        <t id="450">{1266,4}(Paraniden)</t>
         <!-- Teladi -->
         <t id="500">{1000,105}(Teladi - add space to prevent colouring of "Teladi"anium if necessary)</t>
         <t id="501">{1266,205}(T.)</t>
@@ -82,6 +90,7 @@
         <t id="503">{1000,1051}(Creditania)</t>
         <t id="504">{1000,60008}(Freibeuter)</t>
         <t id="530">{1000,30000}(Militär)</t>
+        <t id="531">{17,20381}(Finanzhof)</t>
         <!-- Pirate - Do not include {8513,134}(Pirate Guild) - Plugin includes special handling for this string -->
         <t id="800">{1000,108}(Piraten)</t>
         <t id="801">{1266,208}(Pi.)</t>
@@ -91,6 +100,9 @@
         <t id="805">{1000,60008}(Freibeuter)</t>
 
         <t id="830">{17,6341}(The Marauder)</t>
+
+        <t id="850">{17,20411}(Piratenbörse)</t>
+        <t id="851">{1266,4}(Piraten)</t>
         <!-- Hidden Pirate Names -->
         <t id="30">{1000,1051}(Creditania)</t>
         <t id="31">{1000,137}(Korsaren)</t>
@@ -122,6 +134,7 @@
         <t id="1832">{1000,30000}(Militär)</t>
         <t id="1833">{7,1020414}(Erde)</t>
         <t id="1834">{7,1020212}(Saturn)</t>
+        <t id="1835">{17,20401}(Sol-Börse)</t>
         <!-- <t id="1832">{17,13131}(McCallum)</t> -->
         <t id="1898">1803</t>
         <t id="1899">1803</t>
@@ -131,6 +144,7 @@
         <t id="1902">{1000,1040}(Holy Dimensions)</t>
         <t id="1903">{3214,5}(Trouble Seeker)</t>
         <t id="1930">{1000,108}(Piraten)</t>
+        <t id="1950">{17,20421}(Yakibörse)</t>
         <!-- OTAS -->
         <t id="2000">{1000,133}(OTAS)</t>
         <t id="2031">{1000,101}(Argon)</t>
@@ -198,7 +212,7 @@
         <t id="80487">Beryll</t>
         <t id="16391">\033R{1000,119}\033X {17,16041}(Yaki Schifswerft)</t>
         <!--XRM 9950 Stuff - End -->
-        <!-- XRM 7027 Stuff - Start -->	
+        <!-- XRM 7027 Stuff - Start -->
         <t id="75000">\033A{1000,122}\033X {1000,40007}(AGI Task Force Command)</t>
         <t id="75002">\033A{1000,122}\033X {1000,20010}(AGI Task Force Flugschule)</t>
         <t id="75004">\033A{1000,122}\033X {1000,50202}(AGI Task Force Stationsverteidigung)</t>
@@ -295,16 +309,15 @@
         <t id="18200">\033B{13,9020}\033X {17,16041}(OTAS Schifswerft)</t>
     </page>
     <page id="380017" title="Boardcomp. objects" descr="0" voice="yes">
-	<!--
-        <t id="20351">\033BArgon\033X Stock Exchange(Argon Stock Exchange)</t>
-        <t id="20361">\033GBoron\033X Stock Exchange(Argon Stock Exchange)</t>
-        <t id="20371">\033OParanid\033X Stock Exchange(Paranid Stock Exchange)</t>
-        <t id="20381">\033YTeladi\033X Stock Exchange(Teladi Stock Exchange)</t>
-        <t id="20391">\033MSplit\033X Stock Exchange(Split Stock Exchange)</t>
-        <t id="20401">\033ATerran\033X Stock Exchange(Terran Stock Exchange)</t>
-        <t id="20411">\033RPirate\033X Stock Exchange(Pirate Stock Exchange)</t>
-        <t id="20421">\033RYaki\033X Stock Exchange(Yaki Stock Exchange)</t>
-	-->
+        <t id="20351">\033BFöderationsbörse\033X(Argon Stock Exchange)</t>
+        <t id="20361">\033GKöniglicher Handelshof\033X(Boron Stock Exchange)</t>
+        <t id="20371">\033OImperialer Finanzhof\033X(Paranid Stock Exchange)</t>
+        <t id="20381">\033YFinanzhof\033X(Teladi Stock Exchange)</t>
+        <t id="20391">\033MHandelsplatz\033X(Split Stock Exchange)</t>
+        <t id="20401">\033ASol-Börse\033X(Terran Stock Exchange)</t>
+        <t id="20411">\033RPiratenbörse\033X(Pirate Stock Exchange)</t>
+        <t id="20421">\033RYakibörse\033X(Yaki Stock Exchange)</t>
+
         <t id="20431">\033BPMC\033X Handelshafen(Plutarch Handelshafen)</t>
         <t id="20441">\033BPMC\033X Verteidigungsposten(Plutarch Verteidigungsposten)</t>
         <t id="20451">\033BPMC\033X Entwicklungsstation(Plutarch Entwicklungsstation)</t>
