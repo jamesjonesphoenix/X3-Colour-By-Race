@@ -129,7 +129,13 @@ Colour By Race currently does not include functionality to restore the names of 
 
 ### Languages
 
-Currently English only. If there's demand for other languages I can probably add them. 
+* English (my native language)
+* German (checked by Olsch)
+* French
+* Spanish
+* Italian
+* Czech 
+* Polish
 
 ### Why an X3 mod in 2023?
 
@@ -139,8 +145,19 @@ Because I'm an idiot.
 
 * Thanks Egosoft for making a great game.
 * Thanks Cycrow who saw my proof of concept and wrote me a primer on global signals in X3.
+* Thanks Olsch for improving my dodgy German translation.
 
 ## Changelog
+
+##### 1.2.2
+
+* Added German translation - thanks to Olsch for checking and improving my initial attempt. 
+* Added ability to add strings to t file to check for stations only, but checked before other strings - needed for German translation which has masculine and feminine noun modifiers.
+* Made a dubious attempt at other French, Spanish, Italian, Czech and Polish translations. I took these translations straight from Google translate. 
+
+##### 1.2.1    
+
+* Forgot to version up event file to 1.2
 
 #### 1.2
 
