@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language id="42">
+    <page id="9964" title="" desc="" voice="no">
+        <t id="1000">\033GTrue Relations\033X od FriendlyFirePhoenix. v%s</t>
+        <t id="1001">\033GTrue Relations\033X deaktivována.</t>
+        <t id="1002">Inicializováno \033GTrue Relations\033X.\n\nV rámci aktivace plugin opravil IFF pro stanice a jejich vlastněné lodě po celé galaxii. Od nynějška bude True Relations pravidelně vybírat náhodný sektor, pro který bude IFF opravovat, a bude pomalu procházet galaxií. Pokud chcete znovu rychle opravit IFF pro celou galaxii, můžete plugin deaktivovat a znovu aktivovat.</t>
+
+        <t id="1010">Ztráta %s %s proslulosti v důsledku %s %s zisku proslulosti.</t>
+        <t id="1011">Získal %s %s proslulost v důsledku %s %s zisku proslulosti.</t>
+        <t id="1012">True Relations opravující IFF napříč galaxií...</t>
+        <t id="1013">%s zkontrolováno %s stanic.</t>
+        <t id="1014">%s Dokončeno.</t>
+        <t id="1015">%s vás \033Rdegradovali\033X na %s jako trest za váš %s zisk proslulosti.</t>
+        <t id="1016">%s vás \033Bpovýšili\033X na %s jako odměnu za váš %s zisk proslulosti.</t>
+
+        <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X od FriendlyFirePhoenix. v%s</t>
+        <t id="1101">\033GColour By Race\033X deaktivována.</t>
+        <t id="1102">Inicializováno \033GColour By Race\033X.\n\nV rámci aktivace plugin zabarvil názvy lodí, doků a loděnic po celé galaxii.</t>
+    </page>
+</language>

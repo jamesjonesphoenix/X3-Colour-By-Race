@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language id="39">
+    <page id="9964" title="" desc="" voice="no">
+        <t id="1000">\033GTrue Relations\033X di FriendlyFirePhoenix. v%s</t>
+        <t id="1001">\033GTrue Relations\033X disattivato.</t>
+        <t id="1002">Inizializzato \033GTrue Relations\033X.\n\nCome parte dell'attivazione, il plug-in ha corretto l'IFF per le stazioni e le loro navi di proprietà in tutta la galassia. D'ora in poi True Relations selezionerà regolarmente un settore casuale per cui correggere l'IFF, lavorando lentamente attraverso la galassia. Se desideri correggere rapidamente l'IFF per l'intera galassia, puoi disattivare e riattivare il plug-in.</t>
+
+        <t id="1010">%s %s notorietà persa a causa dell'acquisizione di %s %s notorietà.</t>
+        <t id="1011">Hai ottenuto %s %s notorietà come effetto del guadagno di %s %s notorietà.</t>
+        <t id="1012">True Relations aggiusta l'IFF attraverso la galassia...</t>
+        <t id="1013">%s controlla %s stazioni.</t>
+        <t id="1014">%s Finito.</t>
+        <t id="1015">I %s ti hanno \033Rretrocesso\033X a %s come punizione per la tua notorietà guadagnata in %s.</t>
+        <t id="1016">I %s ti hanno \033Bpromosso\033X a %s come ricompensa per la tua notorietà guadagnata in %s.</t>
+
+        <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X di FriendlyFirePhoenix. v%s</t>
+        <t id="1101">\033GColour By Race\033X disattivato.</t>
+        <t id="1102">Inizializzato \033GColour By Race\033X.\n\nCome parte dell'attivazione, il plugin ha colorato i nomi di navi, moli e cantieri navali in tutta la galassia.</t>
+    </page>
+</language>
