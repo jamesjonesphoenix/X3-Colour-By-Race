@@ -47,8 +47,9 @@
         <t id="107">{1000,60008}(Freibeuter)</t>
         <t id="108">{17,13471}(Exterminator)</t>
 
-        <t id="130">{1000,30000}(Militär)</t>
-        <t id="131">{17,20351}(Föderationsbörse)</t>
+        <t id="130">Militärischer</t>
+        <t id="131">{1000,30000}(Militär)</t>
+        <t id="132">{17,20351}(Föderationsbörse)</t>
 
         <!-- <t id="130">{1000,1012}(Farpoint)</t> -->
         <!-- <t id="131">TerraCorp(Some stations use capital C for Corp and there is no translation)</t> -->
@@ -61,8 +62,9 @@
         <t id="204">{1000,60008}(Freibeuter)</t>
         <t id="205">{17,5511}(Nikkonofune)</t>
 
-        <t id="230">{1000,30000}(Militär)</t>
-        <t id="231">{17,20361}(Königlicher Handelshof)</t>
+        <t id="230">Militärischer</t>
+        <t id="231">{1000,30000}(Militär)</t>
+        <t id="232">{17,20361}(Königlicher Handelshof)</t>
 
         <t id="250">{1266,2}(Boronen)</t>
         <!-- Split -->
@@ -71,8 +73,10 @@
         <t id="302">{13,9080}(Starkimarm)</t>
         <t id="303">{1000,1033}(Thuruk's Inc.)</t>
         <t id="304">{1000,60008}(Freibeuter)</t>
-        <t id="330">{1000,30000}(Militär)</t>
-        <t id="331">{17,20391}(Handelsplatz)</t>
+
+        <t id="330">Militärischer</t>
+        <t id="331">{1000,30000}(Militär)</t>
+        <t id="332">{17,20391}(Handelsplatz)</t>
         <!-- Paranid -->
         <t id="400">{1000,104}(Paraniden)</t>
         <t id="401">{1266,204}(P.)</t>
@@ -80,8 +84,10 @@
         <t id="403">{1000,1043}(Trinity Corp.)</t>
         <t id="404">{1000,137}(Korsaren)</t>
         <t id="405">{1000,60008}(Freibeuter)</t>
-        <t id="430">{1000,30000}(Militär)</t>
-        <t id="431">{17,20371}(Imperialer Finanzhof)</t>
+
+        <t id="430">Militärischer</t>
+        <t id="431">{1000,30000}(Militär)</t>
+        <t id="432">{17,20371}(Imperialer Finanzhof)</t>
         <t id="450">{1266,4}(Paraniden)</t>
         <!-- Teladi -->
         <t id="500">{1000,105}(Teladi - add space to prevent colouring of "Teladi"anium if necessary)</t>
@@ -89,10 +95,11 @@
         <t id="502">{1000,146}(NMMC)</t>
         <t id="503">{1000,1051}(Creditania)</t>
         <t id="504">{1000,60008}(Freibeuter)</t>
-        <t id="530">{1000,30000}(Militär)</t>
-        <t id="531">{17,20381}(Finanzhof)</t>
+        <t id="530">Militärischer</t>
+        <t id="531">{1000,30000}(Militär)</t>
+        <t id="532">{17,20381}(Finanzhof)</t>
         <!-- Pirate - Do not include {8513,134}(Pirate Guild) - Plugin includes special handling for this string -->
-        <t id="800">{1000,108}(Piraten)</t>
+        <t id="800">{1000,108}(Pirat)</t>
         <t id="801">{1266,208}(Pi.)</t>
         <t id="802">{1000,1050}(Talonfire)</t>
         <t id="803">{1000,137}(Korsaren)</t>
@@ -102,7 +109,7 @@
         <t id="830">{17,6341}(The Marauder)</t>
 
         <t id="850">{17,20411}(Piratenbörse)</t>
-        <t id="851">{1266,4}(Piraten)</t>
+        <t id="851">{1266,8}(Piraten)</t>
         <!-- Hidden Pirate Names -->
         <t id="30">{1000,1051}(Creditania)</t>
         <t id="31">{1000,137}(Korsaren)</t>
@@ -150,18 +157,21 @@
         <t id="2031">{1000,101}(Argon)</t>
         <!-- Terracorp -->
         <t id="2100">{1000,132}(Terracorp)</t>
+        <t id="2101">TerraCorp</t>
         <!-- Atreus -->
         <t id="2200">{1000,138}(Atreus)</t>
         <!-- NMMC -->
         <t id="2300">{1000,146}(NMMC)</t>
         <!-- StarkimArm -->
         <t id="2400">{13,9080}(Starkimarm)</t>
-        <t id="2430">{1000,30000}(Militär)</t>
-        <t id="2431">{1000,103}(Split)</t>
+        <t id="2430">Militärischer</t>
+        <t id="2431">{1000,30000}(Militär)</t>
+        <t id="2432">{1000,103}(Split)</t>
         <!-- Beryll -->
         <t id="2500">{17,80487}(Beryll)</t>
         <!-- Korsaren -->
         <t id="2600">{1000,137}(Korsaren)</t>
+        <t id="2630">Herzogs(Herzogs)</t>
         <!-- Darkspace -->
         <t id="2700">{1000,150}(Darkspace)</t>
         <t id="2730">{1000,140}(Dark Space)</t>
@@ -181,7 +191,7 @@
         <t id="3391">\033MSplit\033X Ausrüstungsdock(Split Ausrüstungsdock)</t>
         <t id="3401">\033OParanid\033X Schiffswerft(Paranid Schifswerft)</t>
         <t id="3481">\033OParanid\033X Handelsdock(Paranid Handelsdock)</t>
-        <t id="3491">\033OParanid\033X  Ausrüstungsdock(Paranid Ausrüstungsdock)</t>
+        <t id="3491">\033OParanid\033X Ausrüstungsdock(Paranid Ausrüstungsdock)</t>
         <t id="3501">\033YTeladi\033X Schiffswerft(Teladi Schifswerft)</t>
         <!-- <t id="3502">{17,3108} {17,3509}</t> -->
         <t id="3581">\033YTeladi\033X Handelsstation(Teladi Handelsstation)</t>
@@ -282,7 +292,7 @@
         <!--XRM 9950 Stuff - End -->
     </page>
     <page id="350017" title="Boardcomp. objects" descr="0" voice="yes">
-        <t id="15271">\033BTerracorp\033X HQ(Terracorp HQ)</t>
+        <t id="15271">\033BTerraCorp\033X HQ(Terracorp HQ)</t>
         <t id="15281">\033BOTAS\033X HQ(OTAS HQ speak Oh-Tass)</t>
         <t id="15291">\033BJonferco\033X Hauptquartier(Jonferco Hauptquartier)</t>
         <t id="15301">HQ der \033BPlutarch\033X Mining Corporation(Plutarch Mining Corporation HQ speak ploo-tark)</t>
