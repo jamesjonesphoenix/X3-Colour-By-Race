@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="39">
     <page id="9964" title="" desc="" voice="no">
+        <!-- Italian -->
         <t id="1000">\033GTrue Relations\033X di FriendlyFirePhoenix. v%s</t>
         <t id="1001">\033GTrue Relations\033X disattivato.</t>
         <t id="1002">Inizializzato \033GTrue Relations\033X.\n\nCome parte dell'attivazione, il plug-in ha corretto l'IFF per le stazioni e le loro navi di proprietà in tutta la galassia. D'ora in poi True Relations selezionerà regolarmente un settore casuale per cui correggere l'IFF, lavorando lentamente attraverso la galassia. Se desideri correggere rapidamente l'IFF per l'intera galassia, puoi disattivare e riattivare il plug-in.</t>
@@ -14,7 +15,10 @@
         <t id="1016">I %s ti hanno \033Bpromosso\033X a %s come ricompensa per la tua notorietà guadagnata in %s.</t>
 
         <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X di FriendlyFirePhoenix. v%s</t>
-        <t id="1101">\033GColour By Race\033X disattivato.</t>
+        <t id="1101">\033GColour By Race\033X disattivato.\n\nIl plugin ha rimosso i colori dai nomi delle navi e delle stazioni in tutta la galassia, ha cancellato le loro variabili locali e ha rimosso le variabili globali. Se ti imbatti in qualsiasi istanza di oggetti colorati dopo la disattivazione, invia una segnalazione di bug in modo che possiamo risolvere il problema. Per rimuovere completamente qualsiasi traccia del plug-in, segui questi passaggi: salva il gioco, elimina i file del plug-in dalla directory di X3 e ricarica il salvataggio.</t>
         <t id="1102">Inizializzato \033GColour By Race\033X.\n\nCome parte dell'attivazione, il plugin ha colorato i nomi di navi, moli e cantieri navali in tutta la galassia.</t>
+
+        <!-- Job IDs to avoid prefixing with race name IDs- 10000 to 10100-->
+        <t id="10000">8660(Unknown Object)</t>
     </page>
 </language>

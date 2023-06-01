@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="49">
     <page id="9964" title="" desc="" voice="no">
+        <!-- German -->
         <t id="1000">\033GTrue Relations\033X von FriendlyFirePhoenix. v%s</t>
         <t id="1001">\033GTrue Relations\033X deaktiviert.</t>
         <t id="1002">Initialisiere \033GTrue Relations\033X.\n\nAls Teil der Aktivierung hat das Plugin die Freund-Feind-Erkennung für Stationen und ihre eigenen Schiffe in der ganzen Galaxie behoben. Von nun an wird True Relations regelmäßig einen zufälligen Sektor auswählen, um IFF zu beheben, und sich langsam durch die Galaxie arbeiten. Wenn Sie die Freund-Feind-Erkennung schnell wieder für die gesamte Galaxie korrigieren möchten, können Sie das Plugin deaktivieren und erneut aktivieren.</t>
@@ -14,7 +15,9 @@
         <t id="1016">Die %s haben dich \033Bbefördert\033X zu %s als Belohnung für deinen Ansehensgewinn bei %s.</t>
 
         <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X von FriendlyFirePhoenix. v%s</t>
-        <t id="1101">\033GColour By Race\033X deaktiviert.</t>
+        <t id="1101">\033GColour By Race\033X deaktiviert.\n\nDas Plugin hat die Farben von Schiffs- und Stationsnamen in der gesamten Galaxie entfernt, ihre lokalen Variablen gelöscht und globale Variablen entfernt. Sollten Sie nach der Deaktivierung auf farbige Objekte stoßen, senden Sie bitte einen Fehlerbericht, damit wir das Problem beheben können. Um alle Spuren des Plugins vollständig zu entfernen, befolgen Sie diese Schritte: Speichern Sie Ihr Spiel, löschen Sie die Plugin-Dateien aus Ihrem X3-Verzeichnis und laden Sie Ihren Speicherstand erneut.</t>
         <t id="1102">\033GColour By Race\033X wurde initialisiert.\n\nAls Teil der Aktivierung hat das Plugin die Namen von Schiffen, Docks und Werften in der ganzen Galaxie eingefärbt.</t>
+        <!-- Job IDs to avoid prefixing with race name; Text IDs 10000 to 10100 -->
+        <t id="10000">8660(Unknown Object)</t>
     </page>
 </language>

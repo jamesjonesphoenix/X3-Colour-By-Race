@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="34">
     <page id="9964" title="" desc="" voice="no">
+        <!-- Spanish -->
         <t id="1000">\033GTrue Relations\033X de FriendlyFirePhoenix. v%s</t>
         <t id="1001">\033GTrue Relations\033X desactivado.</t>
         <t id="1002">\033GTrue Relations\033X inicializadas.\n\nComo parte de la activación, el complemento ha corregido IFF para las estaciones y sus propias naves en toda la galaxia. A partir de ahora, True Relations seleccionará regularmente un sector aleatorio para arreglar IFF, trabajando lentamente a través de la galaxia. Si desea volver a corregir rápidamente IFF para toda la galaxia, puede desactivar y reactivar el complemento.</t>
@@ -14,7 +15,9 @@
         <t id="1016">Los %s te han \033Bascendido\033X a %s como recompensa por tu ganancia de notoriedad de %s.</t>
 
         <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X de FriendlyFirePhoenix. v%s</t>
-        <t id="1101">\033GColour By Race\033X desactivado.</t>
+        <t id="1101">\033GColour By Race\033X desactivado.\n\nEl complemento eliminó los colores de los nombres de barcos y estaciones en toda la galaxia, borró sus variables locales y eliminó variables globales. Si encuentra instancias de objetos coloreados después de la desactivación, envíe un informe de error para que podamos abordar el problema. Para eliminar por completo cualquier rastro del complemento, siga estos pasos: guarde su juego, elimine los archivos del complemento de su directorio X3 y vuelva a cargar su guardado.</t>
         <t id="1102">\033GColour By Race\033X inicializadas.\n\nComo parte de la activación, el complemento ha coloreado los nombres de barcos, muelles y astilleros de toda la galaxia.</t>
+        <!-- Job IDs to avoid prefixing with race name; Text IDs 10000 to 10100 -->
+        <t id="10000">8660(Unknown Object)</t>
     </page>
 </language>

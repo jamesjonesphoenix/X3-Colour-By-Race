@@ -14,7 +14,9 @@
         <t id="1016">The %s have \033Bpromoted\033X you to %s as a reward for your %s notoriety gain.</t>
 
         <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X by FriendlyFirePhoenix. v%s</t>
-        <t id="1101">\033GColour By Race\033X deactivated.</t>
+        <t id="1101">\033GColour By Race\033X deactivated.\n\nThe plugin has removed the colors from ship and station names throughout the galaxy, cleared their local variables, and removed global variables. If you come across any instances of colored objects after deactivation, please submit a bug report so that we can address the issue. To completely remove any trace of the plugin, follow these steps: save your game, delete the plugin files from your X3 directory, and reload your save.</t>
         <t id="1102">Initialised \033GColour By Race\033X.\n\nAs part of activation, the plugin has coloured the names of ships, docks and shipyards across the galaxy.</t>
+        <!-- Job IDs to avoid prefixing with race name; Text IDs 10000 to 10100 -->
+        <t id="10000">8660(Unknown Object)</t>
     </page>
 </language>

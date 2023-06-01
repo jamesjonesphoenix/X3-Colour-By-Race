@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="42">
     <page id="9964" title="" desc="" voice="no">
+        <!-- Czech -->
         <t id="1000">\033GTrue Relations\033X od FriendlyFirePhoenix. v%s</t>
         <t id="1001">\033GTrue Relations\033X deaktivována.</t>
         <t id="1002">Inicializováno \033GTrue Relations\033X.\n\nV rámci aktivace plugin opravil IFF pro stanice a jejich vlastněné lodě po celé galaxii. Od nynějška bude True Relations pravidelně vybírat náhodný sektor, pro který bude IFF opravovat, a bude pomalu procházet galaxií. Pokud chcete znovu rychle opravit IFF pro celou galaxii, můžete plugin deaktivovat a znovu aktivovat.</t>
@@ -14,7 +15,10 @@
         <t id="1016">%s vás \033Bpovýšili\033X na %s jako odměnu za váš %s zisk proslulosti.</t>
 
         <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X od FriendlyFirePhoenix. v%s</t>
-        <t id="1101">\033GColour By Race\033X deaktivována.</t>
+        <t id="1101">\033GColour By Race\033X deaktivována.\n\nPlugin odstranil barvy z názvů lodí a stanic v celé galaxii, vymazal jejich lokální proměnné a odstranil globální proměnné. Pokud po deaktivaci narazíte na nějaké případy barevných objektů, odešlete prosím hlášení o chybě, abychom mohli problém vyřešit. Chcete-li zcela odstranit jakoukoli stopu pluginu, postupujte takto: uložte hru, odstraňte soubory pluginu z adresáře X3 a znovu načtěte uložení.</t>
         <t id="1102">Inicializováno \033GColour By Race\033X.\n\nV rámci aktivace plugin zabarvil názvy lodí, doků a loděnic po celé galaxii.</t>
+
+        <!-- Job IDs to avoid prefixing with race name; Text IDs 10000 to 10100 -->
+        <t id="10000">8660(Unknown Object)</t>
     </page>
 </language>
