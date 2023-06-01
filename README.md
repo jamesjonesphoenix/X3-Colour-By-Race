@@ -111,10 +111,6 @@ The third problem is ships that are created inside docking bays instead of in sp
 
 These engine limitations mean you'll occasionally see an uncoloured ship or station. But the additional checks performed by the plugin should make this a rare occasion.
 
-## Warning!
-
-Colour By Race currently does not include functionality to restore the names of ships and stations to their original uncoloured status. So make sure to back up your saves in case you don't like it. 
-
 ## Compatibility
 
 * Terran Conflict - Yes.
@@ -148,6 +144,19 @@ Because I'm an idiot.
 * Thanks Olsch for improving my dodgy German translation.
 
 ## Changelog
+
+#### 1.3
+
+* Improved plugin deactivation. Plugin will now remove the colour from the coloured part of the name of all ships and stations in the galaxy and remove all local vars and global vars. It will be as if Colour By Race was never installed.  
+* Setup [SIGNAL_CREATED] for stations in FL. In FL stations will now be coloured as soon as they appear in the universe.
+* Improved detection of FL. The plugin would fail to detect FL if X3 was running unofficial patch version 1.3.6 and later. Amongst other things, this would leave corporation ships uncoloured.
+* Changed prepending of ships without a race substring to colour. Previously the plugin queried a list of approved jobs to prepend with a race name. This was cumbersome, it's quicker to query jobs which shouldn't be prepended with a race name. Currently the only job we make sure not to prepend is the UFO Unknown Ship job 8660 and any drones.
+* Setup a feature where a set of station-only search substrings will be searched before any others. For example I added "Boronen" to this set for the German translation which will be searched and coloured before "Boron". These strings are set with IDs from x50 to x60 where x is the race ID. So for example strings 450 to 460 for the Paranid.
+* Fixed some t file typos
+* German translation:
+  * Added "Militärischer" to German translation substrings and made sure it gets coloured before Militär.
+  * Added "Herzogs" as a substring to search for Duke's 
+* Added descriptions to all script files.
 
 ##### 1.2.2
 
