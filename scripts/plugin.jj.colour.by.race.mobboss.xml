@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.mobboss</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Colours PG3 Mob Boss's home sector name.</description>
 	<arguments>
 		<argument index="1" name="substringSearchArray" type="Var/Array" desc="substringSearchArray" />
 		<argument index="2" name="debug" type="Var/Boolean" desc="debug" />
@@ -24,22 +24,19 @@
 			<comment>*                       Rather than search for static substrings as per other ships we colour the home sector portion of the name. </comment>
 		</line>
 		<line linenr="005" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="006" indent="">
 			<comment>* AUTHOR: JJ     DATE: 21 January 2023</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="009" indent="&#160;" interruptable="@">
+		<line linenr="008" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -57,7 +54,7 @@
 			<text>=</text>
 			<text>'Mob Boss Function'</text>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="009" indent="">
 			<var>$anarkisBoss</var>
 			<text> </text>
 			<text>=</text>
@@ -76,7 +73,7 @@
 			<text>=</text>
 			<text>'anarkis.pirate.boss'</text>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$anarkisBoss</var>
@@ -85,7 +82,7 @@
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="012" indent="&#160;">
+		<line linenr="011" indent="&#160;">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -104,7 +101,7 @@
 			<text>=</text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="013" indent="&#160;">
+		<line linenr="012" indent="&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -116,7 +113,7 @@
 			<text> </text>
 			<text>name</text>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="013" indent="&#160;">
 			<var>$homeSector</var>
 			<text> </text>
 			<text>=</text>
@@ -128,7 +125,7 @@
 			<text> </text>
 			<text>homesector</text>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="014" indent="&#160;">
 			<var>$homeSector</var>
 			<text> </text>
 			<text>=</text>
@@ -155,7 +152,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="016" indent="&#160;" interruptable="@">
+		<line linenr="015" indent="&#160;" interruptable="@">
 			<var>$homeSectorUncoloured</var>
 			<text> </text>
 			<text>=</text>
@@ -175,7 +172,7 @@
 			<text>=</text>
 			<var>$homeSector</var>
 		</line>
-		<line linenr="017" indent="&#160;">
+		<line linenr="016" indent="&#160;">
 			<var>$pluginData</var>
 			<text> </text>
 			<text>=</text>
@@ -191,17 +188,26 @@
 			<text>=</text>
 			<text>'plugin.jj.colour.by.race'</text>
 		</line>
-		<line linenr="018" indent="&#160;">
+		<line linenr="017" indent="&#160;">
 			<var>$colourWrapper</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$substringSearchArray</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>0</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="019" indent="&#160;">
+		<line linenr="018" indent="&#160;">
 			<var>$homeSectorColoured</var>
 			<text> </text>
 			<text>=</text>
@@ -228,7 +234,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="020" indent="&#160;">
+		<line linenr="019" indent="&#160;">
 			<var>$checkAlreadyColoured</var>
 			<text> </text>
 			<text>=</text>
@@ -247,7 +253,7 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="021" indent="&#160;">
+		<line linenr="020" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$checkAlreadyColoured</var>
@@ -256,7 +262,7 @@
 			<text> </text>
 			<var>-1</var>
 		</line>
-		<line linenr="022" indent="&#160;&#160;">
+		<line linenr="021" indent="&#160;&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -278,7 +284,7 @@
 			<text> </text>
 			<var>$homeSectorUncoloured</var>
 		</line>
-		<line linenr="023" indent="&#160;&#160;">
+		<line linenr="022" indent="&#160;&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -300,7 +306,7 @@
 			<text> </text>
 			<var>$homeSectorColoured</var>
 		</line>
-		<line linenr="024" indent="&#160;&#160;" interruptable="@">
+		<line linenr="023" indent="&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -322,18 +328,18 @@
 			<text>=</text>
 			<var>$debug</var>
 		</line>
-		<line linenr="025" indent="&#160;">
+		<line linenr="024" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="026" indent="&#160;">
+		<line linenr="025" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="027" indent="">
+		<line linenr="026" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="028" indent="" interruptable="@">
+		<line linenr="027" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -351,11 +357,15 @@
 			<text>=</text>
 			<var>$substringSearchArray</var>
 			<text> </text>
+			<text>index</text>
+			<text>=</text>
+			<var>1</var>
+			<text> </text>
 			<text>debug</text>
 			<text>=</text>
 			<var>$debug</var>
 		</line>
-		<line linenr="029" indent="">
+		<line linenr="028" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -365,7 +375,7 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.mobboss" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Colours PG3 Mob Boss's home sector name." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="10">
@@ -560,15 +570,17 @@
 					<sval type="int" val="131075" />
 					<sval type="int" val="10" />
 				</sval>
-				<sval type="array" size="10">
+				<sval type="array" size="12">
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.jj.colour.by.race.object" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="2" />
+					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 				</sval>
@@ -588,7 +600,7 @@
 					<sval type="string" val="debug" />
 				</sval>
 			</sval>
-			<sval type="array" size="9">
+			<sval type="array" size="8">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -608,11 +620,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="                      Rather than search for static substrings as per other ships we colour the home sector portion of the name. " />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.log</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Logs info about an object.</description>
 	<arguments>
 		<argument index="1" name="prepend" type="Var/String" desc="prepend" />
 		<argument index="2" name="logFile" type="Var/Number" desc="logFile" />
@@ -18,18 +18,15 @@
 			<comment>* SCRIPT NAME: Log</comment>
 		</line>
 		<line linenr="003" indent="">
-			<comment>* DESCRIPTION: Takes an object such as a ship or station and logs info about it</comment>
+			<comment>* DESCRIPTION: Takes an object such as a ship or station and logs info about it.</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 2 February 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>$logName</var>
 			<text> </text>
 			<text>=</text>
@@ -41,7 +38,7 @@
 			<text> </text>
 			<text>name</text>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$logJobID</var>
 			<text> </text>
 			<text>=</text>
@@ -55,7 +52,7 @@
 			<text> </text>
 			<text>id</text>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<var>$logObjectID</var>
 			<text> </text>
 			<text>=</text>
@@ -69,7 +66,7 @@
 			<text> </text>
 			<text>code</text>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="009" indent="">
 			<var>$logRace</var>
 			<text> </text>
 			<text>=</text>
@@ -83,7 +80,7 @@
 			<text> </text>
 			<text>race</text>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<var>$logTrueOwner</var>
 			<text> </text>
 			<text>=</text>
@@ -97,7 +94,7 @@
 			<text> </text>
 			<text>owner</text>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="011" indent="">
 			<var>$logPlayTime</var>
 			<text> </text>
 			<text>=</text>
@@ -106,7 +103,7 @@
 			<text> </text>
 			<text>time</text>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="012" indent="">
 			<var>$logFlightTime</var>
 			<text> </text>
 			<text>=</text>
@@ -120,14 +117,14 @@
 			<text> </text>
 			<text>time</text>
 		</line>
-		<line linenr="014" indent="">
+		<line linenr="013" indent="">
 			<var>$logOnTheLevel</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<text>'On The Level'</text>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="014" indent="">
 			<var>$logClass</var>
 			<text> </text>
 			<text>=</text>
@@ -141,7 +138,7 @@
 			<text> </text>
 			<text>class</text>
 		</line>
-		<line linenr="016" indent="">
+		<line linenr="015" indent="">
 			<var>$logType</var>
 			<text> </text>
 			<text>=</text>
@@ -153,7 +150,7 @@
 			<text> </text>
 			<text>subtype</text>
 		</line>
-		<line linenr="017" indent="">
+		<line linenr="016" indent="">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
@@ -169,7 +166,7 @@
 			<text> </text>
 			<var>[Station]</var>
 		</line>
-		<line linenr="018" indent="&#160;">
+		<line linenr="017" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -180,17 +177,17 @@
 			<text> </text>
 			<var>$logTrueOwner</var>
 		</line>
-		<line linenr="019" indent="&#160;&#160;">
+		<line linenr="018" indent="&#160;&#160;">
 			<var>$logOnTheLevel</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<text>'Disguised Criminal'</text>
 		</line>
-		<line linenr="020" indent="">
+		<line linenr="019" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="021" indent="">
+		<line linenr="020" indent="">
 			<var>$logIsRenamed</var>
 			<text> </text>
 			<text>=</text>
@@ -209,7 +206,7 @@
 			<text>=</text>
 			<text>'JJ.Set.New.Name'</text>
 		</line>
-		<line linenr="022" indent="">
+		<line linenr="021" indent="">
 			<var>$logHomeSector</var>
 			<text> </text>
 			<text>=</text>
@@ -221,7 +218,7 @@
 			<text> </text>
 			<text>homesector</text>
 		</line>
-		<line linenr="023" indent="">
+		<line linenr="022" indent="">
 			<var>$logHomeBase</var>
 			<text> </text>
 			<text>=</text>
@@ -233,8 +230,8 @@
 			<text> </text>
 			<text>homebase</text>
 		</line>
-		<line linenr="024" indent="" />
-		<line linenr="025" indent="">
+		<line linenr="023" indent="" />
+		<line linenr="024" indent="">
 			<var>$logSector</var>
 			<text> </text>
 			<text>=</text>
@@ -246,8 +243,8 @@
 			<text> </text>
 			<text>sector</text>
 		</line>
-		<line linenr="026" indent="" />
-		<line linenr="027" indent="">
+		<line linenr="025" indent="" />
+		<line linenr="026" indent="">
 			<var>$string1</var>
 			<text> </text>
 			<text>=</text>
@@ -257,7 +254,7 @@
 			<text> </text>
 			<text>fmt</text>
 			<text>=</text>
-			<text>'%s --- %s --- ID: %s --- name: %s --- Job ID: %s '</text>
+			<text>'%s --- %s --- ID: %s --- Name: %s --- Job ID: %s '</text>
 			<text>,</text>
 			<text> </text>
 			<var>$prepend</var>
@@ -274,7 +271,7 @@
 			<text> </text>
 			<var>$logJobID</var>
 		</line>
-		<line linenr="028" indent="">
+		<line linenr="027" indent="">
 			<var>$string2</var>
 			<text> </text>
 			<text>=</text>
@@ -284,7 +281,7 @@
 			<text> </text>
 			<text>fmt</text>
 			<text>=</text>
-			<text>'%s --- Race: %s --- True Owner: %s --- Renamed: %s --- Home Sector: %s'</text>
+			<text>'%s --- Race: %s --- True Owner: %s --- Renamed: %s --- Sector: %s'</text>
 			<text>,</text>
 			<text> </text>
 			<var>$string1</var>
@@ -299,9 +296,9 @@
 			<var>$logIsRenamed</var>
 			<text>,</text>
 			<text> </text>
-			<var>$logHomeSector</var>
+			<var>$logSector</var>
 		</line>
-		<line linenr="029" indent="">
+		<line linenr="028" indent="">
 			<var>$string3</var>
 			<text> </text>
 			<text>=</text>
@@ -311,7 +308,7 @@
 			<text> </text>
 			<text>fmt</text>
 			<text>=</text>
-			<text>'%s --- Homebase: %s --- Sector: %s --- Class: %s --- Type: %s'</text>
+			<text>'%s --- Homebase: %s ---  Home Sector: %s --- Class: %s --- Type: %s'</text>
 			<text>,</text>
 			<text> </text>
 			<var>$string2</var>
@@ -320,7 +317,7 @@
 			<var>$logHomeBase</var>
 			<text>,</text>
 			<text> </text>
-			<var>$logSector</var>
+			<var>$logHomeSector</var>
 			<text>,</text>
 			<text> </text>
 			<var>$logClass</var>
@@ -328,14 +325,14 @@
 			<text> </text>
 			<var>$logType</var>
 		</line>
-		<line linenr="030" indent="">
+		<line linenr="029" indent="">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
 			<text> </text>
 			<var>$logFile</var>
 		</line>
-		<line linenr="031" indent="&#160;">
+		<line linenr="030" indent="&#160;">
 			<var>$pluginData</var>
 			<text> </text>
 			<text>=</text>
@@ -351,20 +348,29 @@
 			<text>=</text>
 			<text>'plugin.jj.colour.by.race'</text>
 		</line>
-		<line linenr="032" indent="&#160;">
+		<line linenr="031" indent="&#160;">
 			<var>$logFile</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>2</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="033" indent="">
+		<line linenr="032" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="034" indent="">
+		<line linenr="033" indent="">
 			<text>write</text>
 			<text> </text>
 			<text>to</text>
@@ -401,7 +407,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="035" indent="">
+		<line linenr="034" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -411,7 +417,7 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.log" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Logs info about an object." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="20">
@@ -560,7 +566,7 @@
 					<sval type="int" val="149" />
 					<sval type="int" val="16" />
 					<sval type="int" val="5" />
-					<sval type="string" val="%s --- %s --- ID: %s --- name: %s --- Job ID: %s " />
+					<sval type="string" val="%s --- %s --- ID: %s --- Name: %s --- Job ID: %s " />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
 					<sval type="int" val="131074" />
@@ -576,7 +582,7 @@
 					<sval type="int" val="149" />
 					<sval type="int" val="17" />
 					<sval type="int" val="5" />
-					<sval type="string" val="%s --- Race: %s --- True Owner: %s --- Renamed: %s --- Home Sector: %s" />
+					<sval type="string" val="%s --- Race: %s --- True Owner: %s --- Renamed: %s --- Sector: %s" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="16" />
 					<sval type="int" val="131074" />
@@ -586,19 +592,19 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="12" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="13" />
+					<sval type="int" val="15" />
 				</sval>
 				<sval type="array" size="14">
 					<sval type="int" val="149" />
 					<sval type="int" val="18" />
 					<sval type="int" val="5" />
-					<sval type="string" val="%s --- Homebase: %s --- Sector: %s --- Class: %s --- Type: %s" />
+					<sval type="string" val="%s --- Homebase: %s ---  Home Sector: %s --- Class: %s --- Type: %s" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="17" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="14" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="15" />
+					<sval type="int" val="13" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="10" />
 					<sval type="int" val="131074" />
@@ -662,7 +668,7 @@
 					<sval type="string" val="logFile" />
 				</sval>
 			</sval>
-			<sval type="array" size="10">
+			<sval type="array" size="9">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -676,12 +682,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="DESCRIPTION: Takes an object such as a ship or station and logs info about it" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
+					<sval type="string" val="DESCRIPTION: Takes an object such as a ship or station and logs info about it." />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

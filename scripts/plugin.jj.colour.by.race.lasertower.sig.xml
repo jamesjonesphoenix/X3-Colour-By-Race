@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.lasertower.sig</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Similar to ship.sig but also strips timer from lasertower name.</description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -21,15 +21,12 @@
 			<comment>*                       We do this because we can't trigger a signal for station creation so it's a potentially good way to catch an uncoloured station when it reappears. </comment>
 		</line>
 		<line linenr="005" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="006" indent="">
 			<comment>* AUTHOR: JJ     DATE: 24 January 2023</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$isRenamed</var>
 			<text> </text>
 			<text>=</text>
@@ -48,7 +45,7 @@
 			<text>=</text>
 			<text>'JJ.Set.New.Name'</text>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -59,12 +56,12 @@
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="010" indent="&#160;">
+		<line linenr="009" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<var>$pluginData</var>
 			<text> </text>
 			<text>=</text>
@@ -80,24 +77,33 @@
 			<text>=</text>
 			<text>'plugin.jj.colour.by.race'</text>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="011" indent="">
 			<var>$debug</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>3</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="012" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="014" indent="&#160;" interruptable="@">
+		<line linenr="013" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -115,7 +121,7 @@
 			<text>=</text>
 			<text>'Lasertower Signal'</text>
 		</line>
-		<line linenr="015" indent="" interruptable="@">
+		<line linenr="014" indent="" interruptable="@">
 			<var>$substringSearchArray</var>
 			<text> </text>
 			<text>=</text>
@@ -130,12 +136,8 @@
 			<call>plugin.jj.colour.by.race.getsubstrings</call>
 			<text> </text>
 			<text>:</text>
-			<text> </text>
-			<text>category</text>
-			<text>=</text>
-			<var>1</var>
 		</line>
-		<line linenr="016" indent="" interruptable="@">
+		<line linenr="015" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -153,11 +155,15 @@
 			<text>=</text>
 			<var>$substringSearchArray</var>
 			<text> </text>
+			<text>index</text>
+			<text>=</text>
+			<var>1</var>
+			<text> </text>
 			<text>debug</text>
 			<text>=</text>
 			<var>$debug</var>
 		</line>
-		<line linenr="017" indent="" interruptable="@">
+		<line linenr="016" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -171,17 +177,26 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="017" indent="">
 			<var>$shipsToColour</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>10</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="019" indent="">
+		<line linenr="018" indent="">
 			<text>append</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -192,18 +207,18 @@
 			<text> </text>
 			<var>$shipsToColour</var>
 		</line>
-		<line linenr="020" indent="">
+		<line linenr="019" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="021" indent="" />
+		<line linenr="020" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.lasertower.sig" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Similar to ship.sig but also strips timer from lasertower name." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="5">
@@ -275,25 +290,25 @@
 					<sval type="int" val="5" />
 					<sval type="string" val="Lasertower Signal" />
 				</sval>
-				<sval type="array" size="8">
+				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.jj.colour.by.race.getsubstrings" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="1" />
-					<sval type="int" val="4" />
-					<sval type="int" val="1" />
+					<sval type="int" val="0" />
 				</sval>
-				<sval type="array" size="10">
+				<sval type="array" size="12">
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.jj.colour.by.race.object" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="2" />
+					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
 				</sval>
@@ -327,7 +342,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="8">
+			<sval type="array" size="7">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -347,11 +362,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="                      We do this because we can't trigger a signal for station creation so it's a potentially good way to catch an uncoloured station when it reappears. " />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

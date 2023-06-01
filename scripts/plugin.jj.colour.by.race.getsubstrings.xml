@@ -5,10 +5,8 @@
 	<name>plugin.jj.colour.by.race.getsubstrings</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
-	<arguments>
-		<argument index="1" name="category" type="Var/Number" desc="category" />
-	</arguments>
+	<description>Grabs substrings for race from main global substrings variable.</description>
+	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
 			<comment>* ************************************************</comment>
@@ -20,15 +18,12 @@
 			<comment>* DESCRIPTION: Grabs substrings for a particular race from the main global substrings variable. </comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 27 January 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>$pluginData</var>
 			<text> </text>
 			<text>=</text>
@@ -44,27 +39,45 @@
 			<text>=</text>
 			<text>'plugin.jj.colour.by.race'</text>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$races</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>5</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<var>$substringSearchArrays</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>6</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="009" indent="">
 			<var>$raceID</var>
 			<text> </text>
 			<text>=</text>
@@ -87,20 +100,26 @@
 			<text>=</text>
 			<var>-1</var>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<var>$substringSearchArray</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$substringSearchArrays</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>$raceID</var>
-			<text>]</text>
-			<text>[</text>
-			<var>$category</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="011" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$substringSearchArray</var>
@@ -110,11 +129,10 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.getsubstrings" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Grabs substrings for race from main global substrings variable." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="6">
-				<sval type="string" val="category" />
+			<sval type="array" size="5">
 				<sval type="string" val="pluginData" />
 				<sval type="string" val="races" />
 				<sval type="string" val="substringSearchArrays" />
@@ -126,57 +144,50 @@
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
 					<sval type="string" val="plugin.jj.colour.by.race" />
-					<sval type="int" val="1" />
+					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="0" />
 					<sval type="int" val="4" />
 					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
-					<sval type="int" val="3" />
+					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
+					<sval type="int" val="0" />
 					<sval type="int" val="4" />
 					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="1083" />
-					<sval type="int" val="4" />
+					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="2" />
+					<sval type="int" val="1" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="7" />
 					<sval type="int" val="4" />
 					<sval type="int" val="-2" />
 				</sval>
-				<sval type="array" size="8">
-					<sval type="int" val="1081" />
-					<sval type="int" val="5" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
 					<sval type="int" val="4" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
 				</sval>
 			</sval>
-			<sval type="array" size="1">
-				<sval type="array" size="2">
-					<sval type="int" val="10" />
-					<sval type="string" val="category" />
-				</sval>
-			</sval>
-			<sval type="array" size="6">
+			<sval type="int" val="0" />
+			<sval type="array" size="5">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -191,11 +202,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="DESCRIPTION: Grabs substrings for a particular race from the main global substrings variable. " />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

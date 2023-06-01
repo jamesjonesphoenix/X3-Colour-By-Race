@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.lasert.strip.timer</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Strip out (xx:xx) from lasertower name.</description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -15,18 +15,15 @@
 			<comment>* SCRIPT NAME: Lasertower Strip Timer</comment>
 		</line>
 		<line linenr="003" indent="">
-			<comment>* DESCRIPTION: Strip out (xx:xx) from lasertower name</comment>
+			<comment>* DESCRIPTION: Strip out (xx:xx) from lasertower name.</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 3 April 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -38,7 +35,7 @@
 			<text> </text>
 			<text>name</text>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$leftBracket</var>
 			<text> </text>
 			<text>=</text>
@@ -57,7 +54,7 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -68,12 +65,12 @@
 			<text> </text>
 			<var>-1</var>
 		</line>
-		<line linenr="010" indent="&#160;">
+		<line linenr="009" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<var>$rightBracket</var>
 			<text> </text>
 			<text>=</text>
@@ -92,7 +89,7 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="011" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -103,12 +100,12 @@
 			<text> </text>
 			<var>-1</var>
 		</line>
-		<line linenr="013" indent="&#160;">
+		<line linenr="012" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="014" indent="">
+		<line linenr="013" indent="">
 			<var>$colon</var>
 			<text> </text>
 			<text>=</text>
@@ -127,7 +124,7 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="014" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -138,12 +135,12 @@
 			<text> </text>
 			<var>-1</var>
 		</line>
-		<line linenr="016" indent="&#160;">
+		<line linenr="015" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="017" indent="">
+		<line linenr="016" indent="">
 			<var>$gap1</var>
 			<text> </text>
 			<text>=</text>
@@ -154,7 +151,7 @@
 			<text> </text>
 			<var>$leftBracket</var>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="017" indent="">
 			<var>$gap2</var>
 			<text> </text>
 			<text>=</text>
@@ -165,7 +162,7 @@
 			<text> </text>
 			<var>$colon</var>
 		</line>
-		<line linenr="019" indent="">
+		<line linenr="018" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -184,12 +181,12 @@
 			<text> </text>
 			<var>3</var>
 		</line>
-		<line linenr="020" indent="&#160;">
+		<line linenr="019" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="021" indent="">
+		<line linenr="020" indent="">
 			<var>$gap1</var>
 			<text> </text>
 			<text>=</text>
@@ -200,7 +197,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="022" indent="">
+		<line linenr="021" indent="">
 			<var>$timer</var>
 			<text> </text>
 			<text>=</text>
@@ -221,7 +218,7 @@
 			<text>=</text>
 			<var>8</var>
 		</line>
-		<line linenr="023" indent="">
+		<line linenr="022" indent="">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -243,7 +240,7 @@
 			<text> </text>
 			<text>''</text>
 		</line>
-		<line linenr="024" indent="">
+		<line linenr="023" indent="">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -255,7 +252,7 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="025" indent="">
+		<line linenr="024" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -265,7 +262,7 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.lasert.strip.timer" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Strip out (xx:xx) from lasertower name." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="7">
@@ -479,7 +476,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="6">
+			<sval type="array" size="5">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -493,12 +490,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="DESCRIPTION: Strip out (xx:xx) from lasertower name" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
+					<sval type="string" val="DESCRIPTION: Strip out (xx:xx) from lasertower name." />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

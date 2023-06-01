@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.scanned</name>
 	<version>1</version>
 	<engineversion>50</engineversion>
-	<description></description>
+	<description>Run by scanned.sig</description>
 	<arguments>
 		<argument index="1" name="pluginData" type="Var/Array" desc="pluginData" />
 		<argument index="2" name="trueOwner" type="Var/Race" desc="trueOwner" />
@@ -21,46 +21,70 @@
 			<comment>* DESCRIPTION: Run by Scanned Signal, this script simply exists to reduce file size of Scanned Signal</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 20 March 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>$debug</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>3</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$races</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>5</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<var>$substringSearchArrays</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>6</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="010" indent="">
-			<var>$raceID</var>
+		<line linenr="009" indent="">
+			<var>$raceIDMask</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -82,20 +106,30 @@
 			<text>=</text>
 			<var>-1</var>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<var>$substringSearchArray</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$substringSearchArrays</var>
-			<text>[</text>
-			<var>$raceID</var>
-			<text>]</text>
-			<text>[</text>
-			<var>0</var>
-			<text>]</text>
+			<text> </text>
+			<text>(</text>
+			<var>$raceIDMask</var>
+			<text>)</text>
+			<text> </text>
+			<text>(</text>
+			<var>1</var>
+			<text>)</text>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="011" indent="">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -107,8 +141,8 @@
 			<text> </text>
 			<text>name</text>
 		</line>
-		<line linenr="013" indent="">
-			<var>$XS.Iterator1</var>
+		<line linenr="012" indent="">
+			<var>$i</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -120,27 +154,36 @@
 			<text> </text>
 			<var>$substringSearchArray</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="013" indent="">
 			<text>while</text>
 			<text> </text>
-			<var>$XS.Iterator1</var>
+			<var>$i</var>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="014" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
-			<var>$XS.Iterator1</var>
+			<var>$i</var>
 		</line>
-		<line linenr="016" indent="&#160;&#160;">
+		<line linenr="015" indent="&#160;">
 			<var>$substringSearch</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$substringSearchArray</var>
-			<text>[</text>
-			<var>$XS.Iterator1</var>
-			<text>]</text>
+			<text> </text>
+			<text>(</text>
+			<var>$i</var>
+			<text>)</text>
 		</line>
-		<line linenr="017" indent="&#160;">
+		<line linenr="016" indent="&#160;">
 			<var>$substringSearchPosition</var>
 			<text> </text>
 			<text>=</text>
@@ -159,7 +202,7 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="018" indent="&#160;">
+		<line linenr="017" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -170,31 +213,11 @@
 			<text> </text>
 			<var>-1</var>
 		</line>
-		<line linenr="019" indent="&#160;&#160;">
+		<line linenr="018" indent="&#160;&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="020" indent="&#160;&#160;">
-			<var>$terranConflict</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<text>engine</text>
-			<text> </text>
-			<text>version</text>
-		</line>
-		<line linenr="021" indent="&#160;&#160;">
-			<text>if</text>
-			<text> </text>
-			<var>$terranConflict</var>
-			<text> </text>
-			<text>&lt;</text>
-			<text> </text>
-			<var>54</var>
-		</line>
-		<line linenr="022" indent="&#160;">
-			<var>$index</var>
+		<line linenr="019" indent="&#160;">
+			<var>$raceIDCrim</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -216,191 +239,115 @@
 			<text>=</text>
 			<var>-1</var>
 		</line>
-		<line linenr="023" indent="&#160;&#160;">
-			<var>$raceIDs</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$pluginData</var>
-			<text>[</text>
-			<var>12</var>
-			<text>]</text>
-		</line>
-		<line linenr="024" indent="&#160;">
-			<var>$raceID</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$raceIDs</var>
-			<text>[</text>
-			<var>$index</var>
-			<text> </text>
-			<text>]</text>
-		</line>
-		<line linenr="025" indent="&#160;">
-			<text>else</text>
-		</line>
-		<line linenr="026" indent="&#160;">
-			<var>$raceID</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>race</text>
-			<text> </text>
-			<text>id</text>
-			<text> </text>
-			<text>for</text>
-			<text> </text>
-			<text>race</text>
-			<text>:</text>
-			<text> </text>
-			<var>$trueOwner</var>
-		</line>
-		<line linenr="027" indent="&#160;">
-			<text>end</text>
-		</line>
-		<line linenr="028" indent="&#160;">
-			<var>$raceID</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$raceID</var>
-			<text> </text>
-			<text>+</text>
-			<text> </text>
-			<var>100</var>
-		</line>
-		<line linenr="029" indent="&#160;">
-			<var>$smugglerSubstring</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>read</text>
-			<text> </text>
-			<text>text</text>
-			<text>:</text>
-			<text> </text>
-			<text>page</text>
-			<text>=</text>
-			<var>1000</var>
-			<text> </text>
-			<text>id</text>
-			<text>=</text>
-			<var>$raceID</var>
-		</line>
-		<line linenr="030" indent="&#160;">
-			<var>$raceID</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>index</text>
-			<text> </text>
-			<text>of</text>
-			<text> </text>
-			<var>$trueOwner</var>
-			<text> </text>
-			<text>in</text>
-			<text> </text>
-			<text>array</text>
-			<text> </text>
-			<var>$races</var>
-			<text> </text>
-			<text>offset</text>
-			<text>=</text>
-			<var>-1</var>
-		</line>
-		<line linenr="031" indent="&#160;">
+		<line linenr="020" indent="&#160;">
 			<var>$criminalSearchArray</var>
 			<text> </text>
 			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
 			<text> </text>
 			<var>$substringSearchArrays</var>
-			<text>[</text>
-			<var>$raceID</var>
-			<text>]</text>
-			<text>[</text>
-			<var>0</var>
-			<text>]</text>
+			<text> </text>
+			<text>(</text>
+			<var>$raceIDCrim</var>
+			<text>)</text>
+			<text> </text>
+			<text>(</text>
+			<var>3</var>
+			<text>)</text>
 		</line>
-		<line linenr="032" indent="&#160;">
-			<var>$newColourWrapper</var>
+		<line linenr="021" indent="&#160;">
+			<var>$numberOfStrings</var>
 			<text> </text>
 			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
 			<text> </text>
 			<var>$criminalSearchArray</var>
-			<text>[</text>
-			<var>0</var>
-			<text>]</text>
 		</line>
-		<line linenr="033" indent="&#160;">
-			<var>$smugglerSubstring</var>
+		<line linenr="022" indent="&#160;">
+			<var>$numberOfStrings</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<text>sprintf</text>
-			<text>:</text>
+			<var>$numberOfStrings</var>
 			<text> </text>
-			<text>fmt</text>
-			<text>=</text>
-			<var>$newColourWrapper</var>
-			<text>,</text>
+			<text>-</text>
 			<text> </text>
-			<var>$smugglerSubstring</var>
-			<text>,</text>
-			<text> </text>
-			<var>null</var>
-			<text>,</text>
-			<text> </text>
-			<var>null</var>
-			<text>,</text>
-			<text> </text>
-			<var>null</var>
-			<text>,</text>
-			<text> </text>
-			<var>null</var>
+			<var>1</var>
 		</line>
-		<line linenr="034" indent="&#160;">
-			<var>$oldColourWrapper</var>
+		<line linenr="023" indent="&#160;">
+			<var>$criminalSubstring</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$substringSearchArray</var>
-			<text>[</text>
-			<var>0</var>
-			<text>]</text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$criminalSearchArray</var>
+			<text> </text>
+			<text>(</text>
+			<var>$numberOfStrings</var>
+			<text>)</text>
 		</line>
-		<line linenr="035" indent="&#160;&#160;">
+		<line linenr="024" indent="&#160;">
+			<var>$colouredSubstrings</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$substringSearchArrays</var>
+			<text> </text>
+			<text>(</text>
+			<var>$raceIDMask</var>
+			<text>)</text>
+			<text> </text>
+			<text>(</text>
+			<var>3</var>
+			<text>)</text>
+		</line>
+		<line linenr="025" indent="&#160;">
 			<var>$substringColoured</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<text>sprintf</text>
-			<text>:</text>
+			<text>array</text>
 			<text> </text>
-			<text>fmt</text>
-			<text>=</text>
-			<var>$oldColourWrapper</var>
-			<text>,</text>
+			<text>or</text>
 			<text> </text>
-			<var>$substringSearch</var>
-			<text>,</text>
+			<text>table</text>
 			<text> </text>
-			<var>null</var>
-			<text>,</text>
+			<text>get</text>
 			<text> </text>
-			<var>null</var>
-			<text>,</text>
+			<var>$colouredSubstrings</var>
 			<text> </text>
-			<var>null</var>
-			<text>,</text>
-			<text> </text>
-			<var>null</var>
+			<text>(</text>
+			<var>$i</var>
+			<text>)</text>
 		</line>
-		<line linenr="036" indent="&#160;">
+		<line linenr="026" indent="&#160;">
 			<var>$checkAlreadyColoured</var>
 			<text> </text>
 			<text>=</text>
@@ -419,7 +366,7 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="037" indent="&#160;">
+		<line linenr="027" indent="&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -430,14 +377,14 @@
 			<text> </text>
 			<var>-1</var>
 		</line>
-		<line linenr="038" indent="&#160;">
+		<line linenr="028" indent="&#160;&#160;">
 			<var>$substringSearch</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$substringColoured</var>
 		</line>
-		<line linenr="039" indent="&#160;">
+		<line linenr="029" indent="&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -457,9 +404,9 @@
 			<text> </text>
 			<text>with</text>
 			<text> </text>
-			<var>$smugglerSubstring</var>
+			<var>$criminalSubstring</var>
 		</line>
-		<line linenr="040" indent="&#160;&#160;">
+		<line linenr="030" indent="&#160;">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -471,7 +418,7 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="041" indent="&#160;">
+		<line linenr="031" indent="&#160;">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -487,14 +434,14 @@
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="042" indent="">
+		<line linenr="032" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="043" indent="" interruptable="@">
+		<line linenr="033" indent="&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -512,22 +459,22 @@
 			<text>=</text>
 			<text>'Renamed Scanned Smuggler Ship'</text>
 		</line>
-		<line linenr="044" indent="&#160;">
+		<line linenr="034" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="045" indent="">
+		<line linenr="035" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="046" indent="">
+		<line linenr="036" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="047" indent="" interruptable="@">
+		<line linenr="037" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -545,7 +492,7 @@
 			<text>=</text>
 			<text>'Failed to Rename Scanned Smuggler Ship'</text>
 		</line>
-		<line linenr="048" indent="">
+		<line linenr="038" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -555,32 +502,30 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.scanned" />
 			<sval type="int" val="50" />
-			<sval type="string" val="" />
+			<sval type="string" val="Run by scanned.sig" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="20">
+			<sval type="array" size="18">
 				<sval type="string" val="pluginData" />
 				<sval type="string" val="trueOwner" />
 				<sval type="string" val="debug" />
 				<sval type="string" val="races" />
 				<sval type="string" val="substringSearchArrays" />
-				<sval type="string" val="raceID" />
+				<sval type="string" val="raceIDMask" />
 				<sval type="string" val="substringSearchArray" />
 				<sval type="string" val="name" />
+				<sval type="string" val="i" />
 				<sval type="string" val="substringSearch" />
-				<sval type="string" val="XS.Iterator1" />
 				<sval type="string" val="substringSearchPosition" />
-				<sval type="string" val="terranConflict" />
-				<sval type="string" val="index" />
-				<sval type="string" val="raceIDs" />
-				<sval type="string" val="smugglerSubstring" />
+				<sval type="string" val="raceIDCrim" />
 				<sval type="string" val="criminalSearchArray" />
-				<sval type="string" val="newColourWrapper" />
-				<sval type="string" val="oldColourWrapper" />
+				<sval type="string" val="numberOfStrings" />
+				<sval type="string" val="criminalSubstring" />
+				<sval type="string" val="colouredSubstrings" />
 				<sval type="string" val="substringColoured" />
 				<sval type="string" val="checkAlreadyColoured" />
 			</sval>
-			<sval type="array" size="41">
+			<sval type="array" size="33">
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
 					<sval type="int" val="2" />
@@ -623,7 +568,7 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="5" />
 					<sval type="int" val="4" />
-					<sval type="int" val="0" />
+					<sval type="int" val="1" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="1028" />
@@ -633,30 +578,30 @@
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="131" />
-					<sval type="int" val="9" />
+					<sval type="int" val="8" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610602999" />
+					<sval type="int" val="-1610605047" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="9" />
+					<sval type="int" val="8" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="143" />
-					<sval type="int" val="9" />
+					<sval type="int" val="8" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="9" />
+					<sval type="int" val="8" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="1076" />
@@ -664,7 +609,7 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
@@ -685,87 +630,9 @@
 					<sval type="int" val="112" />
 					<sval type="int" val="7" />
 				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="152" />
-					<sval type="int" val="11" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610607869" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="11" />
-					<sval type="int" val="4" />
-					<sval type="int" val="54" />
-					<sval type="int" val="15" />
-					<sval type="int" val="3" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-2" />
-				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="1083" />
-					<sval type="int" val="12" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="int" val="4" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="129" />
-					<sval type="int" val="13" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="4" />
-					<sval type="int" val="12" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="129" />
-					<sval type="int" val="5" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="13" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="12" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="112" />
-					<sval type="int" val="20" />
-				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="1616" />
-					<sval type="int" val="5" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="5" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
-					<sval type="int" val="4" />
-					<sval type="int" val="100" />
-					<sval type="int" val="15" />
 					<sval type="int" val="11" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="11" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="126" />
-					<sval type="int" val="14" />
-					<sval type="int" val="4" />
-					<sval type="int" val="1000" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
-				</sval>
-				<sval type="array" size="8">
-					<sval type="int" val="1083" />
-					<sval type="int" val="5" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
@@ -775,76 +642,75 @@
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="1081" />
+					<sval type="int" val="12" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+					<sval type="int" val="4" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="13" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="13" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="12" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="14" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="12" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="1081" />
 					<sval type="int" val="15" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="4" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="5" />
 					<sval type="int" val="4" />
-					<sval type="int" val="0" />
+					<sval type="int" val="3" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
 					<sval type="int" val="16" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
-					<sval type="int" val="4" />
-					<sval type="int" val="0" />
-				</sval>
-				<sval type="array" size="14">
-					<sval type="int" val="149" />
-					<sval type="int" val="14" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="16" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="14" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="129" />
-					<sval type="int" val="17" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="6" />
-					<sval type="int" val="4" />
-					<sval type="int" val="0" />
-				</sval>
-				<sval type="array" size="14">
-					<sval type="int" val="149" />
-					<sval type="int" val="18" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="17" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="8" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="1076" />
-					<sval type="int" val="19" />
+					<sval type="int" val="17" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="18" />
+					<sval type="int" val="16" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-536862969" />
+					<sval type="int" val="-536865017" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="19" />
+					<sval type="int" val="17" />
 					<sval type="int" val="4" />
 					<sval type="int" val="-1" />
 					<sval type="int" val="15" />
@@ -856,10 +722,10 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="18" />
+					<sval type="int" val="16" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
@@ -869,7 +735,7 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
+					<sval type="int" val="9" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="14" />
 				</sval>
@@ -889,7 +755,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610603512" />
+					<sval type="int" val="-1610605560" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
@@ -917,7 +783,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610602488" />
+					<sval type="int" val="-1610604536" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
@@ -950,7 +816,7 @@
 					<sval type="string" val="trueOwner" />
 				</sval>
 			</sval>
-			<sval type="array" size="10">
+			<sval type="array" size="7">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -969,11 +835,6 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
 					<sval type="string" val="AUTHOR: JJ     DATE: 20 March 2023" />
 				</sval>
 				<sval type="array" size="3">
@@ -986,15 +847,7 @@
 					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="19" />
-					<sval type="int" val="5" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="20" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="38" />
+					<sval type="int" val="30" />
 					<sval type="int" val="4" />
 				</sval>
 			</sval>

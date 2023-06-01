@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.commandship</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Checks if ship is an XRM command ship with sector as part of name.</description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -21,15 +21,12 @@
 			<comment>*                       This is useful for if we've coloured sector names we'll need to strip colour tags from the sector name</comment>
 		</line>
 		<line linenr="005" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="006" indent="">
 			<comment>* AUTHOR: JJ     DATE: 28 January 2023</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$jobsToCheck</var>
 			<text> </text>
 			<text>=</text>
@@ -43,7 +40,7 @@
 			<text>=</text>
 			<var>5</var>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<var>$jobsToCheck</var>
 			<text>[</text>
 			<var>0</var>
@@ -53,7 +50,7 @@
 			<text> </text>
 			<var>6510</var>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="009" indent="">
 			<var>$jobsToCheck</var>
 			<text>[</text>
 			<var>1</var>
@@ -63,7 +60,7 @@
 			<text> </text>
 			<var>6532</var>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<var>$jobsToCheck</var>
 			<text>[</text>
 			<var>2</var>
@@ -73,7 +70,7 @@
 			<text> </text>
 			<var>8722</var>
 		</line>
-		<line linenr="012" indent="&#160;">
+		<line linenr="011" indent="">
 			<var>$jobsToCheck</var>
 			<text>[</text>
 			<var>3</var>
@@ -83,7 +80,7 @@
 			<text> </text>
 			<var>8726</var>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="012" indent="">
 			<var>$jobsToCheck</var>
 			<text>[</text>
 			<var>4</var>
@@ -93,7 +90,7 @@
 			<text> </text>
 			<var>8734</var>
 		</line>
-		<line linenr="014" indent="">
+		<line linenr="013" indent="">
 			<var>$jobID</var>
 			<text> </text>
 			<text>=</text>
@@ -107,7 +104,7 @@
 			<text> </text>
 			<text>id</text>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="014" indent="">
 			<var>$index</var>
 			<text> </text>
 			<text>=</text>
@@ -130,7 +127,7 @@
 			<text>=</text>
 			<var>-1</var>
 		</line>
-		<line linenr="016" indent="">
+		<line linenr="015" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -141,15 +138,15 @@
 			<text> </text>
 			<var>-1</var>
 		</line>
-		<line linenr="017" indent="">
+		<line linenr="016" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="017" indent="">
 			<comment>* Redemption, CEO's Investment, Light of Hope, Rolk's Demise, Unholy Retribution</comment>
 		</line>
-		<line linenr="019" indent="&#160;">
+		<line linenr="018" indent="">
 			<var>$stringsIDs</var>
 			<text> </text>
 			<text>=</text>
@@ -163,7 +160,7 @@
 			<text>=</text>
 			<var>5</var>
 		</line>
-		<line linenr="020" indent="&#160;">
+		<line linenr="019" indent="">
 			<var>$stringsIDs</var>
 			<text>[</text>
 			<var>0</var>
@@ -173,7 +170,7 @@
 			<text> </text>
 			<var>1021706</var>
 		</line>
-		<line linenr="021" indent="&#160;">
+		<line linenr="020" indent="">
 			<var>$stringsIDs</var>
 			<text>[</text>
 			<var>1</var>
@@ -183,7 +180,7 @@
 			<text> </text>
 			<var>30050</var>
 		</line>
-		<line linenr="022" indent="">
+		<line linenr="021" indent="">
 			<var>$stringsIDs</var>
 			<text>[</text>
 			<var>2</var>
@@ -193,7 +190,7 @@
 			<text> </text>
 			<var>1023800</var>
 		</line>
-		<line linenr="023" indent="">
+		<line linenr="022" indent="">
 			<var>$stringsIDs</var>
 			<text>[</text>
 			<var>3</var>
@@ -203,7 +200,7 @@
 			<text> </text>
 			<var>1023828</var>
 		</line>
-		<line linenr="024" indent="">
+		<line linenr="023" indent="">
 			<var>$stringsIDs</var>
 			<text>[</text>
 			<var>4</var>
@@ -213,7 +210,7 @@
 			<text> </text>
 			<var>1023825</var>
 		</line>
-		<line linenr="025" indent="">
+		<line linenr="024" indent="">
 			<var>$stringID</var>
 			<text> </text>
 			<text>=</text>
@@ -223,7 +220,7 @@
 			<var>$index</var>
 			<text>]</text>
 		</line>
-		<line linenr="026" indent="">
+		<line linenr="025" indent="">
 			<var>$string</var>
 			<text> </text>
 			<text>=</text>
@@ -241,7 +238,7 @@
 			<text>=</text>
 			<var>$stringID</var>
 		</line>
-		<line linenr="027" indent="" interruptable="@">
+		<line linenr="026" indent="" interruptable="@">
 			<var>$cleanString</var>
 			<text> </text>
 			<text>=</text>
@@ -261,7 +258,7 @@
 			<text>=</text>
 			<var>$string</var>
 		</line>
-		<line linenr="028" indent="">
+		<line linenr="027" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$cleanString</var>
@@ -270,7 +267,7 @@
 			<text> </text>
 			<var>$string</var>
 		</line>
-		<line linenr="029" indent="">
+		<line linenr="028" indent="&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -282,7 +279,7 @@
 			<text> </text>
 			<text>name</text>
 		</line>
-		<line linenr="030" indent="">
+		<line linenr="029" indent="&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -304,7 +301,7 @@
 			<text> </text>
 			<var>$cleanString</var>
 		</line>
-		<line linenr="031" indent="">
+		<line linenr="030" indent="&#160;">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -316,10 +313,10 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="032" indent="">
+		<line linenr="031" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="033" indent="">
+		<line linenr="032" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -329,7 +326,7 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.commandship" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Checks if ship is an XRM command ship with sector as part of name." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="8">
@@ -552,7 +549,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="9">
+			<sval type="array" size="8">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -572,11 +569,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="                      This is useful for if we've coloured sector names we'll need to strip colour tags from the sector name" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

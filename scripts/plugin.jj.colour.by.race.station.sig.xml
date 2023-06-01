@@ -2,23 +2,23 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>plugin.jj.colour.by.race.drone.sig</name>
+	<name>plugin.jj.colour.by.race.station.sig</name>
 	<version>1</version>
-	<engineversion>44</engineversion>
-	<description>Same as ship.sig but we don`t need to check drones name a second time so no need to add it to global array.</description>
+	<engineversion>50</engineversion>
+	<description>Runs name colouring script on stations. Similar to ship.sig.</description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
 			<comment>* ************************************************</comment>
 		</line>
 		<line linenr="002" indent="">
-			<comment>* SCRIPT NAME: Drone Signal </comment>
+			<comment>* SCRIPT NAME: Station Signal</comment>
 		</line>
 		<line linenr="003" indent="">
-			<comment>* DESCRIPTION: Same as ship.sig but we don't need to check drones name a second time so no need to add it to global array.</comment>
+			<comment>* DESCRIPTION: Runs name colouring script on stations. Checks the station for local var set by naming script to avoid wasting CPU.             </comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* AUTHOR: JJ     DATE: 1 February 2023</comment>
+			<comment>* AUTHOR: JJ     DATE: 27 May 2023</comment>
 		</line>
 		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
@@ -79,10 +79,19 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>3</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
 		<line linenr="011" indent="">
 			<text>do</text>
@@ -107,7 +116,7 @@
 			<text> </text>
 			<text>prepend</text>
 			<text>=</text>
-			<text>'Drone Signal'</text>
+			<text>'Station Signal'</text>
 		</line>
 		<line linenr="013" indent="" interruptable="@">
 			<var>$substringSearchArray</var>
@@ -145,7 +154,7 @@
 			<text> </text>
 			<text>index</text>
 			<text>=</text>
-			<var>1</var>
+			<var>2</var>
 			<text> </text>
 			<text>debug</text>
 			<text>=</text>
@@ -159,9 +168,9 @@
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="plugin.jj.colour.by.race.drone.sig" />
-			<sval type="int" val="44" />
-			<sval type="string" val="Same as ship.sig but we don`t need to check drones name a second time so no need to add it to global array." />
+			<sval type="string" val="plugin.jj.colour.by.race.station.sig" />
+			<sval type="int" val="50" />
+			<sval type="string" val="Runs name colouring script on stations. Similar to ship.sig." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="4">
@@ -230,7 +239,7 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="1" />
 					<sval type="int" val="5" />
-					<sval type="string" val="Drone Signal" />
+					<sval type="string" val="Station Signal" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
@@ -250,7 +259,7 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
 					<sval type="int" val="4" />
-					<sval type="int" val="1" />
+					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
 				</sval>
@@ -270,17 +279,17 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="SCRIPT NAME: Drone Signal " />
+					<sval type="string" val="SCRIPT NAME: Station Signal" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="DESCRIPTION: Same as ship.sig but we don't need to check drones name a second time so no need to add it to global array." />
+					<sval type="string" val="DESCRIPTION: Runs name colouring script on stations. Checks the station for local var set by naming script to avoid wasting CPU.             " />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="AUTHOR: JJ     DATE: 1 February 2023" />
+					<sval type="string" val="AUTHOR: JJ     DATE: 27 May 2023" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

@@ -2,28 +2,31 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>plugin.jj.colour.by.race.drone.sig</name>
+	<name>plugin.jj.colour.by.race.station.factory.sig</name>
 	<version>1</version>
-	<engineversion>44</engineversion>
-	<description>Same as ship.sig but we don`t need to check drones name a second time so no need to add it to global array.</description>
+	<engineversion>50</engineversion>
+	<description>Runs name colouring script on factories. Only used for some XRM stations.</description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
 			<comment>* ************************************************</comment>
 		</line>
 		<line linenr="002" indent="">
-			<comment>* SCRIPT NAME: Drone Signal </comment>
+			<comment>* SCRIPT NAME: Station Factory Signal</comment>
 		</line>
 		<line linenr="003" indent="">
-			<comment>* DESCRIPTION: Same as ship.sig but we don't need to check drones name a second time so no need to add it to global array.</comment>
+			<comment>* DESCRIPTION: Runs name colouring script on factories. Only needed if XRM is running.              </comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* AUTHOR: JJ     DATE: 1 February 2023</comment>
+			<comment>*                       Checks the station for local var set by naming script so we don't waste CPU renaming the station over and over again.</comment>
 		</line>
 		<line linenr="005" indent="">
-			<comment>* ************************************************</comment>
+			<comment>* AUTHOR: JJ     DATE: 27 May 2023</comment>
 		</line>
 		<line linenr="006" indent="">
+			<comment>* ************************************************</comment>
+		</line>
+		<line linenr="007" indent="">
 			<var>$isRenamed</var>
 			<text> </text>
 			<text>=</text>
@@ -42,7 +45,7 @@
 			<text>=</text>
 			<text>'JJ.Set.New.Name'</text>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="008" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -53,12 +56,12 @@
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="008" indent="&#160;">
+		<line linenr="009" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="010" indent="">
 			<var>$pluginData</var>
 			<text> </text>
 			<text>=</text>
@@ -74,24 +77,33 @@
 			<text>=</text>
 			<text>'plugin.jj.colour.by.race'</text>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="011" indent="">
 			<var>$debug</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>3</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="012" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="012" indent="&#160;" interruptable="@">
+		<line linenr="013" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -107,9 +119,119 @@
 			<text> </text>
 			<text>prepend</text>
 			<text>=</text>
-			<text>'Drone Signal'</text>
+			<text>'Station Factory Signal'</text>
 		</line>
-		<line linenr="013" indent="" interruptable="@">
+		<line linenr="014" indent="">
+			<var>$races</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$pluginData</var>
+			<text> </text>
+			<text>(</text>
+			<var>5</var>
+			<text>)</text>
+		</line>
+		<line linenr="015" indent="">
+			<var>$i</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>index</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<var>[OWNER]</var>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$races</var>
+			<text> </text>
+			<text>offset</text>
+			<text>=</text>
+			<var>-1</var>
+		</line>
+		<line linenr="016" indent="" interruptable="@">
+			<var>$stationTypes</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.jj.colour.by.race.getstationtypes</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="017" indent="">
+			<var>$types</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$stationTypes</var>
+			<text> </text>
+			<text>(</text>
+			<var>$i</var>
+			<text>)</text>
+		</line>
+		<line linenr="018" indent="">
+			<var>$type</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>subtype</text>
+		</line>
+		<line linenr="019" indent="">
+			<text>skip</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<text>find</text>
+			<text> </text>
+			<var>$type</var>
+			<text> </text>
+			<text>in</text>
+			<text> </text>
+			<text>array</text>
+			<text>:</text>
+			<text> </text>
+			<var>$types</var>
+		</line>
+		<line linenr="020" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="021" indent="" interruptable="@">
 			<var>$substringSearchArray</var>
 			<text> </text>
 			<text>=</text>
@@ -125,7 +247,7 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="014" indent="" interruptable="@">
+		<line linenr="022" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -145,13 +267,13 @@
 			<text> </text>
 			<text>index</text>
 			<text>=</text>
-			<var>1</var>
+			<var>2</var>
 			<text> </text>
 			<text>debug</text>
 			<text>=</text>
 			<var>$debug</var>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="023" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -159,18 +281,23 @@
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="plugin.jj.colour.by.race.drone.sig" />
-			<sval type="int" val="44" />
-			<sval type="string" val="Same as ship.sig but we don`t need to check drones name a second time so no need to add it to global array." />
+			<sval type="string" val="plugin.jj.colour.by.race.station.factory.sig" />
+			<sval type="int" val="50" />
+			<sval type="string" val="Runs name colouring script on factories. Only used for some XRM stations." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="4">
+			<sval type="array" size="9">
 				<sval type="string" val="isRenamed" />
 				<sval type="string" val="pluginData" />
 				<sval type="string" val="debug" />
+				<sval type="string" val="races" />
+				<sval type="string" val="i" />
+				<sval type="string" val="stationTypes" />
+				<sval type="string" val="types" />
+				<sval type="string" val="type" />
 				<sval type="string" val="substringSearchArray" />
 			</sval>
-			<sval type="array" size="10">
+			<sval type="array" size="17">
 				<sval type="array" size="6">
 					<sval type="int" val="156" />
 					<sval type="int" val="131075" />
@@ -230,12 +357,65 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="1" />
 					<sval type="int" val="5" />
-					<sval type="string" val="Drone Signal" />
+					<sval type="string" val="Station Factory Signal" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="1083" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="7" />
+					<sval type="int" val="4" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.jj.colour.by.race.getstationtypes" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="6" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="660" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="7" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1406" />
+					<sval type="int" val="-536867321" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.jj.colour.by.race.getsubstrings" />
-					<sval type="int" val="3" />
+					<sval type="int" val="8" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="0" />
@@ -248,9 +428,9 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
+					<sval type="int" val="8" />
 					<sval type="int" val="4" />
-					<sval type="int" val="1" />
+					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
 				</sval>
@@ -261,7 +441,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="5">
+			<sval type="array" size="6">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -270,17 +450,22 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="SCRIPT NAME: Drone Signal " />
+					<sval type="string" val="SCRIPT NAME: Station Factory Signal" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="DESCRIPTION: Same as ship.sig but we don't need to check drones name a second time so no need to add it to global array." />
+					<sval type="string" val="DESCRIPTION: Runs name colouring script on factories. Only needed if XRM is running.              " />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="AUTHOR: JJ     DATE: 1 February 2023" />
+					<sval type="string" val="                      Checks the station for local var set by naming script so we don't waste CPU renaming the station over and over again." />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="AUTHOR: JJ     DATE: 27 May 2023" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

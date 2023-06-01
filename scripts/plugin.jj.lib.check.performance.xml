@@ -5,7 +5,7 @@
 	<name>plugin.jj.lib.check.performance</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Check if player sector is busy</description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -18,15 +18,12 @@
 			<comment>* DESCRIPTION: Check if sector is extremely busy or the player is under attack and the sector is pretty busy</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 23 February 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>$playerSector</var>
 			<text> </text>
 			<text>=</text>
@@ -38,7 +35,7 @@
 			<text> </text>
 			<text>sector</text>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$currentSectorShips</var>
 			<text> </text>
 			<text>=</text>
@@ -60,7 +57,7 @@
 			<text>/</text>
 			<text>station</text>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<var>$numberOfShips</var>
 			<text> </text>
 			<text>=</text>
@@ -73,7 +70,7 @@
 			<text> </text>
 			<var>$currentSectorShips</var>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="009" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -84,12 +81,12 @@
 			<text> </text>
 			<var>200</var>
 		</line>
-		<line linenr="011" indent="&#160;">
+		<line linenr="010" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="011" indent="">
 			<var>$attacker</var>
 			<text> </text>
 			<text>=</text>
@@ -101,12 +98,12 @@
 			<text> </text>
 			<text>attacker</text>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="012" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$attacker</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="013" indent="&#160;">
 			<var>$attackerSector</var>
 			<text> </text>
 			<text>=</text>
@@ -118,7 +115,7 @@
 			<text> </text>
 			<text>sector</text>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="014" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$playerSector</var>
@@ -127,7 +124,7 @@
 			<text> </text>
 			<var>$attackerSector</var>
 		</line>
-		<line linenr="016" indent="&#160;&#160;">
+		<line linenr="015" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -138,18 +135,18 @@
 			<text> </text>
 			<var>50</var>
 		</line>
-		<line linenr="017" indent="&#160;&#160;&#160;">
+		<line linenr="016" indent="&#160;&#160;&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="018" indent="&#160;">
+		<line linenr="017" indent="&#160;">
+			<text>end</text>
+		</line>
+		<line linenr="018" indent="">
 			<text>end</text>
 		</line>
 		<line linenr="019" indent="">
-			<text>end</text>
-		</line>
-		<line linenr="020" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>[FALSE]</var>
@@ -159,7 +156,7 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.lib.check.performance" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Check if player sector is busy" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="5">
@@ -271,7 +268,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="8">
+			<sval type="array" size="7">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -286,11 +283,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="DESCRIPTION: Check if sector is extremely busy or the player is under attack and the sector is pretty busy" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.captured.sig</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Removes local var so ship can be renamed after someone claims it.</description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -18,15 +18,12 @@
 			<comment>* DESCRIPTION: Removes local var set by Colour By Race plugin. This allows a chance for the ship to renamed after someone claims it</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 24 February 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -45,7 +42,7 @@
 			<text>=</text>
 			<var>null</var>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$pluginData</var>
 			<text> </text>
 			<text>=</text>
@@ -61,24 +58,33 @@
 			<text>=</text>
 			<text>'plugin.jj.colour.by.race'</text>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<var>$debug</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>3</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="009" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="011" indent="&#160;" interruptable="@">
+		<line linenr="010" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -96,7 +102,7 @@
 			<text>=</text>
 			<text>'Captured Ship Signal'</text>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="011" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -106,7 +112,7 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.captured.sig" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Removes local var so ship can be renamed after someone claims it." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="2">
@@ -163,7 +169,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="6">
+			<sval type="array" size="5">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -178,11 +184,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="DESCRIPTION: Removes local var set by Colour By Race plugin. This allows a chance for the ship to renamed after someone claims it" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

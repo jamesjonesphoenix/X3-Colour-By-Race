@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.getstationtypes</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description> Returns array of station types to colour.</description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -15,18 +15,15 @@
 			<comment>* SCRIPT NAME: Get station types</comment>
 		</line>
 		<line linenr="003" indent="">
-			<comment>* DESCRIPTION: Array of station types to colour that aren't part of the [Docks] or [Shipyard] class.</comment>
+			<comment>* DESCRIPTION: Returns array of station types to colour that aren't part of the [Docks] or [Shipyard] class. They happen to all be part of XRM. </comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 14 February 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>$stationTypes</var>
 			<text> </text>
 			<text>=</text>
@@ -40,7 +37,7 @@
 			<text>=</text>
 			<var>6</var>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$types</var>
 			<text> </text>
 			<text>=</text>
@@ -53,160 +50,259 @@
 			<text>size</text>
 			<text>=</text>
 			<var>2</var>
+		</line>
+		<line linenr="008" indent="">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$types</var>
+			<text> </text>
+			<text>(</text>
+			<var>0</var>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>{SSTYPE_FACTORY@499}</var>
 		</line>
 		<line linenr="009" indent="">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
 			<var>$types</var>
-			<text>[</text>
-			<var>0</var>
-			<text>]</text>
+			<text> </text>
+			<text>(</text>
+			<var>1</var>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Argon \033BTerracorp\033X Weapons Dealer M}</var>
+			<var>{SSTYPE_FACTORY@492}</var>
 		</line>
 		<line linenr="010" indent="">
-			<var>$types</var>
-			<text>[</text>
-			<var>1</var>
-			<text>]</text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$stationTypes</var>
+			<text> </text>
+			<text>(</text>
+			<var>0</var>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Argon \033BTerracorp\033X Weapons Dealer L}</var>
+			<var>$types</var>
 		</line>
 		<line linenr="011" indent="">
-			<var>$stationTypes</var>
-			<text>[</text>
-			<var>0</var>
-			<text>]</text>
+			<var>$types</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$types</var>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>2</var>
 		</line>
 		<line linenr="012" indent="">
-			<var>$types</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
 			<text>array</text>
 			<text> </text>
-			<text>alloc</text>
-			<text>:</text>
+			<text>or</text>
 			<text> </text>
-			<text>size</text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$types</var>
+			<text> </text>
+			<text>(</text>
+			<var>0</var>
+			<text>)</text>
+			<text> </text>
 			<text>=</text>
-			<var>2</var>
+			<text> </text>
+			<var>{SSTYPE_FACTORY@500}</var>
 		</line>
 		<line linenr="013" indent="">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
 			<var>$types</var>
-			<text>[</text>
-			<var>0</var>
-			<text>]</text>
+			<text> </text>
+			<text>(</text>
+			<var>1</var>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Split \033MStrong Arms\033X Weapons Dealer M}</var>
+			<var>{SSTYPE_FACTORY@494}</var>
 		</line>
 		<line linenr="014" indent="">
-			<var>$types</var>
-			<text>[</text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$stationTypes</var>
+			<text> </text>
+			<text>(</text>
 			<var>1</var>
-			<text>]</text>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Split \033MStrong Arms\033X Weapons Dealer L}</var>
+			<var>$types</var>
 		</line>
 		<line linenr="015" indent="">
-			<var>$stationTypes</var>
-			<text>[</text>
-			<var>1</var>
-			<text>]</text>
+			<var>$types</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$types</var>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>2</var>
 		</line>
 		<line linenr="016" indent="">
-			<var>$types</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
 			<text>array</text>
 			<text> </text>
-			<text>alloc</text>
-			<text>:</text>
+			<text>or</text>
 			<text> </text>
-			<text>size</text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$types</var>
+			<text> </text>
+			<text>(</text>
+			<var>0</var>
+			<text>)</text>
+			<text> </text>
 			<text>=</text>
-			<var>2</var>
+			<text> </text>
+			<var>{SSTYPE_FACTORY@496}</var>
 		</line>
 		<line linenr="017" indent="">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
 			<var>$types</var>
-			<text>[</text>
-			<var>0</var>
-			<text>]</text>
+			<text> </text>
+			<text>(</text>
+			<var>1</var>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Paranid \033OHoly Dimensions\033X Weapons Dealer M}</var>
+			<var>{SSTYPE_FACTORY@495}</var>
 		</line>
 		<line linenr="018" indent="">
-			<var>$types</var>
-			<text>[</text>
-			<var>1</var>
-			<text>]</text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$stationTypes</var>
+			<text> </text>
+			<text>(</text>
+			<var>2</var>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Paranid \033OHoly Dimensions\033X Weapons Dealer L}</var>
+			<var>$types</var>
 		</line>
 		<line linenr="019" indent="">
-			<var>$stationTypes</var>
-			<text>[</text>
-			<var>2</var>
-			<text>]</text>
+			<var>$types</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$types</var>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>1</var>
 		</line>
 		<line linenr="020" indent="">
-			<var>$types</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
 			<text>array</text>
 			<text> </text>
-			<text>alloc</text>
-			<text>:</text>
+			<text>or</text>
 			<text> </text>
-			<text>size</text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$types</var>
+			<text> </text>
+			<text>(</text>
+			<var>0</var>
+			<text>)</text>
+			<text> </text>
 			<text>=</text>
-			<var>1</var>
+			<text> </text>
+			<var>{SSTYPE_FACTORY@497}</var>
 		</line>
 		<line linenr="021" indent="">
-			<var>$types</var>
-			<text>[</text>
-			<var>0</var>
-			<text>]</text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$stationTypes</var>
+			<text> </text>
+			<text>(</text>
+			<var>3</var>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Terran \033ADark Space\033X Weapons Dealer L}</var>
+			<var>$types</var>
 		</line>
 		<line linenr="022" indent="">
-			<var>$stationTypes</var>
-			<text>[</text>
-			<var>3</var>
-			<text>]</text>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$types</var>
-		</line>
-		<line linenr="023" indent="">
 			<var>$types</var>
 			<text> </text>
 			<text>=</text>
@@ -220,27 +316,45 @@
 			<text>=</text>
 			<var>1</var>
 		</line>
-		<line linenr="024" indent="">
+		<line linenr="023" indent="">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
 			<var>$types</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>0</var>
-			<text>]</text>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{\033MStrong Arms\033X Weapons Dealer XL}</var>
+			<var>{SSTYPE_FACTORY@493}</var>
+		</line>
+		<line linenr="024" indent="">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
+			<var>$stationTypes</var>
+			<text> </text>
+			<text>(</text>
+			<var>4</var>
+			<text>)</text>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$types</var>
 		</line>
 		<line linenr="025" indent="">
-			<var>$stationTypes</var>
-			<text>[</text>
-			<var>4</var>
-			<text>]</text>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$types</var>
-		</line>
-		<line linenr="026" indent="">
 			<var>$types</var>
 			<text> </text>
 			<text>=</text>
@@ -254,37 +368,64 @@
 			<text>=</text>
 			<var>2</var>
 		</line>
-		<line linenr="027" indent="">
+		<line linenr="026" indent="">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
 			<var>$types</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>0</var>
-			<text>]</text>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>{Pirates \033ODuke's\033X Weapons Dealer L}</var>
+			<var>{SSTYPE_FACTORY@498}</var>
 		</line>
-		<line linenr="028" indent="">
+		<line linenr="027" indent="">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
 			<var>$types</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>1</var>
-			<text>]</text>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>{Paranid Pleasure Complex}</var>
 		</line>
-		<line linenr="029" indent="">
+		<line linenr="028" indent="">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
 			<var>$stationTypes</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>5</var>
-			<text>]</text>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$types</var>
 		</line>
-		<line linenr="030" indent="">
+		<line linenr="029" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$stationTypes</var>
@@ -294,7 +435,7 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.getstationtypes" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val=" Returns array of station types to colour." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="2">
@@ -495,7 +636,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="6">
+			<sval type="array" size="5">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -509,12 +650,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="DESCRIPTION: Array of station types to colour that aren't part of the [Docks] or [Shipyard] class." />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
+					<sval type="string" val="DESCRIPTION: Returns array of station types to colour that aren't part of the [Docks] or [Shipyard] class. They happen to all be part of XRM. " />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

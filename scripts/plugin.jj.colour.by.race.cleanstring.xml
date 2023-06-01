@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.cleanstring</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Removes colour tags from a string</description>
 	<arguments>
 		<argument index="1" name="string" type="Var/String" desc="string to clean" />
 	</arguments>
@@ -20,22 +20,19 @@
 			<comment>* DESCRIPTION: Removes colour tags from a string</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 28 January 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>$stringUncoloured</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$string</var>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$pluginData</var>
 			<text> </text>
 			<text>=</text>
@@ -51,7 +48,7 @@
 			<text>=</text>
 			<text>'plugin.jj.colour.by.race'</text>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<var>$pageID</var>
 			<text> </text>
 			<text>=</text>
@@ -61,7 +58,7 @@
 			<var>2</var>
 			<text>]</text>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="009" indent="">
 			<var>$colourTags</var>
 			<text> </text>
 			<text>=</text>
@@ -97,14 +94,14 @@
 			<text>=</text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<var>$looped</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="012" indent="">
+		<line linenr="011" indent="">
 			<var>$i</var>
 			<text> </text>
 			<text>=</text>
@@ -117,17 +114,17 @@
 			<text> </text>
 			<var>$colourTags</var>
 		</line>
-		<line linenr="013" indent="&#160;">
+		<line linenr="012" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$i</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="013" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$i</var>
 		</line>
-		<line linenr="015" indent="&#160;&#160;">
+		<line linenr="014" indent="&#160;">
 			<var>$colourTag</var>
 			<text> </text>
 			<text>=</text>
@@ -137,7 +134,7 @@
 			<var>$i</var>
 			<text>]</text>
 		</line>
-		<line linenr="016" indent="&#160;&#160;">
+		<line linenr="015" indent="&#160;">
 			<var>$stringUncoloured</var>
 			<text> </text>
 			<text>=</text>
@@ -159,7 +156,7 @@
 			<text> </text>
 			<text>''</text>
 		</line>
-		<line linenr="017" indent="&#160;">
+		<line linenr="016" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -178,25 +175,25 @@
 			<text> </text>
 			<var>$string</var>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="017" indent="&#160;&#160;">
 			<comment>* Exit if we don't find the \033X tag to save loop cycles</comment>
 		</line>
-		<line linenr="019" indent="">
+		<line linenr="018" indent="&#160;&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>$string</var>
 		</line>
-		<line linenr="020" indent="">
+		<line linenr="019" indent="&#160;">
 			<var>$looped</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="021" indent="">
+		<line linenr="020" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="022" indent="">
+		<line linenr="021" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$stringUncoloured</var>
@@ -206,7 +203,7 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.cleanstring" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Removes colour tags from a string" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="8">
@@ -216,8 +213,8 @@
 				<sval type="string" val="pageID" />
 				<sval type="string" val="colourTags" />
 				<sval type="string" val="looped" />
-				<sval type="string" val="colourTag" />
 				<sval type="string" val="i" />
+				<sval type="string" val="colourTag" />
 			</sval>
 			<sval type="array" size="15">
 				<sval type="array" size="7">
@@ -266,7 +263,7 @@
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="131" />
-					<sval type="int" val="7" />
+					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="4" />
 				</sval>
@@ -275,21 +272,21 @@
 					<sval type="int" val="-1610609143" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="7" />
+					<sval type="int" val="6" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="143" />
-					<sval type="int" val="7" />
+					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
-					<sval type="int" val="6" />
+					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="4" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="7" />
+					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="1079" />
@@ -297,7 +294,7 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="6" />
+					<sval type="int" val="7" />
 					<sval type="int" val="5" />
 					<sval type="string" val="" />
 				</sval>
@@ -358,7 +355,7 @@
 					<sval type="string" val="string to clean" />
 				</sval>
 			</sval>
-			<sval type="array" size="8">
+			<sval type="array" size="7">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -373,11 +370,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="DESCRIPTION: Removes colour tags from a string" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

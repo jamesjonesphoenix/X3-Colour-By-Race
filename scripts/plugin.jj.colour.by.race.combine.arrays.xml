@@ -5,7 +5,7 @@
 	<name>plugin.jj.colour.by.race.combine.arrays</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Combines an array of arrays into a big one dimensional array and returns it</description>
 	<arguments>
 		<argument index="1" name="arrayOfArrays" type="Var/Array" desc="arrayOfArrays" />
 	</arguments>
@@ -20,15 +20,12 @@
 			<comment>* DESCRIPTION: Combines an array of arrays into a big one dimensional array and returns it</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 11 February 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>$return</var>
 			<text> </text>
 			<text>=</text>
@@ -42,21 +39,21 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<var>$lastIndex</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<var>$sizeOfReturn</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="009" indent="">
 			<var>$XS.Iterator1</var>
 			<text> </text>
 			<text>=</text>
@@ -69,17 +66,17 @@
 			<text> </text>
 			<var>$arrayOfArrays</var>
 		</line>
-		<line linenr="011" indent="&#160;">
+		<line linenr="010" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="012" indent="&#160;">
+		<line linenr="011" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="013" indent="&#160;">
+		<line linenr="012" indent="&#160;">
 			<var>$array</var>
 			<text> </text>
 			<text>=</text>
@@ -89,7 +86,7 @@
 			<var>$XS.Iterator1</var>
 			<text>]</text>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="013" indent="&#160;">
 			<var>$sizeOfArray</var>
 			<text> </text>
 			<text>=</text>
@@ -102,7 +99,7 @@
 			<text> </text>
 			<var>$array</var>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="014" indent="&#160;">
 			<var>$sizeOfReturn</var>
 			<text> </text>
 			<text>=</text>
@@ -113,7 +110,7 @@
 			<text> </text>
 			<var>$sizeOfArray</var>
 		</line>
-		<line linenr="016" indent="">
+		<line linenr="015" indent="&#160;">
 			<text>resize</text>
 			<text> </text>
 			<text>array</text>
@@ -124,7 +121,7 @@
 			<text> </text>
 			<var>$sizeOfReturn</var>
 		</line>
-		<line linenr="017" indent="">
+		<line linenr="016" indent="&#160;">
 			<text>copy</text>
 			<text> </text>
 			<text>array</text>
@@ -151,28 +148,28 @@
 			<text> </text>
 			<var>$lastIndex</var>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="017" indent="&#160;">
 			<var>$lastIndex</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$sizeOfReturn</var>
 		</line>
-		<line linenr="019" indent="">
+		<line linenr="018" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="020" indent="">
+		<line linenr="019" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$return</var>
 		</line>
-		<line linenr="021" indent="" />
+		<line linenr="020" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.colour.by.race.combine.arrays" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Combines an array of arrays into a big one dimensional array and returns it" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="7">
@@ -180,8 +177,8 @@
 				<sval type="string" val="return" />
 				<sval type="string" val="lastIndex" />
 				<sval type="string" val="sizeOfReturn" />
-				<sval type="string" val="array" />
 				<sval type="string" val="XS.Iterator1" />
+				<sval type="string" val="array" />
 				<sval type="string" val="sizeOfArray" />
 			</sval>
 			<sval type="array" size="14">
@@ -211,7 +208,7 @@
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="131" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
 				</sval>
@@ -220,27 +217,27 @@
 					<sval type="int" val="-1610609399" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="143" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="129" />
-					<sval type="int" val="4" />
+					<sval type="int" val="5" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="131" />
 					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
+					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
@@ -271,7 +268,7 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
+					<sval type="int" val="5" />
 					<sval type="int" val="4" />
 					<sval type="int" val="0" />
 					<sval type="int" val="131074" />
@@ -302,7 +299,7 @@
 					<sval type="string" val="arrayOfArrays" />
 				</sval>
 			</sval>
-			<sval type="array" size="8">
+			<sval type="array" size="7">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -317,11 +314,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="DESCRIPTION: Combines an array of arrays into a big one dimensional array and returns it" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />

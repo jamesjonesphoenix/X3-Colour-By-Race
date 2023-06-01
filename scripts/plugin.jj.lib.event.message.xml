@@ -5,7 +5,7 @@
 	<name>plugin.jj.lib.event.message</name>
 	<version>1</version>
 	<engineversion>44</engineversion>
-	<description></description>
+	<description>Send mesage and write log file.</description>
 	<arguments>
 		<argument index="1" name="textID" type="Var/Number" desc="textID" />
 		<argument index="2" name="pageID" type="Var/Number" desc="pageID" />
@@ -22,15 +22,12 @@
 			<comment>* DESCRIPTION: Send mesage, this script exists simply to save space in main script.</comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* </comment>
-		</line>
-		<line linenr="005" indent="">
 			<comment>* AUTHOR: JJ     DATE: 16 March 2023</comment>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
 		</line>
-		<line linenr="007" indent="">
+		<line linenr="006" indent="">
 			<var>$eventMessage</var>
 			<text> </text>
 			<text>=</text>
@@ -61,7 +58,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="008" indent="">
+		<line linenr="007" indent="">
 			<text>send</text>
 			<text> </text>
 			<text>incoming</text>
@@ -81,14 +78,14 @@
 			<text>=</text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="008" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="010" indent="&#160;">
+		<line linenr="009" indent="&#160;">
 			<text>write</text>
 			<text> </text>
 			<text>to</text>
@@ -107,7 +104,7 @@
 			<text>=</text>
 			<var>$eventMessage</var>
 		</line>
-		<line linenr="011" indent="">
+		<line linenr="010" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -117,7 +114,7 @@
 		<sval type="array" size="10">
 			<sval type="string" val="plugin.jj.lib.event.message" />
 			<sval type="int" val="44" />
-			<sval type="string" val="" />
+			<sval type="string" val="Send mesage and write log file." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
 			<sval type="array" size="4">
@@ -190,7 +187,7 @@
 					<sval type="string" val="debug" />
 				</sval>
 			</sval>
-			<sval type="array" size="6">
+			<sval type="array" size="5">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -205,11 +202,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="DESCRIPTION: Send mesage, this script exists simply to save space in main script." />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="string" val="" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
