@@ -145,6 +145,9 @@ Because I'm an idiot.
 
 ## Changelog
 
+##### 1.3.1
+* Prevented search substrings from being deleted when processing a plugin update. This bug prevented the galaxy from being reset so objects could be recoloured from a "blank slate".
+
 #### 1.3
 
 * Improved plugin deactivation. Plugin will now remove the colour from the coloured part of the name of all ships and stations in the galaxy and remove all local vars and global vars. It will be as if Colour By Race was never installed.  
