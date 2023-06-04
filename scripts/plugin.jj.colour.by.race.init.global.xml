@@ -101,27 +101,60 @@
 			<var>3</var>
 			<text>)</text>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="013" indent="&#160;">
+			<var>$searchStrings</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$pluginData</var>
+			<text> </text>
+			<text>(</text>
+			<var>6</var>
+			<text>)</text>
+		</line>
+		<line linenr="014" indent="">
 			<text>else</text>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="015" indent="&#160;">
 			<var>$activated</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="016" indent="&#160;">
 			<var>$debug</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="016" indent="">
+		<line linenr="017" indent="&#160;">
+			<var>$searchStrings</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>alloc</text>
+			<text>:</text>
+			<text> </text>
+			<text>size</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="018" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="017" indent="" interruptable="@">
+		<line linenr="019" indent="" interruptable="@">
 			<var>$races</var>
 			<text> </text>
 			<text>=</text>
@@ -137,21 +170,7 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="018" indent="">
-			<var>$searchStrings</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>array</text>
-			<text> </text>
-			<text>alloc</text>
-			<text>:</text>
-			<text> </text>
-			<text>size</text>
-			<text>=</text>
-			<var>0</var>
-		</line>
-		<line linenr="019" indent="">
+		<line linenr="020" indent="">
 			<var>$ships</var>
 			<text> </text>
 			<text>=</text>
@@ -165,7 +184,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="020" indent="">
+		<line linenr="021" indent="">
 			<var>$commandShips</var>
 			<text> </text>
 			<text>=</text>
@@ -179,7 +198,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="021" indent="">
+		<line linenr="022" indent="">
 			<var>$mobBosses</var>
 			<text> </text>
 			<text>=</text>
@@ -193,7 +212,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="022" indent="">
+		<line linenr="023" indent="">
 			<var>$laserTowers</var>
 			<text> </text>
 			<text>=</text>
@@ -207,7 +226,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="023" indent="">
+		<line linenr="024" indent="">
 			<var>$dockableShips</var>
 			<text> </text>
 			<text>=</text>
@@ -221,14 +240,14 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="024" indent="">
+		<line linenr="025" indent="">
 			<var>$pageID</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>9965</var>
 		</line>
-		<line linenr="025" indent="">
+		<line linenr="026" indent="">
 			<var>$engine</var>
 			<text> </text>
 			<text>=</text>
@@ -239,7 +258,7 @@
 			<text> </text>
 			<text>version</text>
 		</line>
-		<line linenr="026" indent="">
+		<line linenr="027" indent="">
 			<var>$jobIdStrings</var>
 			<text> </text>
 			<text>=</text>
@@ -275,7 +294,7 @@
 			<text>=</text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="027" indent="">
+		<line linenr="028" indent="">
 			<var>$numberOfJobs</var>
 			<text> </text>
 			<text>=</text>
@@ -288,7 +307,7 @@
 			<text> </text>
 			<var>$jobIdStrings</var>
 		</line>
-		<line linenr="028" indent="">
+		<line linenr="029" indent="">
 			<var>$jobIDs</var>
 			<text> </text>
 			<text>=</text>
@@ -302,7 +321,7 @@
 			<text>=</text>
 			<var>$numberOfJobs</var>
 		</line>
-		<line linenr="029" indent="">
+		<line linenr="030" indent="">
 			<var>$i</var>
 			<text> </text>
 			<text>=</text>
@@ -315,17 +334,17 @@
 			<text> </text>
 			<var>$jobIdStrings</var>
 		</line>
-		<line linenr="030" indent="">
+		<line linenr="031" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$i</var>
 		</line>
-		<line linenr="031" indent="&#160;">
+		<line linenr="032" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$i</var>
 		</line>
-		<line linenr="032" indent="&#160;">
+		<line linenr="033" indent="&#160;">
 			<var>$jobID</var>
 			<text> </text>
 			<text>=</text>
@@ -344,7 +363,7 @@
 			<var>$i</var>
 			<text>)</text>
 		</line>
-		<line linenr="033" indent="&#160;">
+		<line linenr="034" indent="&#160;">
 			<var>$jobID</var>
 			<text> </text>
 			<text>=</text>
@@ -357,7 +376,7 @@
 			<text> </text>
 			<text>integer</text>
 		</line>
-		<line linenr="034" indent="&#160;">
+		<line linenr="035" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -376,10 +395,10 @@
 			<text> </text>
 			<var>$jobID</var>
 		</line>
-		<line linenr="035" indent="">
+		<line linenr="036" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="036" indent="">
+		<line linenr="037" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -390,7 +409,7 @@
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="037" indent="&#160;" interruptable="@">
+		<line linenr="038" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -416,7 +435,7 @@
 			<text>=</text>
 			<var>$pageID</var>
 		</line>
-		<line linenr="038" indent="">
+		<line linenr="039" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$engine</var>
@@ -425,57 +444,57 @@
 			<text> </text>
 			<var>61</var>
 		</line>
-		<line linenr="039" indent="&#160;">
+		<line linenr="040" indent="&#160;">
 			<var>$fl</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="040" indent="">
+		<line linenr="041" indent="">
 			<text>else</text>
 		</line>
-		<line linenr="041" indent="&#160;">
+		<line linenr="042" indent="&#160;">
 			<var>$fl</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="042" indent="">
+		<line linenr="043" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="043" indent="">
+		<line linenr="044" indent="">
 			<comment>* 0: Plugin Version, 1: Activated, 2: PageID, 3: Debug, 4: Time last ran, 5: Races, 6: Race searchstrings</comment>
 		</line>
-		<line linenr="044" indent="">
+		<line linenr="045" indent="">
 			<comment>* 7 - 10 are arrays of objects to run colour scripts on a second time. We do this to overwrite any name changes by mods in their creation scripts. </comment>
 		</line>
-		<line linenr="045" indent="">
+		<line linenr="046" indent="">
 			<comment>* Examples include Pirate Guild and Military Base Response Revamp</comment>
 		</line>
-		<line linenr="046" indent="">
+		<line linenr="047" indent="">
 			<comment>* 7: Ships to colour a second time</comment>
 		</line>
-		<line linenr="047" indent="">
+		<line linenr="048" indent="">
 			<comment>* 8: M1 and M2s to check for XRM coloured names a second time</comment>
 		</line>
-		<line linenr="048" indent="">
+		<line linenr="049" indent="">
 			<comment>* 9: Pirate Guild mob bosses to colour a second time</comment>
 		</line>
-		<line linenr="049" indent="">
+		<line linenr="050" indent="">
 			<comment>* 10: Laser towers to check the homebase of.</comment>
 		</line>
-		<line linenr="050" indent="">
+		<line linenr="051" indent="">
 			<comment>* 11: Dockable ships to check the docked ships of</comment>
 		</line>
-		<line linenr="051" indent="">
+		<line linenr="052" indent="">
 			<comment>* 12: Job IDs which should not be prefixed with race name if search fails</comment>
 		</line>
-		<line linenr="052" indent="">
+		<line linenr="053" indent="">
 			<comment>* 13: Playing Farnham's Legend - True if FL, False if earlier eg AP or TC</comment>
 		</line>
-		<line linenr="053" indent="">
+		<line linenr="054" indent="">
 			<var>$pluginData</var>
 			<text> </text>
 			<text>=</text>
@@ -489,7 +508,7 @@
 			<text>=</text>
 			<var>14</var>
 		</line>
-		<line linenr="054" indent="">
+		<line linenr="055" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -506,9 +525,9 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>6</var>
+			<var>7</var>
 		</line>
-		<line linenr="055" indent="">
+		<line linenr="056" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -527,7 +546,7 @@
 			<text> </text>
 			<var>$activated</var>
 		</line>
-		<line linenr="056" indent="">
+		<line linenr="057" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -546,7 +565,7 @@
 			<text> </text>
 			<var>$pageID</var>
 		</line>
-		<line linenr="057" indent="">
+		<line linenr="058" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -565,7 +584,7 @@
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="058" indent="">
+		<line linenr="059" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -584,7 +603,7 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="059" indent="">
+		<line linenr="060" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -603,7 +622,7 @@
 			<text> </text>
 			<var>$races</var>
 		</line>
-		<line linenr="060" indent="">
+		<line linenr="061" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -622,7 +641,7 @@
 			<text> </text>
 			<var>$searchStrings</var>
 		</line>
-		<line linenr="061" indent="">
+		<line linenr="062" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -641,7 +660,7 @@
 			<text> </text>
 			<var>$ships</var>
 		</line>
-		<line linenr="062" indent="">
+		<line linenr="063" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -660,7 +679,7 @@
 			<text> </text>
 			<var>$commandShips</var>
 		</line>
-		<line linenr="063" indent="">
+		<line linenr="064" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -679,7 +698,7 @@
 			<text> </text>
 			<var>$mobBosses</var>
 		</line>
-		<line linenr="064" indent="">
+		<line linenr="065" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -698,7 +717,7 @@
 			<text> </text>
 			<var>$laserTowers</var>
 		</line>
-		<line linenr="065" indent="">
+		<line linenr="066" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -717,7 +736,7 @@
 			<text> </text>
 			<var>$dockableShips</var>
 		</line>
-		<line linenr="066" indent="">
+		<line linenr="067" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -736,7 +755,7 @@
 			<text> </text>
 			<var>$jobIDs</var>
 		</line>
-		<line linenr="067" indent="">
+		<line linenr="068" indent="">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -755,7 +774,7 @@
 			<text> </text>
 			<var>$fl</var>
 		</line>
-		<line linenr="068" indent="">
+		<line linenr="069" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$engine</var>
@@ -764,10 +783,10 @@
 			<text> </text>
 			<var>54</var>
 		</line>
-		<line linenr="069" indent="&#160;">
+		<line linenr="070" indent="&#160;">
 			<comment>* Playing Terran Conflict so 'get race id for race' command is unavailable.</comment>
 		</line>
-		<line linenr="070" indent="&#160;">
+		<line linenr="071" indent="&#160;">
 			<var>$raceIDs</var>
 			<text> </text>
 			<text>=</text>
@@ -781,7 +800,7 @@
 			<text>=</text>
 			<var>11</var>
 		</line>
-		<line linenr="071" indent="&#160;">
+		<line linenr="072" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -800,7 +819,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="072" indent="&#160;">
+		<line linenr="073" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -819,7 +838,7 @@
 			<text> </text>
 			<var>3</var>
 		</line>
-		<line linenr="073" indent="&#160;">
+		<line linenr="074" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -838,7 +857,7 @@
 			<text> </text>
 			<var>4</var>
 		</line>
-		<line linenr="074" indent="&#160;">
+		<line linenr="075" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -857,7 +876,7 @@
 			<text> </text>
 			<var>18</var>
 		</line>
-		<line linenr="075" indent="&#160;">
+		<line linenr="076" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -876,7 +895,7 @@
 			<text> </text>
 			<var>16</var>
 		</line>
-		<line linenr="076" indent="&#160;">
+		<line linenr="077" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -895,7 +914,7 @@
 			<text> </text>
 			<var>8</var>
 		</line>
-		<line linenr="077" indent="&#160;">
+		<line linenr="078" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -914,7 +933,7 @@
 			<text> </text>
 			<var>19</var>
 		</line>
-		<line linenr="078" indent="&#160;">
+		<line linenr="079" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -933,7 +952,7 @@
 			<text> </text>
 			<var>9</var>
 		</line>
-		<line linenr="079" indent="&#160;">
+		<line linenr="080" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -952,7 +971,7 @@
 			<text> </text>
 			<var>17</var>
 		</line>
-		<line linenr="080" indent="&#160;">
+		<line linenr="081" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -971,7 +990,7 @@
 			<text> </text>
 			<var>2</var>
 		</line>
-		<line linenr="081" indent="&#160;">
+		<line linenr="082" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -990,7 +1009,7 @@
 			<text> </text>
 			<var>5</var>
 		</line>
-		<line linenr="082" indent="&#160;">
+		<line linenr="083" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -1006,10 +1025,10 @@
 			<text>=</text>
 			<var>$raceIDs</var>
 		</line>
-		<line linenr="083" indent="">
+		<line linenr="084" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="084" indent="">
+		<line linenr="085" indent="">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -1025,7 +1044,7 @@
 			<text>=</text>
 			<var>$pluginData</var>
 		</line>
-		<line linenr="085" indent="">
+		<line linenr="086" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$pluginData</var>
@@ -1043,8 +1062,8 @@
 				<sval type="string" val="pluginData" />
 				<sval type="string" val="activated" />
 				<sval type="string" val="debug" />
-				<sval type="string" val="races" />
 				<sval type="string" val="searchStrings" />
+				<sval type="string" val="races" />
 				<sval type="string" val="ships" />
 				<sval type="string" val="commandShips" />
 				<sval type="string" val="mobBosses" />
@@ -1060,7 +1079,7 @@
 				<sval type="string" val="fl" />
 				<sval type="string" val="raceIDs" />
 			</sval>
-			<sval type="array" size="65">
+			<sval type="array" size="66">
 				<sval type="array" size="4">
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
@@ -1069,7 +1088,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610610941" />
+					<sval type="int" val="-1610610685" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
@@ -1112,9 +1131,17 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="3" />
 				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="6" />
+				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="9" />
+					<sval type="int" val="11" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
@@ -1134,18 +1161,18 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="128" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.jj.colour.by.race.get.races" />
-					<sval type="int" val="4" />
+					<sval type="int" val="5" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="0" />
-				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="128" />
-					<sval type="int" val="5" />
-					<sval type="int" val="4" />
 					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="4">
@@ -1223,7 +1250,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610605559" />
+					<sval type="int" val="-1610605303" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="16" />
@@ -1259,11 +1286,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="22" />
+					<sval type="int" val="23" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610605048" />
+					<sval type="int" val="-1610604792" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
@@ -1292,7 +1319,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610604285" />
+					<sval type="int" val="-1610604029" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="12" />
@@ -1316,7 +1343,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
@@ -1340,7 +1367,7 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="0" />
 					<sval type="int" val="4" />
-					<sval type="int" val="6" />
+					<sval type="int" val="7" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="130" />
@@ -1385,7 +1412,7 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="5" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
+					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="130" />
@@ -1394,7 +1421,7 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="130" />
@@ -1461,7 +1488,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610596605" />
+					<sval type="int" val="-1610596349" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="12" />
@@ -1636,82 +1663,82 @@
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="7" />
+					<sval type="int" val="8" />
 					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="9" />
+					<sval type="int" val="11" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="28" />
+					<sval type="int" val="29" />
 					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="33" />
-					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="34" />
+					<sval type="int" val="5" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="35" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="0: Plugin Version, 1: Activated, 2: PageID, 3: Debug, 4: Time last ran, 5: Races, 6: Race searchstrings" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="7 - 10 are arrays of objects to run colour scripts on a second time. We do this to overwrite any name changes by mods in their creation scripts. " />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="Examples include Pirate Guild and Military Base Response Revamp" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="7: Ships to colour a second time" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="8: M1 and M2s to check for XRM coloured names a second time" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="9: Pirate Guild mob bosses to colour a second time" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="10: Laser towers to check the homebase of." />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="11: Dockable ships to check the docked ships of" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="12: Job IDs which should not be prefixed with race name if search fails" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="34" />
+					<sval type="int" val="35" />
 					<sval type="int" val="1" />
 					<sval type="string" val="13: Playing Farnham's Legend - True if FL, False if earlier eg AP or TC" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="50" />
+					<sval type="int" val="51" />
 					<sval type="int" val="1" />
 					<sval type="string" val="Playing Terran Conflict so 'get race id for race' command is unavailable." />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="63" />
+					<sval type="int" val="64" />
 					<sval type="int" val="4" />
 				</sval>
 			</sval>

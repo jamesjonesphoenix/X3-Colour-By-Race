@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>plugin.jj.colour.by.race.event</name>
-	<version>6</version>
+	<version>7</version>
 	<engineversion>44</engineversion>
 	<description>Handles plugin events except for timer.</description>
 	<arguments>
@@ -97,7 +97,7 @@
 			<var>1100</var>
 			<text>,</text>
 			<text> </text>
-			<text>'1.3.0'</text>
+			<text>'1.3.1'</text>
 			<text>,</text>
 			<text> </text>
 			<var>null</var>
@@ -156,10 +156,19 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>1</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
 		<line linenr="014" indent="&#160;">
 			<text>do</text>
@@ -204,10 +213,19 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>0</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
 		<line linenr="019" indent="&#160;">
 			<text>write</text>
@@ -344,10 +362,19 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>1</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
 		<line linenr="030" indent="&#160;">
 			<text>return</text>
@@ -387,10 +414,19 @@
 			<var>[TRUE]</var>
 		</line>
 		<line linenr="034" indent="&#160;">
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>set</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>1</var>
-			<text>]</text>
+			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -540,10 +576,19 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>3</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
 		<line linenr="050" indent="&#160;">
 			<text>do</text>
@@ -561,10 +606,19 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
 			<var>$pluginData</var>
-			<text>[</text>
+			<text> </text>
+			<text>(</text>
 			<var>2</var>
-			<text>]</text>
+			<text>)</text>
 		</line>
 		<line linenr="052" indent="&#160;" interruptable="@">
 			<text>=</text>
@@ -601,7 +655,7 @@
 			<sval type="string" val="plugin.jj.colour.by.race.event" />
 			<sval type="int" val="44" />
 			<sval type="string" val="Handles plugin events except for timer." />
-			<sval type="int" val="6" />
+			<sval type="int" val="7" />
 			<sval type="int" val="0" />
 			<sval type="array" size="11">
 				<sval type="string" val="pluginID" />
@@ -678,7 +732,7 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="1100" />
 					<sval type="int" val="5" />
-					<sval type="string" val="1.3.0" />
+					<sval type="string" val="1.3.1" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
