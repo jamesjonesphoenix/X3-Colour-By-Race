@@ -1,24 +1,371 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <language id="48">
-    <page id="9964" title="" desc="" voice="no">
-        <!-- Polish -->
-        <t id="1000">\033GTrue Relations\033X autorstwa FriendlyFirePhoenix. v%s</t>
-        <t id="1001">Dezaktywowano \033GTrue Relations\033X.</t>
-        <t id="1002">Zainicjowane \033GTrue Relations\033X.\n\nW ramach aktywacji wtyczka naprawiła IFF dla stacji i posiadanych przez nie statków w całej galaktyce. Od teraz True Relations będzie regularnie wybierać losowy sektor, dla którego ma zostać naprawiony IFF, powoli przemierzając galaktykę. Jeśli chcesz ponownie szybko naprawić IFF dla całej galaktyki, możesz dezaktywować i ponownie aktywować wtyczkę.</t>
+    <!-- Polish -->
+<page id="9964" title="Colour By Race" desc="" voice="no">
+<!-- Text Colour for main X3 races. Text ID corresponds with Race ID. Remove or comment out an entry to prevent that races objects from being coloured.
+     <t id="1">         Opening XML tag with string id
+     \033B              Opening tag for colour. B denotes Blue
+     %s                 Placeholder to be replaced with relevant string when renaming.
+     \033X              Closing tag for colour. Always uses an X
+     (Argon)            Comment for humans
+     </t>               Closing XML tag
+-->
+    <t id="0">Dummy - %s - Dummy</t>
+    <t id="1">\033B%s\033X(Argon)</t>
+    <t id="2">\033G%s\033X(Boron)</t>
+    <t id="3">\033M%s\033X(Split)</t>
+    <t id="4">\033O%s\033X(Paranid)</t>
+    <t id="5">\033Y%s\033X(Teladi)</t>
+    <!-- <t id="6">\033R%s\033X(Xenon)</t> -->
+    <!-- <t id="7">\033R%s\033X(Khaak)</t> -->
+    <t id="8">\033R%s\033X(Pirates)</t>
+    <t id="9">\033B%s\033X(Goner)</t>
+    <t id="16">\033C%s\033X(Independant)</t>
+    <t id="17">\033W%s\033X(ATF)</t>
+    <t id="18">\033W%s\033X(Terran)</t>
+    <t id="19">\033R%s\033X(Yaki)</t>
+<!-- FL Corporations -->
+    <t id="20">\033B%s\033X(OTAS)</t>
+    <t id="21">\033B%s\033X(TerraCorp)</t>
+    <t id="22">\033G%s\033X(Atreus)</t>
+    <t id="23">\033Y%s\033X(NMMC)</t>
+    <t id="24">\033M%s\033X(Strong Arms)</t>
+    <t id="25">\033R%s\033X(Beryll)</t>
+    <t id="26">\033R%s\033X(Duke's)</t>
+    <t id="27">\033W%s\033X(Darkspace)</t>
+    <t id="28">\033O%s\033X(Industritech)</t>
+<!-- 30 - 39: Hidden Pirate Names to be searched within disguise races. -->
+    <t id="30">{1000,1051}(Creditania)</t>
+    <t id="31">{1000,137}(Duke's)</t>
+    <t id="32">{1000,60005}(Assassin)</t>
+    <!-- Border Sector Colour Percentage - If a border colour isn't set for a particular race the border colour is darkened/lightened by this amount. 100% by default so that core and border sectors are coloured the same. -->
+    <t id="40">100(%)</t>
+<!-- 50 - 59: Search strings used by string cleaning function -->
+    <t id="50">\033W(White)</t>
+    <t id="51">\033C(Cyan)</t>
+    <t id="52">\033A(Silver)</t>
+    <t id="53">\033Y(Yellow)</t>
+    <t id="54">\033O(Orange)</t>
+    <t id="55">\033M(Magenta)</t>
+    <t id="56">\033G(Green)</t>
+    <t id="57">\033B(Blue)</t>
+    <t id="58">\033R(Red)</t>
+    <t id="59">\033X(Closing Tag)</t>
+<!-- Colour By Race -->
+    <t id="61">\033GColour By Race\033X</t>
+    <t id="62">\033BColour By Sector\033X</t>
+    <t id="63">(blank placeholder)</t>
+    <t id="64">\n</t>
+    <t id="65">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X autorstwa FriendlyFirePhoenix. v%s</t>
+    <t id="66">[author]{9964,61}[/author]\n[title]Dezaktywowane {9964,61}[/title]\n\nWtyczka usunęła kolory z nazw statków i stacji w całej galaktyce, wyczyściła ich zmienne lokalne i usunęła zmienne globalne.\n\nJeśli po dezaktywacji natrafisz na jakiekolwiek kolorowe obiekty, prześlij raport o błędzie, abyśmy mogli się nim zająć problem.\n\nAby całkowicie usunąć wszelkie ślady wtyczki:\n1: Zapisz grę.\n2: Usuń pliki wtyczki z katalogu X3.\n3: Wczytaj ponownie swój zapis.</t>
+    <t id="67">[author]{9964,61}[/author]\n[title]Zainicjowano {9964,61}[/title]\n\nW ramach aktywacji wtyczka pokolorowała nazwy statków, doków i stoczni w całej galaktyce. Nazwa nowo odrodzonych obiektów będzie automatycznie kolorowana.\n\nMożesz zmienić domyślne kolory, edytując \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Zastosuj zmiany, wykonując jedną z następujących czynności:\n1: Załaduj zapis, w którym jest aktywne {9964,61}.\n2: Dezaktywuj i ponownie aktywuj {9964,61}.</t>
+    <t id="68">Dezaktywacja %s. To zajmie trochę czasu...</t>
+    <t id="69">Inicjowanie %s. To zajmie trochę czasu...</t>
+    <t id="70">%s Dezaktywowane.</t>
+    <t id="71">%s Zainicjowano.</t>
+    <t id="72">%s zaktualizowano do wersji %s.</t>
+    <t id="73">[author]%s[/author]\n[title]%s zaktualizowano do wersji %s.[/title]W ramach aktualizacji nazwy wszystkich %s zostały zresetowane i zmieniono ich kolor.</t>
+    <t id="74">48</t>
+    <t id="75">Nie można natychmiast dezaktywować %s. Poczekaj na zakończenie aktualnie uruchomionych procesów w tle.</t>
+    <t id="76">Nie można aktywować %s natychmiast. Poczekaj na zakończenie aktualnie uruchomionych procesów w tle.</t>
+    <t id="77">%s próbuje zainicjować, ale utknął w trakcie procesu przez długi czas.</t>
+    <t id="78">statki i stacje</t>
+    <t id="79">Aktualizowanie %s do wersji %s. To zajmie trochę czasu...</t>
+    <t id="80">%s wykrył zmianę ustawień i teraz aktualizuje nazwy %s. To zajmie trochę czasu...</t>
+    <t id="81">%s zakończył stosowanie zmienionych ustawień.</t>
+    <t id="82">[author]%s[/author]\n[title]Zastosowano nowe ustawienia[/title]\n\n%s zakończył stosowanie zmienionych ustawień. Imiona wszystkich %s zostały zresetowane i zmieniono kolor.</t>
+    <t id="83">%s zakończył procesy w tle i można je teraz dezaktywować.</t>
+    <t id="84">%s zakończył procesy w tle i można je teraz aktywować.</t>
+<!-- Race Specific Strings
+     x:          Race ID
+     x00-x29:    Strings for ships & stations. These are checked and then coloured if found in the ship's/station's name.
+     x30-x50:    Strings for stations only
+     x50-x59:    Strings for stations only to be checked before strings from x00-x29.
+     x92:        Core Sector colour red     - minimum value 0, maximum value 255.
+     x93:        Core Sector colour green   - minimum value 0, maximum value 255.
+     x94:        Core Sector colour blue    - minimum value 0, maximum value 255.
+                 Red, green and blue are used to generate an RGB colour which is used to colour sector names.
+     x95:        Border sector colour red   - minimum value 0, maximum value 255.
+     x96:        Border sector colour green - minimum value 0, maximum value 255.
+     x97:        Border Sector colour blue  - minimum value 0, maximum value 255.
+                 Set x95, x96 or x97 if you want border sectors to be coloured differently to core sectors.
+                 Alternatively you can change <t id="40">100(%)</t> to a percentage other than 100 to generate a darkened or lightened version of the core sector colour for border sectors.
+     x98:        Prepend string. If a substring to colour isn't found when checking a name it will be prepended instead.
+                 By default the prepend is set to x00 which is usually the name of the race and suitable for most races.
+                 This default can be overwritten by setting a numerical ID.
+                 This setting is used for the Terrans with <t id="1898">1803</t> set so that ships/stations will be prepended with "USC" instead of "Terran"
+     x99:        Short prepend string for long names.
+                 Defaults to x01 if unset in the tfile which is suitable for most races. Argon for example defaults to 101 which is "A.".
+                 An Argon "Small Orbital Weapons Platform" would become "\033BA.\033X Small Orbital Weapons Platform".
+-->
+<!-- Argon -->
+    <t id="100">{1000,101}(Argon)</t><!-- x00 -->
+    <t id="101">{1266,201}(A.)</t><!-- x01 -->
+    <t id="102">{1000,133}(OTAS)</t><!-- x02 -->
+    <t id="103">{1000,132}(Terracorp)</t><!-- x03 -->
+    <t id="104">{1000,144}(Jonferco)</t><!-- x04 -->
+    <t id="105">{1000,135}(Plutarch)</t><!-- x05 -->
+    <t id="106">{17,80487}(Beryll - XRM)</t><!-- x06 -->
+    <t id="107">{1000,60008}(Privateer)</t><!-- x07 -->
+    <t id="108">{17,13471}(Exterminator)</t><!-- x08 -->
 
-        <t id="1010">Utrata %s %s rozgłosu w wyniku wzrostu rozgłosu %s %s.</t>
-        <t id="1011">Zyskano %s %s rozgłosu jako efekt wzrostu rozgłosu %s %s.</t>
-        <t id="1012">True Relations naprawiające IFF w całej galaktyce...</t>
-        <t id="1013">%s sprawdzone stacje %s.</t>
-        <t id="1014">%s Skończone.</t>
-        <t id="1015">%s \033Rzdegradowali\033X cię do %s jako karę za twój wzrost rozgłosu %s.</t>
-        <t id="1016">%s \033Bawansowali\033X cię na %s w nagrodę za twój %s rozgłos.</t>
+    <t id="130">{1000,30000}(Military)</t><!-- x30 -->
 
-        <t id="1100">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X autorstwa FriendlyFirePhoenix. v%s</t>
-        <t id="1101">\033GColour By Race\033X dezaktywowany.\n\nWtyczka usunęła kolory z nazw statków i stacji w całej galaktyce, wyczyściła ich zmienne lokalne i usunęła zmienne globalne. Jeśli po dezaktywacji napotkasz jakiekolwiek kolorowe obiekty, prześlij zgłoszenie błędu, abyśmy mogli rozwiązać problem. Aby całkowicie usunąć wszelkie ślady po wtyczce, wykonaj następujące kroki: zapisz grę, usuń pliki wtyczek z katalogu X3 i ponownie załaduj stan gry.</t>
-        <t id="1102">Zainicjowany \033GColour By Race\033X.\n\nW ramach aktywacji wtyczka pokolorowała nazwy statków, doków i stoczni w całej galaktyce.</t>
+    <t id="192">86(Argon)</t><!-- x92 -->
+    <t id="193">86(Argon)</t><!-- x93 -->
+    <t id="194">255(Argon)</t><!-- x94 -->
+    <t id="195">86(Argon)</t><!-- x95 -->
+    <t id="196">86(Argon)</t><!-- x96 -->
+    <t id="197">255(Argon)</t><!-- x97 -->
 
-        <!-- Job IDs to avoid prefixing with race name; Text IDs 10000 to 10100 -->
-        <t id="10000">8660(Unknown Object)</t>
-    </page>
+    <t id="198">100</t><!-- x98 -->
+    <t id="199">101</t><!-- x99 -->
+<!-- Boron -->
+    <t id="200">{1000,102}(Boron)</t>
+    <t id="201">{1266,202}(B.)</t>
+    <t id="202">{1000,138}(Atreus)</t>
+    <t id="203">{1000,1023}(Waverider Corp.)</t>
+    <t id="204">{1000,60008}(Privateer)</t>
+    <t id="205">{17,5511}(Nikkonofune)</t>
+
+    <t id="230">{1000,30000}(Military)</t>
+
+    <t id="292">86(Boron)</t><!-- Red Colour -->
+    <t id="293">255(Boron)</t><!-- Green Colour -->
+    <t id="294">86(Boron)</t><!-- Blue Colour -->
+    <t id="295">0(Boron)</t><!-- Red Colour -->
+    <t id="296">150(Boron)</t><!-- Green Colour -->
+    <t id="297">0(Boron)</t><!-- Blue Colour -->
+<!-- Split -->
+    <t id="300">{1000,103}(Split)</t>
+    <t id="301">{1266,203}(S.)</t>
+    <t id="302">{13,9080}(Strong Arms)</t>
+    <t id="303">{1000,1033}(Thuruk's Inc.)</t>
+    <t id="304">{1000,60008}(Privateer)</t>
+
+    <t id="330">{1000,30000}(Military)</t>
+
+    <t id="392">255(Split)</t><!-- Red Colour -->
+    <t id="393">0(Split)</t><!-- Green Colour -->
+    <t id="394">255(Split)</t><!-- Blue Colour -->
+<!-- Paranid -->
+    <t id="400">{1000,104}(Paranid)</t>
+    <t id="401">{1266,204}(P.)</t>
+    <t id="402">{1000,1040}(Holy Dimensions)</t>
+    <t id="403">{1000,1043}(Trinity Corp.)</t>
+    <t id="404">{1000,137}(Duke's)</t>
+    <t id="405">{1000,60008}(Privateer)</t>
+
+    <t id="430">{1000,30000}(Military)</t>
+
+    <t id="492">255(Paranid)</t><!-- Red Colour -->
+    <t id="493">120(Paranid)</t><!-- Green Colour -->
+    <t id="494">0(Paranid)</t><!-- Blue Colour -->
+<!-- Teladi -->
+    <t id="500">{1000,105}(Teladi - add space to prevent colouring of "Teladi"anium if necessary)</t>
+    <t id="501">{1266,205}(T.)</t>
+    <t id="502">{1000,146}(NMMC)</t>
+    <t id="503">{1000,1051}(Creditania)</t>
+    <t id="504">{1000,60008}(Privateer)</t>
+
+    <t id="530">{1000,30000}(Military)</t>
+
+    <t id="592">255(Teladi)</t><!-- Red Colour -->
+    <t id="593">255(Teladi)</t><!-- Green Colour -->
+    <t id="594">0(Teladi)</t><!-- Blue Colour -->
+<!-- Xenon -->
+    <t id="600">{1000,106}(Xenon)</t>
+
+    <t id="692">255(Xenon)</t><!-- Red Colour -->
+    <t id="693">84(Xenon)</t><!-- Green Colour -->
+    <t id="694">84(Xenon)</t><!-- Blue Colour -->
+<!-- Khaak -->
+    <t id="700">{1000,107}(Khaak)</t>
+
+    <t id="792">255(Khaak)</t><!-- Red Colour -->
+    <t id="793">84(Khaak)</t><!-- Green Colour -->
+    <t id="794">84(Khaak)</t><!-- Blue Colour -->
+<!-- Pirate - Do not include {8513,134}(Pirate Guild) - Plugin includes special handling for this string -->
+    <t id="800">{1000,108}(Pirate)</t>
+    <t id="801">{1266,208}(Pi.)</t>
+    <t id="802">{1000,1050}(Talonfire)</t>
+    <t id="803">{1000,137}(Duke's)</t>
+    <t id="804">{1000,1040}(Holy Dimensions)</t>
+    <t id="805">{1000,60008}(Privateer)</t>
+
+    <t id="830">{17,6341}(The Marauder)</t>
+
+    <t id="892">255(Pirates)</t><!-- Red Colour -->
+    <t id="893">84(Pirates)</t><!-- Green Colour -->
+    <t id="894">84(Pirates)</t><!-- Blue Colour -->
+<!-- Goner -->
+    <t id="900">{1000,109}(Goner)</t>
+    <t id="901">{1266,209}(G.)</t>
+
+    <t id="992">86(Goner)</t><!-- Red Colour -->
+    <t id="993">86(Goner)</t><!-- Green Colour -->
+    <t id="994">255(Goner)</t><!-- Blue Colour -->
+<!-- Player -->
+    <t id="1092">250(Player)</t><!-- Red Colour -->
+    <t id="1093">214(Player)</t><!-- Green Colour -->
+    <t id="1094">165(Player)</t><!-- Blue Colour -->
+<!-- Enemy -->
+    <t id="1192">255(Enemy)</t><!-- Red Colour -->
+    <t id="1193">84(Enemy)</t><!-- Green Colour -->
+    <t id="1194">84(Enemy)</t><!-- Blue Colour -->
+<!-- Neutral -->
+    <t id="1292">160(Neutral)</t><!-- Red Colour -->
+    <t id="1293">160(Neutral)</t><!-- Green Colour -->
+    <t id="1294">160(Neutral)</t><!-- Blue Colour -->
+<!-- Friendly -->
+    <t id="1392">160(Friendly)</t><!-- Red Colour -->
+    <t id="1393">160(Friendly)</t><!-- Green Colour -->
+    <t id="1394">160(Friendly)</t><!-- Blue Colour -->
+<!-- Unknown -->
+    <t id="1492">160(Unknown)</t><!-- Red Colour -->
+    <t id="1493">160(Unknown)</t><!-- Green Colour -->
+    <t id="1494">160(Unknown)</t><!-- Blue Colour -->
+<!-- Independant -->
+    <t id="1630">{1000,60008} {17,80517}(Privateer Trading Post)</t>
+    <t id="1631">{13,9080}(Strong Arms - used for XRM weapons dealer XL)</t>
+
+    <t id="1692">160(Independant)</t><!-- Red Colour -->
+    <t id="1693">160(Independant)</t><!-- Green Colour -->
+    <t id="1694">160(Independant)</t><!-- Blue Colour -->
+<!-- ATF -->
+    <t id="1700">{1000,120}(ATF)</t>
+    <t id="1730">{17,16081}(Orbital Defence Station)</t>
+
+    <t id="1792">255(ATF)</t><!-- Red Colour -->
+    <t id="1793">255(ATF)</t><!-- Green Colour -->
+    <t id="1794">255(ATF)</t><!-- Blue Colour -->
+<!-- Terran -->
+    <t id="1800">{1000,118}(Terran)</t>
+    <t id="1801">{1266,218}(Ter.)</t>
+    <t id="1802">{1000,120}/{1000,121}(ATF/USC)</t>
+    <t id="1803">{1000,121}(USC)</t>
+    <t id="1804">{1000,120}(ATF)</t>
+    <t id="1805">{1000,124}(Aldrin)</t>
+    <t id="1806">{1000,122}(AGI Task Force)</t>
+    <t id="1807">{1000,140}(Dark Space)</t>
+    <t id="1808">{1000,60008}(Privateer)</t>
+    <t id="1809">{1000,126}(Terraformer)</t>
+    <t id="1810">{1000,40008}(Command Ship - for 'Command Ship "Morning Star"')</t>
+
+    <t id="1830">{17,16081}(Orbital Defence Station)</t>
+    <t id="1831">{17,16091}(Orbital Patrol Base)</t>
+    <t id="1832">{1000,30000}(Military)</t>
+    <t id="1833">{7,1020414}(Earth)</t>
+    <t id="1834">{7,1020212}(Saturn)</t>
+    <!-- <t id="1832">{17,13131}(McCallum)</t> -->
+
+    <t id="1892">255(Terran)</t><!-- Red Colour -->
+    <t id="1893">255(Terran)</t><!-- Green Colour -->
+    <t id="1894">255(Terran)</t><!-- Blue Colour -->
+
+    <t id="1898">1803</t>
+    <t id="1899">1803</t>
+<!-- Yaki -->
+    <t id="1900">{1000,119}(Yaki)</t>
+    <t id="1901">{1266,219}(Y.)</t>
+    <t id="1902">{1000,1040}(Holy Dimensions)</t>
+    <t id="1903">{3214,5}(Trouble Seeker)</t>
+
+    <t id="1930">{1000,108}(Pirate)</t>
+
+    <t id="1992">255(Yaki)</t><!-- Red Colour -->
+    <t id="1993">84(Yaki)</t><!-- Green Colour -->
+    <t id="1994">84(Yaki)</t><!-- Blue Colour -->
+<!-- OTAS -->
+    <t id="2000">{1000,133}(OTAS)</t>
+    <t id="2031">{1000,101}(Argon)</t>
+
+    <t id="2092">86(OTAS)</t><!-- Red Colour -->
+    <t id="2093">86(OTAS)</t><!-- Green Colour -->
+    <t id="2094">255(OTAS)</t><!-- Blue Colour -->
+<!-- Terracorp -->
+    <t id="2100">{1000,132}(Terracorp)</t>
+
+    <t id="2192">86(TerraCorp)</t><!-- Red Colour -->
+    <t id="2193">86(TerraCorp)</t><!-- Green Colour -->
+    <t id="2194">255(TerraCorp)</t><!-- Blue Colour -->
+<!-- Atreus -->
+    <t id="2200">{1000,138}(Atreus)</t>
+
+    <t id="2292">86(Atreus)</t><!-- Red Colour -->
+    <t id="2293">255(Atreus)</t><!-- Green Colour -->
+    <t id="2294">86(Atreus)</t><!-- Blue Colour -->
+<!-- NMMC -->
+    <t id="2300">{1000,146}(NMMC)</t>
+
+    <t id="2392">255(NMMC)</t><!-- Red Colour -->
+    <t id="2393">255(NMMC)</t><!-- Green Colour -->
+    <t id="2394">0(NMMC)</t><!-- Blue Colour -->
+<!-- Strong Arms -->
+    <t id="2400">{13,9080}(Strong Arms)</t>
+
+    <t id="2430">{1000,30000}(Military)</t>
+    <t id="2431">{1000,103}(Split)</t>
+
+    <t id="2492">255(Strong Arms)</t><!-- Red Colour -->
+    <t id="2493">0(Strong Arms)</t><!-- Green Colour -->
+    <t id="2494">255(Strong Arms)</t><!-- Blue Colour -->
+<!-- Beryll -->
+    <t id="2500">{1000,163}(Beryll)</t>
+
+    <t id="2592">86(Beryll)</t><!-- Red Colour -->
+    <t id="2593">86(Beryll)</t><!-- Green Colour -->
+    <t id="2594">255(Beryll)</t><!-- Blue Colour -->
+<!-- Duke's -->
+    <t id="2600">{1000,137}(Duke's)</t>
+
+    <t id="2692">255(Duke's)</t><!-- Red Colour -->
+    <t id="2693">120(Duke's)</t><!-- Green Colour -->
+    <t id="2694">0(Duke's)</t><!-- Blue Colour -->
+<!-- Darkspace -->
+    <t id="2700">{1000,150}(Darkspace)</t>
+    <t id="2730">{1000,140}(Dark Space)</t>
+
+    <t id="2792">255(Darkspace)</t><!-- Red Colour -->
+    <t id="2793">255(Darkspace)</t><!-- Green Colour -->
+    <t id="2794">255(Darkspace)</t><!-- Blue Colour -->
+<!-- Industritech -->
+    <t id="2800">{1000,1010}(Industritech)</t>
+
+    <t id="2892">255(Industritech)</t><!-- Red Colour -->
+    <t id="2893">120(Industritech)</t><!-- Green Colour -->
+    <t id="2894">0(Industritech)</t><!-- Blue Colour -->
+<!-- Text IDs 10000 to 10299; Job IDs to avoid prepending with race name. -->
+    <t id="10000">8660(Unknown Object)</t>
+<!-- Text IDs 10300 to 10349; Job IDs which XRM uses for command ships with sector names. -->
+    <t id="10300">6510(Paranid Command Ship "Duke's Redemption" M2)</t>
+    <t id="10301">6532(Teladi Flagship "CEO's Investment" M1)</t>
+    <t id="10302">8722(Argon Command Ship "Light of Hope" M2)</t>
+    <t id="10303">8726(Boron Command Ship "Rolk's Demise" M2)</t>
+    <t id="10304">8734(Paranid Command Ship "Unholy Retribution" M2)</t>
+<!-- Text IDs 10350 to 10399; String IDs corresponding with XRM command ship Job Ids -->
+    <t id="10350">1021706(Redemption)</t>
+    <t id="10351">30050(CEO`s Investment)</t>
+    <t id="10352">1023800(Light of Hope)</t>
+    <t id="10353">1023828(Rolk`s Demise)</t>
+    <t id="10354">1023825(Unholy Retribution)</t>
+<!-- Text IDs 10400 to 10449; If an object's name is identical to any of these strings it will be prepended with race name -->
+    <t id="10400">{17,10161}(Large Orbital Weapons Platform)</t>
+    <t id="10401">{17,10181}(Medium Orbital Weapons Platform)</t>
+    <t id="10402">{17,12101}(Small Orbital Weapons Platform)</t>
+    <t id="10403">{17,16041}(Shipyard)</t>
+</page>
+<page id="389964" title="Colour By Race" desc="" voice="no">
+    <t id="63">addon</t>
+</page>
+<page id="399964" title="Colour By Race" desc="" voice="no">
+    <t id="63">addon2</t>
+    <t id="66">[author]{9964,61}[/author]\n[title]Dezaktywowane {9964,61}[/title]\n\nWtyczka usunęła kolory z nazw statków i stacji w całej galaktyce, wyczyściła ich zmienne lokalne i usunęła zmienne globalne.\n\nJeśli po dezaktywacji natrafisz na jakiekolwiek kolorowe obiekty, prześlij raport o błędzie, abyśmy mogli się nim zająć problem.\n\nAby całkowicie usunąć wszelkie ślady wtyczki:\n1: Upewnij się, że {9964,62} jest również dezaktywowany.\n2: Zapisz grę.\n3: Usuń pliki wtyczki z katalogu X3.\n4: Wczytaj ponownie swój zapis.</t>
+<!-- Colour By Sector -->
+    <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X autorstwa FriendlyFirePhoenix. v%s</t>
+    <t id="86">[author]{9964,62}[/author]\n[title]Dezaktywowane {9964,62}[/title]\n\nSektorom przywrócono kolor sprzed aktywacji wtyczki i usunięto ich zmienne lokalne.\n\nAby całkowicie usunąć wszelkie ślady wtyczki, wykonaj następujące kroki:\n1: Upewnij się, że {9964,61} jest również dezaktywowane. \n2: Zapisz swoją grę.\n3: Usuń pliki wtyczek z katalogu X3.\n4: Załaduj ponownie swój zapis.</t>
+    <t id="87">[author]{9964,62}[/author]\n[title]Zainicjowano {9964,62}[/title]\n\nW ramach aktywacji wszystkie sektory w całej galaktyce zostały pomalowane kolorem odpowiadającym rasie, która je posiada. Sektory automatycznie zmienią kolor po zmianie właściciela.\n\nMożesz zmienić domyślne kolory sektorów, edytując plik \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\ 033X. Zastosuj zmiany, wykonując jedną z następujących czynności:\n1: Załaduj zapis, w którym jest aktywne {9964,62}.\n2: Dezaktywuj i ponownie aktywuj {9964,62}.</t>
+    <t id="98">statki, stacje i sektory</t>
+    <t id="99">sektory</t>
+</page>
 </language>
