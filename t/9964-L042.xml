@@ -58,7 +58,7 @@
     <t id="64">\n</t>
     <t id="65">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X od FriendlyFirePhoenix. v%s</t>
     <t id="66">[author]{9964,61}[/author]\n[title]{9964,61} Deaktivována[/title]\n\nPlugin odstranil barvy z názvů lodí a stanic v celé galaxii, vymazal jejich místní proměnné a odstranil globální proměnné.\n\nPokud po deaktivaci narazíte na nějaké případy barevných objektů, odešlete prosím hlášení o chybě, abychom to mohli řešit problém.\n\nChcete-li úplně odstranit jakoukoli stopu pluginu:\n1: Uložte hru.\n2: Smažte soubory pluginu z adresáře X3.\n3: Znovu načtěte uložení.</t>
-    <t id="67">[author]{9964,61}[/author]\n[title]Inicializováno {9964,61}[/title]\n\nV rámci aktivace plugin zabarvil názvy lodí, doků a loděnic po celé galaxii. Nově vytvořené objekty budou mít svůj název automaticky obarvený.\n\nVýchozí barvy můžete změnit úpravou \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Aplikujte změny jedním z následujících způsobů:\n1: Načtěte uložení, které má aktivní {9964,61}.\n2: Deaktivujte a znovu aktivujte {9964,61}.</t>
+    <t id="67">[author]{9964,61}[/author]\n[title]Inicializováno {9964,61}[/title]\n\nV rámci aktivace plugin zabarvil názvy lodí, doků a loděnic po celé galaxii. Nově vytvořené objekty budou mít svůj název automaticky obarvený.\n\nVýchozí barvy můžete změnit úpravou \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Aplikujte změny jedním z následujících způsobů:\n1: Načtěte uložení, které má aktivní {9964,61}.\nnebo...\n2: Deaktivujte a znovu aktivujte {9964,61}.</t>
     <t id="68">Deaktivace %s. Bude to chvíli trvat...</t>
     <t id="69">Inicializace %s. Bude to chvíli trvat...</t>
     <t id="70">%s Deaktivováno.</t>
@@ -364,7 +364,7 @@
 <!-- Colour By Sector -->
     <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X od FriendlyFirePhoenix. v%s</t>
     <t id="86">[author]{9964,62}[/author]\n[title]{9964,62} Deaktivována[/title]\n\nSektory byly obnoveny do barvy, kterou používaly před aktivací pluginu, a byly odstraněny jejich místní proměnné.\n\nChcete-li zcela odstranit jakoukoli stopu pluginu, postupujte takto:\n1: Ujistěte se, že je také deaktivováno {9964,61}. \n2: Uložte hru.\n3: Smažte soubory zásuvných modulů z adresáře X3.\n4: Znovu načtěte své uložení.</t>
-    <t id="87">[author]{9964,62}[/author]\n[title]Inicializováno {9964,62}[/title]\n\nJako součást aktivace mají všechny sektory po celé galaxii barvu odpovídající rase, která je vlastní. Sektory automaticky změní barvu, když změní vlastníka.\n\nVýchozí barvy sektorů můžete změnit úpravou \033G\\X3\\{9964,73}\\t\\9964-L0{9964,74}.xml\033X. Aplikujte změny deaktivací a opětovnou aktivací {9964,62}.</t>
+    <t id="87">[autor]{9964,62}[/author]\n[title]Inicializováno {9964,62}[/title]\n\nV rámci aktivace byly všechny sektory v celé galaxii opatřeny barvou odpovídající rase, která vlastní jim. Sektory automaticky změní barvu, když změní vlastníka.\n\nVýchozí barvy sektorů můžete změnit úpravou \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Aplikujte změny jedním z následujících způsobů:\n1: Načtěte uložení, které má aktivní {9964,62}.\nor...\n2: Deaktivujte a znovu aktivujte {9964,62}.</t>
     <t id="98">lodě, stanice a sektory</t>
     <t id="99">sektory</t>
 </page>

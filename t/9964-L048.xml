@@ -58,7 +58,7 @@
     <t id="64">\n</t>
     <t id="65">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X autorstwa FriendlyFirePhoenix. v%s</t>
     <t id="66">[author]{9964,61}[/author]\n[title]Dezaktywowane {9964,61}[/title]\n\nWtyczka usunęła kolory z nazw statków i stacji w całej galaktyce, wyczyściła ich zmienne lokalne i usunęła zmienne globalne.\n\nJeśli po dezaktywacji natrafisz na jakiekolwiek kolorowe obiekty, prześlij raport o błędzie, abyśmy mogli się nim zająć problem.\n\nAby całkowicie usunąć wszelkie ślady wtyczki:\n1: Zapisz grę.\n2: Usuń pliki wtyczki z katalogu X3.\n3: Wczytaj ponownie swój zapis.</t>
-    <t id="67">[author]{9964,61}[/author]\n[title]Zainicjowano {9964,61}[/title]\n\nW ramach aktywacji wtyczka pokolorowała nazwy statków, doków i stoczni w całej galaktyce. Nazwa nowo odrodzonych obiektów będzie automatycznie kolorowana.\n\nMożesz zmienić domyślne kolory, edytując \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Zastosuj zmiany, wykonując jedną z następujących czynności:\n1: Załaduj zapis, w którym jest aktywne {9964,61}.\n2: Dezaktywuj i ponownie aktywuj {9964,61}.</t>
+    <t id="67">[author]{9964,61}[/author]\n[title]Zainicjowano {9964,61}[/title]\n\nW ramach aktywacji wtyczka pokolorowała nazwy statków, doków i stoczni w całej galaktyce. Nazwa nowo odrodzonych obiektów będzie automatycznie kolorowana.\n\nMożesz zmienić domyślne kolory, edytując \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Zastosuj zmiany, wykonując jedną z następujących czynności:\n1: Załaduj zapis, w którym jest aktywne {9964,61}.\nlub...\n2: Dezaktywuj i ponownie aktywuj {9964,61}.</t>
     <t id="68">Dezaktywacja %s. To zajmie trochę czasu...</t>
     <t id="69">Inicjowanie %s. To zajmie trochę czasu...</t>
     <t id="70">%s Dezaktywowane.</t>
@@ -364,7 +364,7 @@
 <!-- Colour By Sector -->
     <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X autorstwa FriendlyFirePhoenix. v%s</t>
     <t id="86">[author]{9964,62}[/author]\n[title]Dezaktywowane {9964,62}[/title]\n\nSektorom przywrócono kolor sprzed aktywacji wtyczki i usunięto ich zmienne lokalne.\n\nAby całkowicie usunąć wszelkie ślady wtyczki, wykonaj następujące kroki:\n1: Upewnij się, że {9964,61} jest również dezaktywowane. \n2: Zapisz swoją grę.\n3: Usuń pliki wtyczek z katalogu X3.\n4: Załaduj ponownie swój zapis.</t>
-    <t id="87">[author]{9964,62}[/author]\n[title]Zainicjowano {9964,62}[/title]\n\nW ramach aktywacji wszystkie sektory w całej galaktyce zostały pomalowane kolorem odpowiadającym rasie, która je posiada. Sektory automatycznie zmienią kolor po zmianie właściciela.\n\nMożesz zmienić domyślne kolory sektorów, edytując plik \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\ 033X. Zastosuj zmiany, wykonując jedną z następujących czynności:\n1: Załaduj zapis, w którym jest aktywne {9964,62}.\n2: Dezaktywuj i ponownie aktywuj {9964,62}.</t>
+    <t id="87">[author]{9964,62}[/author]\n[title]Zainicjowano {9964,62}[/title]\n\nW ramach aktywacji wszystkie sektory w całej galaktyce zostały pomalowane kolorem odpowiadającym rasie, która je posiada. Sektory automatycznie zmienią kolor po zmianie właściciela.\n\nMożesz zmienić domyślne kolory sektorów, edytując plik \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\ 033X. Zastosuj zmiany, wykonując jedną z następujących czynności:\n1: Załaduj zapis, w którym jest aktywne {9964,62}.\nlub...\n2: Dezaktywuj i ponownie aktywuj {9964,62}.</t>
     <t id="98">statki, stacje i sektory</t>
     <t id="99">sektory</t>
 </page>
