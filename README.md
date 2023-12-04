@@ -1,7 +1,8 @@
 ![X3 Colour By Race - Header](https://i.imgur.com/X98MQ7l.jpeg)
 # <span style="color:blue">C</span><span style="color:green">o</span><span style="color:magenta">l</span><span style="color:orange">o</span><span style="color:yellow">u</span><td><span style="color:red">r</span></td> By Race
 
-* Colour By Race is an AL plugin for X3:AP and X3:FL which colours the names of ships and stations across the galaxy. It makes for a cool looking and easier to parse sector map.
+* Colour By Race is an AL plugin for X3:TC, X3:AP and X3:FL which colours the names of ships, stations across the galaxy. It makes for a cool looking and easier to parse sector and universe map.
+* As of version 2.0.0 you can also colour the names of sectors in X3:FL only. Sector colouring is activated as a separate AL plugin so you can use it standalone or alongside colouring ships & stations.
 * Most objects only have part of their name coloured, usually the name of their race or corporation.
 * More screenshots of Colour By Race in action at [this Imgur gallery](https://imgur.com/a/TSrPT8c).
 
@@ -20,7 +21,7 @@ If installing for Farnham's Legend put the files into the `X3/addon2` folder ins
 Optionally you can also use the following optional files. They are included in the zip file under `optional/`.
 
 * Modified `8513` translation files for **[Pirate Guild 3](https://forum.egosoft.com/viewtopic.php?t=244949)**. PG3 dynamically renames pirate stations which overwrites any previously set coloured names. I've modified PG3's t files so that pirate stations will include colour in their name. Paste these files into your `X3/addon/t/` folder overwriting existing files if necessary.  
-* Modified ship naming script `plugin.mbase.create.ship.name.xml` for **[Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599)**. Colours the race name during ship creation. Without this optional script, MBBR ships will remain uncoloured for a few minutes after creation until Colour By Race notices them.
+* Modified ship naming script `plugin.mbase.create.ship.name.xml` for **[Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599)**. Colours the race name during ship creation. Without this you have a very small chance of seeing MBBR ships uncoloured for half a second after creation.
 * Modified ship naming script `plugin.salv.al.ship.cfg.xml` for **[Salvage Commands & NPCs](https://forum.egosoft.com/viewtopic.php?t=221059)**. Colours the race name during ship creation. Also added setting of pilot name, skill, morale and aggression and addition of Explorer Command software.
 
 ## Uninstall
@@ -34,19 +35,23 @@ To make sure the global isn't recreated when you load a save, follow these steps
 * Delete the plugin files.
     * Open the `X3\addon\script` folder in Explorer and delete the relevant scripts. They all
       contain `plugin.jj.colour.by.race` as part of their filename.
-    * Open the `X3\addon\t` folder and delete the `9965` t
+    * Open the `X3\addon\t` folder and delete the `9964` and `9965` t files.
       files.
-    * Delete the `9964` translation files if you aren't using the [True Relations](https://github.com/jamesjonesphoenix/true-relations) plugin. The `9964` t file is used by both plugins.
 * Load the save you made after deactivation. Colour By Race should be gone from the Artificial Life menu and its global will be removed from this save.
 
 ## Debug
 
-To log debugging information run this MSCI code.
+As of v2.0.0, Colour By Race has a dedicated script for activating debugging. To log debugging information run this MSCI code.
 
-    $pluginData = [THIS]-> call script 'plugin.jj.colour.by.race.init.global' :
-    $pluginData[3] = [TRUE]
+    = [THIS]-> call script 'plugin.jj.colour.by.race.set.debug' :
 
-Info will be logged to `log09965.txt`. By default this file is saved to `C:\Users\Username\Documents\Egosoft\X3AP` but may differ for your installation.
+Info will be logged to `log09964.txt`. By default this file is saved to `C:\Users\Username\Documents\Egosoft\X3FL` or similar. Your installation may differ.
+
+You can disable debugging by running the same script with the "disable" flag set to true:
+
+    = [THIS]-> call script 'plugin.jj.true.relations.set.debug' : disable=[TRUE]
+
+Deactivating Colour By Race in the AL game menu will also disable debugging. 
 
 ## Bugs
 
@@ -54,7 +59,7 @@ Found a bug? I'm keen to hear about it. Report it as a Github issue or on the Eg
 
 ## Race Colours
 
-If you want to change a race's assigned colour you can edit the entries in the `9965` translation file. No colours are hardcoded in script files.
+If you want to change a race's assigned colour you can edit the entries in the `9964` translation file. No colours are hardcoded in script files. The t file contains extensive comments explaining settings and changing them.
 
 | **Race** | - | **Colour** | **Code** | **Image Example** | **Note**  |
 |:--- |:--- |:--- |:--- |:--- |:--- |
@@ -66,9 +71,11 @@ If you want to change a race's assigned colour you can edit the entries in the `
 | Pirates | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | ![Pirate Blastclaw Prototype](https://user-images.githubusercontent.com/15099626/228249210-a1d5deec-ec33-4b7b-9556-2ae8c0594628.jpg) | |
 | Goner | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | ![Goner Ozias](https://user-images.githubusercontent.com/15099626/228245381-bb185b8e-5e67-4299-8dae-9356240c4b18.jpg) | |
 | Independant | ![#00FFFF](https://placehold.co/15x15/00FFFF/00FFFF.png) | <span style="color:cyan">Cyan</span> | \033C | ![Privateer Trading Post](https://user-images.githubusercontent.com/15099626/228241313-b8c904cc-9545-490c-b61b-e3cb9938924d.jpg) | Currently the XRM Privateer Trading Post and Strong Arms Weapons Dealer are the only "independant" race objects coloured. |
-| ATF | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:grey">Grey</span> | \033A | ![ATF Escort Vali](https://user-images.githubusercontent.com/15099626/228246213-a201eb2d-3abb-48aa-8036-e87be42552cd.jpg) | |
-| Terran | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:grey">Grey</span> | \033A | ![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png)![Orbital Defence Station](https://user-images.githubusercontent.com/15099626/228242917-37940eb2-6438-48f5-b064-9a02bcbdaa84.jpg)![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png) | A rare example of an object where the entire name is coloured. Some stuff just looks weird partially coloured or prepended with a race name. |
+| ATF | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:white">White</span> | \033A | ![ATF Escort Vali](https://user-images.githubusercontent.com/15099626/228246213-a201eb2d-3abb-48aa-8036-e87be42552cd.jpg) | |
+| Terran | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:white">White</span> | \033A | ![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png)![Orbital Defence Station](https://user-images.githubusercontent.com/15099626/228242917-37940eb2-6438-48f5-b064-9a02bcbdaa84.jpg)![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png) | A rare example of an object where the entire name is coloured. Some stuff just looks weird partially coloured or prepended with a race name. |
 | Yaki | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | ![Yaki Assassin Fujin Raider](https://user-images.githubusercontent.com/15099626/228247485-7b2fc47e-e2ca-4996-a84e-36ef93cf2f60.jpg) | Example of an enemy ship. X3's standard red text colour for an enemy contrasts with the \033R highlight red colour. |
+
+Farnham's Legend Corporation races use the same colours as their allied race. 
 
 ## What is coloured and what isn't
 
@@ -85,38 +92,43 @@ If you want to change a race's assigned colour you can edit the entries in the `
     * Factories.
     * Most freight drones unless they have a race name.
     * Jump beacons.
-    * Xenon or Kha'ak. I saw little value in colouring ships which are always hostile.
+    * Xenon or Kha'ak (by default - you can change this). I saw little value in colouring ships which are always hostile.
 
 ## How It Works
 
-Renaming ships to include their color should be a straightforward process, but due to some peculiarities of X3, it becomes more complex than it should be.
+Renaming ships to include their color should be a straightforward process, but due to some peculiarities of X3, it's more complex than it should be.
 
 When the plugin is activated, it goes through all the ships and stations in the universe and adds colours to their names. This process is repeated every time you load a saved game.
 
-To add colors to ships spawned during gameplay, the plugin uses the `[SIGNAL_CHANGESECTOR]` signal, which is triggered when a ship is created. This approach is much more performance-friendly than checking the universe for new ships repeatedly. The plugin sets a local variable on each ship to prevent it from checking its name every time it changes sectors.
+When renaming an individual object, the plugin checks its name against an array of strings. If one of these strings is detected, that part of the name is colored. For example, for Argon ships, the plugin checks for the following strings: "Argon", "A.", "OTAS", "Terracorp", "Jonferco", "Plutarch", "Beryll," and "Privateer". Once an object is coloured the plugin sets a local variable to prevent it from being recoloured and to allow it to be reset if necessary.
 
-When renaming an individual ship, the plugin checks its name against an array of strings. If one of these strings is detected, that part of the name is colored. For example, for Argon ships, the plugin checks for the following strings: "Argon", "A.", "OTAS", "Terracorp", "Jonferco", "Plutarch", "Beryll," and "Privateer."
+After activation, the plugin must detect new objects so their names can be coloured. In Farnham's Legend the plugin uses `[SIGNAL_CREATED]` signal to detect new ships & stations. This approach is much more performance-friendly than manually checking the universe for new ships regularly.
 
-Unfortunately there are several situations where an object is spawned but not detected by `[SIGNAL_CHANGESECTOR]` or any other signal. The first issue is with stations, which do not trigger any signal upon creation, at least not in Albion Prelude. To ensure that stations are colored, the plugin takes the following steps:
+Once a new object is detected it is coloured once, then after about half a second it is coloured again and after a longer wait of about 15 seconds it is coloured a third time. This is to ensure that a colouring script runs after any creation scripts that might rename the object. This is particularly an issue with some mods such as [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) and [Pirate Guild 3](https://forum.egosoft.com/viewtopic.php?t=244949).
 
-* Checks the universe once every 30 minutes for new unnamed stations, focusing only on shipyards and docks. Although not ideal, this approach does not waste a significant amount of CPU.
-* Checks the universe when the player changes sector.
+### Albion Prelude and Terran Conflict
+
+In Albion Prelude and Terran Conflict we don't have `[SIGNAL_CREATED]` available so we use `[SIGNAL_CHANGESECTOR]` instead. This signal does trigger for many objects as soon as they are created but it has a few significant shortcomings. 
+
+* `[SIGNAL_CHANGESECTOR]` triggers every time a ship goes through a gate.  
+* Stations do not trigger `[SIGNAL_CHANGESECTOR]` or any other signal upon creation. 
+* Ships that spawn in docking bays of carriers or stations do not trigger `[SIGNAL_CHANGESECTOR]` until they leave the dock.
+
+To mitigate these issues, the plugin takes the following steps:
+
+* We avoid going through the colour process each time a ship triggers `[SIGNAL_CHANGESECTOR]` by checking the local variable assigned to the ship but even this quick check leads to some wasted CPU cycles.
+* Checks the universe once every 30 minutes for new unnamed stations and dockable ships. Although not ideal, this approach does not waste a significant amount of CPU.
+* Does the same check when the player changes sector.
 * When `[SIGNAL_CHANGESECTOR]` triggers for a lasertower, checks if it has a homebase to colour. This is because lasertowers are often spawned to guard stations, so if a lasertower is respawning there's a reasonable chance that the homebase it was guarding has also recently respawned.
 
-The second problem is with mods that create ships and rename them as part of their creation script. Although we can colour the ship name, the mod immediately overwrites our change. Pirate Guild and Military Base Response Revamp are two examples of mods where this is a problem. To mitigate this, the plugin adds each new ship to a global array when it spawns. This global array is checked and purged every 3 minutes, giving the mod to chance to rename the ship without being overwritten.
-
-The third problem is with ships that spawn in docking bays instead of in space. These do not trigger `[SIGNAL_CHANGESECTOR]` or any other signal until they leave the dock. To mitigate this stations are checked for docked ships when their own names are checked 
-
-The third problem is ships that are created inside docking bays instead of in space. These do not trigger a signal until they leave the dock. To mitigate this the plugin adds newly spawned carriers to a global array which is regularly checked for docked ships and then purged. Whenever a station is checked it is also checked for docked ships.
-
-These engine limitations mean you'll occasionally see an uncoloured ship or station. But the additional checks performed by the plugin should make this a rare occasion.
+The limitations of AP and TC mean you'll occasionally see an uncoloured ship or station. But the additional checks performed by the plugin should make this a rare occasion.
 
 ## Compatibility
 
 * Terran Conflict - Yes.
 * Albion Prelude - Yes.
 * Farnham's Legend - Yes.
-* [XRM](https://forum.egosoft.com/viewtopic.php?f=94&t=304158) - Yes, I developed this while playing on an LxXRM installation. The plugin includes code to handle several XRM specific objects. 
+* [XRM](https://forum.egosoft.com/viewtopic.php?f=94&t=304158) - Yes, I originally developed this while playing on an LxXRM installation. The plugin includes code to handle several XRM specific objects. 
 * Litcube's universe - I've never played it, so I'm not sure. Try it and let me know!
 * [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) - Yes, especially if you overwrite MBBR's ship naming script with the included optional script. 
 * [Pirate Guild](https://forum.egosoft.com/viewtopic.php?t=244949) - Yes, though station names will be overwritten so I strongly advise the optional included translation files. 
@@ -144,6 +156,38 @@ Because I'm an idiot.
 * Thanks Olsch for improving my dodgy German translation.
 
 ## Changelog
+#### 2.0.0
+
+* Added dynamic colouring of sector names available only in FL. 
+    * Sector colouring is activated as a separate AL plugin so you can use it standalone or alongside colouring ships & stations. 
+	* Sector colours are editable in the 9964 t file set as a red, green and yellow value to be combined into an RGB colour. By default these RGB colours are identical to the colours used for ship & station names.
+	* Border sectors can be set to use different colours to core sectors. By default they are the same. You can set the border sector colours for individual races manually or set a general % value to lighten/darken the core sector colour.
+	* Colour By Race in FL now requires the unofficial patch by Cycrow as sector colouring requires some of the new scripting functions. 
+* Rewrote plugin to start a task on new ships and station for rechecking their names instead of adding them to a global array to be checked on a timer. More elegant and more efficient on CPU and less likely to show uncoloured objects while waiting on 180 second timer.
+* Changed to use SIGNAL_CREATED instead of SIGNAL_CHANGESECTOR to detect new ships for colouring in FL. SIGNAL_CREATED is called once per ship only, meaning reduced CPU load. 
+* Improved reset functionality.
+	* Added check on game load to see if settings are changed from the last session due to a change in the t file. If a change is detected, the plugin will inform the player and reset and recolour all ships, stations and/or sectors to match the new settings. This way the player can change settings without needing to deactivate and reactivate the plugin - though this method is still possible.
+	* The reset and recolouring is run in parallel for a seamless transition from the user's point of view - user won't see the entire universe uncoloured for a few minutes.
+	* If a version update is detected, the plugin will inform the user of the update and reset and recolour ships, stations and/or sectors.
+	* Old data from a previous game session is now stored to be used for any reset deemed necessary on session start. It's then deleted. 
+    * Pirate Guild 3 Mob Bosses and special XRM stations such as "Farpoint Station" are now reset properly.
+* Added script to check for short prepend on objects with short names and replace with the long prepend. This is run once on version upgrade. This was a mistake introduced to a couple of objects in earlier version of plugin. Only seen it in German translation so is fairly rare. 	
+* More informational messages. Short messages now appear as a game tip in FL and AP.
+* Changed Terran colour from "silver" to white as I can see it better. If you prefer to revert to silver, you can edit settings in the 9964 t file.
+* t file improvements. 
+	* Separated True Relations & Colour By Race into separate t files. 9964 is the main t file. 9965 now only contains hard coded coloured names of stations and is not used by FL as we can immediately detect creation of stations with SIGNAL_CREATED.
+	* Added more documentation comments to the t file to explain editable settings. 
+	* Moved some hardcoded settings into t file so they can be edited.
+		* XRM command ship job IDs and relevant sector string IDs.
+		* References to object names to be prepended with race name.
+	* Replaced "Pirate Ship" entry at id="3771" with original uncoloured string.
+	* Added some strings to German t file to ensure an entire word is coloured in stations. For example "Piratenhafen" was only getting "Piraten" coloured which looked odd.
+* Added check to see if plugin is running processes. This stops the plugin from running two intensive processes at the same time and prevents breakage from conflicting processes. For example deactivating while init process is running would break things and vice versa.
+* Added handling of OWNER_CHANGED signal to rename a ship when its owner changes. 	
+* Improved debugging logging 
+    * Added dedicated script for enabling debugging - plugin.jj.colour.by.race.set.debug.
+	* Debug now set to text number (9964) rather than boolean true. 
+* A bunch of refactoring including some functions from jj.colour.by.race to jj.lib.
 
 ##### 1.3.1
 * Prevented search substrings from being deleted when processing a plugin update. This bug prevented the galaxy from being reset so objects could be recoloured from a "blank slate".
