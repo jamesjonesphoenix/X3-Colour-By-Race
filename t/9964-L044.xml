@@ -369,6 +369,8 @@
         <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X by FriendlyFirePhoenix. v%s</t>
         <t id="86">[author]{9964,62}[/author]\n[title]Deactivated {9964,62}[/title]\n\nSectors have been restored to the colour they used before the plugin was activated and had their local variables removed.\n\nTo completely remove any trace of the plugin, follow these steps:\n1: Ensure {9964,61} is also deactivated.\n2: Save your game.\n3: Delete the plugin files from your X3 directory.\n4: Reload your save.</t>
         <t id="87">[author]{9964,62}[/author]\n[title]Initialised {9964,62}[/title]\n\nAs part of activation, all sectors across the galaxy have had colour applied corresponding with the race that owns them. Sectors will automatically change colour when they change owner.\n\nYou can change the default sector colours by editing \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Apply the changes by doing one of the following:\n1: Load a save which has {9964,62} active.\nor...\n2: Deactivate and reactivate {9964,62}.</t>
+        <t id="90">[author]{9964,61}[/author]\n[title]Can't Initialise Plugin[/title]\n\n{9964,61} and {9964,62} require the latest version of Cycrow's unofficial patch to run in Farnham's Legend. Download it at https://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/.</t>
+        <t id="91">\033GColour By Race\033X requires the latest version of Cycrow's unofficial patch to run in Farnham's Legend.</t>
         <t id="98">ships, stations and sectors</t>
         <t id="99">sectors</t>
     </page>

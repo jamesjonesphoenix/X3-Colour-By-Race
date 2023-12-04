@@ -365,6 +365,8 @@
     <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X di FriendlyFirePhoenix. v%s</t>
     <t id="86">[author]{9964,62}[/author]\n[title]Disattivato {9964,62}[/title]\n\nI settori sono stati ripristinati al colore che utilizzavano prima dell'attivazione del plugin e sono state rimosse le variabili locali.\n\nPer rimuovere completamente qualsiasi traccia del plugin, segui questi passaggi:\n1: assicurati che anche {9964,61} sia disattivato. \n2: salva il gioco.\n3: elimina i file plugin dalla directory X3.\n4: ricarica il salvataggio.</t>
     <t id="87">[author]{9964,62}[/author]\n[title]Inizializzato {9964,62}[/title]\n\nCome parte dell'attivazione, a tutti i settori della galassia è stato applicato il colore corrispondente alla razza che li possiede. I settori cambieranno automaticamente colore quando cambiano proprietario.\n\nPuoi cambiare i colori predefiniti dei settori modificando \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Applica le modifiche effettuando una delle seguenti operazioni:\n1: carica un salvataggio che ha {9964,62} attivo.\n2: disattiva e riattiva {9964,62}.</t>
+    <t id="90">[author]{9964,61}[/author]\n[title]Impossibile inizializzare il plugin[/title]\n\n{9964,61} e {9964,62} richiedono l'ultima versione della patch non ufficiale di Cycrow per correre nella leggenda di Farnham. Scaricalo su https://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/.</t>
+    <t id="91">\033GColour By Race\033X richiede l'ultima versione della patch non ufficiale di Cycrow per funzionare in Farnham's Legend.</t>
     <t id="98">navi, stazioni e settori</t>
     <t id="99">settori</t>
 </page>
