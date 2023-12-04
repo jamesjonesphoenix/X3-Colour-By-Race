@@ -8,7 +8,7 @@
 	<description>Sets a new name for given object.</description>
 	<arguments>
 		<argument index="1" name="newName" type="Var/String" desc="newName" />
-		<argument index="2" name="debug" type="Var/Boolean" desc="Debug" />
+		<argument index="2" name="debug" type="Var/Number" desc="Debug" />
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -220,13 +220,17 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>plugin.jj.colour.by.race.log</call>
+			<call>plugin.jj.lib.log.object</call>
 			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>prepend</text>
 			<text>=</text>
 			<text>'Renamed object'</text>
+			<text> </text>
+			<text>logFile</text>
+			<text>=</text>
+			<var>$debug</var>
 		</line>
 		<line linenr="021" indent="">
 			<text>return</text>
@@ -377,15 +381,17 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
-				<sval type="array" size="8">
+				<sval type="array" size="10">
 					<sval type="int" val="102" />
-					<sval type="string" val="plugin.jj.colour.by.race.log" />
+					<sval type="string" val="plugin.jj.lib.log.object" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="1" />
+					<sval type="int" val="2" />
 					<sval type="int" val="5" />
 					<sval type="string" val="Renamed object" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -399,7 +405,7 @@
 					<sval type="string" val="newName" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="63" />
+					<sval type="int" val="10" />
 					<sval type="string" val="Debug" />
 				</sval>
 			</sval>

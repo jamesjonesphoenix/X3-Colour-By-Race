@@ -101,6 +101,10 @@
 			<text>(</text>
 			<var>1</var>
 			<text>)</text>
+			<text> </text>
+			<text>(</text>
+			<var>0</var>
+			<text>)</text>
 		</line>
 		<line linenr="012" indent="">
 			<text>skip</text>
@@ -118,53 +122,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="014" indent="" interruptable="@">
-			<var>$busy</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>[THIS]</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>plugin.jj.lib.check.performance</call>
-			<text> </text>
-			<text>:</text>
-		</line>
-		<line linenr="015" indent="">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$busy</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<var>[TRUE]</var>
-		</line>
-		<line linenr="016" indent="&#160;">
-			<text>return</text>
-			<text> </text>
-			<var>null</var>
-		</line>
-		<line linenr="017" indent="" interruptable="@">
-			<text>=</text>
-			<text> </text>
-			<var>[THIS]</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>call</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>plugin.jj.colour.by.race.run.globals.dowaits</call>
-			<text> </text>
-			<text>:</text>
-		</line>
-		<line linenr="018" indent="">
+		<line linenr="014" indent="">
 			<var>$fl</var>
 			<text> </text>
 			<text>=</text>
@@ -180,10 +138,10 @@
 			<var>$pluginData</var>
 			<text> </text>
 			<text>(</text>
-			<var>13</var>
+			<var>8</var>
 			<text>)</text>
 		</line>
-		<line linenr="019" indent="">
+		<line linenr="015" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -194,23 +152,77 @@
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="020" indent="&#160;">
+		<line linenr="016" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="021" indent="">
+		<line linenr="017" indent="">
+			<var>$processing</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$pluginData</var>
+			<text> </text>
+			<text>(</text>
+			<var>9</var>
+			<text>)</text>
+		</line>
+		<line linenr="018" indent="">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$processing</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>[TRUE]</var>
+		</line>
+		<line linenr="019" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="020" indent="" interruptable="@">
+			<text>do</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.jj.lib.check.performance</call>
+			<text> </text>
+			<text>:</text>
+		</line>
+		<line linenr="021" indent="&#160;">
+			<text>return</text>
+			<text> </text>
+			<var>null</var>
+		</line>
+		<line linenr="022" indent="">
 			<var>$time</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<text>last</text>
-			<text> </text>
-			<text>load</text>
+			<text>playing</text>
 			<text> </text>
 			<text>time</text>
 		</line>
-		<line linenr="022" indent="">
+		<line linenr="023" indent="">
 			<var>$lastRan</var>
 			<text> </text>
 			<text>=</text>
@@ -229,27 +241,100 @@
 			<var>4</var>
 			<text>)</text>
 		</line>
-		<line linenr="023" indent="">
-			<var>$lastRan</var>
+		<line linenr="024" indent="">
+			<var>$difference</var>
 			<text> </text>
 			<text>=</text>
+			<text> </text>
+			<var>$time</var>
+			<text> </text>
+			<text>-</text>
+			<text> </text>
+			<var>$lastRan</var>
+		</line>
+		<line linenr="025" indent="">
+			<var>$debug</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>or</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$pluginData</var>
+			<text> </text>
+			<text>(</text>
+			<var>3</var>
+			<text>)</text>
+		</line>
+		<line linenr="026" indent="">
+			<text>if</text>
+			<text> </text>
+			<var>$debug</var>
+		</line>
+		<line linenr="027" indent="&#160;">
+			<var>$message</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>'Artificial Life Timer --- Playing Time: '</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$time</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<text>' --- Last Ran: '</text>
+			<text> </text>
+			<text>+</text>
 			<text> </text>
 			<var>$lastRan</var>
 			<text> </text>
 			<text>+</text>
 			<text> </text>
-			<var>1800</var>
+			<text>' --- Difference: '</text>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$difference</var>
 		</line>
-		<line linenr="024" indent="">
+		<line linenr="028" indent="&#160;">
+			<text>write</text>
+			<text> </text>
+			<text>to</text>
+			<text> </text>
+			<text>log</text>
+			<text> </text>
+			<text>file</text>
+			<text> </text>
+			<var>$debug</var>
+			<text> </text>
+			<text>append</text>
+			<text>=</text>
+			<var>[TRUE]</var>
+			<text> </text>
+			<text>value</text>
+			<text>=</text>
+			<var>$message</var>
+		</line>
+		<line linenr="029" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="030" indent="">
 			<text>if</text>
 			<text> </text>
-			<var>$time</var>
+			<var>$difference</var>
 			<text> </text>
 			<text>&gt;</text>
 			<text> </text>
-			<var>$lastRan</var>
+			<var>900</var>
 		</line>
-		<line linenr="025" indent="&#160;" interruptable="@">
+		<line linenr="031" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -259,15 +344,11 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>plugin.jj.colour.by.race.stations.dowaits</call>
+			<call>plugin.jj.colour.by.race.dockable.objects</call>
 			<text> </text>
 			<text>:</text>
-			<text> </text>
-			<text>doStationOwnedShips</text>
-			<text>=</text>
-			<var>[TRUE]</var>
 		</line>
-		<line linenr="026" indent="&#160;">
+		<line linenr="032" indent="&#160;">
 			<text>array</text>
 			<text> </text>
 			<text>or</text>
@@ -286,10 +367,10 @@
 			<text> </text>
 			<var>$time</var>
 		</line>
-		<line linenr="027" indent="">
+		<line linenr="033" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="028" indent="">
+		<line linenr="034" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -302,18 +383,21 @@
 			<sval type="string" val="Main AL script for Colour By Race." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="9">
+			<sval type="array" size="12">
 				<sval type="string" val="plugin.ID" />
 				<sval type="string" val="plugin.event" />
 				<sval type="string" val="return" />
 				<sval type="string" val="pluginData" />
 				<sval type="string" val="activated" />
-				<sval type="string" val="busy" />
 				<sval type="string" val="fl" />
+				<sval type="string" val="processing" />
 				<sval type="string" val="time" />
 				<sval type="string" val="lastRan" />
+				<sval type="string" val="difference" />
+				<sval type="string" val="debug" />
+				<sval type="string" val="message" />
 			</sval>
-			<sval type="array" size="21">
+			<sval type="array" size="26">
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
 					<sval type="int" val="-1610611965" />
@@ -352,13 +436,15 @@
 					<sval type="string" val="plugin.jj.colour.by.race" />
 					<sval type="int" val="3" />
 				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="129" />
+				<sval type="array" size="8">
+					<sval type="int" val="1081" />
 					<sval type="int" val="4" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
 					<sval type="int" val="4" />
 					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
@@ -381,12 +467,12 @@
 					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="6">
-					<sval type="int" val="102" />
-					<sval type="string" val="plugin.jj.lib.check.performance" />
+					<sval type="int" val="129" />
 					<sval type="int" val="5" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="8" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
@@ -409,24 +495,16 @@
 					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="6">
-					<sval type="int" val="102" />
-					<sval type="string" val="plugin.jj.colour.by.race.run.globals.dowaits" />
-					<sval type="int" val="-2147483647" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="0" />
-				</sval>
-				<sval type="array" size="6">
 					<sval type="int" val="129" />
 					<sval type="int" val="6" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
 					<sval type="int" val="4" />
-					<sval type="int" val="13" />
+					<sval type="int" val="9" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610609144" />
+					<sval type="int" val="-1610609400" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="6" />
@@ -444,8 +522,21 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
 				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.jj.lib.check.performance" />
+					<sval type="int" val="-1610608888" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="103" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="1220" />
+					<sval type="int" val="141" />
 					<sval type="int" val="7" />
 				</sval>
 				<sval type="array" size="6">
@@ -458,43 +549,106 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="8" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
-					<sval type="int" val="4" />
-					<sval type="int" val="1800" />
-					<sval type="int" val="15" />
-					<sval type="int" val="11" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="11" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610607613" />
+					<sval type="int" val="9" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="7" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="8" />
 					<sval type="int" val="15" />
+					<sval type="int" val="12" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="12" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="4" />
+					<sval type="int" val="3" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610607101" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="37">
+					<sval type="int" val="104" />
+					<sval type="int" val="11" />
+					<sval type="int" val="11" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Artificial Life Timer --- Playing Time: " />
+					<sval type="int" val="131074" />
+					<sval type="int" val="7" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="5" />
+					<sval type="string" val=" --- Last Ran: " />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="8" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="5" />
+					<sval type="string" val=" --- Difference: " />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-4" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-6" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-8" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-10" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="404" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610606333" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="900" />
+					<sval type="int" val="15" />
 					<sval type="int" val="2" />
 					<sval type="int" val="3" />
 					<sval type="int" val="-1" />
 					<sval type="int" val="2" />
 					<sval type="int" val="-2" />
 				</sval>
-				<sval type="array" size="8">
+				<sval type="array" size="6">
 					<sval type="int" val="102" />
-					<sval type="string" val="plugin.jj.colour.by.race.stations.dowaits" />
+					<sval type="string" val="plugin.jj.colour.by.race.dockable.objects" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="10" />
+					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="130" />
@@ -521,7 +675,7 @@
 					<sval type="string" val="plugin Event" />
 				</sval>
 			</sval>
-			<sval type="array" size="7">
+			<sval type="array" size="8">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -552,7 +706,11 @@
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="20" />
+					<sval type="int" val="22" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="25" />
 					<sval type="int" val="4" />
 				</sval>
 			</sval>

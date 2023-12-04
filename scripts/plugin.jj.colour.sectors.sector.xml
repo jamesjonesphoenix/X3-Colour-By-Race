@@ -1,0 +1,296 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl" ?>
+<script>
+<name>plugin.jj.colour.sectors.sector</name>
+<version>1</version>
+<engineversion>62</engineversion>
+<description>Sets the colour of a sector for the map screens.</description>
+<arguments>
+<argument index="1" name="sector" type="Var/Sector" desc="sector" />
+<argument index="2" name="owner" type="Var/Number" desc="new owner race" />
+<argument index="3" name="debug" type="Var" desc="debug" />
+</arguments>
+<sourceplaintext>
+<![CDATA[
+  * ************************************************
+  * SCRIPT NAME: Colour Sector
+  * DESCRIPTION: Sets the colour of a sector for the map screens.
+  * AUTHOR: JJ     DATE: 6 June 2023
+  * ************************************************
+  if $owner == -1
+    $string = 'owner race not found in races array.'
+    goto label Failed.Part
+  end
+  $pluginData = get global variable: name='plugin.jj.colour.by.race'
+  $codes = $pluginData[10][$owner]
+  if $codes == null
+    $string = 'sector colour not found for owner race.'
+    goto label Failed.Part
+  end
+  $a = 1
+  do if $sector -> is core sector
+    $a = 0
+  $code = $codes[$a]
+  $sector -> set sector colour: $code
+  return null
+  Failed.Part:
+  do if $debug
+    write to log file #$debug  append=[TRUE]  printf: fmt='Failed to Colour Sector, %s --- Sector: %s --- Owner: %s', $string, $sector, $owner, null, null
+  return null
+]]>
+</sourceplaintext>
+<sourcetext>
+<line indent=""><comment><text>*&#160;</text><var>************************************************</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>SCRIPT&#160;NAME:&#160;Colour&#160;Sector</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>DESCRIPTION:&#160;Sets&#160;the&#160;colour&#160;of&#160;a&#160;sector&#160;for&#160;the&#160;map&#160;screens.</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>AUTHOR:&#160;JJ&#160;&#160;&#160;&#160;&#160;DATE:&#160;6&#160;June&#160;2023</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>************************************************</var></comment></line>
+<line indent=""><var>if&#160;</var><var>$owner</var><text>&#160;</text><var>==</var><text>&#160;</text><var>-1</var></line>
+<line indent="&#160;"><var>$string&#160;=&#160;</var><var>'owner&#160;race&#160;not&#160;found&#160;in&#160;races&#160;array.'</var></line>
+<line indent="&#160;"><text>goto&#160;label&#160;</text><var>Failed.Part</var></line>
+<line indent=""><text>end</text></line>
+<line indent=""><var>$pluginData&#160;=&#160;</var><text>get&#160;global&#160;variable:&#160;name=</text><var>'plugin.jj.colour.by.race'</var></line>
+<line indent=""><var>$codes&#160;=&#160;</var><var>$pluginData</var><text>[</text><var>10</var><text>][</text><var>$owner</var><text>]</text></line>
+<line indent=""><var>if&#160;</var><var>$codes</var><text>&#160;</text><var>==</var><text>&#160;</text><var>null</var></line>
+<line indent="&#160;"><var>$string&#160;=&#160;</var><var>'sector&#160;colour&#160;not&#160;found&#160;for&#160;owner&#160;race.'</var></line>
+<line indent="&#160;"><text>goto&#160;label&#160;</text><var>Failed.Part</var></line>
+<line indent=""><text>end</text></line>
+<line indent=""><var>$a&#160;=&#160;</var><var>1</var></line>
+<line indent=""><var>do&#160;if&#160;</var><var>$sector&#160;-&gt;</var><text>&#160;is&#160;core&#160;sector</text></line>
+<line indent="&#160;"><var>$a&#160;=&#160;</var><var>0</var></line>
+<line indent=""><var>$code&#160;=&#160;</var><var>$codes</var><text>[</text><var>$a</var><text>]</text></line>
+<line indent=""><var>$sector&#160;-&gt;</var><text>&#160;set&#160;sector&#160;colour:&#160;</text><var>$code</var></line>
+<line indent=""><text>return&#160;</text><var>null</var></line>
+<line indent=""><var>Failed.Part</var><text>:</text></line>
+<line indent=""><var>do&#160;if&#160;</var><var>$debug</var></line>
+<line indent="&#160;"><text>write&#160;to&#160;log&#160;file&#160;#</text><var>$debug</var><text>&#160;&#160;append=</text><var>[TRUE]</var><text>&#160;&#160;printf:&#160;fmt=</text><var>'Failed&#160;to&#160;Colour&#160;Sector,&#160;%s&#160;---&#160;Sector:&#160;%s&#160;---&#160;Owner:&#160;%s'</var><text>,&#160;</text><var>$string</var><text>,&#160;</text><var>$sector</var><text>,&#160;</text><var>$owner</var><text>,&#160;</text><var>null</var><text>,&#160;</text><var>null</var></line>
+<line indent=""><text>return&#160;</text><var>null</var></line>
+</sourcetext>
+<codearray>
+
+<sval type="array" size="10">
+  <sval type="string" val="plugin.jj.colour.sectors.sector"/>
+  <sval type="int" val="62"/>
+  <sval type="string" val="Sets the colour of a sector for the map screens."/>
+  <sval type="int" val="1"/>
+  <sval type="int" val="0"/>
+  <sval type="array" size="8">
+    <sval type="string" val="sector"/>
+    <sval type="string" val="owner"/>
+    <sval type="string" val="debug"/>
+    <sval type="string" val="string"/>
+    <sval type="string" val="pluginData"/>
+    <sval type="string" val="codes"/>
+    <sval type="string" val="a"/>
+    <sval type="string" val="code"/>
+  </sval>
+  <sval type="array" size="18">
+    <sval type="array" size="13">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610611965"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="15"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-2"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="104"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="5"/>
+      <sval type="string" val="owner race not found in races array."/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="-1"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="100"/>
+      <sval type="int" val="14"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="158"/>
+      <sval type="int" val="5"/>
+      <sval type="string" val="plugin.jj.colour.by.race"/>
+      <sval type="int" val="4"/>
+    </sval>
+    <sval type="array" size="8">
+      <sval type="int" val="1081"/>
+      <sval type="int" val="5"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+    </sval>
+    <sval type="array" size="13">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610610685"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="5"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="15"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-2"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="104"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="5"/>
+      <sval type="string" val="sector colour not found for owner race."/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="-1"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="100"/>
+      <sval type="int" val="14"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="104"/>
+      <sval type="int" val="6"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="-1"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="1331"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-1610609912"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="104"/>
+      <sval type="int" val="6"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="-1"/>
+    </sval>
+    <sval type="array" size="6">
+      <sval type="int" val="129"/>
+      <sval type="int" val="7"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="5"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="6"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="3211"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="7"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="103"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="101"/>
+      <sval type="string" val="Failed.Part"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610608376"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="-1"/>
+    </sval>
+    <sval type="array" size="17">
+      <sval type="int" val="405"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="131075"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="5"/>
+      <sval type="string" val="Failed to Colour Sector, %s --- Sector: %s --- Owner: %s"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="103"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="0"/>
+    </sval>
+  </sval>
+  <sval type="array" size="3">
+    <sval type="array" size="2">
+      <sval type="int" val="14"/>
+      <sval type="string" val="sector"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="10"/>
+      <sval type="string" val="new owner race"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="0"/>
+      <sval type="string" val="debug"/>
+    </sval>
+  </sval>
+  <sval type="array" size="7">
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="************************************************"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="SCRIPT NAME: Colour Sector"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="DESCRIPTION: Sets the colour of a sector for the map screens."/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="AUTHOR: JJ     DATE: 6 June 2023"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="************************************************"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="3"/>
+      <sval type="int" val="4"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="8"/>
+      <sval type="int" val="4"/>
+    </sval>
+  </sval>
+  <sval type="int" val="0"/>
+</sval>
+
+</codearray>
+<nosignature>0502</nosignature>
+</script>

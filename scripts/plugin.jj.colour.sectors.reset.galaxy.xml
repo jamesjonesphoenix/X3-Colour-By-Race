@@ -1,0 +1,185 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl" ?>
+<script>
+<name>plugin.jj.colour.sectors.reset.galaxy</name>
+<version>1</version>
+<engineversion>62</engineversion>
+<description>Resets all sectors to their original colour and removes local variable and event scripts.</description>
+<arguments>
+</arguments>
+<sourceplaintext>
+<![CDATA[
+  * ************************************************
+  * SCRIPT NAME: Reset Galaxy
+  * DESCRIPTION: Resets all sectors to their original colour and removes local variable and event scripts.
+  * AUTHOR: JJ     DATE: 17 June 2023
+  * ************************************************
+@ $sectors = [THIS] -> call script plugin.jj.lib.get.sectors : 
+  $x = size of array $sectors
+  while $x
+    dec $x = 
+@   = wait randomly from 2 to 10 ms
+    $sector = $sectors[$x]
+    $sector ->remove event script: script=plugin.jj.colour.sectors.sig
+    $code = $sector -> get local variable: name='JJ.Original.Colour'
+    $sector -> set sector colour: $code
+    $sector ->set local variable: name='JJ.Original.Colour' value=null
+  end
+  return null
+]]>
+</sourceplaintext>
+<sourcetext>
+<line indent=""><comment><text>*&#160;</text><var>************************************************</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>SCRIPT&#160;NAME:&#160;Reset&#160;Galaxy</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>DESCRIPTION:&#160;Resets&#160;all&#160;sectors&#160;to&#160;their&#160;original&#160;colour&#160;and&#160;removes&#160;local&#160;variable&#160;and&#160;event&#160;scripts.</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>AUTHOR:&#160;JJ&#160;&#160;&#160;&#160;&#160;DATE:&#160;17&#160;June&#160;2023</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>************************************************</var></comment></line>
+<line interruptable="@" indent=""><var>$sectors&#160;=&#160;</var><var>[THIS]&#160;-&gt;</var><text>&#160;call&#160;script&#160;</text><call>plugin.jj.lib.get.sectors</call><text>&#160;:&#160;</text></line>
+<line indent=""><var>$x&#160;=&#160;</var><text>size&#160;of&#160;array&#160;</text><var>$sectors</var></line>
+<line indent=""><var>while&#160;</var><var>$x</var></line>
+<line indent="&#160;"><text>dec&#160;</text><var>$x&#160;=&#160;</var></line>
+<line interruptable="@" indent="&#160;"><var>=&#160;</var><text>wait&#160;randomly&#160;from&#160;</text><var>2</var><text>&#160;to&#160;</text><var>10</var><text>&#160;ms</text></line>
+<line indent="&#160;"><var>$sector&#160;=&#160;</var><var>$sectors</var><text>[</text><var>$x</var><text>]</text></line>
+<line indent="&#160;"><var>$sector&#160;-&gt;</var><text>remove&#160;event&#160;script:&#160;script=</text><call>plugin.jj.colour.sectors.sig</call></line>
+<line indent="&#160;"><var>$code&#160;=&#160;</var><var>$sector&#160;-&gt;</var><text>&#160;get&#160;local&#160;variable:&#160;name=</text><var>'JJ.Original.Colour'</var></line>
+<line indent="&#160;"><var>$sector&#160;-&gt;</var><text>&#160;set&#160;sector&#160;colour:&#160;</text><var>$code</var></line>
+<line indent="&#160;"><var>$sector&#160;-&gt;</var><text>set&#160;local&#160;variable:&#160;name=</text><var>'JJ.Original.Colour'</var><text>&#160;value=</text><var>null</var></line>
+<line indent=""><text>end</text></line>
+<line indent=""><text>return&#160;</text><var>null</var></line>
+</sourcetext>
+<codearray>
+
+<sval type="array" size="10">
+  <sval type="string" val="plugin.jj.colour.sectors.reset.galaxy"/>
+  <sval type="int" val="62"/>
+  <sval type="string" val="Resets all sectors to their original colour and removes local variable and event scripts."/>
+  <sval type="int" val="1"/>
+  <sval type="int" val="0"/>
+  <sval type="array" size="4">
+    <sval type="string" val="sectors"/>
+    <sval type="string" val="x"/>
+    <sval type="string" val="sector"/>
+    <sval type="string" val="code"/>
+  </sval>
+  <sval type="array" size="12">
+    <sval type="array" size="6">
+      <sval type="int" val="102"/>
+      <sval type="string" val="plugin.jj.lib.get.sectors"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="131075"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="131"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610609911"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="-1"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="143"/>
+      <sval type="int" val="1"/>
+    </sval>
+    <sval type="array" size="6">
+      <sval type="int" val="107"/>
+      <sval type="int" val="-2147483647"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="10"/>
+    </sval>
+    <sval type="array" size="6">
+      <sval type="int" val="129"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+    </sval>
+    <sval type="array" size="4">
+      <sval type="int" val="2542"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="string" val="plugin.jj.colour.sectors.sig"/>
+    </sval>
+    <sval type="array" size="6">
+      <sval type="int" val="156"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="5"/>
+      <sval type="string" val="JJ.Original.Colour"/>
+      <sval type="int" val="3"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="3211"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="3"/>
+    </sval>
+    <sval type="array" size="7">
+      <sval type="int" val="155"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="2"/>
+      <sval type="int" val="5"/>
+      <sval type="string" val="JJ.Original.Colour"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="112"/>
+      <sval type="int" val="2"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="103"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="0"/>
+    </sval>
+  </sval>
+  <sval type="int" val="0"/>
+  <sval type="array" size="6">
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="************************************************"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="SCRIPT NAME: Reset Galaxy"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="DESCRIPTION: Resets all sectors to their original colour and removes local variable and event scripts."/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="AUTHOR: JJ     DATE: 17 June 2023"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="************************************************"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="11"/>
+      <sval type="int" val="4"/>
+    </sval>
+  </sval>
+  <sval type="int" val="0"/>
+</sval>
+
+</codearray>
+<nosignature>3145</nosignature>
+</script>

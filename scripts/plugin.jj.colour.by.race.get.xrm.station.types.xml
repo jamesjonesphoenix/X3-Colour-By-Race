@@ -1,0 +1,312 @@
+<?xml version="1.0" standalone="yes" ?>
+<?xml-stylesheet href="x2script.xsl" type="text/xsl" ?>
+<script>
+<name>plugin.jj.colour.by.race.get.xrm.station.types</name>
+<version>1</version>
+<engineversion>54</engineversion>
+<description>Returns array of station types to colour.</description>
+<arguments>
+<argument index="1" name="race" type="Var/Race" desc="race" />
+</arguments>
+<sourceplaintext>
+<![CDATA[
+  * ************************************************
+  * SCRIPT NAME: Get station types
+  * DESCRIPTION: Returns array of station types to colour that aren't part of the [Docks] or [Shipyard] class. They happen to all be part of XRM. 
+  * AUTHOR: JJ     DATE: 14 February 2023
+  * ************************************************
+  $types=array alloc: size=0
+  if$race == Argon
+    append Argon Terracorp Weapons Dealer M to array $types
+    append Argon Terracorp Weapons Dealer L to array $types
+  else if$race == Split
+    append Split Strong Arms Weapons Dealer M to array $types
+    append Split Strong Arms Weapons Dealer L to array $types
+  else if$race == Paranid
+    append Paranid Holy Dimensions Weapons Dealer M to array $types
+    append Paranid Holy Dimensions Weapons Dealer L to array $types
+  else if$race == Pirates
+    append Pirates Duke's Weapons Dealer L to array $types
+    append Paranid Pleasure Complex to array $types
+  else if$race == Terran
+    append Terran Dark Space Weapons Dealer L to array $types
+  else if$race == Independant
+    append Strong Arms Weapons Dealer XL to array $types
+  end
+  return $types
+]]>
+</sourceplaintext>
+<sourcetext>
+<line indent=""><comment><text>*&#160;</text><var>************************************************</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>SCRIPT&#160;NAME:&#160;Get&#160;station&#160;types</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>DESCRIPTION:&#160;Returns&#160;array&#160;of&#160;station&#160;types&#160;to&#160;colour&#160;that&#160;aren't&#160;part&#160;of&#160;the&#160;[Docks]&#160;or&#160;[Shipyard]&#160;class.&#160;They&#160;happen&#160;to&#160;all&#160;be&#160;part&#160;of&#160;XRM.&#160;</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>AUTHOR:&#160;JJ&#160;&#160;&#160;&#160;&#160;DATE:&#160;14&#160;February&#160;2023</var></comment></line>
+<line indent=""><comment><text>*&#160;</text><var>************************************************</var></comment></line>
+<line indent=""><var>$types=</var><text>array&#160;alloc:&#160;size=</text><var>0</var></line>
+<line indent=""><var>if</var><var>$race</var><text>&#160;</text><var>==</var><text>&#160;</text><var>Argon</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Argon&#160;Terracorp&#160;Weapons&#160;Dealer&#160;M</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Argon&#160;Terracorp&#160;Weapons&#160;Dealer&#160;L</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent=""><var>else&#160;if</var><var>$race</var><text>&#160;</text><var>==</var><text>&#160;</text><var>Split</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Split&#160;Strong&#160;Arms&#160;Weapons&#160;Dealer&#160;M</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Split&#160;Strong&#160;Arms&#160;Weapons&#160;Dealer&#160;L</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent=""><var>else&#160;if</var><var>$race</var><text>&#160;</text><var>==</var><text>&#160;</text><var>Paranid</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Paranid&#160;Holy&#160;Dimensions&#160;Weapons&#160;Dealer&#160;M</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Paranid&#160;Holy&#160;Dimensions&#160;Weapons&#160;Dealer&#160;L</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent=""><var>else&#160;if</var><var>$race</var><text>&#160;</text><var>==</var><text>&#160;</text><var>Pirates</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Pirates&#160;Duke's&#160;Weapons&#160;Dealer&#160;L</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Paranid&#160;Pleasure&#160;Complex</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent=""><var>else&#160;if</var><var>$race</var><text>&#160;</text><var>==</var><text>&#160;</text><var>Terran</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Terran&#160;Dark&#160;Space&#160;Weapons&#160;Dealer&#160;L</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent=""><var>else&#160;if</var><var>$race</var><text>&#160;</text><var>==</var><text>&#160;</text><var>Independant</var></line>
+<line indent="&#160;"><text>append&#160;</text><var>Strong&#160;Arms&#160;Weapons&#160;Dealer&#160;XL</var><text>&#160;to&#160;array&#160;</text><var>$types</var></line>
+<line indent=""><text>end</text></line>
+<line indent=""><text>return&#160;</text><var>$types</var></line>
+</sourcetext>
+<codearray>
+
+<sval type="array" size="10">
+  <sval type="string" val="plugin.jj.colour.by.race.get.xrm.station.types"/>
+  <sval type="int" val="54"/>
+  <sval type="string" val="Returns array of station types to colour."/>
+  <sval type="int" val="1"/>
+  <sval type="int" val="0"/>
+  <sval type="array" size="2">
+    <sval type="string" val="race"/>
+    <sval type="string" val="types"/>
+  </sval>
+  <sval type="array" size="23">
+    <sval type="array" size="4">
+      <sval type="int" val="128"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="0"/>
+    </sval>
+    <sval type="array" size="13">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610611453"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="15"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-2"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393715"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393708"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="112"/>
+      <sval type="int" val="22"/>
+    </sval>
+    <sval type="array" size="13">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610610427"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="15"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-2"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393716"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393710"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="112"/>
+      <sval type="int" val="22"/>
+    </sval>
+    <sval type="array" size="13">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610609403"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="4"/>
+      <sval type="int" val="15"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-2"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393712"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393711"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="112"/>
+      <sval type="int" val="22"/>
+    </sval>
+    <sval type="array" size="13">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610608379"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="8"/>
+      <sval type="int" val="15"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-2"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393714"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393450"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="112"/>
+      <sval type="int" val="22"/>
+    </sval>
+    <sval type="array" size="13">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610607611"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="18"/>
+      <sval type="int" val="15"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-2"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393713"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="112"/>
+      <sval type="int" val="22"/>
+    </sval>
+    <sval type="array" size="13">
+      <sval type="int" val="104"/>
+      <sval type="int" val="-1610607099"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="10"/>
+      <sval type="int" val="16"/>
+      <sval type="int" val="15"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="3"/>
+      <sval type="int" val="-1"/>
+      <sval type="int" val="0"/>
+      <sval type="int" val="-2"/>
+    </sval>
+    <sval type="array" size="5">
+      <sval type="int" val="135"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+      <sval type="int" val="9"/>
+      <sval type="int" val="393709"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="103"/>
+      <sval type="int" val="131074"/>
+      <sval type="int" val="1"/>
+    </sval>
+  </sval>
+  <sval type="array" size="1">
+    <sval type="array" size="2">
+      <sval type="int" val="16"/>
+      <sval type="string" val="race"/>
+    </sval>
+  </sval>
+  <sval type="array" size="6">
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="************************************************"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="SCRIPT NAME: Get station types"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="DESCRIPTION: Returns array of station types to colour that aren't part of the [Docks] or [Shipyard] class. They happen to all be part of XRM. "/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="AUTHOR: JJ     DATE: 14 February 2023"/>
+    </sval>
+    <sval type="array" size="3">
+      <sval type="int" val="0"/>
+      <sval type="int" val="1"/>
+      <sval type="string" val="************************************************"/>
+    </sval>
+    <sval type="array" size="2">
+      <sval type="int" val="22"/>
+      <sval type="int" val="4"/>
+    </sval>
+  </sval>
+  <sval type="int" val="0"/>
+</sval>
+
+</codearray>
+<nosignature>2937</nosignature>
+</script>

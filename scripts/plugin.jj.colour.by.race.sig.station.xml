@@ -2,23 +2,23 @@
 <?xml-stylesheet href="x2script.xsl" type="text/xsl"?>
 <!-- Generated using X-Studio -->
 <script>
-	<name>plugin.jj.colour.by.race.reset.galaxy</name>
+	<name>plugin.jj.colour.by.race.sig.station</name>
 	<version>1</version>
 	<engineversion>50</engineversion>
-	<description>Resets coloured strings and local vars for all ships and stations across the galaxy.</description>
+	<description>Runs name colouring script on stations. Similar to ship.sig.</description>
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
 			<comment>* ************************************************</comment>
 		</line>
 		<line linenr="002" indent="">
-			<comment>* SCRIPT NAME: Reset Galaxy</comment>
+			<comment>* SCRIPT NAME: Station Signal</comment>
 		</line>
 		<line linenr="003" indent="">
-			<comment>* DESCRIPTION: Resets coloured strings and local vars for all ships and stations across the galaxy.</comment>
+			<comment>* DESCRIPTION: Runs name colouring script on stations. Checks the station for local var set by naming script to avoid wasting CPU.             </comment>
 		</line>
 		<line linenr="004" indent="">
-			<comment>* AUTHOR: JJ     DATE: 21 May 2023</comment>
+			<comment>* AUTHOR: JJ     DATE: 27 May 2023</comment>
 		</line>
 		<line linenr="005" indent="">
 			<comment>* ************************************************</comment>
@@ -59,51 +59,13 @@
 			<text>)</text>
 		</line>
 		<line linenr="008" indent="">
-			<var>$races</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>array</text>
-			<text> </text>
-			<text>or</text>
-			<text> </text>
-			<text>table</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<var>$pluginData</var>
-			<text> </text>
-			<text>(</text>
-			<var>5</var>
-			<text>)</text>
-		</line>
-		<line linenr="009" indent="">
-			<var>$substringSearchArrays</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>array</text>
-			<text> </text>
-			<text>or</text>
-			<text> </text>
-			<text>table</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<var>$pluginData</var>
-			<text> </text>
-			<text>(</text>
-			<var>6</var>
-			<text>)</text>
-		</line>
-		<line linenr="010" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$debug</var>
 		</line>
-		<line linenr="011" indent="&#160;" interruptable="@">
+		<line linenr="009" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -113,24 +75,20 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>plugin.jj.lib.log.array</call>
+			<call>plugin.jj.lib.log.object</call>
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>prepend</text>
+			<text>argument1</text>
 			<text>=</text>
-			<text>'Resetting Galaxy'</text>
+			<text>'Station Signal'</text>
 			<text> </text>
-			<text>array</text>
-			<text>=</text>
-			<var>$substringSearchArrays</var>
-			<text> </text>
-			<text>logFile</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>$debug</var>
 		</line>
-		<line linenr="012" indent="" interruptable="@">
-			<var>$criminalRaces</var>
+		<line linenr="010" indent="" interruptable="@">
+			<var>$substringSearchArray</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
@@ -141,38 +99,32 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>plugin.jj.lib.get.races</call>
+			<call>plugin.jj.colour.by.race.getsubstrings</call>
 			<text> </text>
 			<text>:</text>
-			<text> </text>
-			<text>criminals</text>
-			<text>=</text>
-			<var>[TRUE]</var>
 		</line>
-		<line linenr="013" indent="">
-			<var>$i</var>
+		<line linenr="011" indent="">
+			<text>skip</text>
 			<text> </text>
-			<text>=</text>
+			<text>if</text>
 			<text> </text>
-			<text>size</text>
+			<var>$substringSearchArray</var>
 			<text> </text>
-			<text>of</text>
+			<text>==</text>
 			<text> </text>
-			<text>array</text>
+			<var>null</var>
 			<text> </text>
-			<var>$races</var>
+			<text>OR</text>
+			<text> </text>
+			<var>$substringSearchArray</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>[FALSE]</var>
 		</line>
-		<line linenr="014" indent="">
-			<text>while</text>
+		<line linenr="012" indent="&#160;" interruptable="@">
+			<var>$name</var>
 			<text> </text>
-			<var>$i</var>
-		</line>
-		<line linenr="015" indent="&#160;">
-			<text>dec</text>
-			<text> </text>
-			<var>$i</var>
-		</line>
-		<line linenr="016" indent="&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -182,42 +134,87 @@
 			<text> </text>
 			<text>script</text>
 			<text> </text>
-			<call>plugin.jj.colour.by.race.reset.race</call>
+			<call>plugin.jj.colour.by.race.object</call>
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>i</text>
+			<text>substringSearchArray</text>
 			<text>=</text>
-			<var>$i</var>
+			<var>$substringSearchArray</var>
 			<text> </text>
-			<text>races</text>
+			<text>index</text>
 			<text>=</text>
-			<var>$races</var>
-			<text> </text>
-			<text>substringSearchArrays</text>
-			<text>=</text>
-			<var>$substringSearchArrays</var>
-			<text> </text>
-			<text>doShips</text>
-			<text>=</text>
-			<var>[TRUE]</var>
-			<text> </text>
-			<text>doStations</text>
-			<text>=</text>
-			<var>[TRUE]</var>
-			<text> </text>
-			<text>criminalRaces</text>
-			<text>=</text>
-			<var>$criminalRaces</var>
+			<var>2</var>
 			<text> </text>
 			<text>debug</text>
 			<text>=</text>
 			<var>$debug</var>
 		</line>
-		<line linenr="017" indent="">
-			<text>end</text>
+		<line linenr="013" indent="">
+			<var>$task</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<text>next</text>
+			<text> </text>
+			<text>available</text>
+			<text> </text>
+			<text>task</text>
+			<text>:</text>
+			<text> </text>
+			<text>starting</text>
+			<text>=</text>
+			<var>[Task.StartCustom]</var>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="014" indent="">
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>begin</text>
+			<text> </text>
+			<text>task</text>
+			<text> </text>
+			<var>$task</var>
+			<text> </text>
+			<text>with</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>plugin.jj.colour.by.race.task.object</call>
+			<text> </text>
+			<text>and</text>
+			<text> </text>
+			<text>priority</text>
+			<text> </text>
+			<var>0</var>
+			<text>:</text>
+			<text> </text>
+			<text>arg1</text>
+			<text>=</text>
+			<var>2</var>
+			<text> </text>
+			<text>arg2</text>
+			<text>=</text>
+			<var>$debug</var>
+			<text> </text>
+			<text>arg3</text>
+			<text>=</text>
+			<var>$name</var>
+			<text> </text>
+			<text>arg4</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>arg5</text>
+			<text>=</text>
+			<var>null</var>
+		</line>
+		<line linenr="015" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -225,20 +222,19 @@
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
-			<sval type="string" val="plugin.jj.colour.by.race.reset.galaxy" />
+			<sval type="string" val="plugin.jj.colour.by.race.sig.station" />
 			<sval type="int" val="50" />
-			<sval type="string" val="Resets coloured strings and local vars for all ships and stations across the galaxy." />
+			<sval type="string" val="Runs name colouring script on stations. Similar to ship.sig." />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="6">
+			<sval type="array" size="5">
 				<sval type="string" val="pluginData" />
 				<sval type="string" val="debug" />
-				<sval type="string" val="races" />
-				<sval type="string" val="substringSearchArrays" />
-				<sval type="string" val="criminalRaces" />
-				<sval type="string" val="i" />
+				<sval type="string" val="substringSearchArray" />
+				<sval type="string" val="name" />
+				<sval type="string" val="task" />
 			</sval>
-			<sval type="array" size="13">
+			<sval type="array" size="10">
 				<sval type="array" size="4">
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
@@ -253,99 +249,103 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="3" />
 				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="129" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="4" />
-					<sval type="int" val="5" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="129" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="0" />
-					<sval type="int" val="4" />
-					<sval type="int" val="6" />
-				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610611192" />
+					<sval type="int" val="-1610611704" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="10">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.jj.lib.log.object" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Station Signal" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="plugin.jj.colour.by.race.getsubstrings" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="25">
+					<sval type="int" val="104" />
+					<sval type="int" val="-536869113" />
+					<sval type="int" val="7" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="9" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="10" />
+					<sval type="int" val="7" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+					<sval type="int" val="10" />
+					<sval type="int" val="-4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-5" />
 				</sval>
 				<sval type="array" size="12">
 					<sval type="int" val="102" />
-					<sval type="string" val="plugin.jj.lib.log.array" />
-					<sval type="int" val="-2147483647" />
+					<sval type="string" val="plugin.jj.colour.by.race.object" />
+					<sval type="int" val="3" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
 					<sval type="int" val="3" />
-					<sval type="int" val="5" />
-					<sval type="string" val="Resetting Galaxy" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-				</sval>
-				<sval type="array" size="8">
-					<sval type="int" val="102" />
-					<sval type="string" val="plugin.jj.lib.get.races" />
-					<sval type="int" val="4" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="10" />
-				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="131" />
-					<sval type="int" val="5" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610609655" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="143" />
-					<sval type="int" val="5" />
-				</sval>
-				<sval type="array" size="20">
-					<sval type="int" val="102" />
-					<sval type="string" val="plugin.jj.colour.by.race.reset.race" />
-					<sval type="int" val="-2147483647" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="7" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="5" />
-					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
 					<sval type="int" val="2" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="10" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="10" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="4" />
-					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="112" />
-					<sval type="int" val="8" />
+				<sval type="array" size="6">
+					<sval type="int" val="1462" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="444" />
+				</sval>
+				<sval type="array" size="18">
+					<sval type="int" val="1017" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="string" val="plugin.jj.colour.by.race.task.object" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="4" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -354,7 +354,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="6">
+			<sval type="array" size="5">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -363,26 +363,22 @@
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="SCRIPT NAME: Reset Galaxy" />
+					<sval type="string" val="SCRIPT NAME: Station Signal" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="DESCRIPTION: Resets coloured strings and local vars for all ships and stations across the galaxy." />
+					<sval type="string" val="DESCRIPTION: Runs name colouring script on stations. Checks the station for local var set by naming script to avoid wasting CPU.             " />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
-					<sval type="string" val="AUTHOR: JJ     DATE: 21 May 2023" />
+					<sval type="string" val="AUTHOR: JJ     DATE: 27 May 2023" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
 					<sval type="string" val="************************************************" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="12" />
-					<sval type="int" val="4" />
 				</sval>
 			</sval>
 			<sval type="int" val="0" />

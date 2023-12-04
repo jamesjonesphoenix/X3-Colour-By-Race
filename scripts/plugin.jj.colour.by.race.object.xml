@@ -9,7 +9,7 @@
 	<arguments>
 		<argument index="1" name="substringSearchArray" type="Var/Array" desc="substringSearchArray" />
 		<argument index="2" name="index" type="Var/Number" desc="Either 1 for ship or 2 for station" />
-		<argument index="3" name="debug" type="Var/Boolean" desc="debug" />
+		<argument index="3" name="debug" type="Var/Number" desc="debug" />
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -84,17 +84,6 @@
 			<text>)</text>
 		</line>
 		<line linenr="011" indent="">
-			<var>$index</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$index</var>
-			<text> </text>
-			<text>+</text>
-			<text> </text>
-			<var>2</var>
-		</line>
-		<line linenr="012" indent="">
 			<var>$i</var>
 			<text> </text>
 			<text>=</text>
@@ -107,17 +96,17 @@
 			<text> </text>
 			<var>$searchSubstrings</var>
 		</line>
-		<line linenr="013" indent="">
+		<line linenr="012" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$i</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="013" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$i</var>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="014" indent="&#160;">
 			<var>$substringSearch</var>
 			<text> </text>
 			<text>=</text>
@@ -136,7 +125,7 @@
 			<var>$i</var>
 			<text>)</text>
 		</line>
-		<line linenr="016" indent="&#160;">
+		<line linenr="015" indent="&#160;">
 			<var>$substringSearchPosition</var>
 			<text> </text>
 			<text>=</text>
@@ -155,7 +144,7 @@
 			<text> </text>
 			<var>$name</var>
 		</line>
-		<line linenr="017" indent="&#160;">
+		<line linenr="016" indent="&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -166,8 +155,19 @@
 			<text> </text>
 			<var>-1</var>
 		</line>
-		<line linenr="018" indent="&#160;&#160;">
+		<line linenr="017" indent="&#160;&#160;">
 			<text>continue</text>
+		</line>
+		<line linenr="018" indent="&#160;">
+			<var>$index</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$index</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>2</var>
 		</line>
 		<line linenr="019" indent="&#160;">
 			<var>$substringColoured</var>
@@ -367,7 +367,7 @@
 		<line linenr="035" indent="&#160;">
 			<text>return</text>
 			<text> </text>
-			<var>[TRUE]</var>
+			<var>$newName</var>
 		</line>
 		<line linenr="036" indent="">
 			<text>end</text>
@@ -393,6 +393,10 @@
 			<text>debug</text>
 			<text>=</text>
 			<var>$debug</var>
+			<text> </text>
+			<text>name</text>
+			<text>=</text>
+			<var>$name</var>
 		</line>
 		<line linenr="038" indent="">
 			<text>return</text>
@@ -448,21 +452,6 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="1" />
 				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="1" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="1" />
-					<sval type="int" val="4" />
-					<sval type="int" val="2" />
-					<sval type="int" val="15" />
-					<sval type="int" val="11" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="11" />
-					<sval type="int" val="-2" />
-				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="131" />
 					<sval type="int" val="5" />
@@ -500,7 +489,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610609912" />
+					<sval type="int" val="-1610610168" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="7" />
@@ -515,7 +504,22 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="1" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="1" />
+					<sval type="int" val="4" />
+					<sval type="int" val="2" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
 				</sval>
 				<sval type="array" size="8">
 					<sval type="int" val="1081" />
@@ -673,24 +677,26 @@
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="13" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="5" />
+					<sval type="int" val="4" />
 				</sval>
-				<sval type="array" size="10">
+				<sval type="array" size="12">
 					<sval type="int" val="102" />
 					<sval type="string" val="plugin.jj.colour.by.race.object.failed" />
 					<sval type="int" val="-2147483647" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
-					<sval type="int" val="2" />
+					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="0" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="2" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="3" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -708,7 +714,7 @@
 					<sval type="string" val="Either 1 for ship or 2 for station" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="63" />
+					<sval type="int" val="10" />
 					<sval type="string" val="debug" />
 				</sval>
 			</sval>
@@ -749,7 +755,7 @@
 					<sval type="string" val="************************************************" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="11" />
+					<sval type="int" val="10" />
 					<sval type="int" val="6" />
 				</sval>
 				<sval type="array" size="2">
