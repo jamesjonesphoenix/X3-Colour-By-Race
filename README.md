@@ -36,8 +36,7 @@ To make sure the global isn't recreated when you load a save, follow these steps
     * Open the `X3\addon\script` folder in Explorer and delete the relevant scripts. They all
       contain `plugin.jj.colour.by.race` as part of their filename.
     * Open the `X3\addon\t` folder and delete the `9964` and `9965` t files.
-      files.
-* Load the save you made after deactivation. Colour By Race should be gone from the Artificial Life menu and its global will be removed from this save.
+* Load the save you made after deactivation. Colour By Race should be gone from the Artificial Life menu and its global will be missing from this save.
 
 ## Debug
 
@@ -45,7 +44,7 @@ As of v2.0.0, Colour By Race has a dedicated script for activating debugging. To
 
     = [THIS]-> call script 'plugin.jj.colour.by.race.set.debug' :
 
-Info will be logged to `log09964.txt`. By default this file is saved to `C:\Users\Username\Documents\Egosoft\X3FL` or similar. Your installation may differ.
+Info will be logged to `log09964.txt`. By default this file is saved to `C:\Users\Username\Documents\Egosoft\X3FL` or similar. Your installation may differ. Note that the plugin will generate a large amount of data. The debug file can reach 25MB in size after just a few hours gameplay.
 
 You can disable debugging by running the same script with the "disable" flag set to true:
 
@@ -57,7 +56,7 @@ Deactivating Colour By Race in the AL game menu will also disable debugging.
 
 Found a bug? I'm keen to hear about it. Report it as a Github issue or on the Egosoft forum thread. I'm particularly keen to hear about uncoloured ships or stations that should be coloured. 
 
-## Race Colours
+## Default Race Colours
 
 If you want to change a race's assigned colour you can edit the entries in the `9964` translation file. No colours are hardcoded in script files. The t file contains extensive comments explaining settings and changing them.
 
@@ -71,11 +70,25 @@ If you want to change a race's assigned colour you can edit the entries in the `
 | Pirates | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | ![Pirate Blastclaw Prototype](https://user-images.githubusercontent.com/15099626/228249210-a1d5deec-ec33-4b7b-9556-2ae8c0594628.jpg) | |
 | Goner | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | ![Goner Ozias](https://user-images.githubusercontent.com/15099626/228245381-bb185b8e-5e67-4299-8dae-9356240c4b18.jpg) | |
 | Independant | ![#00FFFF](https://placehold.co/15x15/00FFFF/00FFFF.png) | <span style="color:cyan">Cyan</span> | \033C | ![Privateer Trading Post](https://user-images.githubusercontent.com/15099626/228241313-b8c904cc-9545-490c-b61b-e3cb9938924d.jpg) | Currently the XRM Privateer Trading Post and Strong Arms Weapons Dealer are the only "independant" race objects coloured. |
-| ATF | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:white">White</span> | \033A | ![ATF Escort Vali](https://user-images.githubusercontent.com/15099626/228246213-a201eb2d-3abb-48aa-8036-e87be42552cd.jpg) | |
-| Terran | ![#C0C0C0](https://placehold.co/15x15/C0C0C0/C0C0C0.png) | <span style="color:white">White</span> | \033A | ![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png)![Orbital Defence Station](https://user-images.githubusercontent.com/15099626/228242917-37940eb2-6438-48f5-b064-9a02bcbdaa84.jpg)![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png) | A rare example of an object where the entire name is coloured. Some stuff just looks weird partially coloured or prepended with a race name. |
+| ATF | ![#C0C0C0](https://placehold.co/15x15/FFFFFF/FFFFFF.png) | <span style="color:white">White</span> | \033W | ![ATF Escort Vali](https://user-images.githubusercontent.com/15099626/228246213-a201eb2d-3abb-48aa-8036-e87be42552cd.jpg) | |
+| Terran | ![#C0C0C0](https://placehold.co/15x15/FFFFFF/FFFFFF.png) | <span style="color:white">White</span> | \033W | ![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png)![Orbital Defence Station](https://user-images.githubusercontent.com/15099626/228242917-37940eb2-6438-48f5-b064-9a02bcbdaa84.jpg)![placeholder](https://user-images.githubusercontent.com/15099626/228250530-bf52200c-96e5-4a25-8163-967b99094c29.png) | A rare example of an object where the entire name is coloured. Some stuff just looks weird partially coloured or prepended with a race name. |
 | Yaki | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | ![Yaki Assassin Fujin Raider](https://user-images.githubusercontent.com/15099626/228247485-7b2fc47e-e2ca-4996-a84e-36ef93cf2f60.jpg) | Example of an enemy ship. X3's standard red text colour for an enemy contrasts with the \033R highlight red colour. |
 
-Farnham's Legend Corporation races use the same colours as their allied race. 
+### Default Farnham's Legend Corporation Colours
+
+In FL, corporations exist as their own races independant from their parent races. 
+
+| **Race** | - | **Colour** | **Code** | **Image Example** | **Note**  |
+|:--- |:--- |:--- |:--- |:--- |:--- |
+| OTAS | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | ![OTAS Shipyard](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/ad7e13cb-a252-4093-9b8f-ef49d001433a) | | 
+| Terracorp | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | ![Terracorp Military Titan](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/84c880ea-ce56-4a4e-80ff-2e5375d44872) | |
+| Atreus | ![#008000](https://placehold.co/15x15/008000/008000.png) | <span style="color:green">Green</span> | \033G | ![Atreus Police Enhanced Mako](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/6dbac025-51f3-4747-b5b4-6271f917d71d) | |
+| NMMC | ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) | <span style="color:yellow">Yellow</span> | \033Y | ![NMMC Mineral Transporter](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/9418d5d8-7d6e-4032-9ddb-1e8fed8a4ea1) | |
+| Strong Arms | ![#FF00FF](https://placehold.co/15x15/FF00FF/FF00FF.png) | <span style="color:magenta">Magenta</span> | \033M | ![Strong Arms HQ](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/b66ab864-8dd7-4fb6-902c-239e59b55edd) | |
+| Beryll | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | | Beryll is not yet implemented in Farnham's Legend. | 
+| Duke's | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | ![Duke's Military Transport](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/ec7396d0-345a-4b26-8796-c9ab879f28a8) | |
+| Darkspace | ![#C0C0C0](https://placehold.co/15x15/FFFFFF/FFFFFF.png) | <span style="color:white">White</span> | \033W | ![ATF Escort Vali](https://user-images.githubusercontent.com/15099626/228246213-a201eb2d-3abb-48aa-8036-e87be42552cd.jpg) | |
+| Industritech | ![#FFA500](https://placehold.co/15x15/FFA500/FFA500.png) | <span style="color:orange">Orange</span> | \033O | | Industritech is a Paranid corporation not yet implemented in Farnham's Legend. |
 
 ## What is coloured and what isn't
 
