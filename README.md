@@ -2,15 +2,23 @@
 # <span style="color:blue">C</span><span style="color:green">o</span><span style="color:magenta">l</span><span style="color:orange">o</span><span style="color:yellow">u</span><td><span style="color:red">r</span></td> By Race
 
 * Colour By Race is an AL plugin for X3:TC, X3:AP and X3:FL which colours the names of ships, stations across the galaxy. It makes for a cool looking and easier to parse sector and universe map.
+    * Most objects only have part of their name coloured, usually the name of their race or corporation.
+    * New ships and stations will have their names coloured as they spawn.
+    * Default colours are editable in the t file.
+    * Object names will change colour when they change owner or when a disguised smuggler is discovered. 
 * As of version 2.0.0 you can also colour the names of sectors in X3:FL only. Sector colouring is activated as a separate AL plugin so you can use it standalone or alongside colouring ships & stations.
-* Most objects only have part of their name coloured, usually the name of their race or corporation.
+    * FL version of Colour By Race requires the [latest version of Cycrow's unofficial patch](https://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/).  
+    * Border sectors can be set to use different colours to core sectors.
+    * Sector colour will automatically change when the sector changes owner. 
 * More screenshots of Colour By Race in action at [this Imgur gallery](https://imgur.com/a/TSrPT8c).
+  
+![X3 Colour By Race - Universe Map](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/ebde1362-fc89-41c0-8cbb-7fd49b45585f)
 
 ## Install
 
 Download the [latest release](https://github.com/jamesjonesphoenix/colour-by-race/releases) from Github. You probably want to download the `.zip` file not the `.tar.gz` file. Unzip the download and copy paste files into the `X3/addon/` folder. Files in the `scripts/` folder go into the `scripts/` folder. Files in the `t/` folder go into the `t/` folder.
 
-Launch the game and load a save or start a new game. Navigate to `Main menu->Gameplay->Artificial life Settings` and activate the plugin.
+Launch the game and load a save or start a new game. Navigate to `Main menu->Gameplay->Artificial life Settings` and activate "Colour By Race" and/or "Colour By Sector".
 
 ### Farnham's Legend
 
@@ -58,7 +66,7 @@ Found a bug? I'm keen to hear about it. Report it as a Github issue or on the Eg
 
 ## Default Race Colours
 
-If you want to change a race's assigned colour you can edit the entries in the `9964` translation file. No colours are hardcoded in script files. The t file contains extensive comments explaining settings and changing them.
+If you want to change a race's assigned colour you can edit the entries in the `9964` translation file. No colours are hardcoded in script files. The t file contains extensive comments documenting settings.
 
 | **Race** | - | **Colour** | **Code** | **Image Example** | **Note**  |
 |:--- |:--- |:--- |:--- |:--- |:--- |
@@ -85,10 +93,10 @@ In FL, corporations exist as their own races independant from their parent races
 | Atreus | ![#008000](https://placehold.co/15x15/008000/008000.png) | <span style="color:green">Green</span> | \033G | ![Atreus Police Enhanced Mako](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/6dbac025-51f3-4747-b5b4-6271f917d71d) | |
 | NMMC | ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) | <span style="color:yellow">Yellow</span> | \033Y | ![NMMC Mineral Transporter](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/9418d5d8-7d6e-4032-9ddb-1e8fed8a4ea1) | |
 | Strong Arms | ![#FF00FF](https://placehold.co/15x15/FF00FF/FF00FF.png) | <span style="color:magenta">Magenta</span> | \033M | ![Strong Arms HQ](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/b66ab864-8dd7-4fb6-902c-239e59b55edd) | |
-| Beryll | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | | Beryll is not yet implemented in Farnham's Legend. | 
+| Beryll | ![#0000EE](https://placehold.co/15x15/0000EE/0000EE.png) | <span style="color:blue">Blue</span> | \033B | - | Beryll is not yet implemented in Farnham's Legend. | 
 | Duke's | ![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png) | <span style="color:red">Red</span> | \033R | ![Duke's Military Transport](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/ec7396d0-345a-4b26-8796-c9ab879f28a8) | |
 | Darkspace | ![#C0C0C0](https://placehold.co/15x15/FFFFFF/FFFFFF.png) | <span style="color:white">White</span> | \033W | ![ATF Escort Vali](https://user-images.githubusercontent.com/15099626/228246213-a201eb2d-3abb-48aa-8036-e87be42552cd.jpg) | |
-| Industritech | ![#FFA500](https://placehold.co/15x15/FFA500/FFA500.png) | <span style="color:orange">Orange</span> | \033O | | Industritech is a Paranid corporation not yet implemented in Farnham's Legend. |
+| Industritech | ![#FFA500](https://placehold.co/15x15/FFA500/FFA500.png) | <span style="color:orange">Orange</span> | \033O | - | Industritech is a Paranid corporation not yet implemented in Farnham's Legend. |
 
 ## What is coloured and what isn't
 
@@ -100,6 +108,7 @@ In FL, corporations exist as their own races independant from their parent races
         * Docks including Equipment Docks, Trading Docks and Stock Exchanges.
         * Corporate HQs.
         * XRM Weapons Dealers.
+    * Sector Names.
 * Objects that are not coloured:
     * Any player property is untouched.
     * Factories.
@@ -109,19 +118,17 @@ In FL, corporations exist as their own races independant from their parent races
 
 ## How It Works
 
-Renaming ships to include their color should be a straightforward process, but due to some peculiarities of X3, it's more complex than it should be.
-
 When the plugin is activated, it goes through all the ships and stations in the universe and adds colours to their names. This process is repeated every time you load a saved game.
 
 When renaming an individual object, the plugin checks its name against an array of strings. If one of these strings is detected, that part of the name is colored. For example, for Argon ships, the plugin checks for the following strings: "Argon", "A.", "OTAS", "Terracorp", "Jonferco", "Plutarch", "Beryll," and "Privateer". Once an object is coloured the plugin sets a local variable to prevent it from being recoloured and to allow it to be reset if necessary.
 
 After activation, the plugin must detect new objects so their names can be coloured. In Farnham's Legend the plugin uses `[SIGNAL_CREATED]` signal to detect new ships & stations. This approach is much more performance-friendly than manually checking the universe for new ships regularly.
 
-Once a new object is detected it is coloured once, then after about half a second it is coloured again and after a longer wait of about 15 seconds it is coloured a third time. This is to ensure that a colouring script runs after any creation scripts that might rename the object. This is particularly an issue with some mods such as [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) and [Pirate Guild 3](https://forum.egosoft.com/viewtopic.php?t=244949).
+Once a new object is detected it is coloured once, then after about half a second it is coloured again and after a longer wait of about 15 seconds it is coloured a third time. This is to ensure that a colouring script runs after any creation scripts that might overwrite the name of the object. This is particularly an issue with mods such as [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) and [Pirate Guild 3](https://forum.egosoft.com/viewtopic.php?t=244949).
 
-### Albion Prelude and Terran Conflict
+### Albion Prelude & Terran Conflict
 
-In Albion Prelude and Terran Conflict we don't have `[SIGNAL_CREATED]` available so we use `[SIGNAL_CHANGESECTOR]` instead. This signal does trigger for many objects as soon as they are created but it has a few significant shortcomings. 
+`[SIGNAL_CREATED]` is not available in Albion Prelude and Terran Conflict so we use `[SIGNAL_CHANGESECTOR]` instead. This signal does trigger for many objects as soon as they are created but it has a few significant shortcomings. 
 
 * `[SIGNAL_CHANGESECTOR]` triggers every time a ship goes through a gate.  
 * Stations do not trigger `[SIGNAL_CHANGESECTOR]` or any other signal upon creation. 
@@ -134,13 +141,14 @@ To mitigate these issues, the plugin takes the following steps:
 * Does the same check when the player changes sector.
 * When `[SIGNAL_CHANGESECTOR]` triggers for a lasertower, checks if it has a homebase to colour. This is because lasertowers are often spawned to guard stations, so if a lasertower is respawning there's a reasonable chance that the homebase it was guarding has also recently respawned.
 
-The limitations of AP and TC mean you'll occasionally see an uncoloured ship or station. But the additional checks performed by the plugin should make this a rare occasion.
+The limitations of AP and TC mean you'll occasionally see an uncoloured ship or station, but the additional checks performed by the plugin should make this a rare occasion.
 
 ## Compatibility
 
 * Terran Conflict - Yes.
 * Albion Prelude - Yes.
 * Farnham's Legend - Yes.
+* X3 Reunion - No.
 * [XRM](https://forum.egosoft.com/viewtopic.php?f=94&t=304158) - Yes, I originally developed this while playing on an LxXRM installation. The plugin includes code to handle several XRM specific objects. 
 * Litcube's universe - I've never played it, so I'm not sure. Try it and let me know!
 * [Military Base Response Revamp](https://forum.egosoft.com/viewtopic.php?t=254599) - Yes, especially if you overwrite MBBR's ship naming script with the included optional script. 
