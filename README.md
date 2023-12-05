@@ -9,7 +9,8 @@
 * As of version 2.0.0 you can also colour the names of sectors in X3:FL only. Sector colouring is activated as a separate AL plugin so you can use it standalone or alongside colouring ships & stations.
     * FL version of Colour By Race requires the [latest version of Cycrow's unofficial patch](https://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/).  
     * Border sectors can be set to use different colours to core sectors.
-    * Sector colour will automatically change when the sector changes owner. 
+    * Sector colour will automatically change when the sector changes owner.
+    * Thanks to Cycrow's unofficial patch, coloured sectors are still searchable in the universe map search bar!
 * More screenshots of Colour By Race in action at [this Imgur gallery](https://imgur.com/a/TSrPT8c).
   
 ![X3 Colour By Race - Universe Map](https://github.com/jamesjonesphoenix/X3-Colour-By-Race/assets/15099626/ebde1362-fc89-41c0-8cbb-7fd49b45585f)
