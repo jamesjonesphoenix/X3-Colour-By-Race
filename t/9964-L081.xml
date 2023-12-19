@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<language id="44">
-    <!-- English -->
+<language id="81">
+    <!-- Japanese -->
     <page id="9964" title="Colour By Race" desc="" voice="no">
 <!-- Text Colour for main X3 races. Text ID corresponds with Race ID. Remove or comment out an entry to prevent that races objects from being coloured.
      <t id="1">         Opening XML tag with string id
@@ -57,25 +57,25 @@
         <t id="63">(blank placeholder)</t>
         <t id="64">\n</t>
         <t id="65">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X by FriendlyFirePhoenix \033G|\033X v%s</t>
-        <t id="66">[author]{9964,61}[/author]\n[title]Deactivated {9964,61}[/title]\n\nThe plugin has removed the colours from ship and station names throughout the galaxy, cleared their local variables, and removed global variables.\n\nIf you come across any instances of coloured objects after deactivation, please submit a bug report so that we can address the issue.\n\nTo completely remove any trace of the plugin:\n1: Save your game.\n2: Delete the plugin files from the X3 directory.\n3: Reload your save.</t>
-        <t id="67">[author]{9964,61}[/author]\n[title]Initialised {9964,61}[/title]\n\nAs part of activation, the plugin has coloured the names of ships, docks and shipyards across the galaxy. Newly spawned objects will have their name coloured automatically.\n\nYou can change the default colours by editing \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Apply the changes by doing one of the following:\n1: Load a save which has {9964,61} active.\nor...\n2: Deactivate and reactivate {9964,61}.</t>
-        <t id="68">Deactivating %s. This will take a little while...</t>
-        <t id="69">Initialising %s. This will take a little while...</t>
-        <t id="70">%s Deactivated.</t>
-        <t id="71">%s Initialised.</t>
-        <t id="72">Updated %s to version %s.</t>
-        <t id="73">[author]%s[/author]\n[title]Updated %s[/title]Updated to version %s. As part of the update, the names of all %s were reset and recoloured.</t>
-        <t id="74">44</t>
-        <t id="75">Can't deactivate %s immediately. Please wait for currently running background processes to finish.</t>
-        <t id="76">Can't activate %s immediately. Please wait for currently running background processes to finish.</t>
-        <t id="77">%s is trying to initialise but has been stuck in the middle of a process for a long time.</t>
-        <t id="78">ships and stations</t>
-        <t id="79">Updating %s to version %s. This will take a little while...</t>
-        <t id="80">%s has detected a settings change and is now updating the names of %s. This will take a little while...</t>
-        <t id="81">%s has finished applying changed settings.</t>
-        <t id="82">[author]%s[/author]\n[title]Applied New Settings[/title]\n\n%s has finished applying changed settings. The names of all %s were reset and recoloured.</t>
-        <t id="83">%s finished background processes and can now be deactivated.</t>
-        <t id="84">%s finished background processes and can now be activated.</t>
+        <t id="66">[author]{9964,61}[/author]\n[title]無効化されました {9964,61}[/title]\n\nこのプラグインは、銀河全体の船名とステーション名から色を削除し、ローカル変数をクリアし、グローバル変数を削除しました。\n\n非アクティブ化後に色付きオブジェクトのインスタンスを見つけた場合は、対処できるようにバグ レポートを提出してください。 \n\nプラグインの痕跡を完全に削除するには:\n1: ゲームを保存します。\n2: X3 ディレクトリからプラグイン ファイルを削除します。\n3: セーブをリロードします。</t>
+        <t id="67">[author]{9964,61}[/author]\n[title]Initialised {9964,61}[/title]\n\nアクティベーションの一環として、プラグインは銀河中の船、埠頭、造船所の名前を色付けしました。新しく生成されたオブジェクトには、名前が自動的に色付けされます。\n\n\033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X を編集してデフォルトの色を変更できます。 。次のいずれかを実行して、変更を適用します:\n1: {9964,61} がアクティブになっている保存をロードします。\nまたは...\n2: {9964,61} を非アクティブにして、再度アクティブにします。</t>
+        <t id="68">%s を非アクティブ化しています。これには少し時間がかかります...</t>
+        <t id="69">%s を初期化しています。これには少し時間がかかります...</t>
+        <t id="70">%s 非アクティブ化されました。</t>
+        <t id="71">%s が初期化されました。</t>
+        <t id="72">%s をバージョン %s に更新しました。</t>
+        <t id="73">[author]%s[/author]\n[title]%s を更新しました[/title]バージョン %s に更新されました。更新の一環として、すべての %s の名前がリセットされ、色が変更されました。</t>
+        <t id="74">81</t>
+        <t id="75">%s をすぐに非アクティブ化できません。現在実行中のバックグラウンドプロセスが終了するまでお待ちください。</t>
+        <t id="76">%s をすぐにアクティブ化できません。現在実行中のバックグラウンドプロセスが終了するまでお待ちください。</t>
+        <t id="77">%s は初期化しようとしていますが、プロセスの途中で長時間停止しています。</t>
+        <t id="78">船と駅</t>
+        <t id="79">%s をバージョン %s に更新しています。これには少し時間がかかります...</t>
+        <t id="80">%s は設定の変更を検出し、現在 %s の名前を更新しています。これには少し時間がかかります...</t>
+        <t id="81">%s は変更された設定の適用を終了しました。</t>
+        <t id="82">[author]%s[/author]\n[title]新しい設定を適用しました[/title]\n\n%s は変更された設定の適用を終了しました。すべての %s の名前がリセットされ、色が変更されました。</t>
+        <t id="83">%s はバックグラウンド プロセスを終了したため、非アクティブ化できるようになりました。</t>
+        <t id="84">%s はバックグラウンド プロセスを終了し、アクティブ化できるようになりました。</t>
 <!-- Race Specific Strings
      x:          Race ID
      x00-x29:    Strings for ships & stations. These are checked and then coloured if found in the ship's/station's name.
@@ -364,15 +364,15 @@
     </page>
     <page id="399964" title="Colour By Race" desc="" voice="no">
         <t id="63">addon2</t>
-        <t id="66">[author]{9964,61}[/author]\n[title]Deactivated {9964,61}[/title]\n\nThe plugin has removed the colours from ship and station names throughout the galaxy, cleared their local variables, and removed global variables.\n\nIf you come across any instances of coloured objects after deactivation, please submit a bug report so that we can address the issue.\n\nTo completely remove any trace of the plugin:\n1: Ensure {9964,62} is also deactivated.\n2: Save your game.\n3: Delete the plugin files from your X3 directory.\n4: Reload your save.</t>
+        <t id="66">[author]{9964,61}[/author]\n[title]無効化されました {9964,61}[/title]\n\nこのプラグインは、銀河全体の船名とステーション名から色を削除し、ローカル変数をクリアし、グローバル変数を削除しました。\n\n非アクティブ化後に色付きオブジェクトのインスタンスを見つけた場合は、対処できるようにバグ レポートを提出してください。 \n\nプラグインの痕跡を完全に削除するには:\n1: {9964,62} も非アクティブ化されていることを確認します。\n2: ゲームを保存します。\n3: X3 ディレクトリからプラグイン ファイルを削除します。\n4:保存をリロードします。</t>
 <!-- Colour By Sector -->
         <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X by FriendlyFirePhoenix \033G|\033X v%s</t>
-        <t id="86">[author]{9964,62}[/author]\n[title]Deactivated {9964,62}[/title]\n\nSectors have been restored to the colour they used before the plugin was activated and had their local variables removed.\n\nTo completely remove any trace of the plugin, follow these steps:\n1: Ensure {9964,61} is also deactivated.\n2: Save your game.\n3: Delete the plugin files from your X3 directory.\n4: Reload your save.</t>
-        <t id="87">[author]{9964,62}[/author]\n[title]Initialised {9964,62}[/title]\n\nAs part of activation, all sectors across the galaxy have had colour applied corresponding with the race that owns them. Sectors will automatically change colour when they change owner.\n\nYou can change the default sector colours by editing \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Apply the changes by doing one of the following:\n1: Load a save which has {9964,62} active.\nor...\n2: Deactivate and reactivate {9964,62}.</t>
-        <t id="90">[author]{9964,61}[/author]\n[title]Can't Initialise Plugin[/title]\n\n{9964,61} and {9964,62} require the latest version of Cycrow's unofficial patch to run in Farnham's Legend. Download it at \033Ghttps://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/\033X.</t>
-        <t id="91">\033GColour By Race\033X requires the latest version of Cycrow's unofficial patch to run in Farnham's Legend.</t>
-        <t id="92">%s \033G|\033X Requires Cycrow's unofficial patch latest version.</t>
-        <t id="98">ships, stations and sectors</t>
-        <t id="99">sectors</t>
+        <t id="86">[author]{9964,62}[/author]\n[title]無効化されました {9964,62}[/title]\n\nセクタは、プラグインがアクティブ化され、ローカル変数が削除される前に使用されていた色に復元されました。\n\nプラグインの痕跡を完全に削除するには、次の手順に従ってください:\n1: {9964,61} も非アクティブ化されていることを確認します。 \n2: ゲームを保存します。\n3: X3 ディレクトリからプラグイン ファイルを削除します。\n4: セーブをリロードします。</t>
+        <t id="87">[author]{9964,62}[/author]\n[title]初期化済み {9964,62}[/title]\n\nアクティベーションの一環として、銀河中のすべてのセクターには、それらを所有する種族に応じた色が適用されています。セクターの所有者が変更されると、セクターの色が自動的に変わります。\n\n\033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\ を編集することで、デフォルトのセクターの色を変更できます。 033X。次のいずれかを実行して、変更を適用します:\n1: {9964,62} がアクティブになっている保存をロードします。\nまたは...\n2: {9964,62} を非アクティブにして、再度アクティブにします。</t>
+        <t id="90">[author]{9964,61}[/author]\n[title]プラグインを初期化できません[/title]\n\n{9964,61} と {9964,62} を Farnham's Legend で実行するには、Cycrow の非公式パッチの最新バージョンが必要です。 \033Ghttps://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/\033X からダウンロードしてください。</t>
+        <t id="91">\033GColor By Race\033X を Farnham's Legend で実行するには、Cycrow の非公式パッチの最新バージョンが必要です。</t>
+        <t id="92">%s \033G|\033X Cycrow の最新の非公式パッチが必要です。</t>
+        <t id="98">船、ステーション、セクター</t>
+        <t id="99">セクター</t>
     </page>
 </language>

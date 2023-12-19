@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<language id="44">
-    <!-- English -->
+<language id="7">
+    <!-- Russian -->
     <page id="9964" title="Colour By Race" desc="" voice="no">
 <!-- Text Colour for main X3 races. Text ID corresponds with Race ID. Remove or comment out an entry to prevent that races objects from being coloured.
      <t id="1">         Opening XML tag with string id
@@ -10,7 +10,7 @@
      (Argon)            Comment for humans
      </t>               Closing XML tag
 -->
-        <t id="0">Dummy - %s - Dummy</t>
+        <t id="0">Пустой - %s - Пустой</t>
         <t id="1">\033B%s\033X(Argon)</t>
         <t id="2">\033G%s\033X(Boron)</t>
         <t id="3">\033M%s\033X(Split)</t>
@@ -41,41 +41,41 @@
 <!-- Border Sector Colour Percentage - If a border colour isn't set for a particular race the border colour is darkened/lightened by this amount. 100% by default so that core and border sectors are coloured the same. -->
         <t id="40">100(%)</t>
 <!-- 50 - 59: Search strings used by string cleaning function -->
-        <t id="50">\033W(White)</t>
-        <t id="51">\033C(Cyan)</t>
-        <t id="52">\033A(Silver)</t>
-        <t id="53">\033Y(Yellow)</t>
-        <t id="54">\033O(Orange)</t>
-        <t id="55">\033M(Magenta)</t>
-        <t id="56">\033G(Green)</t>
-        <t id="57">\033B(Blue)</t>
-        <t id="58">\033R(Red)</t>
-        <t id="59">\033X(Closing Tag)</t>
+        <t id="50">\033W(белый)</t>
+        <t id="51">\033C(голубой)</t>
+        <t id="52">\033A(серебро)</t>
+        <t id="53">\033Y(желтый)</t>
+        <t id="54">\033O(оранжевый)</t>
+        <t id="55">\033M(пурпурный)</t>
+        <t id="56">\033G(зеленый)</t>
+        <t id="57">\033B(синий)</t>
+        <t id="58">\033R(красный)</t>
+        <t id="59">\033X(закрывающий тег)</t>
 <!-- Colour By Race -->
         <t id="61">\033GColour By Race\033X</t>
         <t id="62">\033BColour By Sector\033X</t>
         <t id="63">(blank placeholder)</t>
         <t id="64">\n</t>
         <t id="65">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X by FriendlyFirePhoenix \033G|\033X v%s</t>
-        <t id="66">[author]{9964,61}[/author]\n[title]Deactivated {9964,61}[/title]\n\nThe plugin has removed the colours from ship and station names throughout the galaxy, cleared their local variables, and removed global variables.\n\nIf you come across any instances of coloured objects after deactivation, please submit a bug report so that we can address the issue.\n\nTo completely remove any trace of the plugin:\n1: Save your game.\n2: Delete the plugin files from the X3 directory.\n3: Reload your save.</t>
-        <t id="67">[author]{9964,61}[/author]\n[title]Initialised {9964,61}[/title]\n\nAs part of activation, the plugin has coloured the names of ships, docks and shipyards across the galaxy. Newly spawned objects will have their name coloured automatically.\n\nYou can change the default colours by editing \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Apply the changes by doing one of the following:\n1: Load a save which has {9964,61} active.\nor...\n2: Deactivate and reactivate {9964,61}.</t>
-        <t id="68">Deactivating %s. This will take a little while...</t>
-        <t id="69">Initialising %s. This will take a little while...</t>
-        <t id="70">%s Deactivated.</t>
-        <t id="71">%s Initialised.</t>
-        <t id="72">Updated %s to version %s.</t>
-        <t id="73">[author]%s[/author]\n[title]Updated %s[/title]Updated to version %s. As part of the update, the names of all %s were reset and recoloured.</t>
-        <t id="74">44</t>
-        <t id="75">Can't deactivate %s immediately. Please wait for currently running background processes to finish.</t>
-        <t id="76">Can't activate %s immediately. Please wait for currently running background processes to finish.</t>
-        <t id="77">%s is trying to initialise but has been stuck in the middle of a process for a long time.</t>
-        <t id="78">ships and stations</t>
-        <t id="79">Updating %s to version %s. This will take a little while...</t>
-        <t id="80">%s has detected a settings change and is now updating the names of %s. This will take a little while...</t>
-        <t id="81">%s has finished applying changed settings.</t>
-        <t id="82">[author]%s[/author]\n[title]Applied New Settings[/title]\n\n%s has finished applying changed settings. The names of all %s were reset and recoloured.</t>
-        <t id="83">%s finished background processes and can now be deactivated.</t>
-        <t id="84">%s finished background processes and can now be activated.</t>
+        <t id="66">[author]{9964,61}[/author]\n[title]Деактивирован {9964,61}[/title]\n\nПлагин удаляет окраску названий кораблей и станций по всей галактике, вычищает локальные переменные и удаляет глобальные переменные.\n\nЕсли вдруг появится окрашенный объект после деактивации, отправьте нам сообщение об ошибке, для устранения проблемы.\n\nДля полного удаления всех следов плагина:\n1: Выйдите из игры.\n2: Выйдите из игры.\n3: Удалите файлы плагина из каталога X3\n4: Запустите игру и загрузите сохранение.</t>
+        <t id="67">[author]{9964,61}[/author]\n[title]Установлен {9964,61}[/title]\n\nВ процессе активации плагин раскрасил названия кораблей, доков и верфей по всей галактике. Новые объекты будут окрашиваться автоматически.\n\nВы можете изменить цвета по умолчанию, отредактировав данные в файле \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Для применения изменений выполните одно из следующих действий:\n1: Загрузите сохранение, в котором установлен {9964,61}.\nили...\n2: Деактивируйте и снова активируйте {9964,61}.</t>
+        <t id="68">Деактивация %s. Это займет некоторое время...</t>
+        <t id="69">Инициализация %s. Это займет некоторое время...</t>
+        <t id="70">%s удален.</t>
+        <t id="71">%s установлен.</t>
+        <t id="72">Обновление %s до версии %s.</t>
+        <t id="73">[author]%s[/author]\n[title]%s обновлен[/title]Обновлен до версии %s. В ходе обновления имена всех %s были сброшены и перекрашены.</t>
+        <t id="74">7</t>
+        <t id="75">Не удается выполнить деактивацию %s. Пожалуйста, подождите, пока завершатся текущие фоновые процессы.</t>
+        <t id="76">Невозможно активировать %s. Пожалуйста, дождитесь завершения текущих фоновых процессов.</t>
+        <t id="77">%s пытается установиться, но долгое время находится на середине процесса.</t>
+        <t id="78">кораблей и станций</t>
+        <t id="79">Обновление %s до версии %s. Это займет некоторое время...</t>
+        <t id="80">%s обнаружил изменение настроек и обновляет имена %s. Это займет немного времени...</t>
+        <t id="81">%s завершил применение изменений настроек.</t>
+        <t id="82">[author]%s[/author]\n[title]Применены новые настройки[/title]\n\n%s закончил применение изменённых настроек. Названия всех %s были сброшены и перекрашены.</t>
+        <t id="83">%s завершил фоновые процессы и может быть отключен.</t>
+        <t id="84">%s завершил фоновые процессы и может быть включен.</t>
 <!-- Race Specific Strings
      x:          Race ID
      x00-x29:    Strings for ships & stations. These are checked and then coloured if found in the ship's/station's name.
@@ -230,7 +230,7 @@
         <t id="1593">160(Race 1)</t><!-- Green Colour -->
         <t id="1594">160(Race 1)</t><!-- Blue Colour -->
 <!-- Independant/Race 2  -->
-        <t id="1630">{1000,60008} {17,80517}(Privateer Trading Post)</t>
+        <t id="1630">{17,80517} {1000,60008}(Торговый пост Капер)</t>
         <t id="1631">{13,9080}(Strong Arms - used for XRM weapons dealer XL)</t>
 
         <t id="1692">160(Independant)</t><!-- Red Colour -->
@@ -364,15 +364,15 @@
     </page>
     <page id="399964" title="Colour By Race" desc="" voice="no">
         <t id="63">addon2</t>
-        <t id="66">[author]{9964,61}[/author]\n[title]Deactivated {9964,61}[/title]\n\nThe plugin has removed the colours from ship and station names throughout the galaxy, cleared their local variables, and removed global variables.\n\nIf you come across any instances of coloured objects after deactivation, please submit a bug report so that we can address the issue.\n\nTo completely remove any trace of the plugin:\n1: Ensure {9964,62} is also deactivated.\n2: Save your game.\n3: Delete the plugin files from your X3 directory.\n4: Reload your save.</t>
+        <t id="66">[author]{9964,61}[/author]\n[title]Отключен {9964,61}[/title]\n\nПлагин удаляет цвета из названий кораблей и станций по всей галактике, очищает локальные переменные и удаляет глобальные переменные.\n\nЕсли вы столкнулись с проблемой окрашивания объектов после деактивации, пожалуйста, отправьте сообщение об ошибке, чтобы мы могли решить эту проблему.\n\nДля полного удаления всех следов плагина:\n1: Убедитесь, что {9964,62} тоже отключен.\n2: Сохраните игру.\n3: Удалите файлы плагина из каталога X3.\n4: Загрузите свое сохранение.</t>
 <!-- Colour By Sector -->
         <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X by FriendlyFirePhoenix \033G|\033X v%s</t>
-        <t id="86">[author]{9964,62}[/author]\n[title]Deactivated {9964,62}[/title]\n\nSectors have been restored to the colour they used before the plugin was activated and had their local variables removed.\n\nTo completely remove any trace of the plugin, follow these steps:\n1: Ensure {9964,61} is also deactivated.\n2: Save your game.\n3: Delete the plugin files from your X3 directory.\n4: Reload your save.</t>
-        <t id="87">[author]{9964,62}[/author]\n[title]Initialised {9964,62}[/title]\n\nAs part of activation, all sectors across the galaxy have had colour applied corresponding with the race that owns them. Sectors will automatically change colour when they change owner.\n\nYou can change the default sector colours by editing \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Apply the changes by doing one of the following:\n1: Load a save which has {9964,62} active.\nor...\n2: Deactivate and reactivate {9964,62}.</t>
-        <t id="90">[author]{9964,61}[/author]\n[title]Can't Initialise Plugin[/title]\n\n{9964,61} and {9964,62} require the latest version of Cycrow's unofficial patch to run in Farnham's Legend. Download it at \033Ghttps://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/\033X.</t>
-        <t id="91">\033GColour By Race\033X requires the latest version of Cycrow's unofficial patch to run in Farnham's Legend.</t>
-        <t id="92">%s \033G|\033X Requires Cycrow's unofficial patch latest version.</t>
-        <t id="98">ships, stations and sectors</t>
-        <t id="99">sectors</t>
+        <t id="86">[author]{9964,62}[/author]\n[title]Отключен {9964,62}[/title]\n\nСектора восстановили цвет, который они использовали до активации плагина, и были удалены их локальные переменные.\n\nДля полного удаления всех следов плагина выполните следующие действия:\n1: Убедитесь, что {9964,61} тоже отключен.\n2: Сохраните игру.\n3: Удалите файлы плагинов из директории X3.\n4: Загрузите сохранение.</t>
+        <t id="87">[author]{9964,62}[/author]\n[title]{9964,62} инициализирован[/title]\n\nВ процессе активации все сектора в галактике были раскрашены в разные цвета в соответствии с расой, к которой они принадлежат. Сектора автоматически меняют цвет при смене владельца.\n\nВы можете изменить цвета секторов в файле \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Для применения изменений выполните одно из следующих действий:\n1: Загрузите сохранение, в котором активирован {9964,62}.\nили...\n2: Деактивируйте и снова активируйте {9964,62}.</t>
+        <t id="90">[author]{9964,61}[/author]\n[title]Не удается инициализировать плагин[/title]\n\n{9964,61} и {9964,62} необходима последняя версия неофициального патча FL для запуска в Наследии Фарнема. Загрузите его по ссылке \033Ghttps://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/\033X.</t>
+        <t id="91">\033GColour By Race\033X требуется последняя версия неофициального патча FL для запуска в Наследие Фарнема.</t>
+        <t id="92">%s \033G|\033X Требуется последний неофициальный патч Cycrow.</t>
+        <t id="98">корабли, станции и сектора</t>
+        <t id="99">сектора</t>
     </page>
 </language>

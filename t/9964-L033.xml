@@ -56,7 +56,7 @@
     <t id="62">\033BColour By Sector\033X</t>
     <t id="63">(blank placeholder)</t>
     <t id="64">\n</t>
-    <t id="65">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X par FriendlyFirePhoenix. v%s</t>
+    <t id="65">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X par FriendlyFirePhoenix \033G|\033X v%s</t>
     <t id="66">[author]{9964,61}[/author]\n[title]Désactivé {9964,61}[/title]\n\nLe plugin a supprimé les couleurs des noms de vaisseaux et de stations dans toute la galaxie, effacé leurs variables locales et supprimé les variables globales.\n\nSi vous rencontrez des instances d'objets colorés après la désactivation, veuillez soumettre un rapport de bug afin que nous puissions y remédier. résoudre le problème.\n\nPour supprimer complètement toute trace du plugin:\n1: Enregistrez votre partie.\n2: Supprimez les fichiers du plugin de votre répertoire X3.\n3: Rechargez votre sauvegarde.</t>
     <t id="67">[author]{9964,61}[/author]\n[title]Initialisé {9964,61}[/title]\n\nDans le cadre de l'activation, le plugin a coloré les noms des navires, des quais et des chantiers navals à travers la galaxie. Les objets nouvellement générés verront leur nom coloré automatiquement.\n\nVous pouvez modifier les couleurs par défaut en éditant \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Appliquez les modifications en effectuant l'une des opérations suivantes:\n1: chargez une sauvegarde sur laquelle {9964,61} est actif.\nou...\n2: désactivez et réactivez {9964,61}.</t>
     <t id="68">Désactivation de %s. Cela prendra un peu de temps...</t>
@@ -362,11 +362,12 @@
     <t id="63">addon2</t>
     <t id="66">[author]{9964,61}[/author]\n[title]Désactivé {9964,61}[/title]\n\nLe plugin a supprimé les couleurs des noms de vaisseaux et de stations dans toute la galaxie, effacé leurs variables locales et supprimé les variables globales.\n\nSi vous rencontrez des instances d'objets colorés après la désactivation, veuillez soumettre un rapport de bug afin que nous puissions y remédier. résoudre le problème.\n\nPour supprimer complètement toute trace du plugin:\n1: Assurez-vous que {9964,62} est également désactivé.\n2: Enregistrez votre partie.\n3: Supprimez les fichiers du plugin de votre répertoire X3.\n4: Rechargez votre sauvegarde.</t>
 <!-- Colour By Sector -->
-    <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X par FriendlyFirePhoenix. v%s</t>
+    <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X par FriendlyFirePhoenix \033G|\033X v%s</t>
     <t id="86">[author]{9964,62}[/author]\n[title]Désactivé {9964,62}[/title]\n\nLes secteurs ont été restaurés à la couleur qu'ils utilisaient avant l'activation du plugin et leurs variables locales ont été supprimées.\n\nPour supprimer complètement toute trace du plugin, suivez ces étapes:\n1: Assurez-vous que {9964,61} est également désactivé.\n2: Enregistrez votre partie.\n3: Supprimez les fichiers du plugin de votre répertoire X3.\n4: Rechargez votre sauvegarde.</t>
     <t id="87">[author]{9964,62}[/author]\n[title]Initialisé {9964,62}[/title]\n\nDans le cadre de l'activation, tous les secteurs de la galaxie ont reçu une couleur correspondant à la race qui les possède. Les secteurs changeront automatiquement de couleur lorsqu'ils changeront de propriétaire.\n\nVous pouvez modifier les couleurs par défaut des secteurs en éditant \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Appliquez les modifications en effectuant l'une des opérations suivantes:\n1: chargez une sauvegarde sur laquelle {9964,62} est actif.\nou...\n2: désactivez et réactivez {9964,62}.</t>
-    <t id="90">[author]{9964,61}[/author]\n[title]Impossible d'initialiser le plug-in[/title]\n\n{9964,61} et {9964,62} nécessitent la dernière version du correctif non officiel de Cycrow pour courir dans Farnham's Legend. Téléchargez-le sur https://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/.</t>
+    <t id="90">[author]{9964,61}[/author]\n[title]Impossible d'initialiser le plug-in[/title]\n\n{9964,61} et {9964,62} nécessitent la dernière version du correctif non officiel de Cycrow pour courir dans Farnham's Legend. Téléchargez-le sur \033Ghttps://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/\033X.</t>
     <t id="91">\033GCoulour By Race\033X nécessite la dernière version du patch non officiel de Cycrow pour fonctionner dans Farnham's Legend.</t>
+    <t id="92">%s \033G|\033X Nécessite le dernier patch non officiel de Cycrow.</t>
     <t id="98">navires, stations et secteurs</t>
     <t id="99">secteurs</t>
 </page>

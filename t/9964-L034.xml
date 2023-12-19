@@ -56,7 +56,7 @@
     <t id="62">\033BColour By Sector\033X</t>
     <t id="63">(blank placeholder)</t>
     <t id="64">\n</t>
-    <t id="65">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X de FriendlyFirePhoenix. v%s</t>
+    <t id="65">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Race\033X de FriendlyFirePhoenix \033G|\033X v%s</t>
     <t id="66">[author]{9964,61}[/author]\n[title]{9964,61} Desactivado[/title]\n\nEl complemento eliminó los colores de los nombres de naves y estaciones en toda la galaxia, borró sus variables locales y eliminó las variables globales.\n\nSi encuentra algún caso de objetos coloreados después de la desactivación, envíe un informe de error para que podamos solucionarlo. el problema.\n\nPara eliminar completamente cualquier rastro del complemento:\n1: Guarde su juego.\n2: Elimine los archivos del complemento de su directorio X3.\n3: Vuelve a cargar tu guardado.</t>
     <t id="67">[author]{9964,61}[/author]\n[title]{9964,61} Inicializadas[/title]\n\nComo parte de la activación, el complemento ha coloreado los nombres de barcos, muelles y astilleros en toda la galaxia. Los nombres de los objetos recién generados se colorearán automáticamente.\n\nPuedes cambiar los colores predeterminados editando \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\033X. Aplique los cambios haciendo lo siguiente:\n1: cargue un archivo guardado que tenga {9964,61} activo.\n2: desactive y reactive {9964,61}.</t>
     <t id="68">Desactivando %s. Esto tomará un poco de tiempo...</t>
@@ -367,11 +367,12 @@
     <t id="63">addon2</t>
     <t id="66">[author]{9964,61}[/author]\n[title]{9964,61} Desactivado[/title]\n\nEl complemento eliminó los colores de los nombres de naves y estaciones en toda la galaxia, borró sus variables locales y eliminó las variables globales.\n\nSi encuentra algún caso de objetos coloreados después de la desactivación, envíe un informe de error para que podamos solucionarlo. el problema.\n\nPara eliminar completamente cualquier rastro del complemento:\n1: Asegúrese de que {9964,62} también esté desactivado.\n2: Guarde su juego.\n3: Elimine los archivos del complemento de su directorio X3.\n4: Vuelve a cargar tu guardado.</t>
 <!-- Colour By Sector -->
-    <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X de FriendlyFirePhoenix. v%s</t>
+    <t id="85">\033G\033BC\033X\033Go\033X\033Ml\033X\033Oo\033X\033Yu\033X\033Rr\033X By Sector\033X de FriendlyFirePhoenix \033G|\033X v%s</t>
     <t id="86">[author]{9964,62}[/author]\n[title]{9964,62} Desactivado[/title]\n\nLos sectores se restauraron al color que usaban antes de que se activara el complemento y se eliminaron sus variables locales.\n\nPara eliminar completamente cualquier rastro del complemento, siga estos pasos:\n1: Asegúrese de que {9964,61} también esté desactivado. \n2: Guarda tu juego.\n3: Elimina los archivos del complemento de tu directorio X3.\n4: Vuelve a cargar tu juego.</t>
     <t id="87">[author]{9964,62}[/author]\n[title]{9964,62} Inicializadas[/title]\n\nComo parte de la activación, a todos los sectores de la galaxia se les ha aplicado el color correspondiente a la raza propietaria de ellos. Los sectores cambiarán de color automáticamente cuando cambien de propietario.\n\nPuedes cambiar los colores predeterminados del sector editando \033G\\X3\\{9964,63}\\t\\9964-L0{9964,74}.xml\ 033X. Aplique los cambios haciendo lo siguiente:\n1: cargue un archivo guardado que tenga {9964,62} activo.\n2: desactive y reactive {9964,62}.</t>
-    <t id="90">[author]{9964,61}[/author]\n[title]No se puede inicializar el complemento[/title]\n\n{9964,61} y {9964,62} requieren la última versión del parche no oficial de Cycrow para corre en Farnham's Legend. Descárguelo en https://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/.</t>
+    <t id="90">[author]{9964,61}[/author]\n[title]No se puede inicializar el complemento[/title]\n\n{9964,61} y {9964,62} requieren la última versión del parche no oficial de Cycrow para corre en Farnham's Legend. Descárguelo en \033Ghttps://www.xpluginmanager.co.uk/download/x3fl-unofficial-patch/\033X.</t>
     <t id="91">\033GColour By Race\033X requiere la última versión del parche no oficial de Cycrow para ejecutarse en Farnham's Legend.</t>
+    <t id="92">%s \033G|\033X Requiere el último parche no oficial de Cycrow.</t>
     <t id="98">barcos, estaciones y sectores</t>
     <t id="99">sectores</t>
 </page>

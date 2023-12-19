@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language id="81">
+    <!-- Japanese -->
+    <page id="17" title="Boardcomp. objects"
+          descr="Quad line groups for ware factory pairs or twins (spoken by Boardcomputer)" voice="yes">
+        <!-- XRM 9950 Stuff - This gets overwritten regularly - Start -->
+        <t id="16391">\033R{1000,119}\033X {17,16041}(Yaki Shipyard)</t>
+        <!--XRM 9950 Stuff - End -->
+        <!-- XRM 7027 Stuff - Start -->
+        <t id="75000">\033A{1000,122}\033X {1000,40007}(AGI Task Force Command)</t>
+        <t id="75002">\033A{1000,122}\033X {1000,20010}(AGI Task Force Flight School)</t>
+        <t id="75004">\033A{1000,122}\033X {1000,50202}(AGI Task Force Station Defence)</t>
+        <t id="75006">\033R{1000,119}\033X {17,16041}(Yaki Shipyard)</t>
+
+        <t id="75008">\033R{1000,119}\033X {1000,40011} {1000,40007}(Yaki Flotilla Command)</t>
+        <t id="75010">\033R{1000,119}\033X {1000,40010} {1000,40007}(Yaki Battle Group Command)</t>
+        <t id="75020">\033A{1000,118}\033X {1000,30003}(Terran Border Control)</t>
+        <t id="75022">\033A{1000,122}\033X {1000,30000} {1000,30002}(AGI Task Force Military Police)</t>
+        <t id="75024">\033A{1000,123}\033X {1000,30000} {1000,30002}(USC Military Police)</t>
+        <t id="75026">\033R{1000,108}\033X {17,16041}(Pirate Shipyard)</t>
+        <t id="75028">\033R{1000,137}\033X {17,16041}(Duke's Shipyard)</t>
+        <t id="75030">\033R{1000,137}\033X {1000,10006}(Duke's Scrap Iron Merchant)</t>
+
+        <t id="75032">\033A{1000,122}\033X {1000,30014}(AGI Task Force Disaster Control)</t>
+        <t id="75034">\033A{1000,122}\033X {1000,20032}(AGI Task Force Technical Emergency Service)</t>
+        <t id="75536">\033B{1000,109}\033X {17,16041}(Goner Shipyard)</t>
+        <t id="75538">\033A{1000,122}\033X {1000,30005}(AGI Task Force Intelligence Service)</t>
+        <t id="81114">\033A{17,13131}\033X {17,81113}(McCallum Station)</t>
+        <t id="81116">\033B{1000,1012}\033X {17,81113}(Farpoint Station)</t>
+        <!-- XRM 7027 Stuff - End -->
+        <!-- XRM 9950 Stuff - This gets overwritten regularly - Start -->
+        <t id="80108">\033A{1000,121}\033X {17,16041}(USC Shipyard)</t>
+
+        <t id="80148">\033O{1000,1043}\033X {17,6161}(Trinity Corp. Headquarters)</t>
+        <t id="80150">\033O{1000,1040}\033X {17,6161}(Holy Dimensions Headquarters)</t>
+        <t id="80152">\033G{1000,1023}\033X {17,6161}(Waverider Corp. Headquarters)</t>
+        <t id="80154">\033Y{1000,1051}\033X {17,6161}(Creditania Headquarters)</t>
+        <t id="80156">\033M{1000,1033}\033X {17,6161}(Thuruk's Inc. Headquarters)</t>
+
+        <t id="80180">\033B{1000,101}\033X {9,515}{9,500}{9,517} {17,16041}(Argon PAR Shipyard)</t>
+        <t id="80182">\033G{1000,102}\033X {9,515}{9,500}{9,517} {17,16041}(Boron PAR Shipyard)</t>
+        <t id="80184">\033M{1000,103}\033X {9,515}{9,500}{9,517} {17,16041}(Split PAR Shipyard)</t>
+        <t id="80186">\033O{1000,104}\033X {9,515}{9,500}{9,517} {17,16041}(Paranid PAR Shipyard)</t>
+        <t id="80188">\033Y{1000,105}\033X {9,515}{9,500}{9,517} {17,16041}(Teladi PAR Shipyard)</t>
+        <t id="80190">\033A{1000,121}\033X {9,515}{9,500}{9,517} {17,16041}(USC PAR Shipyard)</t>
+
+        <t id="80192">\033B{1000,1091}\033X {1000,10021}(Terracorp Weapons Dealer)</t>
+        <t id="80194">\033G{1000,1024}\033X {1000,10021}(Blue Storm Weapons Dealer)</t>
+        <t id="80196">\033O{1000,1040}\033X {1000,10021}(Holy Dimensions Weapons Dealer)</t>
+        <t id="80198">\033M{1000,1098}\033X {1000,10021}(Strong Arms Weapons Dealer)</t>
+        <t id="80200">\033R{1000,1050}\033X {1000,10021}(Talonfire Weapons Dealer)</t>
+        <t id="80202">\033O{1000,1096}\033X {1000,10021}(Duke's Weapons Dealer)</t>
+        <t id="80204">\033A{1000,150}\033X {1000,10021}(Dark Space Weapons Dealer)</t>
+
+        <t id="80233">\033B{13,9030}\033X {17,80232}(Jonferco Showroom)</t>
+        <t id="80235">\033G{13,9073}\033X {17,80232}(Atreus Showroom)</t>
+        <t id="80237">\033M{1000,1033}\033X {17,80232}(Thuruk's Inc. Showroom)</t>
+        <t id="80239">\033O{1000,1043}\033X {17,80232}(Trinity Corp Showroom)</t>
+        <t id="80241">\033Y{1000,146}\033X {17,80232}(NMMC Showroom)</t>
+        <t id="80243">\033A{1000,150}\033X {17,80232}(Dark Space Showroom)</t>
+
+        <t id="80245">\033B{13,9030}\033X {17,80227}(Jonferco Research Station)</t>
+        <t id="80247">\033G{1000,1023}\033X {17,80227}(Waverider Corp. Research Station)</t>
+        <t id="80249">\033M{1000,1033}\033X {17,80227}(Thuruk's Inc. Research Station)</t>
+        <t id="80251">\033O{1000,1040}\033X {17,80227}(Holy Dimensions Research Station)</t>
+        <t id="80253">\033Y{1000,1051}\033X {17,80227}(Creditania Research Station)</t>
+        <t id="80255">\033A{1000,150}\033X {17,80227}(Dark Space Research Station)</t>
+        <t id="80382">\033A{1000,150}\033X {17,6161}(Dark Space Headquarters)</t>
+        <t id="80384">\033B{1000,133}\033X {17,80227}(OTAS Research Station)</t>
+
+        <t id="81114">\033A{17,13131}\033X {17,81113}(McCallum Station)</t>
+        <t id="81116">\033B{1000,1012}\033X {17,81113}(Farpoint Station)</t>
+        <t id="81118">\033A{1000,121}\033X {1000,30000} {1000,40007}(USC Military Command)</t>
+        <t id="81120">\033B{1000,101}\033X {1000,30000} {1000,40007}(Argon Military Command)</t>
+        <!--XRM 9950 Stuff - End -->
+    </page>
+    <page id="350017" title="Boardcomp. objects" descr="0" voice="yes">
+        <t id="18200">\033B{13,9020}\033X {17,16041}(OTAS Shipyard)</t>
+    </page>
+    <page id="8010" title="Military Transport" descr="Lucike Military Transport" voice="yes">
+        <t id="100">\033B{1000,101}\033X \033R{1000,30000}\033X {17,4161}(Argon Military Express)</t>
+        <t id="101">\033B{1000,101}\033X \033B{1000,30000}\033X {17,4161}(Argon Military Express)</t>
+        <t id="102">\033Y{1000,105}\033X \033R{1000,30000}\033X {17,4561}(Teladi Military Tukan)</t>
+        <t id="103">\033Y{1000,105}\033X \033B{1000,30000}\033X {17,4561}(Teladi Military Tukan)</t>
+        <t id="104">\033A{1000,118}\033X \033R{1000,30000}\033X {17,10811}(Terran Military Scabbard)</t>
+        <t id="105">\033A{1000,118}\033X \033B{1000,30000}\033X {17,10811}(Terran Military Scabbard)</t>
+    </page>
+</language>
