@@ -159,6 +159,7 @@ The limitations of AP and TC mean you'll occasionally see an uncoloured ship or 
 
 ### Languages
 
+* Russian (Provided by [Alexalsp](https://forum.egosoft.com/viewtopic.php?f=94&t=453035#p5209255))
 * English (my native language)
 * German (checked by Olsch)
 * French
@@ -166,6 +167,7 @@ The limitations of AP and TC mean you'll occasionally see an uncoloured ship or 
 * Italian
 * Czech 
 * Polish
+* Japanese
 
 ### Why an X3 mod in 2023?
 
