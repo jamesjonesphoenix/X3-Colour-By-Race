@@ -178,6 +178,12 @@ Because I'm an idiot.
 * Thanks Olsch for improving my dodgy German translation.
 
 ## Changelog
+##### 2.0.1
+
+* Added Russian translation provided by [Alexalsp](https://forum.egosoft.com/viewtopic.php?f=94&t=453035#p5209255). 
+* Added Japanese translation.
+* Improved messaging of wrong version of FL unofficial patch including adding message to plugin description in AL menu.
+  
 #### 2.0.0
 
 * Added dynamic colouring of sector names available only in FL. 
